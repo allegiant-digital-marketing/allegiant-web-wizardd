@@ -1,0 +1,89 @@
+{
+  "partner": {
+    "businessName": "Kirchner Electric",
+    "primaryContact": {
+      "name": "TBD",
+      "title": "Owner",
+      "email": null,
+      "phone": null
+    },
+    "salesforcePartnerId": null
+  },
+  "brandAssets": {
+    "logo": {
+      "available": false,
+      "needsCreation": false,
+      "primary": null,
+      "stamp": null,
+      "variants": []
+    },
+    "colorTokens": {
+      "available": false,
+      "needsRecommendation": true,
+      "primary": null,
+      "secondary": null,
+      "accent": null,
+      "neutral": null,
+      "semantic": null
+    },
+    "typography": {
+      "available": false,
+      "needsRecommendation": true,
+      "headingFont": null,
+      "bodyFont": null
+    },
+    "photographyStyle": {
+      "hasExistingLibrary": false,
+      "libraryUrl": null,
+      "styleNotes": "Documentary-style on-the-job shots — Cypress homes, real Kirchner crews, warm and authentic. Avoid stock-electrician imagery.",
+      "approach": "hybrid"
+    }
+  },
+  "designDirection": {
+    "archetypeFamily": "trust-first",
+    "rationale": "Kirchner's 40 years operating + 4.9★ / 237 reviews + family-owned positioning is the structural advantage. Trust-First archetype puts review depth, longevity, and licensure badges above the fold. Authority and Velocity archetypes presented alongside for partner comparison.",
+    "verticalAdjustments": "Electrician-specific: licensure number visible, 24/7 emergency line in sticky mobile CTA, Google Guaranteed badge if/when LSA active.",
+    "selectedDirectionAtSignoff": null
+  },
+  "pageSelection": {
+    "homePage": true,
+    "interiorServicePage": {
+      "serviceName": "Whole-home generator install",
+      "rationale": "Highest-LTV residential service. Anchors the Primary Highest Value persona (Heather & Mark Thompson). Hurricane-season urgency means the page earns its keep year-round in Houston metro."
+    },
+    "additionalRequestedPages": []
+  },
+  "ctaPreferences": {
+    "primary": {
+      "label": "Schedule a Generator Consultation",
+      "action": "form",
+      "destination": null
+    },
+    "secondary": {
+      "label": "Call 24/7 — (xxx) xxx-xxxx",
+      "action": "phone-call",
+      "destination": null
+    },
+    "phoneNumber": null
+  },
+  "differentiators": [
+    "40 years operating in Cypress",
+    "Family-owned — not a franchise, not an aggregator",
+    "4.9★ across 237 verified Google reviews",
+    "Licensed and insured (Texas Master Electrician)"
+  ],
+  "outOfScope": [],
+  "complianceFlags": {
+    "requiresLegalDisclaimer": false,
+    "requiresMedicalDisclaimer": false,
+    "requiresHipaaSignals": false,
+    "stateBarCompliance": null,
+    "customNotes": "Texas licensure number must be visible per state regulation. Add to footer and contact page."
+  },
+  "operator": {
+    "builderName": "Chad Markham",
+    "buildInitiatedAt": "2026-06-15T19:00:00Z",
+    "intakeFormVersion": "1.0",
+    "buildId": null
+  }
+}

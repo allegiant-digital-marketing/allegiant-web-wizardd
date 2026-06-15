@@ -1,0 +1,360 @@
+{
+  "businessIdentity": {
+    "businessName": "Tucker, Albin and Associates, Inc.",
+    "vertical": "collections_agency",
+    "subVertical": null,
+    "zone": null,
+    "yearsOperating": null,
+    "tagline": null,
+    "founderNarrative": null
+  },
+  "currentDigitalPresence": {
+    "website": {
+      "url": null,
+      "lcpDesktopSeconds": null,
+      "lcpMobileSeconds": null,
+      "knownIssues": []
+    },
+    "reviews": {
+      "googleRating": null,
+      "googleReviewCount": null,
+      "yelp": {
+        "verified": null,
+        "visibleReviewCount": null,
+        "knownIssues": []
+      },
+      "bbb": {
+        "present": null,
+        "rating": null,
+        "knownIssues": []
+      }
+    },
+    "social": {},
+    "paidMedia": {
+      "googleAds": {
+        "active": null,
+        "notes": null
+      },
+      "localServiceAds": {
+        "present": null,
+        "competitorsHoldingSlots": []
+      }
+    }
+  },
+  "aiVisibility": {
+    "avs": 22,
+    "citationCount": null,
+    "platforms": {
+      "chatgpt": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "claude": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "gemini": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "perplexity": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "copilot": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      }
+    },
+    "disciplineScores": {
+      "aeo": {
+        "score": null,
+        "notes": null
+      },
+      "geo": {
+        "score": null,
+        "notes": null
+      },
+      "aiSeo": {
+        "score": null,
+        "notes": null
+      },
+      "llmSeo": {
+        "score": null,
+        "notes": null
+      }
+    }
+  },
+  "targetServices": [
+    {
+      "name": "PENDING_LLM_EXTRACTION",
+      "shortName": null,
+      "personaIds": [],
+      "priority": "medium",
+      "competitiveContext": null
+    }
+  ],
+  "targetLocations": [
+    {
+      "name": "PENDING_LLM_EXTRACTION",
+      "tier": "primary",
+      "context": null,
+      "parentRegion": null
+    }
+  ],
+  "competitors": [
+    {
+      "name": "The Kaplan Group",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "Altus Receivables",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "Cedar Financial",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "IC System",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "Prestige Services",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    }
+  ],
+  "audience": {
+    "totalCoveragePct": null,
+    "personas": [
+      {
+        "id": "P1",
+        "name": "The Urgent AR Crisis",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "Aging receivables threatening cash flow — needs recovery now",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "Receivables past 90 days, cash flow crisis",
+        "mindset": "Urgent — needs recovery partner now",
+        "device": "70% desktop / 30% mobile",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.25,
+        "fullProfileNotes": "{\"modalTitle\":\"The Urgent AR Crisis\",\"modalRole\":\"Receivables past 90 days — cash flow emergency\",\"demographics\":{\"age\":\"35–60\",\"revenue\":\"$1M–$50M annual\",\"role\":\"Business owner, CFO, or Controller\",\"industry\":\"B2B services, manufacturing, distribution, staffing\"},\"psychographics\":{\"values\":\"Speed, results, transparent contingency fees. Wants recovered money, not excuses.\",\"fears\":\"Writing off bad debt, losing money to non-paying clients, damaging customer relationships with aggressive tactics.\",\"motivations\":\"Recover outstanding receivables quickly. Protect cash flow. Avoid writing off large balances.\",\"buying behavior\":\"Fast decision-maker when receivables are aging. Wants to see success rates, contingency terms, and industry experience.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"emergency debt recovery near me\\\" or \\\"commercial debt recovery agency nationwide\\\" — clicks the top result with strong reviews and a visible phone number.\"},{\"channel\":\"review\",\"text\":\"Reviews: Scans star rating and review count in under 10 seconds. Reads 1-2 recent reviews for reassurance. A 4.5+ rating with 100+ reviews creates instant trust.\"},{\"channel\":\"social\",\"text\":\"Social / LinkedIn: May post \\\"my receivables are 90+ days past due — who do you use?\\\" in a LinkedIn group or industry Facebook community. Peer recommendations carry enormous weight in emergencies.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Increasingly asking Siri, Google Assistant, or ChatGPT \\\"best commercial collection agency for B2B\\\" — spoken search is rising fast in emergency scenarios.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Problem\",\"description\":\"Receivables hit 90+ days. Cash flow tightens. Urgency to recover.\"},{\"step\":2,\"name\":\"Search\",\"description\":\"Searches Google for collection agencies. Asks industry peers for referrals.\"},{\"step\":3,\"name\":\"Evaluate\",\"description\":\"10-second review scan. Checks rating, count, and recency.\"},{\"step\":4,\"name\":\"Call\",\"description\":\"Calls the first company that looks credible. First to answer wins.\"},{\"step\":5,\"name\":\"Hire\",\"description\":\"Places first batch of accounts. Evaluates recovery rate and communication.\"}],\"keySearchTerms\":[\"emergency debt recovery near me\",\"commercial debt recovery agency\",\"unpaid invoice recovery\",\"collect unpaid business invoices\",\"client refusing to pay invoice\",\"emergency debt recovery nationwide\"]}"
+      },
+      {
+        "id": "P2",
+        "name": "The Strategic CFO / Credit Manager",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "Proactively optimizing A/R processes and recovery partnerships",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "Rising DSO, growing write-offs",
+        "mindset": "Research-driven, compares 3-4",
+        "device": "60% mobile / 40% desktop",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.25,
+        "fullProfileNotes": "{\"modalTitle\":\"The Strategic CFO / Credit Manager\",\"modalRole\":\"Proactively optimizing A/R processes and recovery partnerships\",\"demographics\":{\"age\":\"35–60\",\"revenue\":\"$5M–$100M annual\",\"role\":\"CFO, Credit Manager, or Controller\",\"location\":\"National — corporate offices, mid-market companies\"},\"psychographics\":{\"values\":\"Data-driven results, compliance, and partnership quality. Willing to invest in a collection partner that protects relationships.\",\"fears\":\"Compliance violations, damaged client relationships, poor recovery rates, hidden fees.\",\"motivations\":\"Improved DSO, reduced bad debt reserves, predictable cash flow, automated reporting.\",\"buying behavior\":\"Methodical researcher. Reviews 3-5 agencies, checks CLLA certification, compares recovery rates, evaluates compliance and reporting capabilities.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"best commercial collections company nationwide,\\\" \\\"collection agency fees,\\\" or \\\"A/R management services near me.\\\" Visits 3-5 websites before deciding who to call.\"},{\"channel\":\"review\",\"text\":\"Reviews: Reads in depth — not just star rating but the content of reviews, especially recent ones mentioning recovery rates, communication, and professionalism.\"},{\"channel\":\"video\",\"text\":\"YouTube: Watches \\\"how to choose a commercial collection agency\\\" or comparison videos before reaching out. Educational content builds trust before the first call.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Asks \\\"what should I look for in a commercial collection agency\\\" or \\\"are contingency-based collection fees worth it\\\" — uses AI as a research assistant, not just for recommendations.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Awareness\",\"description\":\"Identifies increasing DSO trend and growing bad debt reserves.\"},{\"step\":2,\"name\":\"Research\",\"description\":\"Spends 2-4 weeks evaluating collection agencies, reviewing case studies and compliance certifications.\"},{\"step\":3,\"name\":\"Compare\",\"description\":\"Requests proposals from 3-4 agencies. Compares contingency rates, reporting, and CLLA certification.\"},{\"step\":4,\"name\":\"Decide\",\"description\":\"Selects agency with strongest combination of recovery rates, compliance, and reporting capabilities.\"},{\"step\":5,\"name\":\"Retain\",\"description\":\"Signs service agreement. Expands scope as trust builds. Becomes long-term partner and referral source.\"}],\"keySearchTerms\":[\"best commercial collections company nationwide\",\"collection agency fees\",\"A/R management services\",\"contingency-based collection services\",\"collection agency comparison\",\"CLLA certification explained\"]}"
+      },
+      {
+        "id": "P3",
+        "name": "The Growing Business",
+        "tier": "secondary",
+        "subTier": null,
+        "ageRange": "Scaling rapidly — needs first collection partner",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "First significant unpaid invoices",
+        "mindset": "Trust-seeking, peer referrals",
+        "device": "Mobile + LinkedIn",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.13,
+        "fullProfileNotes": "{\"modalTitle\":\"The Growing Business\",\"modalRole\":\"Scaling rapidly — needs first collection partner\",\"demographics\":{\"age\":\"28–45\",\"revenue\":\"$500K–$5M annual\",\"role\":\"Founder, CEO, or Office Manager\",\"industry\":\"Startups, SaaS, e-commerce, professional services\"},\"psychographics\":{\"values\":\"Trustworthiness, transparency, proven track record. Wants a reliable collection partner they can count on as the business scales.\",\"fears\":\"Choosing the wrong agency, damaging customer relationships with heavy-handed tactics, not understanding collection fee structures.\",\"motivations\":\"Establish a reliable collections partnership, understand contingency fee structures, protect cash flow as the business grows.\",\"buying behavior\":\"Community-driven. Asks industry peers, checks LinkedIn groups and trade associations, trusts peer recommendations over ads.\"},\"onlineBehavior\":[{\"channel\":\"local\",\"text\":\"LinkedIn: Posts \\\"need a commercial collection partner — who do you recommend?\\\" These posts in B2B communities generate valuable peer recommendations.\"},{\"channel\":\"social\",\"text\":\"Facebook groups: Joins industry LinkedIn groups and associations and searches for past recommendations. Active businesses that engage in these groups have a major advantage.\"},{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"commercial collection agencies near me\\\" or \\\"A/R health check nationwide\\\" — then cross-references against the names peers recommended.\"},{\"channel\":\"review\",\"text\":\"Reviews: Reads reviews specifically for mentions of friendliness, honesty, and willingness to explain things. First-time business owners value education from their providers.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Scale\",\"description\":\"Business growing fast. First time dealing with significant unpaid invoices.\"},{\"step\":2,\"name\":\"Ask around\",\"description\":\"Asks peers in industry groups, searches LinkedIn, checks trade association directories.\"},{\"step\":3,\"name\":\"Verify\",\"description\":\"Cross-checks agency reputation via BBB, Google reviews, CLLA directory, and case studies.\"},{\"step\":4,\"name\":\"Trial\",\"description\":\"Places a few test accounts to evaluate recovery rate and communication quality.\"},{\"step\":5,\"name\":\"Loyalty\",\"description\":\"If recovery rates are strong, becomes a long-term client and recommends to industry peers.\"}],\"keySearchTerms\":[\"commercial collection agencies near me\",\"A/R health check nationwide\",\"who do you use for commercial debt recovery\",\"first-time collection agency selection guide\",\"best commercial collection agencies their market\"]}"
+      },
+      {
+        "id": "P4",
+        "name": "The Multi-Location Controller",
+        "tier": "secondary",
+        "subTier": null,
+        "ageRange": "Multi-location or franchise A/R management",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "Inconsistent A/R across locations",
+        "mindset": "Process-driven, compliance-focused",
+        "device": "Desktop, email-first",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.13,
+        "fullProfileNotes": "{\"modalTitle\":\"The Multi-Location Controller\",\"modalRole\":\"Multi-location business or franchise — centralized A/R management\",\"demographics\":{\"age\":\"35–55\",\"revenue\":\"$10M–$200M across locations\",\"role\":\"Corporate Controller, VP of Finance, or Regional Manager\",\"industry\":\"Franchise systems, multi-location retail, healthcare networks\"},\"psychographics\":{\"values\":\"Centralized reporting, consistent processes, and scalable recovery. Wants one partner across all locations.\",\"fears\":\"Inconsistent collection practices across locations, compliance risk, unpredictable cash flow.\",\"motivations\":\"Standardize A/R processes, reduce write-offs across all locations, maintain compliance, improve net recovery rates.\",\"buying behavior\":\"Process-driven. Evaluates agencies formally, requires SOC compliance, CLLA certification, and multi-location experience.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"commercial commercial collections nationwide,\\\" \\\"A/R outsourcing service agreement,\\\" or \\\"franchise collection agency partner.\\\" Evaluates website professionalism as a proxy for service quality.\"},{\"channel\":\"review\",\"text\":\"Reviews: Looks specifically for reviews mentioning commercial work, reliability, and professionalism. Filters for negative reviews about poor communication or hidden fees.\"},{\"channel\":\"social\",\"text\":\"LinkedIn: May search for vendors through LinkedIn or industry associations. Values formal business profiles and professional credentials.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Need\",\"description\":\"Inconsistent recovery rates across locations, or current agency underperforming.\"},{\"step\":2,\"name\":\"Source\",\"description\":\"Google search + corporate peer referrals + CLLA directory.\"},{\"step\":3,\"name\":\"Vet\",\"description\":\"Requests proposals, verifies SOC compliance, checks CLLA certification, calls references.\"},{\"step\":4,\"name\":\"Trial\",\"description\":\"Places test accounts from one location first to evaluate recovery and reporting.\"},{\"step\":5,\"name\":\"Contract\",\"description\":\"Signs enterprise agreement. Rolls out across all locations with centralized reporting.\"}],\"keySearchTerms\":[\"commercial commercial collections nationwide\",\"A/R outsourcing service agreement\",\"commercial debt recovery\",\"franchise collection agency partner\",\"collection services agreement template\"]}"
+      },
+      {
+        "id": "P5",
+        "name": "The B2B Business Owner",
+        "tier": "secondary",
+        "subTier": null,
+        "ageRange": "Mid-market business with growing unpaid receivables",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "Client default = cash flow gap",
+        "mindset": "Pragmatic, values results",
+        "device": "Mobile during business hours",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.13,
+        "fullProfileNotes": "{\"modalTitle\":\"The B2B Business Owner\",\"modalRole\":\"Mid-market business with growing unpaid receivables\",\"demographics\":{\"age\":\"35–60\",\"revenue\":\"$500K–$10M\",\"type\":\"B2B companies — professional services, manufacturing, distribution, staffing\",\"location\":\"Office parks, industrial districts, metro business centers\"},\"psychographics\":{\"values\":\"Recovery speed and professionalism. Every dollar in unpaid receivables reduces working capital and growth potential.\",\"fears\":\"Cash flow crunches, writing off significant receivables, losing time chasing payments instead of growing the business.\",\"motivations\":\"Recover owed money without damaging client relationships, maintain focus on core business operations.\",\"buying behavior\":\"Pragmatic decision-maker. Wants contingency-based pricing, clear communication, and proven results before committing.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"commercial debt collection agency\\\" or \\\"B2B debt recovery services.\\\" Often searches during business hours when a client payment falls significantly overdue.\"},{\"channel\":\"social\",\"text\":\"Peer networks: Asks other business owners in their network, BNI groups, chamber of commerce connections, or local business Facebook groups.\"},{\"channel\":\"review\",\"text\":\"Reviews: Specifically looks for other business owners mentioning recovery success, professionalism, and transparent contingency fees in reviews.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Crisis\",\"description\":\"Key client defaults on a significant invoice. Cash flow impact is immediate.\"},{\"step\":2,\"name\":\"Search\",\"description\":\"Google + asks other business owners for an immediate referral.\"},{\"step\":3,\"name\":\"Call\",\"description\":\"Calls 1-2 companies. Availability and response time are the deciding factors.\"},{\"step\":4,\"name\":\"Fix\",\"description\":\"Places accounts for recovery. Evaluates the agency based on communication and early results.\"},{\"step\":5,\"name\":\"Retain\",\"description\":\"If reliable, becomes long-term account. Refers to other business owner peers.\"}],\"keySearchTerms\":[\"commercial debt collection agency\",\"commercial debt recovery for businesses\",\"B2B unpaid invoice recovery\",\"emergency commercial debt recovery\",\"ongoing A/R management services\"]}"
+      },
+      {
+        "id": "P6",
+        "name": "The Enterprise Credit Director",
+        "tier": "secondary",
+        "subTier": null,
+        "ageRange": "Enterprise A/R with global debt recovery needs",
+        "locationContext": null,
+        "situation": null,
+        "trigger": "Global receivables, cross-border recovery",
+        "mindset": "Compliance-driven, enterprise scale",
+        "device": "Desktop, RFP-based procurement",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.13,
+        "fullProfileNotes": "{\"modalTitle\":\"The Enterprise Credit Director\",\"modalRole\":\"Managing global receivables with international exposure\",\"demographics\":{\"age\":\"30–55\",\"revenue\":\"$1M–$20M+\",\"type\":\"Enterprise / multinational corporation\",\"location\":\"Active in growth markets with international exposure\"},\"psychographics\":{\"values\":\"Global compliance, multi-jurisdictional recovery, consolidated reporting. Needs a partner who understands international debt law.\",\"fears\":\"Cross-border compliance violations, currency exposure, inconsistent recovery across regions. Reputational risk from aggressive international tactics.\",\"motivations\":\"Establish a single global recovery partner, reduce international write-offs, maintain compliance across jurisdictions, and consolidate reporting.\",\"buying behavior\":\"RFP and procurement-driven. Evaluates agencies through formal vetting, legal review, and pilot programs. Loyalty once earned is strong.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: Searches \\\"international commercial debt recovery\\\" or \\\"CLLA-certified global collection agency.\\\" Website must demonstrate global reach, compliance certifications, and enterprise case studies.\"},{\"channel\":\"social\",\"text\":\"LinkedIn: Uses LinkedIn to vet agencies, review leadership credentials, and evaluate company scale. A strong executive presence signals enterprise readiness.\"},{\"channel\":\"local\",\"text\":\"Industry associations: Checks IACC, CLLA, and international trade directories. Membership in global associations signals cross-border capability and compliance commitment.\"}],\"journeyStages\":[{\"step\":1,\"name\":\"Need\",\"description\":\"International receivable aging, current agency lacks global reach, or expansion into new markets creates new recovery needs.\"},{\"step\":2,\"name\":\"Referral\",\"description\":\"Consults legal counsel, checks IACC/CLLA directories, issues RFP to vetted global agencies.\"},{\"step\":3,\"name\":\"Bid\",\"description\":\"Reviews proposals against compliance requirements. Evaluates jurisdictional coverage, reporting, and fee transparency.\"},{\"step\":4,\"name\":\"Test\",\"description\":\"Places pilot accounts in 1-2 regions. Evaluates recovery rate, compliance adherence, and reporting quality.\"},{\"step\":5,\"name\":\"Partner\",\"description\":\"Adds to approved vendor list. Consolidates global recovery under single partnership with enterprise SLA.\"}],\"keySearchTerms\":[\"international debt collection services\",\"CLLA-certified global collection agency nationwide\",\"enterprise accounts receivable outsourcing\",\"international debt recovery RFP\",\"global commercial collection agency\"]}"
+      }
+    ],
+    "buyingJourney": {
+      "stages": []
+    },
+    "decisionDrivers": [
+      {
+        "rank": 1,
+        "title": "Recovery rates & track record",
+        "description": "Documented success rates, case studies, and volume of recoveries. CFOs and controllers want proof of performance before placing accounts."
+      },
+      {
+        "rank": 2,
+        "title": "Industry certifications & compliance",
+        "description": "CLLA certification, IACC membership, SOC 2 compliance, insurance bonding. In a regulated industry, credentials are table stakes."
+      },
+      {
+        "rank": 3,
+        "title": "Fee structure & transparency",
+        "description": "Contingency rates, flat-fee options, no-recovery-no-fee guarantees. Decision-makers compare fee structures before shortlisting agencies."
+      },
+      {
+        "rank": 4,
+        "title": "Technology & reporting",
+        "description": "Real-time client portals, automated status updates, and integration with the client's ERP/accounting systems. Modern creditors expect visibility."
+      },
+      {
+        "rank": 5,
+        "title": "Geographic & international reach",
+        "description": "Ability to recover across state lines and internationally. Multi-location agencies with global networks win enterprise contracts."
+      },
+      {
+        "rank": 6,
+        "title": "Reviews & peer reputation",
+        "description": "Google reviews, BBB ratings, Clutch profiles, and LinkedIn endorsements. B2B buyers validate agencies through peer networks and online presence."
+      }
+    ],
+    "channelMap": [
+      {
+        "channel": "Google Search",
+        "priority": "Critical",
+        "priorityNotes": null,
+        "usageNotes": "Primary discovery — \"commercial debt collection agency\" searches"
+      },
+      {
+        "channel": "LinkedIn",
+        "priority": "Critical",
+        "priorityNotes": null,
+        "usageNotes": "B2B decision-maker targeting, thought leadership, executive outreach"
+      },
+      {
+        "channel": "AI Platforms",
+        "priority": "Rising",
+        "priorityNotes": null,
+        "usageNotes": "Growing rapidly — buyers asking ChatGPT/Gemini for agency recommendations"
+      },
+      {
+        "channel": "Facebook / Meta",
+        "priority": "Supporting",
+        "priorityNotes": null,
+        "usageNotes": "Retargeting website visitors, brand awareness among business owners"
+      },
+      {
+        "channel": "YouTube",
+        "priority": "Supporting",
+        "priorityNotes": null,
+        "usageNotes": "Educational content, process explainers, credibility building"
+      },
+      {
+        "channel": "Industry Directories",
+        "priority": "Supporting",
+        "priorityNotes": null,
+        "usageNotes": "CLLA directory, IACC listings, trade association referrals"
+      },
+      {
+        "channel": "Google Maps / GBP",
+        "priority": "Supporting",
+        "priorityNotes": null,
+        "usageNotes": "Local credibility signal for office locations — supports trust"
+      }
+    ]
+  },
+  "painPoints": [],
+  "roadmap": {
+    "phases": [],
+    "packages": []
+  },
+  "metadata": {
+    "sourceUrl": "https://tucker-albin-arc.netlify.app/",
+    "extractedAt": "2026-06-15T20:32:32.750Z",
+    "arcTemplateVersion": "current-2026-06",
+    "completenessScore": 78,
+    "extractionWarnings": [
+      "LLM task 'vertical-and-identity' stubbed — fields pending: businessIdentity.vertical, businessIdentity.subVertical, businessIdentity.zone, businessIdentity.yearsOperating, businessIdentity.tagline",
+      "LLM task 'founder-narrative' stubbed — fields pending: businessIdentity.founderNarrative",
+      "LLM task 'target-services' stubbed — fields pending: targetServices",
+      "LLM task 'target-locations' stubbed — fields pending: targetLocations",
+      "LLM task 'pain-points' stubbed — fields pending: painPoints",
+      "LLM task 'roadmap' stubbed — fields pending: roadmap",
+      "LLM task 'buying-journey' stubbed — fields pending: audience.buyingJourney",
+      "LLM task 'ai-platform-detail' stubbed — fields pending: aiVisibility.platforms, aiVisibility.disciplineScores, aiVisibility.citationCount",
+      "LLM task 'digital-presence-detail' stubbed — fields pending: currentDigitalPresence",
+      "Completeness score 78 is below the 80 threshold — builder review recommended before Generation runs."
+    ]
+  }
+}

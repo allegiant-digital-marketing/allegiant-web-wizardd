@@ -1,0 +1,501 @@
+{
+  "businessIdentity": {
+    "businessName": "Kirchner Electric",
+    "vertical": "electrician",
+    "subVertical": "residential-and-light-commercial",
+    "zone": "Houston (Zone 1)",
+    "yearsOperating": 40,
+    "tagline": null,
+    "founderNarrative": null
+  },
+  "currentDigitalPresence": {
+    "website": {
+      "url": null,
+      "lcpDesktopSeconds": null,
+      "lcpMobileSeconds": 20.6,
+      "knownIssues": [
+        "Brand consolidation gaps — multiple NAP variants across the web",
+        "Schema markup missing or incomplete",
+        "Slow mobile LCP (20.6s) — no sticky CTA",
+        "Currently outside the Cypress Google Map pack despite review qualification"
+      ]
+    },
+    "reviews": {
+      "googleRating": 4.9,
+      "googleReviewCount": 237,
+      "yelp": {
+        "verified": true,
+        "visibleReviewCount": 0,
+        "knownIssues": [
+          "Yelp shows zero visible reviews",
+          "Yelp profile links to a legacy domain"
+        ]
+      },
+      "bbb": {
+        "present": false,
+        "rating": null,
+        "knownIssues": [
+          "BBB profile missing entirely despite 40-year operating history"
+        ]
+      }
+    },
+    "social": {
+      "facebook": {
+        "url": null,
+        "followers": 535,
+        "reviewCount": 12,
+        "recommendationPct": 100,
+        "lastActivityDate": "2025-06",
+        "status": "dormant",
+        "knownIssues": ["Dormant since June 2025"]
+      },
+      "instagram": {
+        "url": null,
+        "followers": 105,
+        "reviewCount": null,
+        "recommendationPct": null,
+        "lastActivityDate": "2024",
+        "status": "dormant",
+        "knownIssues": ["Dormant since 2024"]
+      },
+      "nextdoor": {
+        "url": null,
+        "followers": null,
+        "reviewCount": 1,
+        "recommendationPct": null,
+        "lastActivityDate": null,
+        "status": "issue",
+        "knownIssues": [
+          "Only 1 recommendation",
+          "Profile lives in Tomball, not Cypress — wrong neighborhood for primary persona base"
+        ]
+      },
+      "linkedin": {
+        "url": null,
+        "followers": null,
+        "reviewCount": null,
+        "recommendationPct": null,
+        "lastActivityDate": null,
+        "status": "missing",
+        "knownIssues": [
+          "No active LinkedIn presence — gap for commercial property manager persona (Carla Whitfield)"
+        ]
+      },
+      "tiktok": {
+        "url": null,
+        "followers": null,
+        "reviewCount": null,
+        "recommendationPct": null,
+        "lastActivityDate": null,
+        "status": "missing",
+        "knownIssues": ["No TikTok presence; Vanessa persona is mobile-first and consumes EV creator content on TikTok"]
+      },
+      "youtube": {
+        "url": null,
+        "followers": null,
+        "reviewCount": null,
+        "recommendationPct": null,
+        "lastActivityDate": null,
+        "status": "missing",
+        "knownIssues": ["No YouTube presence; long-tail education content gap"]
+      }
+    },
+    "paidMedia": {
+      "googleAds": {
+        "active": null,
+        "notes": null
+      },
+      "localServiceAds": {
+        "present": false,
+        "competitorsHoldingSlots": ["A1 Plus Electrical", "Mister Sparky"]
+      }
+    }
+  },
+  "aiVisibility": {
+    "avs": 16,
+    "citationCount": "2 of 6",
+    "platforms": {
+      "chatgpt": { "cited": null, "citationContext": null, "score": null },
+      "claude": { "cited": null, "citationContext": null, "score": null },
+      "gemini": { "cited": null, "citationContext": null, "score": null },
+      "perplexity": { "cited": null, "citationContext": null, "score": null },
+      "copilot": { "cited": null, "citationContext": null, "score": null }
+    },
+    "disciplineScores": {
+      "aeo": { "score": null, "notes": null },
+      "geo": { "score": null, "notes": null },
+      "aiSeo": { "score": null, "notes": null },
+      "llmSeo": { "score": null, "notes": null }
+    }
+  },
+  "targetServices": [
+    {
+      "name": "Whole-home generator install",
+      "shortName": "Generators",
+      "personaIds": ["P1"],
+      "priority": "high",
+      "competitiveContext": "Heather & Mark anchor persona; storm-season urgency drives high-LTV bookings; competitors include franchise generalists"
+    },
+    {
+      "name": "Panel upgrade and FPE Stab-Lok replacement",
+      "shortName": "Panel Upgrades",
+      "personaIds": ["P2"],
+      "priority": "high",
+      "competitiveContext": "Daniel persona; aging 1985-2005 homes in Cypress / Tomball / Spring; insurance/inspection-driven demand"
+    },
+    {
+      "name": "EV charger and Tesla Wall Connector installation",
+      "shortName": "EV Chargers",
+      "personaIds": ["P3"],
+      "priority": "growth",
+      "competitiveContext": "Vanessa persona; mobile-first growth segment; Tesla/dealer-driven referrals; flat-rate pricing expectation"
+    },
+    {
+      "name": "Emergency electrical service (24/7)",
+      "shortName": "Emergency Service",
+      "personaIds": ["P4"],
+      "priority": "high",
+      "competitiveContext": "Cynthia persona; sub-5-minute decision window; LSA pack is the battleground; partner is currently absent"
+    },
+    {
+      "name": "Residential remodel and addition electrical coordination",
+      "shortName": "Remodel & Additions",
+      "personaIds": ["P5"],
+      "priority": "medium",
+      "competitiveContext": "Michael persona; GC-referral-driven; schedule reliability is the differentiator"
+    },
+    {
+      "name": "Commercial property and multi-property service",
+      "shortName": "Commercial",
+      "personaIds": ["P6"],
+      "priority": "high-LTV",
+      "competitiveContext": "Carla persona; 90+ day evaluation cycle; multi-year relationship horizon; LinkedIn + commercial-track sub-site is the access path"
+    }
+  ],
+  "targetLocations": [
+    {
+      "name": "Cypress",
+      "tier": "primary",
+      "context": "Primary persona concentration (Heather & Mark, Daniel, Vanessa, Michael all Cypress-based)",
+      "parentRegion": "Houston, TX"
+    },
+    {
+      "name": "Bridgeland",
+      "tier": "primary",
+      "context": "Recent subdivision boom; Heather & Mark and Vanessa concentration; newer homes with attached garages for EV chargers",
+      "parentRegion": "Houston, TX"
+    },
+    {
+      "name": "Towne Lake",
+      "tier": "primary",
+      "context": "Heather & Mark generator-buyer concentration",
+      "parentRegion": "Houston, TX"
+    },
+    {
+      "name": "Tomball",
+      "tier": "secondary",
+      "context": "Daniel persona reach; aging 1985-2005 housing stock with FPE Stab-Lok / aluminum wiring",
+      "parentRegion": "Houston, TX"
+    },
+    {
+      "name": "Spring",
+      "tier": "secondary",
+      "context": "Daniel persona reach; similar housing-stock profile to Tomball",
+      "parentRegion": "Houston, TX"
+    },
+    {
+      "name": "Northwest Houston metro",
+      "tier": "secondary",
+      "context": "Carla persona commercial property-manager catchment",
+      "parentRegion": "Houston, TX"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "A1 Plus Electrical",
+      "url": null,
+      "domainRating": 12,
+      "backlinks": 395,
+      "referringDomains": 218,
+      "notes": "Holds LSA pack position #1 — primary blocker for Cynthia emergency-mode booking capture",
+      "type": "independent"
+    },
+    {
+      "name": "Mister Sparky",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Holds LSA pack position #2; franchise model; key competitor for Heather & Mark trust-driven booking",
+      "type": "franchise"
+    },
+    {
+      "name": "Abacus",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Aggregator-style competitor; visible across multiple channels",
+      "type": "aggregator"
+    },
+    {
+      "name": "RHK Electrical",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Regional competitor",
+      "type": "regional-chain"
+    },
+    {
+      "name": "JMS",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Aggregator-style competitor mentioned alongside Abacus",
+      "type": "aggregator"
+    }
+  ],
+  "audience": {
+    "totalCoveragePct": 90,
+    "personas": [
+      {
+        "id": "P1",
+        "name": "Heather & Mark Thompson",
+        "tier": "primary",
+        "subTier": "Highest Value",
+        "ageRange": "38-55",
+        "locationContext": "Cypress / Bridgeland / Towne Lake homeowner",
+        "situation": "Planning a generator before hurricane season",
+        "trigger": "Storm power loss event — want a whole-home generator before next hurricane season",
+        "mindset": "Risk-averse on home infrastructure; will pay a premium for the brand they trust",
+        "device": "Cross-device research — reads reviews, asks Nextdoor neighbors, gets 2-3 quotes",
+        "decisionWindow": "2-3 weeks",
+        "primaryServiceIds": ["Whole-home generator install"],
+        "weightingHint": 0.25,
+        "fullProfileNotes": null
+      },
+      {
+        "id": "P2",
+        "name": "Daniel Reyes",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "35-60",
+        "locationContext": "1985-2005 Cypress / Tomball / Spring home — aging panel, often FPE Stab-Lok or aluminum-wired",
+        "situation": "Breakers tripping; insurance or inspection has flagged the panel",
+        "trigger": "Breakers tripping; insurance or inspection has flagged the panel",
+        "mindset": "Researcher — wants licensure verified, hates being upsold, picks transparent over cheapest",
+        "device": "Desktop research, reads 3+ reviews per business, checks BBB before calling",
+        "decisionWindow": "1-3 weeks",
+        "primaryServiceIds": ["Panel upgrade and FPE Stab-Lok replacement"],
+        "weightingHint": 0.2,
+        "fullProfileNotes": null
+      },
+      {
+        "id": "P3",
+        "name": "Vanessa Pham",
+        "tier": "primary",
+        "subTier": "Growth Segment",
+        "ageRange": "28-45",
+        "locationContext": "Newer Cypress / Bridgeland home with attached garage — recent EV (Tesla, Rivian, Lightning, Mach-E)",
+        "situation": "Just bought an EV; Tesla or dealer recommends a Wall Connector before delivery",
+        "trigger": "Just bought an EV; Tesla or dealer recommends a Wall Connector before delivery",
+        "mindset": "Mobile-first; prefers transparent flat-rate pricing; will book online without calling",
+        "device": "Mobile-first — researches via Reddit, YouTube creator content, manufacturer locators",
+        "decisionWindow": "Days to 2 weeks",
+        "primaryServiceIds": ["EV charger and Tesla Wall Connector installation"],
+        "weightingHint": 0.15,
+        "fullProfileNotes": null
+      },
+      {
+        "id": "P4",
+        "name": "Cynthia Marsh",
+        "tier": "secondary",
+        "subTier": "Emergency Capture",
+        "ageRange": "30-65",
+        "locationContext": "Cypress / Tomball / Spring renter or owner — active circuit failure right now",
+        "situation": "Active circuit failure right now",
+        "trigger": "8pm Sunday outage — half the outlets stopped working, possible burning smell",
+        "mindset": "Time-pressured — the first credible electrician who can come tonight wins",
+        "device": "Mobile only — LSA pack is the first place she looks; Google Guaranteed badge wins",
+        "decisionWindow": "< 5 min",
+        "primaryServiceIds": ["Emergency electrical service (24/7)"],
+        "weightingHint": 0.15,
+        "fullProfileNotes": null
+      },
+      {
+        "id": "P5",
+        "name": "Michael Lewinsky",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "40-65",
+        "locationContext": "3,500-6,000 sq ft Cypress / Bridgeland / Lakes — multi-month remodel with pool",
+        "situation": "Active remodel + addition + pool project — needs an electrician sub who can handle scope",
+        "trigger": "Active remodel + addition + pool project — needs an electrician sub who can handle scope",
+        "mindset": "Schedule reliability — will pay for a sub who shows up when they say",
+        "device": "GC referral primary; cross-checks via Houzz / Pro listings and project portfolio reviews",
+        "decisionWindow": "Weeks (project-cycle-paced)",
+        "primaryServiceIds": ["Residential remodel and addition electrical coordination"],
+        "weightingHint": 0.15,
+        "fullProfileNotes": null
+      },
+      {
+        "id": "P6",
+        "name": "Carla Whitfield",
+        "tier": "secondary",
+        "subTier": "Highest LTV",
+        "ageRange": "40-65",
+        "locationContext": "Property manager, 1-6 small commercial properties — Northwest Houston metro",
+        "situation": "Tenant electrical issue or planned tenant build-out",
+        "trigger": "Tenant electrical issue or planned tenant build-out; loses money by the hour when down",
+        "mindset": "Loyal once vetted — wants one electrician for every property; hates being passed around",
+        "device": "Desktop business email; vets via LinkedIn + property-management peer network",
+        "decisionWindow": "90+ days",
+        "primaryServiceIds": ["Commercial property and multi-property service"],
+        "weightingHint": 0.1,
+        "fullProfileNotes": null
+      }
+    ],
+    "buyingJourney": {
+      "stages": [
+        {
+          "step": 1,
+          "name": "Search & discover",
+          "description": "Trigger event hits — storm, tripping breaker, EV delivery date, 8pm outage, GC handoff, tenant complaint. Persona goes to Google, AI platform, or peer recommendation channel (Nextdoor, Houzz, LinkedIn).",
+          "channels": ["Google Search", "AI Platforms", "Nextdoor", "Houzz", "LinkedIn"]
+        },
+        {
+          "step": 2,
+          "name": "Evaluate & compare",
+          "description": "Residential personas pull up 2-3 options on mobile, scan reviews, check BBB rating, look for licensure/insurance badges. Cynthia decides in under 5 minutes. Heather & Mark / Daniel take 1-3 weeks. Michael trusts GC referral but cross-checks via Houzz. Carla takes 90+ days.",
+          "channels": ["Google reviews", "BBB", "Yelp", "Houzz", "LinkedIn"]
+        },
+        {
+          "step": 3,
+          "name": "Validate & decide",
+          "description": "Cross-references on Nextdoor, Facebook groups, YouTube/TikTok creator content, project portfolio reviews, commercial references. AI platforms increasingly used for second-opinion check.",
+          "channels": ["Nextdoor", "Facebook groups", "YouTube", "TikTok", "AI Platforms", "LinkedIn"]
+        }
+      ]
+    },
+    "decisionDrivers": [
+      {
+        "rank": 1,
+        "title": "Speed of response — right now, near me",
+        "description": "Single biggest factor for emergency motion. Cynthia decides in under 5 minutes. Whichever brand answers the phone, returns the form-fill within 15 minutes, and confirms same-day/next-day visit wins. Tap-to-call mobile + LSA pack presence are required to convert urgency."
+      },
+      {
+        "rank": 2,
+        "title": "Trust signals — license, insurance, longevity, reviews",
+        "description": "Daniel reads 3+ reviews and checks BBB. Heather & Mark want Google Guaranteed + 4.7★+ + 10+ years operating. Carla requires current COI and 2-3 commercial references. Kirchner's 4.9★ / 237 reviews / 40 years is one of the strongest in the category but only if it surfaces."
+      },
+      {
+        "rank": 3,
+        "title": "Transparent pricing and no surprise upsells",
+        "description": "Daniel hates being sold a panel he doesn't need. Vanessa wants flat-rate Tesla Wall Connector pricing online before calling. Heather & Mark fear hidden install fees on a $12K generator quote. Service-page price ranges, flat-rate diagnostics, and written quotes convert materially higher than 'call for a quote.'"
+      },
+      {
+        "rank": 4,
+        "title": "Specialization signals for the high-stakes job",
+        "description": "Generator install, FPE Stab-Lok replacement, Tesla/EV certification, pool/addition coordination, commercial COI + multi-property capacity. The generalist 'we do all electrical work' positioning loses every one of these to a brand with a dedicated service page, manufacturer-certification badge, or commercial-track sub-site."
+      },
+      {
+        "rank": 5,
+        "title": "Local roots and neighbor recommendations",
+        "description": "Heather & Mark, Daniel, Michael all use Nextdoor and Cypress Facebook groups as primary trust validators. The 40-year operating history is a structural advantage no franchise (Mister Sparky) and no aggregator (Abacus, JMS) can match — but it has to surface."
+      },
+      {
+        "rank": 6,
+        "title": "Mobile-first booking and speed-of-quote",
+        "description": "Vanessa books from her phone without calling. Cynthia taps the LSA pack and dials the first result. Daniel form-fills at midnight and expects response by 9am. Sticky tap-to-call, 60-second quote form, and 15-minute response SLA convert significantly better than 'please complete the contact form' on a slow-loading page. Kirchner mobile experience (20.6s LCP, no sticky CTA) is the bottleneck."
+      }
+    ],
+    "channelMap": [
+      { "channel": "Google Search", "priority": "Critical", "usageNotes": "Primary discovery for every persona; highest-leverage channel." },
+      { "channel": "Google Maps / GBP", "priority": "Critical", "usageNotes": "237 reviews / 4.9★ / 40 yrs pre-qualifies for Cypress map pack but currently outside it." },
+      { "channel": "Local Services Ads", "priority": "Critical", "usageNotes": "Cynthia's emergency-mode default and Heather & Mark's urgency-trigger default. Google Guaranteed badge is strongest trust signal at moment of click." },
+      { "channel": "Nextdoor", "priority": "High", "usageNotes": "Where Heather & Mark ask for generator-installer recommendations. Currently 1 rec, profile in wrong neighborhood (Tomball not Cypress)." },
+      { "channel": "Facebook", "priority": "High", "usageNotes": "Local Cypress homeowner groups; 535 followers + 12 reviews / 100% recommend; dormant since June 2025." },
+      { "channel": "AI Platforms", "priority": "Rising", "usageNotes": "Vanessa heaviest user; Heather & Mark cross-reference; Daniel asks 'is FPE Stab-Lok safe'. 2 of 6 platforms cite. AVS 16." },
+      { "channel": "Instagram + TikTok", "priority": "Rising", "usageNotes": "Vanessa primary; 105 IG followers, dormant since 2024." },
+      { "channel": "Yelp / BBB", "priority": "High", "usageNotes": "Daniel's vetting pattern. Yelp verified but zero visible reviews; BBB missing entirely." },
+      { "channel": "YouTube", "priority": "Supporting", "usageNotes": "Long-tail education content; pre-qualifies homeowners before they call. Currently absent." },
+      { "channel": "LinkedIn", "priority": "Low", "priorityNotes": "High for Carla (commercial property manager persona)", "usageNotes": "Carla's vetting channel for commercial property work; sole channel for highest-LTV persona." }
+    ]
+  },
+  "painPoints": [
+    "Brand consolidation gaps — multiple NAP variants across the web",
+    "Schema markup missing or incomplete",
+    "No LSA presence — A1 Plus and Mister Sparky occupy slots #1-2",
+    "Dormant social since June 2025 (Facebook) and 2024 (Instagram)",
+    "20.6s mobile LCP — major UX bottleneck",
+    "Yelp shows zero visible reviews and links to legacy domain",
+    "BBB profile missing entirely despite 40-year operating history",
+    "Nextdoor profile in Tomball, not Cypress (wrong neighborhood)",
+    "No LinkedIn presence — gap for commercial property manager persona",
+    "No YouTube content — long-tail education gap",
+    "Generalist 'we do all electrical work' positioning losing specialty jobs",
+    "Currently outside Cypress Google Map pack despite review-qualification"
+  ],
+  "roadmap": {
+    "phases": [
+      {
+        "phase": 1,
+        "title": "Consolidate, Clean, Activate",
+        "description": "Quick wins that unlock immediate market visibility"
+      },
+      {
+        "phase": 2,
+        "title": "Activate Paid Channels & Rebuild Content",
+        "description": "Turn on revenue channels and eliminate the content quality issues blocking organic visibility"
+      },
+      {
+        "phase": 3,
+        "title": "Compound Authority & Build Lasting Advantage",
+        "description": "Move from foundation-fixing to category leadership in the Cypress electrician market"
+      }
+    ],
+    "packages": [
+      {
+        "tier": "A",
+        "name": "Pkg A",
+        "services": ["SEO", "Google Ads", "Basic AI SEO"],
+        "zoneAdjustment": "Houston (Zone 1)"
+      },
+      {
+        "tier": "B",
+        "name": "Pkg B",
+        "services": ["Pkg A services", "Local Services Ads", "Standard AI SEO"],
+        "zoneAdjustment": "Houston (Zone 1)"
+      },
+      {
+        "tier": "C",
+        "name": "Pkg C",
+        "services": ["Pkg B services", "Meta Ads", "Advanced AI SEO"],
+        "zoneAdjustment": "Houston (Zone 1)"
+      },
+      {
+        "tier": "D",
+        "name": "Pkg D",
+        "services": ["Pkg C services", "Social Organic", "Advanced+ AI SEO"],
+        "zoneAdjustment": "Houston (Zone 1)"
+      }
+    ]
+  },
+  "metadata": {
+    "sourceUrl": "https://kirchner-arc-report.netlify.app/",
+    "extractedAt": "2026-06-15T19:00:00Z",
+    "arcTemplateVersion": "current-2026-06",
+    "completenessScore": 88,
+    "extractionWarnings": [
+      "businessIdentity.tagline not present in source",
+      "businessIdentity.founderNarrative not extracted (Word from Founder tab text content pending capture)",
+      "aiVisibility.platforms[*] per-platform scores not extracted in this pass (free-text mentions only)",
+      "aiVisibility.disciplineScores not extracted in this pass (free-text mentions only)",
+      "competitors[1..4].domainRating/backlinks/referringDomains not extracted (only A1 Plus had numeric stats in scanned section)",
+      "currentDigitalPresence.website.url not extracted (Website Audit tab parsing not completed in this validation pass)",
+      "currentDigitalPresence.paidMedia.googleAds.active not extracted (Audit tab parsing not completed)"
+    ]
+  }
+}

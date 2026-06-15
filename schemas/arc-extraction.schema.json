@@ -1,0 +1,510 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://wizardd.allegiantdigital.co/schemas/arc-extraction.schema.json",
+  "title": "Allegiant A.R.C. Extraction Schema",
+  "description": "Canonical structure for data extracted from a partner's A.R.C. Report URL. As of June 2026, A.R.C. Reports contain the partner's personas (formerly delivered as a standalone ICP Strategy doc), collapsing what was a three-input model into a two-input model: A.R.C. URL + Web WIZARDD intake form. This schema is the contract every A.R.C. parser must satisfy.",
+  "type": "object",
+  "required": [
+    "businessIdentity",
+    "targetServices",
+    "targetLocations",
+    "competitors",
+    "audience",
+    "metadata"
+  ],
+  "properties": {
+    "businessIdentity": {
+      "type": "object",
+      "description": "Who the partner is and the basic identifying facts the site will need everywhere.",
+      "required": ["businessName", "vertical"],
+      "properties": {
+        "businessName": {
+          "type": "string",
+          "description": "Partner's primary business name as it appears in the A.R.C. cover and used everywhere on the site (header, footer, meta, schema).",
+          "examples": ["Kirchner Electric"]
+        },
+        "vertical": {
+          "type": "string",
+          "description": "The partner's vertical category. Drives template selection and ICP archetype defaults.",
+          "examples": ["electrician", "hvac", "plumbing", "roofing", "pest control", "ria m&a advisor"]
+        },
+        "subVertical": {
+          "type": ["string", "null"],
+          "description": "Optional sub-classification within the vertical (e.g. residential vs commercial focus, specialty within the vertical)."
+        },
+        "zone": {
+          "type": ["string", "null"],
+          "description": "Allegiant pricing zone designation (Z1, Z2, Z3). Sourced from the Investment tab of the A.R.C.",
+          "examples": ["Houston (Zone 1)", "Z1", "Z2"]
+        },
+        "yearsOperating": {
+          "type": ["integer", "null"],
+          "description": "Years the partner has been in business. Used for trust signals and credibility framing.",
+          "examples": [40]
+        },
+        "tagline": {
+          "type": ["string", "null"],
+          "description": "Tagline or one-line positioning sourced from the cover or Word from Founder tab."
+        },
+        "founderNarrative": {
+          "type": ["string", "null"],
+          "description": "Founder's voice content from the Word from Founder tab. Provides authentic voice and origin story material for About page and trust-building copy."
+        }
+      }
+    },
+    "currentDigitalPresence": {
+      "type": "object",
+      "description": "Partner's current digital footprint at the time of the A.R.C. Used by Generation to identify trust signals to surface and by Gauntlet to validate the site doesn't contradict the partner's actual state.",
+      "properties": {
+        "website": {
+          "type": "object",
+          "properties": {
+            "url": { "type": ["string", "null"], "format": "uri" },
+            "lcpDesktopSeconds": { "type": ["number", "null"] },
+            "lcpMobileSeconds": { "type": ["number", "null"] },
+            "knownIssues": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Technical issues identified in the Website Audit tab (schema gaps, NAP inconsistency, slow load, etc.)"
+            }
+          }
+        },
+        "reviews": {
+          "type": "object",
+          "properties": {
+            "googleRating": { "type": ["number", "null"], "minimum": 0, "maximum": 5 },
+            "googleReviewCount": { "type": ["integer", "null"], "minimum": 0 },
+            "yelp": {
+              "type": "object",
+              "properties": {
+                "verified": { "type": ["boolean", "null"] },
+                "visibleReviewCount": { "type": ["integer", "null"] },
+                "knownIssues": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "bbb": {
+              "type": "object",
+              "properties": {
+                "present": { "type": ["boolean", "null"] },
+                "rating": { "type": ["string", "null"] },
+                "knownIssues": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        },
+        "social": {
+          "type": "object",
+          "properties": {
+            "facebook": { "$ref": "#/definitions/socialPlatform" },
+            "instagram": { "$ref": "#/definitions/socialPlatform" },
+            "nextdoor": { "$ref": "#/definitions/socialPlatform" },
+            "linkedin": { "$ref": "#/definitions/socialPlatform" },
+            "tiktok": { "$ref": "#/definitions/socialPlatform" },
+            "youtube": { "$ref": "#/definitions/socialPlatform" }
+          }
+        },
+        "paidMedia": {
+          "type": "object",
+          "properties": {
+            "googleAds": {
+              "type": "object",
+              "properties": {
+                "active": { "type": ["boolean", "null"] },
+                "notes": { "type": ["string", "null"] }
+              }
+            },
+            "localServiceAds": {
+              "type": "object",
+              "properties": {
+                "present": { "type": ["boolean", "null"] },
+                "competitorsHoldingSlots": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "description": "Names of competitors currently occupying the LSA pack the partner is absent from."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiVisibility": {
+      "type": "object",
+      "description": "Partner's AI search visibility footprint at the time of the A.R.C. Drives AI SEO content angle decisions in Generation.",
+      "properties": {
+        "avs": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "AI Visibility Score from 0-100. Sourced from the AI Visibility tab."
+        },
+        "citationCount": {
+          "type": ["string", "null"],
+          "description": "Format like '2 of 6' indicating how many AI platforms currently cite the partner.",
+          "examples": ["2 of 6", "0 of 6"]
+        },
+        "platforms": {
+          "type": "object",
+          "description": "Per-platform visibility status.",
+          "properties": {
+            "chatgpt": { "$ref": "#/definitions/aiPlatformStatus" },
+            "claude": { "$ref": "#/definitions/aiPlatformStatus" },
+            "gemini": { "$ref": "#/definitions/aiPlatformStatus" },
+            "perplexity": { "$ref": "#/definitions/aiPlatformStatus" },
+            "copilot": { "$ref": "#/definitions/aiPlatformStatus" }
+          }
+        },
+        "disciplineScores": {
+          "type": "object",
+          "description": "Scores across the four AI SEO disciplines (Answer Engine Optimization, Generative Engine Optimization, AI SEO, LLM SEO).",
+          "properties": {
+            "aeo": { "$ref": "#/definitions/disciplineScore" },
+            "geo": { "$ref": "#/definitions/disciplineScore" },
+            "aiSeo": { "$ref": "#/definitions/disciplineScore" },
+            "llmSeo": { "$ref": "#/definitions/disciplineScore" }
+          }
+        }
+      }
+    },
+    "targetServices": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Services the site must feature. Sourced from a combination of the Audience Opportunity, Target Audience, and Roadmap tabs. Each service is tagged with the personas it serves to inform page composition.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Service name as the partner would describe it (not Allegiant taxonomy).",
+            "examples": ["Whole-home generator install", "Panel upgrade / FPE Stab-Lok replacement"]
+          },
+          "shortName": {
+            "type": ["string", "null"],
+            "description": "Condensed label for navigation and cards.",
+            "examples": ["Generators", "Panel Upgrades"]
+          },
+          "personaIds": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "IDs of personas (P1, P2, etc) this service primarily serves."
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["high", "medium", "low", "growth", "high-LTV"],
+            "description": "Strategic priority. 'high-LTV' flags lifetime-value standouts like commercial. 'growth' flags rising-demand segments like EV chargers."
+          },
+          "competitiveContext": {
+            "type": ["string", "null"],
+            "description": "Notes about competitive landscape for this service (who else offers it, where partner sits)."
+          }
+        }
+      }
+    },
+    "targetLocations": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Cities, neighborhoods, and metros the partner serves. Drives location page generation and LocalBusiness schema.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "examples": ["Cypress", "Bridgeland", "Towne Lake", "Houston metro"]
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["primary", "secondary", "tertiary"],
+            "description": "Strategic priority. Primary = anchor markets the home/service pages must speak to; secondary = additional service-area page coverage; tertiary = mentioned-in-passing."
+          },
+          "context": {
+            "type": ["string", "null"],
+            "description": "Why this location matters (e.g., 'partner HQ', 'highest concentration of P1 personas', 'recent subdivision growth')."
+          },
+          "parentRegion": {
+            "type": ["string", "null"],
+            "description": "State or metro the location sits within.",
+            "examples": ["Houston, TX"]
+          }
+        }
+      }
+    },
+    "competitors": {
+      "type": "array",
+      "description": "Top competitors the partner is benchmarking against. Sourced from the Competitive tab. Used for positioning copy and competitive differentiation framing.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string", "examples": ["A1 Plus Electrical", "Mister Sparky"] },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "domainRating": { "type": ["integer", "null"] },
+          "backlinks": { "type": ["integer", "null"] },
+          "referringDomains": { "type": ["integer", "null"] },
+          "notes": {
+            "type": ["string", "null"],
+            "description": "Strategic notes about this competitor (e.g., 'LSA position #1', 'franchise model', 'aggregator')."
+          },
+          "type": {
+            "type": ["string", "null"],
+            "enum": ["franchise", "independent", "aggregator", "pe-backed", "regional-chain", null],
+            "description": "Competitor business model classification."
+          }
+        }
+      }
+    },
+    "audience": {
+      "type": "object",
+      "description": "The full audience model. This is the section that absorbed what was formerly the standalone ICP Strategy doc. It is the highest-leverage section of the A.R.C. for Generation purposes.",
+      "required": ["personas"],
+      "properties": {
+        "totalCoveragePct": {
+          "type": ["number", "null"],
+          "description": "Stated percentage of the partner's addressable demand the listed personas cover (e.g., '~90%').",
+          "examples": [90]
+        },
+        "personas": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The persona roster. Each persona is a real-named, fully-developed buyer archetype with trigger, mindset, channel behavior, and decision profile.",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "tier", "trigger"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^P[0-9]+$",
+                "description": "Persona ID matching A.R.C. labeling (P1, P2, etc).",
+                "examples": ["P1"]
+              },
+              "name": {
+                "type": "string",
+                "description": "Persona's given name as constructed in the A.R.C.",
+                "examples": ["Heather & Mark Thompson", "Daniel Reyes"]
+              },
+              "tier": {
+                "type": "string",
+                "enum": ["primary", "secondary"],
+                "description": "Primary vs Secondary classification from the persona badge."
+              },
+              "subTier": {
+                "type": ["string", "null"],
+                "description": "Sub-label modifying the tier.",
+                "examples": ["Highest Value", "Growth Segment", "Emergency Capture", "Highest LTV"]
+              },
+              "ageRange": {
+                "type": ["string", "null"],
+                "examples": ["38-55", "30-65"]
+              },
+              "locationContext": {
+                "type": ["string", "null"],
+                "description": "Free-text description of where this persona lives or operates.",
+                "examples": ["Cypress / Bridgeland / Towne Lake homeowner"]
+              },
+              "situation": {
+                "type": ["string", "null"],
+                "description": "Brief life/business context of the persona.",
+                "examples": ["planning a generator before hurricane season"]
+              },
+              "trigger": {
+                "type": "string",
+                "description": "The moment that brings this persona to a search bar. Critical for hook copy and CTA framing.",
+                "examples": ["Storm power loss event — want a whole-home generator before next hurricane season"]
+              },
+              "mindset": {
+                "type": ["string", "null"],
+                "description": "The persona's psychological state during decision-making. Drives tone of copy targeting them.",
+                "examples": ["Risk-averse on home infrastructure; will pay a premium for the brand they trust"]
+              },
+              "device": {
+                "type": ["string", "null"],
+                "description": "How and on what device the persona researches and decides. Drives mobile vs desktop UX emphasis.",
+                "examples": ["Cross-device research — reads reviews, asks Nextdoor neighbors, gets 2–3 quotes"]
+              },
+              "decisionWindow": {
+                "type": ["string", "null"],
+                "description": "How long this persona takes to decide. Drives urgency framing.",
+                "examples": ["< 5 min", "2-3 weeks", "90+ days"]
+              },
+              "primaryServiceIds": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Services from targetServices[] this persona primarily buys. Cross-references targetServices.name."
+              },
+              "weightingHint": {
+                "type": ["number", "null"],
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Inferred or explicit social calendar / page composition weighting. If the A.R.C. provides explicit weights, use them; otherwise infer from tier+subTier (Primary Highest Value = ~0.25, Primary = ~0.20, Primary Growth = ~0.15, Secondary Emergency = ~0.10, Secondary Highest LTV = ~0.10, etc). Weights across all personas should sum to ~1.0."
+              },
+              "fullProfileNotes": {
+                "type": ["string", "null"],
+                "description": "Optional longer-form notes from the persona modal/full profile if present in the A.R.C."
+              }
+            }
+          }
+        },
+        "buyingJourney": {
+          "type": "object",
+          "description": "The shared buying-journey arc across personas. Some A.R.C.s use 3 stages, some use 4 — the schema accepts either via the stages array.",
+          "properties": {
+            "stages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["step", "name"],
+                "properties": {
+                  "step": { "type": "integer", "minimum": 1 },
+                  "name": { "type": "string", "examples": ["Search & discover", "Evaluate & compare", "Validate & decide"] },
+                  "description": { "type": ["string", "null"] },
+                  "channels": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "description": "Channels personas use at this stage."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "decisionDrivers": {
+          "type": "array",
+          "description": "Ranked factors that win or lose the booking. Used directly as messaging pillars in Generation.",
+          "items": {
+            "type": "object",
+            "required": ["rank", "title"],
+            "properties": {
+              "rank": { "type": "integer", "minimum": 1 },
+              "title": { "type": "string", "examples": ["Speed of response — right now, near me"] },
+              "description": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "channelMap": {
+          "type": "array",
+          "description": "Per-channel priority and usage notes. Drives channel-specific messaging on the site (e.g., emphasizing GBP optimization, building Nextdoor presence, AI platform readiness).",
+          "items": {
+            "type": "object",
+            "required": ["channel", "priority"],
+            "properties": {
+              "channel": { "type": "string", "examples": ["Google Search", "Local Services Ads", "Nextdoor"] },
+              "priority": {
+                "type": "string",
+                "enum": ["Critical", "High", "Rising", "Supporting", "Low"],
+                "description": "Overall channel priority for the partner."
+              },
+              "priorityNotes": {
+                "type": ["string", "null"],
+                "description": "Modifier for the overall priority when a channel matters more or less for a specific persona. Example: LinkedIn is 'Low' overall but 'High for Carla' for the commercial property-manager persona. The base priority stays in the enum; the nuance lives here."
+              },
+              "usageNotes": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "painPoints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Specific issues identified across the A.R.C. that the new site should resolve. Used by Gauntlet to verify the site actually addresses them."
+    },
+    "roadmap": {
+      "type": "object",
+      "description": "Recommended phasing and package tiers from the Roadmap and Investment tabs.",
+      "properties": {
+        "phases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["phase", "title"],
+            "properties": {
+              "phase": { "type": "integer" },
+              "title": { "type": "string", "examples": ["Consolidate, Clean, Activate"] },
+              "description": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "packages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["tier", "name"],
+            "properties": {
+              "tier": { "type": "string", "enum": ["A", "B", "C", "D"] },
+              "name": { "type": "string", "examples": ["Pkg A", "Foundation"] },
+              "services": { "type": "array", "items": { "type": "string" } },
+              "zoneAdjustment": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["sourceUrl", "extractedAt"],
+      "description": "Bookkeeping fields that travel with every extracted A.R.C.",
+      "properties": {
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "The A.R.C. URL the data was extracted from."
+        },
+        "extractedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of the extraction."
+        },
+        "arcTemplateVersion": {
+          "type": ["string", "null"],
+          "description": "Version of the A.R.C. template the source was built with, if identifiable. Helps the parser adapt to template revisions over time."
+        },
+        "completenessScore": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of expected fields that were successfully extracted. Below 80 should trigger a builder review before proceeding to Generation."
+        },
+        "extractionWarnings": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Non-blocking warnings raised during extraction (e.g., 'persona P4 missing decisionWindow field', 'no LinkedIn data found')."
+        }
+      }
+    }
+  },
+  "definitions": {
+    "socialPlatform": {
+      "type": "object",
+      "description": "Per-platform social presence status.",
+      "properties": {
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "followers": { "type": ["integer", "null"] },
+        "reviewCount": { "type": ["integer", "null"] },
+        "recommendationPct": { "type": ["number", "null"] },
+        "lastActivityDate": { "type": ["string", "null"] },
+        "status": {
+          "type": ["string", "null"],
+          "enum": ["active", "dormant", "missing", "issue", null],
+          "description": "Calculated status. Dormant = no posts in 90+ days. Issue = wrong NAP, wrong neighborhood, etc."
+        },
+        "knownIssues": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "aiPlatformStatus": {
+      "type": "object",
+      "properties": {
+        "cited": { "type": ["boolean", "null"] },
+        "citationContext": { "type": ["string", "null"] },
+        "score": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 }
+      }
+    },
+    "disciplineScore": {
+      "type": "object",
+      "properties": {
+        "score": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "notes": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

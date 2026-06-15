@@ -1,0 +1,51 @@
+# Allegiant Web WIZARDD — Netlify config
+# Deploys to wizardd.allegiantdigital.co
+# Internal Allegiant tool — gated, noindex, no public exposure
+
+[build]
+  publish = "public"
+  functions = "src/functions"
+  command = "npm run validate:schemas"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# ─── Security headers ─────────────────────────────────────────────
+# noindex applies to every response at the HTTP layer (in addition to
+# meta tags inside each HTML page). Layered defense — neither alone
+# is sufficient; together they cover the cases where a meta tag is
+# missing from a programmatically-generated page.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# ─── Partner preview URLs ─────────────────────────────────────────
+# Signed preview URLs at /preview/:buildId/:token are publicly
+# reachable (no auth wall) but still noindex. Token validation
+# happens in the function handler.
+[[headers]]
+  for = "/preview/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex"
+
+# ─── Function routes ──────────────────────────────────────────────
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# ─── Auth gate ────────────────────────────────────────────────────
+# All routes except /preview/* require Netlify Identity sign-in.
+# Identity is configured to accept only @allegiantdigital.com emails
+# (set via the Netlify dashboard, not in this file).
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "preview"

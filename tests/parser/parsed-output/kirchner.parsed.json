@@ -1,0 +1,377 @@
+{
+  "businessIdentity": {
+    "businessName": "Kirchner Electric",
+    "vertical": "electrician",
+    "subVertical": null,
+    "zone": null,
+    "yearsOperating": null,
+    "tagline": null,
+    "founderNarrative": null
+  },
+  "currentDigitalPresence": {
+    "website": {
+      "url": null,
+      "lcpDesktopSeconds": null,
+      "lcpMobileSeconds": null,
+      "knownIssues": []
+    },
+    "reviews": {
+      "googleRating": null,
+      "googleReviewCount": null,
+      "yelp": {
+        "verified": null,
+        "visibleReviewCount": null,
+        "knownIssues": []
+      },
+      "bbb": {
+        "present": null,
+        "rating": null,
+        "knownIssues": []
+      }
+    },
+    "social": {},
+    "paidMedia": {
+      "googleAds": {
+        "active": null,
+        "notes": null
+      },
+      "localServiceAds": {
+        "present": null,
+        "competitorsHoldingSlots": []
+      }
+    }
+  },
+  "aiVisibility": {
+    "avs": 16,
+    "citationCount": null,
+    "platforms": {
+      "chatgpt": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "claude": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "gemini": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "perplexity": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "copilot": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      }
+    },
+    "disciplineScores": {
+      "aeo": {
+        "score": null,
+        "notes": null
+      },
+      "geo": {
+        "score": null,
+        "notes": null
+      },
+      "aiSeo": {
+        "score": null,
+        "notes": null
+      },
+      "llmSeo": {
+        "score": null,
+        "notes": null
+      }
+    }
+  },
+  "targetServices": [
+    {
+      "name": "PENDING_LLM_EXTRACTION",
+      "shortName": null,
+      "personaIds": [],
+      "priority": "medium",
+      "competitiveContext": null
+    }
+  ],
+  "targetLocations": [
+    {
+      "name": "PENDING_LLM_EXTRACTION",
+      "tier": "primary",
+      "context": null,
+      "parentRegion": null
+    }
+  ],
+  "competitors": [
+    {
+      "name": "A1 Plus Electrical Target",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "RHK Electrical",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": null,
+      "type": null
+    },
+    {
+      "name": "JR Electrical",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Map Pack #1",
+      "type": null
+    },
+    {
+      "name": "Abacus",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Tier 2 ceiling",
+      "type": null
+    },
+    {
+      "name": "Mister Sparky",
+      "url": null,
+      "domainRating": null,
+      "backlinks": null,
+      "referringDomains": null,
+      "notes": "Tier 1",
+      "type": null
+    }
+  ],
+  "audience": {
+    "totalCoveragePct": null,
+    "personas": [
+      {
+        "id": "P1",
+        "name": "Heather & Mark Thompson",
+        "tier": "primary",
+        "subTier": "Highest Value",
+        "ageRange": "38–55",
+        "locationContext": "Cypress / Bridgeland / Towne Lake homeowner",
+        "situation": "planning a generator before hurricane season",
+        "trigger": "Storm power loss event — want a whole-home generator before next hurricane season",
+        "mindset": "Risk-averse on home infrastructure; will pay a premium for the brand they trust",
+        "device": "Cross-device research — reads reviews, asks Nextdoor neighbors, gets 2–3 quotes",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.24,
+        "fullProfileNotes": "{\"modalTitle\":\"Heather & Mark Thompson\",\"modalRole\":\"“The whole house lost power last night during the storm. We need a generator and we need someone we trust.”\",\"demographics\":{\"age\":\"38–55\",\"living situation\":\"Cypress / Bridgeland / Towne Lake homeowner\",\"income\":\"$120K–$220K household\",\"vehicle\":\"SUV or truck, garage attached\"},\"psychographics\":{\"values\":\"Risk-averse on home infrastructure. Will pay a premium for the brand they trust.\",\"fears\":\"Storm power loss putting family at risk. Hidden install fees. Unlicensed work.\",\"motivations\":\"Whole-home generator before next hurricane season. Safety + property protection.\",\"buying behavior\":\"Reads reviews, asks neighbors. Gets 2–3 quotes. High LTV: $8K–$18K install plus annual maintenance.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “whole home generator cypress”, “generac installer near me”, “standby generator cost” — researched after a storm event.\"},{\"channel\":\"social\",\"text\":\"Nextdoor: Neighbor recs are the strongest signal. Watches local hurricane-prep threads.\"},{\"channel\":\"review\",\"text\":\"Reviews: Reads carefully. Looks for technician names and post-install service mentions.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Asks ChatGPT “best generator installer in Cypress” before calling.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      },
+      {
+        "id": "P2",
+        "name": "Daniel Reyes",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "35–60",
+        "locationContext": "1985–2005 Cypress / Tomball / Spring home",
+        "situation": "aging panel, often FPE Stab-Lok or aluminum-wired",
+        "trigger": "Breakers tripping; insurance / inspection has flagged the panel",
+        "mindset": "Researcher — wants licensure verified, hates being upsold, picks transparent over cheapest",
+        "device": "Desktop research, reads 3+ reviews per business, checks BBB before calling",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.19,
+        "fullProfileNotes": "{\"modalTitle\":\"Daniel Reyes\",\"modalRole\":\"“My panel is 30 years old and the breakers keep tripping. I just want a real electrician — not a guy with a truck.”\",\"demographics\":{\"age\":\"35–60\",\"living situation\":\"1985–2005 Cypress / Tomball / Spring home\",\"income\":\"$80K–$160K household\",\"panel\":\"Often FPE Stab-Lok, Zinsco, or aluminum-wired\"},\"psychographics\":{\"values\":\"Researches before calling. Wants licensure verified. Hates being upsold.\",\"fears\":\"Insurance non-coverage from FPE. Fire risk. Being sold a panel he doesn't need.\",\"motivations\":\"Insurance / inspection has flagged the panel. Wants a clean, code-compliant fix.\",\"buying behavior\":\"Reads 3+ reviews per business. Checks BBB. Picks transparent over cheapest.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “panel upgrade cypress tx” (1,300/mo), “federal pacific replacement”, “200 amp service upgrade cost”.\"},{\"channel\":\"social\",\"text\":\"Facebook: Local neighborhood groups for trusted-electrician threads.\"},{\"channel\":\"review\",\"text\":\"Reviews: Reads at least 3 reviews per business. Looks for specific panel-work mentions.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Asks ChatGPT/Claude “is FPE Stab-Lok safe” before deciding.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      },
+      {
+        "id": "P3",
+        "name": "Vanessa Pham",
+        "tier": "primary",
+        "subTier": "Growth Segment",
+        "ageRange": "28–45",
+        "locationContext": "newer Cypress / Bridgeland home with attached garage",
+        "situation": "recent EV (Tesla, Rivian, Lightning, Mach-E)",
+        "trigger": "Just bought an EV; Tesla / dealer recommends a Wall Connector before delivery",
+        "mindset": "Mobile-first; prefers transparent flat-rate pricing; will book online without calling",
+        "device": "Mobile-first — researches via Reddit, YouTube creator content, manufacturer locators",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.14,
+        "fullProfileNotes": "{\"modalTitle\":\"Vanessa Pham\",\"modalRole\":\"“I just bought an EV. Tesla recommends I get a 240V charger installed. Where do I even start?”\",\"demographics\":{\"age\":\"28–45\",\"living situation\":\"Newer Cypress / Bridgeland home with attached garage\",\"income\":\"$100K–$200K household\",\"vehicle\":\"Recent EV (Tesla, Rivian, Lightning, Mach-E)\"},\"psychographics\":{\"values\":\"Mobile-first. Prefers transparent flat-rate pricing. Will book online without calling.\",\"fears\":\"Hidden upsells. Slow install. Wrong amperage breaker.\",\"motivations\":\"Tesla / dealer recommended a Wall Connector before delivery. Solar adjacent.\",\"buying behavior\":\"Researches via Reddit + YouTube + manufacturer locators. Trusts certified-installer badges.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “tesla wall connector installer cypress”, “ev charger installation houston”, “240v outlet install cost”.\"},{\"channel\":\"video\",\"text\":\"YouTube / TikTok: Watches install walkthroughs. Brand discovery via creator content.\"},{\"channel\":\"review\",\"text\":\"Reviews: Reddit r/teslamotors and Houston subs for first-hand installer recommendations.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: ChatGPT and Perplexity for “best ev charger installer in cypress”.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      },
+      {
+        "id": "P4",
+        "name": "Cynthia Marsh",
+        "tier": "secondary",
+        "subTier": "Emergency Capture",
+        "ageRange": "30–65",
+        "locationContext": "Cypress / Tomball / Spring renter or owner",
+        "situation": "active circuit failure right now",
+        "trigger": "8pm Sunday outage — half the outlets stopped working, possible burning smell",
+        "mindset": "Time-pressured — the first credible electrician who can come tonight wins",
+        "device": "Mobile only — LSA pack is the first place she looks; Google Guaranteed badge wins",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.14,
+        "fullProfileNotes": "{\"modalTitle\":\"Cynthia Marsh\",\"modalRole\":\"“It's 8pm on a Sunday and half my outlets just stopped working. I need someone here, now.”\",\"demographics\":{\"age\":\"30–65\",\"living situation\":\"Cypress / Tomball / Spring renter or owner\",\"income\":\"$60K–$140K\",\"trigger\":\"Active circuit failure\"},\"psychographics\":{\"values\":\"Time-pressured. Wants the first credible electrician who can come tonight.\",\"fears\":\"Burning smell. Fire risk. Being told it's a 3-day wait.\",\"motivations\":\"Restore power. Identify root cause. Avoid bigger problem.\",\"buying behavior\":\"Looks at 3–4 results max. LSA pack first. Word-of-mouth referrer afterward if treated well.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “emergency electrician near me cypress”, “electrician open now houston”.\"},{\"channel\":\"local\",\"text\":\"LSA pack: Google Guaranteed badge is the strongest trust signal at the urgency moment.\"},{\"channel\":\"review\",\"text\":\"Reviews: Skims for “came out same day” mentions.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Rare in emergency — calls fast.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      },
+      {
+        "id": "P5",
+        "name": "Michael Lewinsky",
+        "tier": "primary",
+        "subTier": null,
+        "ageRange": "40–65",
+        "locationContext": "3,500–6,000 sq ft Cypress / Bridgeland / Lakes",
+        "situation": "multi-month remodel with pool",
+        "trigger": "Active remodel + addition + pool project — needs an electrician sub who can handle scope",
+        "mindset": "Schedule reliability — will pay for a sub who shows up when they say",
+        "device": "GC referral primary; cross-checks via Houzz / Pro listings & project portfolio reviews",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.19,
+        "fullProfileNotes": "{\"modalTitle\":\"Michael Lewinsky\",\"modalRole\":\"“We're remodeling, doing an addition, and adding a pool. I need an electrician who can handle it all on schedule.”\",\"demographics\":{\"age\":\"40–65\",\"living situation\":\"3,500–6,000 sq ft Cypress / Bridgeland / Lakes\",\"income\":\"$180K–$400K household\",\"project\":\"Multi-month remodel with pool\"},\"psychographics\":{\"values\":\"Schedule reliability. Will pay for a sub who shows up when they say.\",\"fears\":\"Subs not showing. Permit delays. Coordination problems with GC.\",\"motivations\":\"Get the project done on time. Build a long-term relationship for next phase.\",\"buying behavior\":\"Trusts GC referral most. Long relationship buyer once a contractor proves out.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “licensed electrician contractor cypress”, “remodel electrician houston”.\"},{\"channel\":\"social\",\"text\":\"Houzz / Pro listings: Reviews project-portfolio content. Strong trust signal.\"},{\"channel\":\"review\",\"text\":\"References: Wants 2–3 GC references, not just star-rated reviews.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Limited — relies on professional network.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      },
+      {
+        "id": "P6",
+        "name": "Carla Whitfield",
+        "tier": "secondary",
+        "subTier": "Highest LTV",
+        "ageRange": "40–65",
+        "locationContext": "property manager, 1–6 small commercial properties",
+        "situation": "Northwest Houston metro",
+        "trigger": "Tenant electrical issue or planned tenant build-out; loses money by the hour when down",
+        "mindset": "Loyal once vetted — wants one electrician for every property; hates being passed around",
+        "device": "Desktop business email; vets via LinkedIn + property-management peer network",
+        "decisionWindow": null,
+        "primaryServiceIds": [],
+        "weightingHint": 0.1,
+        "fullProfileNotes": "{\"modalTitle\":\"Carla Whitfield\",\"modalRole\":\"“I run a small commercial property. When something goes wrong electrically, I lose money by the hour.”\",\"demographics\":{\"age\":\"40–65\",\"role\":\"Property manager, 1–6 small commercial properties\",\"region\":\"Northwest Houston metro\",\"budget\":\"$5K–$25K annual maintenance per property\"},\"psychographics\":{\"values\":\"Loyal once vetted. Wants one electrician for every property. Hates being passed around.\",\"fears\":\"Tenant complaints. After-hours emergencies with no response. COI lapses.\",\"motivations\":\"Predictable maintenance + tenant build-out capacity. Single point of contact.\",\"buying behavior\":\"Long evaluation, slow yes. Once committed, multi-year relationship.\"},\"onlineBehavior\":[{\"channel\":\"search\",\"text\":\"Google Search: “commercial electrician cypress”, “tenant build out electrical houston”.\"},{\"channel\":\"social\",\"text\":\"LinkedIn: Vets via professional network. Property-management peers.\"},{\"channel\":\"review\",\"text\":\"References: Asks for 2–3 commercial-property references and calls them.\"},{\"channel\":\"ai\",\"text\":\"AI platforms: Low usage personally.\"}],\"journeyStages\":[],\"keySearchTerms\":[]}"
+      }
+    ],
+    "buyingJourney": {
+      "stages": []
+    },
+    "decisionDrivers": [
+      {
+        "rank": 1,
+        "title": "Speed of response — right now, near me",
+        "description": "The single biggest decision factor for the emergency motion. Cynthia decides in under 5 minutes. Heather & Mark and Daniel give it 1–3 hours of phone tag before defaulting to whoever picked up first. Whichever brand answers the phone, returns the form-fill within 15 minutes, and confirms a same-day or next-day visit wins the booking. Kirchner’s 24/7 emergency claim must be backed by a tap-to-call mobile experience and an LSA pack presence to convert the urgency."
+      },
+      {
+        "rank": 2,
+        "title": "Trust signals — license, insurance, longevity, reviews",
+        "description": "Daniel reads 3+ reviews per business and checks the BBB. Heather & Mark want a Google Guaranteed badge plus 4.7☆+ reviews plus 10+ years operating. Carla requires a current COI and 2–3 commercial references. Kirchner’s real-world position (4.9☆ / 237 reviews / 40 years) is one of the strongest in the category — but only if it surfaces. Schema, BBB profile, citation consistency, and on-site licensure / insurance badges close that gap."
+      },
+      {
+        "rank": 3,
+        "title": "Transparent pricing & no surprise upsells",
+        "description": "Daniel hates being sold a panel he doesn’t need. Vanessa wants flat-rate Tesla Wall Connector pricing she can see online before calling. Heather & Mark fear hidden install fees on a $12K generator quote. Brands that publish service-page price ranges, offer flat-rate diagnostics, and quote in writing before the truck arrives convert at materially higher rates than “call for a quote” alternatives."
+      },
+      {
+        "rank": 4,
+        "title": "Specialization signals for the high-stakes job",
+        "description": "Generator install (Heather & Mark), FPE Stab-Lok replacement (Daniel), Tesla / EV-charger certification (Vanessa), pool / addition coordination (Michael), commercial COI & multi-property capacity (Carla). The generalist “we do all electrical work” positioning loses every one of these jobs to a brand that publishes a dedicated service page, manufacturer-certification badge, or commercial-track sub-site. Kirchner has the in-the-field expertise — the website doesn’t reflect it."
+      },
+      {
+        "rank": 5,
+        "title": "Local roots & neighbor recommendations",
+        "description": "Heather & Mark, Daniel, and Michael all use Nextdoor and Cypress Facebook groups as primary trust validators. The 40-year operating history is a structural advantage no franchise (Mister Sparky) and no aggregator (Abacus, JMS) can match — but it has to surface. Nextdoor profile in the correct neighborhood, Facebook group presence, project photos with actual Cypress addresses, and customer-quote testimonials with neighborhood names compound this signal."
+      },
+      {
+        "rank": 6,
+        "title": "Mobile-first booking & speed-of-quote",
+        "description": "Vanessa books from her phone without calling. Cynthia taps the LSA pack and dials the first result. Daniel form-fills at midnight and expects a response by 9am. Heather & Mark schedule the in-home generator estimate from a Saturday-morning phone session. Sticky tap-to-call, a 60-second quote-request form, and a 15-minute response SLA convert significantly better than “please complete the contact form” on a slow-loading page. The Kirchner mobile experience (20.6s LCP, no sticky CTA) is the bottleneck here."
+      }
+    ],
+    "channelMap": [
+      {
+        "channel": "Google Search",
+        "priority": "Critical",
+        "priorityNotes": null,
+        "usageNotes": "Primary discovery for every persona — “electrician cypress,” “emergency electrician near me,” “panel upgrade cypress tx,” “tesla wall connector installer,” “whole home generator cypress.” The single highest-leverage channel."
+      },
+      {
+        "channel": "Google Maps / GBP",
+        "priority": "Critical",
+        "priorityNotes": null,
+        "usageNotes": "237 reviews / 4.9☆ / 40 yrs already pre-qualifies for the Cypress map pack. Currently outside it — the structural fixes (NAP, schema, brand consolidation) restore visibility. Heather/Mark, Daniel, and Cynthia all check the map pack."
+      },
+      {
+        "channel": "Local Services Ads (LSA)",
+        "priority": "Critical",
+        "priorityNotes": null,
+        "usageNotes": "Cynthia’s emergency-mode default and Heather/Mark’s urgency-trigger default. Google Guaranteed badge is the strongest trust signal at the moment of click. Kirchner is not currently in the stack — A1 Plus and Mister Sparky occupy slots #1 and #2."
+      },
+      {
+        "channel": "Nextdoor",
+        "priority": "High",
+        "priorityNotes": null,
+        "usageNotes": "Where Heather & Mark ask “anyone have a recommendation for a generator installer?” Cypress / Bridgeland / Towne Lake homeowners trust neighbor recs over almost anything else. Currently 1 recommendation — profile lives in Tomball, not Cypress."
+      },
+      {
+        "channel": "Facebook",
+        "priority": "High",
+        "priorityNotes": null,
+        "usageNotes": "Local Cypress homeowner groups are where Daniel reads but doesn’t post, where Heather/Mark watch hurricane-prep threads, and where Vanessa sees EV-related creator content. 535 followers + 12 reviews / 100% recommend — warm but dormant since June 2025."
+      },
+      {
+        "channel": "AI Platforms",
+        "priority": "Rising",
+        "priorityNotes": null,
+        "usageNotes": "Vanessa is the heaviest user (asks ChatGPT/Perplexity for shortlists). Heather/Mark cross-reference AI shortlist against Google + Nextdoor. Daniel asks “is FPE Stab-Lok safe.” Currently 2 of 6 platforms cite Kirchner. AVS 16/100."
+      },
+      {
+        "channel": "Instagram + TikTok",
+        "priority": "Rising",
+        "priorityNotes": null,
+        "usageNotes": "Where Vanessa (mobile-first EV buyer) and the digitally-native portion of every persona find brands through creator content. EV-charger walkthroughs, before/after panel upgrades, generator-install reels. 105 followers, dormant since 2024."
+      },
+      {
+        "channel": "Yelp / BBB",
+        "priority": "High",
+        "priorityNotes": null,
+        "usageNotes": "Daniel’s vetting pattern. Yelp is verified but shows zero visible reviews and links to a legacy domain. BBB is missing entirely despite 40-year operating history. Both fixable in Phase 1; both are persistent trust signals for the careful-vetter persona."
+      },
+      {
+        "channel": "YouTube",
+        "priority": "Supporting",
+        "priorityNotes": null,
+        "usageNotes": "“What is a 200-amp panel,” “why is my breaker tripping,” “cost to install a generator” — long-tail education that pre-qualifies homeowners before they call. Currently absent from Kirchner’s content stack."
+      },
+      {
+        "channel": "LinkedIn",
+        "priority": "Low",
+        "priorityNotes": "high for Carla",
+        "usageNotes": "Carla’s vetting channel for commercial property work. Vets via professional network, asks for 2–3 commercial references. Not a consumer-acquisition channel — but the sole channel for the highest-LTV persona in the audience set."
+      }
+    ]
+  },
+  "painPoints": [],
+  "roadmap": {
+    "phases": [],
+    "packages": []
+  },
+  "metadata": {
+    "sourceUrl": "https://kirchner-arc-report.netlify.app/",
+    "extractedAt": "2026-06-15T20:32:32.401Z",
+    "arcTemplateVersion": "current-2026-06",
+    "completenessScore": 98,
+    "extractionWarnings": [
+      "LLM task 'vertical-and-identity' stubbed — fields pending: businessIdentity.vertical, businessIdentity.subVertical, businessIdentity.zone, businessIdentity.yearsOperating, businessIdentity.tagline",
+      "LLM task 'founder-narrative' stubbed — fields pending: businessIdentity.founderNarrative",
+      "LLM task 'target-services' stubbed — fields pending: targetServices",
+      "LLM task 'target-locations' stubbed — fields pending: targetLocations",
+      "LLM task 'pain-points' stubbed — fields pending: painPoints",
+      "LLM task 'roadmap' stubbed — fields pending: roadmap",
+      "LLM task 'buying-journey' stubbed — fields pending: audience.buyingJourney",
+      "LLM task 'ai-platform-detail' stubbed — fields pending: aiVisibility.platforms, aiVisibility.disciplineScores, aiVisibility.citationCount",
+      "LLM task 'digital-presence-detail' stubbed — fields pending: currentDigitalPresence"
+    ]
+  }
+}

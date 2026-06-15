@@ -1,0 +1,319 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://wizardd.allegiantdigital.co/schemas/intake-form.schema.json",
+  "title": "Web WIZARDD Intake Form Schema",
+  "description": "Captures everything the A.R.C. cannot provide — aesthetic preferences, brand assets, design archetype direction, page selection, CTA preferences, differentiators, and out-of-scope flags. Completed by the Allegiant team member initiating the build during or after the partner onboarding conversation.",
+  "type": "object",
+  "required": [
+    "partner",
+    "brandAssets",
+    "designDirection",
+    "pageSelection",
+    "ctaPreferences",
+    "operator"
+  ],
+  "properties": {
+    "partner": {
+      "type": "object",
+      "required": ["businessName"],
+      "description": "Partner identification. businessName must match the A.R.C.'s businessIdentity.businessName exactly — the tool cross-validates and blocks if they diverge.",
+      "properties": {
+        "businessName": {
+          "type": "string",
+          "description": "Must exactly match the A.R.C. businessIdentity.businessName. Catches the 'wrong A.R.C. linked to wrong intake' failure mode.",
+          "examples": ["Kirchner Electric"]
+        },
+        "primaryContact": {
+          "type": "object",
+          "properties": {
+            "name": { "type": ["string", "null"] },
+            "title": { "type": ["string", "null"] },
+            "email": { "type": ["string", "null"], "format": "email" },
+            "phone": { "type": ["string", "null"] }
+          }
+        },
+        "salesforcePartnerId": {
+          "type": ["string", "null"],
+          "description": "Optional Salesforce or CRM ID for downstream system linking."
+        }
+      }
+    },
+    "brandAssets": {
+      "type": "object",
+      "required": ["logo", "colorTokens", "typography"],
+      "description": "Partner brand assets. Each section has an 'available' boolean — if false, Web WIZARDD composes a recommendation from the design archetype defaults and flags it for partner approval.",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "required": ["available"],
+          "properties": {
+            "available": { "type": "boolean" },
+            "needsCreation": {
+              "type": "boolean",
+              "description": "True if partner has no logo and needs one created. Triggers an out-of-scope notice (logo creation is not a Web WIZARDD deliverable; flag for separate engagement)."
+            },
+            "primary": {
+              "type": ["object", "null"],
+              "properties": {
+                "filename": { "type": "string" },
+                "format": { "type": "string", "enum": ["svg", "png", "jpg", "eps", "ai"] },
+                "url": { "type": ["string", "null"], "format": "uri" }
+              }
+            },
+            "stamp": {
+              "type": ["object", "null"],
+              "description": "Stamp/icon variant of the logo if available.",
+              "properties": {
+                "filename": { "type": "string" },
+                "format": { "type": "string" },
+                "url": { "type": ["string", "null"], "format": "uri" }
+              }
+            },
+            "variants": {
+              "type": "array",
+              "description": "Additional variants (white-on-dark, monochrome, etc).",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": { "type": "string", "examples": ["white-on-dark", "monochrome black"] },
+                  "filename": { "type": "string" },
+                  "url": { "type": ["string", "null"], "format": "uri" }
+                }
+              }
+            }
+          }
+        },
+        "colorTokens": {
+          "type": "object",
+          "required": ["available"],
+          "description": "Partner brand color palette. If unavailable, Web WIZARDD recommends a palette from the design archetype defaults tuned to the vertical.",
+          "properties": {
+            "available": { "type": "boolean" },
+            "needsRecommendation": { "type": "boolean" },
+            "primary": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$", "examples": ["#1A4D8C"] },
+            "secondary": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "accent": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "neutral": {
+              "type": ["object", "null"],
+              "description": "Neutral ramp for backgrounds, borders, text.",
+              "properties": {
+                "darkest": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+                "dark": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+                "medium": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+                "light": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" },
+                "lightest": { "type": ["string", "null"], "pattern": "^#[0-9A-Fa-f]{6}$" }
+              }
+            },
+            "semantic": {
+              "type": ["object", "null"],
+              "description": "Semantic state colors (success, warning, error, info). Generated from accent if not provided.",
+              "properties": {
+                "success": { "type": ["string", "null"] },
+                "warning": { "type": ["string", "null"] },
+                "error": { "type": ["string", "null"] },
+                "info": { "type": ["string", "null"] }
+              }
+            }
+          }
+        },
+        "typography": {
+          "type": "object",
+          "required": ["available"],
+          "properties": {
+            "available": { "type": "boolean" },
+            "needsRecommendation": { "type": "boolean" },
+            "headingFont": {
+              "type": ["object", "null"],
+              "properties": {
+                "family": { "type": "string", "examples": ["Inter", "Outfit", "Poppins"] },
+                "source": { "type": "string", "enum": ["google-fonts", "adobe-fonts", "self-hosted", "system"] },
+                "weights": { "type": "array", "items": { "type": "integer" } }
+              }
+            },
+            "bodyFont": {
+              "type": ["object", "null"],
+              "properties": {
+                "family": { "type": "string" },
+                "source": { "type": "string", "enum": ["google-fonts", "adobe-fonts", "self-hosted", "system"] },
+                "weights": { "type": "array", "items": { "type": "integer" } }
+              }
+            }
+          }
+        },
+        "photographyStyle": {
+          "type": "object",
+          "description": "Partner's existing photography library and style direction.",
+          "properties": {
+            "hasExistingLibrary": { "type": "boolean" },
+            "libraryUrl": { "type": ["string", "null"], "format": "uri", "description": "Google Drive, Dropbox, or other shared library URL." },
+            "styleNotes": {
+              "type": ["string", "null"],
+              "description": "Free-text style direction. Used to inform image prompt generation when AI-generated images are produced.",
+              "examples": ["Documentary-style on-the-job shots, warm and authentic, no stock-looking imagery"]
+            },
+            "approach": {
+              "type": "string",
+              "enum": ["partner-provided-only", "ai-generated-only", "hybrid", "licensed-stock"],
+              "description": "How images for the site will be sourced."
+            }
+          }
+        }
+      }
+    },
+    "designDirection": {
+      "type": "object",
+      "required": ["archetypeFamily"],
+      "description": "Three archetypes are presented to the partner per build; the selected archetype family lives here. The actual three-direction generation happens in the Generation layer based on this family.",
+      "properties": {
+        "archetypeFamily": {
+          "type": "string",
+          "description": "The archetype family for this vertical. For home services: trust-first, authority, velocity. Additional families are added as new verticals are encountered.",
+          "examples": ["trust-first", "authority", "velocity", "editorial", "story-driven"]
+        },
+        "rationale": {
+          "type": ["string", "null"],
+          "description": "Why this archetype family was selected for this partner. Captured at intake; reviewed at design selection."
+        },
+        "verticalAdjustments": {
+          "type": ["string", "null"],
+          "description": "Vertical-specific notes that modify the archetype defaults."
+        },
+        "selectedDirectionAtSignoff": {
+          "type": ["string", "null"],
+          "description": "Populated after partner review. Identifies which of the three generated directions the partner selected. Not required at intake."
+        }
+      }
+    },
+    "pageSelection": {
+      "type": "object",
+      "required": ["interiorServicePage"],
+      "description": "Which pages are in scope for the v1 mockup phase. Home page is always included. v1 produces home + one interior service page across three design directions = six total mockups.",
+      "properties": {
+        "homePage": {
+          "type": "boolean",
+          "default": true,
+          "description": "Always true in v1. Reserved field for future configurability."
+        },
+        "interiorServicePage": {
+          "type": "object",
+          "required": ["serviceName"],
+          "properties": {
+            "serviceName": {
+              "type": "string",
+              "description": "Must exactly match one of the names in the A.R.C. targetServices array. Cross-validated by the tool.",
+              "examples": ["Whole-home generator install"]
+            },
+            "rationale": {
+              "type": ["string", "null"],
+              "description": "Why this service was chosen for the v1 mockup (usually: highest LTV, primary persona anchor, biggest competitive gap)."
+            }
+          }
+        },
+        "additionalRequestedPages": {
+          "type": "array",
+          "description": "Pages the partner specifically requested be represented in the v1 mockup phase beyond home and the selected service page. Out-of-default scope — flag to the team that these add lift.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pageType": { "type": "string", "examples": ["financing", "reviews-page", "locations-grid", "about", "contact"] },
+              "rationale": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "ctaPreferences": {
+      "type": "object",
+      "required": ["primary"],
+      "description": "Call-to-action framing confirmed with the partner. Ties to the messaging pillars from the A.R.C. audience.decisionDrivers.",
+      "properties": {
+        "primary": {
+          "type": "object",
+          "required": ["label"],
+          "properties": {
+            "label": { "type": "string", "examples": ["Schedule a Consultation", "Get a Free Estimate"] },
+            "action": { "type": "string", "enum": ["form", "phone-call", "calendar-link", "external-url"] },
+            "destination": { "type": ["string", "null"] }
+          }
+        },
+        "secondary": {
+          "type": ["object", "null"],
+          "properties": {
+            "label": { "type": "string", "examples": ["Call 24/7 Emergency Line"] },
+            "action": { "type": "string", "enum": ["form", "phone-call", "calendar-link", "external-url"] },
+            "destination": { "type": ["string", "null"] }
+          }
+        },
+        "phoneNumber": {
+          "type": ["string", "null"],
+          "description": "Click-to-call number. Used in sticky mobile CTAs and click-to-call schema."
+        }
+      }
+    },
+    "differentiators": {
+      "type": "array",
+      "description": "Partner's stated edges that should appear above-the-fold on the home page. Should be substantive and verifiable (not generic claims). Audited at Gauntlet P4 by the Lawyer reader.",
+      "items": {
+        "type": "string",
+        "examples": [
+          "40 years operating in Cypress",
+          "Family-owned, not franchise",
+          "Google Guaranteed",
+          "ISA-certified arborists on every crew"
+        ]
+      }
+    },
+    "outOfScope": {
+      "type": "array",
+      "description": "Things the partner has explicitly asked not to address on the site. Hard constraints — Generation must not produce content touching these.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": { "type": "string", "examples": ["mention of pricing", "old service no longer offered"] },
+          "reason": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "complianceFlags": {
+      "type": "object",
+      "description": "Vertical-specific compliance requirements that affect content generation. Examples: legal disclaimers for legal/medical, HIPAA for medical, FTC for affiliate or financial content.",
+      "properties": {
+        "requiresLegalDisclaimer": { "type": "boolean", "default": false },
+        "requiresMedicalDisclaimer": { "type": "boolean", "default": false },
+        "requiresHipaaSignals": { "type": "boolean", "default": false },
+        "stateBarCompliance": {
+          "type": ["object", "null"],
+          "properties": {
+            "state": { "type": "string", "examples": ["TX"] },
+            "rules": { "type": "string" }
+          }
+        },
+        "customNotes": { "type": ["string", "null"] }
+      }
+    },
+    "operator": {
+      "type": "object",
+      "required": ["builderName", "buildInitiatedAt"],
+      "description": "Bookkeeping fields. Builder identity drives Gauntlet peer-review assignment and override approval logging.",
+      "properties": {
+        "builderName": {
+          "type": "string",
+          "description": "Allegiant team member initiating the build. Must be an active @allegiantdigital.com identity."
+        },
+        "buildInitiatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "intakeFormVersion": {
+          "type": "string",
+          "default": "1.0",
+          "description": "Schema version this intake was completed against. Helps the tool gracefully handle older intakes if the schema evolves."
+        },
+        "buildId": {
+          "type": ["string", "null"],
+          "description": "Optional pre-assigned build ID. If not provided, Web WIZARDD generates one."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "allegiant-web-wizardd",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Allegiant's turnkey website production engine. Takes a partner's A.R.C. Report and intake form, produces three design directions with launch-ready content, AI/traditional/technical SEO artifacts, schema markup, image specs, and Avada implementation notes.",
+  "license": "UNLICENSED",
+  "author": "Allegiant Digital Marketing",
+  "homepage": "https://wizardd.allegiantdigital.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allegiant-digital-marketing/allegiant-web-wizardd.git"
+  },
+  "scripts": {
+    "validate:schemas": "node tests/schemas/validate.js",
+    "test:parser": "node tests/parser/test-parser.js",
+    "parser:dump": "node tests/parser/dump-parsed.js",
+    "test": "npm run validate:schemas && npm run test:parser"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
