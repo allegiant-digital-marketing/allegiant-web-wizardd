@@ -1,0 +1,135 @@
+{
+  "data": {
+    "targetServices": [
+      {
+        "name": "Cryotherapy",
+        "shortName": "Cryotherapy",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "EvolvE ranks well for cryotherapy terms (positions 4–8 in Austin, #1 in Round Rock) and leads local independents in authority score; main threats are national chains Restore Hyper Wellness and iCRYO whose Austin location has closed."
+      },
+      {
+        "name": "Cold Plunge / Contrast Therapy",
+        "shortName": "Cold Plunge",
+        "personaIds": [
+          "P1",
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "320 searches/mo in Austin; EvolvE not yet ranking for contrast therapy terms outside cryotherapy cluster, representing a near-term capture opportunity."
+      },
+      {
+        "name": "Infrared Sauna",
+        "shortName": "Infrared Sauna",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "210 searches/mo; EvolvE not in top 100 for 'infrared sauna austin' — a high-priority gap given the service is on the menu and the keyword is uncontested locally."
+      },
+      {
+        "name": "Red Light Therapy",
+        "shortName": "Red Light Therapy",
+        "personaIds": [
+          "P4"
+        ],
+        "priority": "medium",
+        "competitiveContext": "210 searches/mo; primarily sought by biohackers; EvolvE not currently ranking for this term."
+      },
+      {
+        "name": "Body Contouring / CryoSlimming",
+        "shortName": "Body Contouring",
+        "personaIds": [
+          "P3"
+        ],
+        "priority": "high",
+        "competitiveContext": "390 searches/mo for 'body contouring austin'; EvolvE not in top 100; competing against med spas and national chains; before/after proof is the key conversion driver for this persona."
+      },
+      {
+        "name": "Facials / Cryo Facial",
+        "shortName": "Facials",
+        "personaIds": [
+          "P2",
+          "P3"
+        ],
+        "priority": "high",
+        "competitiveContext": "Part of the aesthetics cluster alongside microneedling (880/mo) and HydraFacial (880/mo); EvolvE currently invisible for these terms; med spas are primary competitors."
+      },
+      {
+        "name": "Massage Therapy",
+        "shortName": "Massage",
+        "personaIds": [
+          "P2",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "'Massage austin' drives 4,400 searches/mo — the single largest keyword in EvolvE's menu; EvolvE not in top 100; highly competitive but wide open for a focused content and paid strategy."
+      },
+      {
+        "name": "Lymphatic Drainage Massage",
+        "shortName": "Lymphatic Drainage",
+        "personaIds": [
+          "P5"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "1,000 searches/mo; EvolvE not in top 100; relief-seeking persona relies heavily on reviews and referrals; low competitive clutter for an optimized local page."
+      },
+      {
+        "name": "Deep Tissue Massage",
+        "shortName": "Deep Tissue",
+        "personaIds": [
+          "P5"
+        ],
+        "priority": "medium",
+        "competitiveContext": "880 searches/mo; EvolvE not currently ranking; competes broadly with massage studios and spas across Austin metro."
+      },
+      {
+        "name": "Wellness Memberships",
+        "shortName": "Memberships",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P4"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "Recurring membership conversion is the primary revenue goal across primary personas; pricing clarity and intro offers are key differentiators vs. national chains with established membership models."
+      },
+      {
+        "name": "Gift Cards & Intro Offers",
+        "shortName": "Gift Cards",
+        "personaIds": [
+          "P6"
+        ],
+        "priority": "growth",
+        "competitiveContext": "First-timer and gifter persona discovers via Groupon, ClassPass, and social; intro offers are the entry point to converting one-time visitors to recurring members; ClassPass and Groupon are current discovery channels."
+      }
+    ]
+  },
+  "raw": "{\"targetServices\":[{\"name\":\"Cryotherapy\",\"shortName\":\"Cryotherapy\",\"personaIds\":[\"P1\",\"P2\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"EvolvE ranks well for cryotherapy terms (positions 4–8 in Austin, #1 in Round Rock) and leads local independents in authority score; main threats are national chains Restore Hyper Wellness and iCRYO whose Austin location has closed.\"},{\"name\":\"Cold Plunge / Contrast Therapy\",\"shortName\":\"Cold Plunge\",\"personaIds\":[\"P1\",\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"320 searches/mo in Austin; EvolvE not yet ranking for contrast therapy terms outside cryotherapy cluster, representing a near-term capture opportunity.\"},{\"name\":\"Infrared Sauna\",\"shortName\":\"Infrared Sauna\",\"personaIds\":[\"P1\",\"P2\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"210 searches/mo; EvolvE not in top 100 for 'infrared sauna austin' — a high-priority gap given the service is on the menu and the keyword is uncontested locally.\"},{\"name\":\"Red Light Therapy\",\"shortName\":\"Red Light Therapy\",\"personaIds\":[\"P4\"],\"priority\":\"medium\",\"competitiveContext\":\"210 searches/mo; primarily sought by biohackers; EvolvE not currently ranking for this term.\"},{\"name\":\"Body Contouring / CryoSlimming\",\"shortName\":\"Body Contouring\",\"personaIds\":[\"P3\"],\"priority\":\"high\",\"competitiveContext\":\"390 searches/mo for 'body contouring austin'; EvolvE not in top 100; competing against med spas and national chains; before/after proof is the key conversion driver for this persona.\"},{\"name\":\"Facials / Cryo Facial\",\"shortName\":\"Facials\",\"personaIds\":[\"P2\",\"P3\"],\"priority\":\"high\",\"competitiveContext\":\"Part of the aesthetics cluster alongside microneedling (880/mo) and HydraFacial (880/mo); EvolvE currently invisible for these terms; med spas are primary competitors.\"},{\"name\":\"Massage Therapy\",\"shortName\":\"Massage\",\"personaIds\":[\"P2\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"'Massage austin' drives 4,400 searches/mo — the single largest keyword in EvolvE's menu; EvolvE not in top 100; highly competitive but wide open for a focused content and paid strategy.\"},{\"name\":\"Lymphatic Drainage Massage\",\"shortName\":\"Lymphatic Drainage\",\"personaIds\":[\"P5\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"1,000 searches/mo; EvolvE not in top 100; relief-seeking persona relies heavily on reviews and referrals; low competitive clutter for an optimized local page.\"},{\"name\":\"Deep Tissue Massage\",\"shortName\":\"Deep Tissue\",\"personaIds\":[\"P5\"],\"priority\":\"medium\",\"competitiveContext\":\"880 searches/mo; EvolvE not currently ranking; competes broadly with massage studios and spas across Austin metro.\"},{\"name\":\"Wellness Memberships\",\"shortName\":\"Memberships\",\"personaIds\":[\"P1\",\"P2\",\"P4\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"Recurring membership conversion is the primary revenue goal across primary personas; pricing clarity and intro offers are key differentiators vs. national chains with established membership models.\"},{\"name\":\"Gift Cards & Intro Offers\",\"shortName\":\"Gift Cards\",\"personaIds\":[\"P6\"],\"priority\":\"growth\",\"competitiveContext\":\"First-timer and gifter persona discovers via Groupon, ClassPass, and social; intro offers are the entry point to converting one-time visitors to recurring members; ClassPass and Groupon are current discovery channels.\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 5138,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 912,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-services",
+    "key": "d5a41d5da0f53574",
+    "capturedAt": "2026-06-16T21:36:07.423Z"
+  }
+}

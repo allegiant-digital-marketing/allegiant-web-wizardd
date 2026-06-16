@@ -1,0 +1,69 @@
+{
+  "data": {
+    "citationCount": "2 of 12",
+    "platforms": {
+      "chatgpt": {
+        "cited": false,
+        "citationContext": "0 of 12 questions returned your business name",
+        "score": null
+      },
+      "claude": {
+        "cited": true,
+        "citationContext": "Mentioned in 1 of 12 questions as a secondary option; Listed #6 for 'Who are the best commercial collection agencies in the US?' and Listed #6 for 'Best B2B collection agencies for large commercial claims'",
+        "score": null
+      },
+      "gemini": {
+        "cited": true,
+        "citationContext": "Appeared in a list of 8+ companies with minimal detail; Listed #8 for 'Who are the best commercial collection agencies in the US?'",
+        "score": null
+      },
+      "perplexity": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "copilot": {
+        "cited": false,
+        "citationContext": "0 of 12 questions returned your business name",
+        "score": null
+      }
+    },
+    "disciplineScores": {
+      "aeo": {
+        "score": null,
+        "notes": null
+      },
+      "geo": {
+        "score": null,
+        "notes": null
+      },
+      "aiSeo": {
+        "score": 22,
+        "notes": "Overall AI visibility score of 22 out of 100; business mentioned in only 2 of 12 queries across all platforms with a 4.2% mention rate"
+      },
+      "llmSeo": {
+        "score": null,
+        "notes": null
+      }
+    }
+  },
+  "raw": "{\n  \"citationCount\": \"2 of 12\",\n  \"platforms\": {\n    \"chatgpt\": {\n      \"cited\": false,\n      \"citationContext\": \"0 of 12 questions returned your business name\",\n      \"score\": null\n    },\n    \"claude\": {\n      \"cited\": true,\n      \"citationContext\": \"Mentioned in 1 of 12 questions as a secondary option; Listed #6 for 'Who are the best commercial collection agencies in the US?' and Listed #6 for 'Best B2B collection agencies for large commercial claims'\",\n      \"score\": null\n    },\n    \"gemini\": {\n      \"cited\": true,\n      \"citationContext\": \"Appeared in a list of 8+ companies with minimal detail; Listed #8 for 'Who are the best commercial collection agencies in the US?'\",\n      \"score\": null\n    },\n    \"perplexity\": {\n      \"cited\": null,\n      \"citationContext\": null,\n      \"score\": null\n    },\n    \"copilot\": {\n      \"cited\": false,\n      \"citationContext\": \"0 of 12 questions returned your business name\",\n      \"score\": null\n    }\n  },\n  \"disciplineScores\": {\n    \"aeo\": {\n      \"score\": null,\n      \"notes\": null\n    },\n    \"geo\": {\n      \"score\": null,\n      \"notes\": null\n    },\n    \"aiSeo\": {\n      \"score\": 22,\n      \"notes\": \"Overall AI visibility score of 22 out of 100; business mentioned in only 2 of 12 queries across all platforms with a 4.2% mention rate\"\n    },\n    \"llmSeo\": {\n      \"score\": null,\n      \"notes\": null\n    }\n  }\n}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 1632,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 450,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "ai-platform-detail",
+    "key": "84d1d966957da2db",
+    "capturedAt": "2026-06-16T21:38:41.799Z"
+  }
+}

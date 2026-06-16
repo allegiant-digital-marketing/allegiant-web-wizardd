@@ -12,16 +12,23 @@
   },
   "scripts": {
     "validate:schemas": "node tests/schemas/validate.js",
-    "test:parser": "node tests/parser/test-parser.js",
-    "parser:dump": "node tests/parser/dump-parsed.js",
-    "test": "npm run validate:schemas && npm run test:parser"
+    "test:parser": "cross-env LLM_CACHE_MODE=replay node tests/parser/test-parser.js",
+    "test:parser:live": "cross-env LLM_CACHE_MODE=live node tests/parser/test-parser.js",
+    "test:parser:record": "cross-env LLM_CACHE_MODE=record node tests/parser/test-parser.js",
+    "parser:dump": "cross-env LLM_CACHE_MODE=replay node tests/parser/dump-parsed.js",
+    "parser:dump:record": "cross-env LLM_CACHE_MODE=record node tests/parser/dump-parsed.js",
+    "test": "npm run validate:schemas && npm run test:parser",
+    "test:live": "npm run validate:schemas && npm run test:parser:live"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12"
+    "@anthropic-ai/sdk": "^0.27.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1"
+    "ajv-formats": "^2.1.1",
+    "cross-env": "^7.0.3"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -11,8 +11,16 @@
  *   - AVS score is in 0-100 range OR is correctly null with a warning
  *   - completenessScore is recorded
  *
- * Run: node tests/parser/test-parser.js
+ * Run modes (set via LLM_CACHE_MODE):
+ *   replay (default) — use cached LLM fixtures; fast and free
+ *   record           — hit the live Claude API and capture new fixtures
+ *   live             — hit the live Claude API but do not write fixtures
+ *
+ * Loads a .env file from the repo root if present (so ANTHROPIC_API_KEY can
+ * live there for local dev — never committed; gitignored).
  */
+
+try { require('dotenv').config({ path: require('path').join(__dirname, '..', '..', '.env') }); } catch (_) {}
 
 const fs = require('fs');
 const path = require('path');

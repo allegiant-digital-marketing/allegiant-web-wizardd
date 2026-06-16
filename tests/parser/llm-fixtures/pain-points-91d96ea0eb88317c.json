@@ -1,0 +1,70 @@
+{
+  "data": {
+    "painPoints": [
+      "Overall digital health score is critically low at 32/100, indicating a broadly underperforming digital presence",
+      "Website performance score is only 42/100 on mobile and 53/100 on desktop, well below competitive thresholds",
+      "Mobile page speed is slow with a 4.8s Largest Contentful Paint, risking loss of nearly 40% of visitors before they see content",
+      "SEO health and visibility score is 28/100 with Tucker Albin not appearing in the top 50 organic results for any core commercial collection keywords",
+      "Placeholder content (lorem ipsum) is still visible on the /our-offices page, signaling an incomplete and unprofessional website",
+      "38% duplicate content detected across the site — far above the healthy threshold of under 10% — actively suppressing rankings",
+      "Multiple high-traffic pages including /commercial-debt-recovery (82%) and /ar-management (79%) have extremely high duplication rates",
+      "Missing meta descriptions on multiple key pages including /commercial-debt-recovery, /ar-management, /associations, /contact/, and /our-offices",
+      "Duplicate meta title on /ar-management page (copies the homepage title), confusing search engines about page relevance",
+      "Meta title on /associations page is too long at 78 characters, risking truncation in search results",
+      "Meta title on /contact/ page is too short at 38 characters, underutilizing ranking opportunity",
+      "H1 tag missing on /ar-management and /contact/ pages",
+      "Schema markup is not detected anywhere on the site, reducing eligibility for rich results and AI data extraction",
+      "Canonical tags are only partially implemented — missing on 4 pages — creating potential duplicate content ranking conflicts",
+      "7 broken links (404 errors) detected on the website, harming crawlability and user experience",
+      "12 images are missing alt text, hurting accessibility and image SEO signals",
+      "3 tap target elements are spaced too closely together on mobile, creating usability issues flagged by Google",
+      "AI visibility score is only 15/100 (22/100 in detailed audit), with Tucker Albin mentioned in only 2 of 12 AI queries across all platforms",
+      "Tucker Albin is completely absent from ChatGPT and Microsoft Copilot responses across all 12 tested queries",
+      "Tucker Albin appears only as a secondary or low-ranked option on Claude and Gemini, never as a top recommendation",
+      "Competitors like The Kaplan Group (91.7% mention rate) and Altus Receivables dominate AI recommendations while Tucker Albin has only a 4.2% mention rate",
+      "Thin web presence, limited content authority, and weak structured data are causing AI platforms to exclude Tucker Albin from recommendations",
+      "Social media impact score is only 12/100 — the lowest score in the entire audit",
+      "Facebook page is dormant with infrequent posting and only 569 page likes",
+      "No Instagram profile exists, representing a missed brand presence opportunity",
+      "X (Twitter) profile exists but is inactive with minimal followers",
+      "No YouTube channel exists",
+      "No TikTok profile exists",
+      "Only 4 total posts across all platforms in the last 6 months, with 4 of 6 months having zero posts",
+      "Average posting frequency of only 0.7 posts per month versus a recommended 12–16 per month",
+      "Content types are text-only with no video content produced",
+      "No Google Ads conversion tag or active PPC campaigns detected, meaning Tucker Albin is invisible in paid search while competitors actively bid on target keywords",
+      "No remarketing or display advertising tags detected on the website",
+      "No Meta Pixel installed on the website, preventing Facebook/Instagram ad targeting and retargeting",
+      "No active ads found in the Meta Ad Library — zero paid social advertising presence",
+      "No Google Local Services Ads listing or Google Guaranteed badge detected",
+      "3 of the top 5 competitors are actively running paid ads while Tucker Albin has zero active paid advertising channels",
+      "Google Business Profile rating of 3.9 stars is below key competitors such as The Kaplan Group (4.9), Cedar Financial (4.5), and Prestige Services (4.3)",
+      "Facebook listing has an outdated address, creating NAP inconsistency that confuses search engines",
+      "Apple Maps listing is not claimed, leaving a gap in local directory presence",
+      "Bing Places listing is not claimed, missing a secondary search engine visibility opportunity",
+      "Yellow Pages listing contains outdated information, further undermining NAP consistency",
+      "Only 13 of 37 directory listings are accurate, with the rest needing corrections that are actively undermining local map pack rankings",
+      "No blog or content strategy exists on the website, eliminating a major source of organic traffic and AI training signal",
+      "No paid advertising infrastructure of any kind is in place — no conversion tracking, no pixels, no active campaigns — making it impossible to measure or scale digital marketing ROI"
+    ]
+  },
+  "raw": "{\"painPoints\": [\"Overall digital health score is critically low at 32/100, indicating a broadly underperforming digital presence\",\"Website performance score is only 42/100 on mobile and 53/100 on desktop, well below competitive thresholds\",\"Mobile page speed is slow with a 4.8s Largest Contentful Paint, risking loss of nearly 40% of visitors before they see content\",\"SEO health and visibility score is 28/100 with Tucker Albin not appearing in the top 50 organic results for any core commercial collection keywords\",\"Placeholder content (lorem ipsum) is still visible on the /our-offices page, signaling an incomplete and unprofessional website\",\"38% duplicate content detected across the site — far above the healthy threshold of under 10% — actively suppressing rankings\",\"Multiple high-traffic pages including /commercial-debt-recovery (82%) and /ar-management (79%) have extremely high duplication rates\",\"Missing meta descriptions on multiple key pages including /commercial-debt-recovery, /ar-management, /associations, /contact/, and /our-offices\",\"Duplicate meta title on /ar-management page (copies the homepage title), confusing search engines about page relevance\",\"Meta title on /associations page is too long at 78 characters, risking truncation in search results\",\"Meta title on /contact/ page is too short at 38 characters, underutilizing ranking opportunity\",\"H1 tag missing on /ar-management and /contact/ pages\",\"Schema markup is not detected anywhere on the site, reducing eligibility for rich results and AI data extraction\",\"Canonical tags are only partially implemented — missing on 4 pages — creating potential duplicate content ranking conflicts\",\"7 broken links (404 errors) detected on the website, harming crawlability and user experience\",\"12 images are missing alt text, hurting accessibility and image SEO signals\",\"3 tap target elements are spaced too closely together on mobile, creating usability issues flagged by Google\",\"AI visibility score is only 15/100 (22/100 in detailed audit), with Tucker Albin mentioned in only 2 of 12 AI queries across all platforms\",\"Tucker Albin is completely absent from ChatGPT and Microsoft Copilot responses across all 12 tested queries\",\"Tucker Albin appears only as a secondary or low-ranked option on Claude and Gemini, never as a top recommendation\",\"Competitors like The Kaplan Group (91.7% mention rate) and Altus Receivables dominate AI recommendations while Tucker Albin has only a 4.2% mention rate\",\"Thin web presence, limited content authority, and weak structured data are causing AI platforms to exclude Tucker Albin from recommendations\",\"Social media impact score is only 12/100 — the lowest score in the entire audit\",\"Facebook page is dormant with infrequent posting and only 569 page likes\",\"No Instagram profile exists, representing a missed brand presence opportunity\",\"X (Twitter) profile exists but is inactive with minimal followers\",\"No YouTube channel exists\",\"No TikTok profile exists\",\"Only 4 total posts across all platforms in the last 6 months, with 4 of 6 months having zero posts\",\"Average posting frequency of only 0.7 posts per month versus a recommended 12–16 per month\",\"Content types are text-only with no video content produced\",\"No Google Ads conversion tag or active PPC campaigns detected, meaning Tucker Albin is invisible in paid search while competitors actively bid on target keywords\",\"No remarketing or display advertising tags detected on the website\",\"No Meta Pixel installed on the website, preventing Facebook/Instagram ad targeting and retargeting\",\"No active ads found in the Meta Ad Library — zero paid social advertising presence\",\"No Google Local Services Ads listing or Google Guaranteed badge detected\",\"3 of the top 5 competitors are actively running paid ads while Tucker Albin has zero active paid advertising channels\",\"Google Business Profile rating of 3.9 stars is below key competitors such as The Kaplan Group (4.9), Cedar Financial (4.5), and Prestige Services (4.3)\",\"Facebook listing has an outdated address, creating NAP inconsistency that confuses search engines\",\"Apple Maps listing is not claimed, leaving a gap in local directory presence\",\"Bing Places listing is not claimed, missing a secondary search engine visibility opportunity\",\"Yellow Pages listing contains outdated information, further undermining NAP consistency\",\"Only 13 of 37 directory listings are accurate, with the rest needing corrections that are actively undermining local map pack rankings\",\"No blog or content strategy exists on the website, eliminating a major source of organic traffic and AI training signal\",\"No paid advertising infrastructure of any kind is in place — no conversion tracking, no pixels, no active campaigns — making it impossible to measure or scale digital marketing ROI\"]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 6562,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1060,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "pain-points",
+    "key": "91d96ea0eb88317c",
+    "capturedAt": "2026-06-16T21:38:11.715Z"
+  }
+}

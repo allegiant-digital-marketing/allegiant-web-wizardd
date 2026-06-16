@@ -1,0 +1,61 @@
+{
+  "data": {
+    "targetLocations": [
+      {
+        "name": "Dallas",
+        "tier": "primary",
+        "context": "Headquarters market for Tucker Albin; primary service footprint for competitive analysis and localized SEO",
+        "parentRegion": "Dallas/Richardson, TX"
+      },
+      {
+        "name": "Richardson",
+        "tier": "primary",
+        "context": "HQ location for Tucker Albin; explicitly listed as primary service footprint",
+        "parentRegion": "Dallas/Richardson, TX"
+      },
+      {
+        "name": "Chicago",
+        "tier": "primary",
+        "context": "Office location listed as primary service footprint for Tucker Albin",
+        "parentRegion": "Illinois"
+      },
+      {
+        "name": "Denver",
+        "tier": "primary",
+        "context": "Office location listed as primary service footprint for Tucker Albin",
+        "parentRegion": "Colorado"
+      },
+      {
+        "name": "New Orleans",
+        "tier": "primary",
+        "context": "Office location listed as primary service footprint for Tucker Albin",
+        "parentRegion": "Louisiana"
+      },
+      {
+        "name": "National (USA)",
+        "tier": "primary",
+        "context": "Tucker Albin operates nationally; 156K+ monthly searches nationwide for commercial debt recovery services",
+        "parentRegion": null
+      }
+    ]
+  },
+  "raw": "{\"targetLocations\": [{\"name\": \"Dallas\", \"tier\": \"primary\", \"context\": \"Headquarters market for Tucker Albin; primary service footprint for competitive analysis and localized SEO\", \"parentRegion\": \"Dallas/Richardson, TX\"}, {\"name\": \"Richardson\", \"tier\": \"primary\", \"context\": \"HQ location for Tucker Albin; explicitly listed as primary service footprint\", \"parentRegion\": \"Dallas/Richardson, TX\"}, {\"name\": \"Chicago\", \"tier\": \"primary\", \"context\": \"Office location listed as primary service footprint for Tucker Albin\", \"parentRegion\": \"Illinois\"}, {\"name\": \"Denver\", \"tier\": \"primary\", \"context\": \"Office location listed as primary service footprint for Tucker Albin\", \"parentRegion\": \"Colorado\"}, {\"name\": \"New Orleans\", \"tier\": \"primary\", \"context\": \"Office location listed as primary service footprint for Tucker Albin\", \"parentRegion\": \"Louisiana\"}, {\"name\": \"National (USA)\", \"tier\": \"primary\", \"context\": \"Tucker Albin operates nationally; 156K+ monthly searches nationwide for commercial debt recovery services\", \"parentRegion\": null}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 5966,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 270,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-locations",
+    "key": "051b35648f1a93a0",
+    "capturedAt": "2026-06-16T21:37:45.710Z"
+  }
+}

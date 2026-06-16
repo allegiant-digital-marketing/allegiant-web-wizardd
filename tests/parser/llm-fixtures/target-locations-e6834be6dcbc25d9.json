@@ -1,0 +1,109 @@
+{
+  "data": {
+    "targetLocations": [
+      {
+        "name": "Houston",
+        "tier": "primary",
+        "context": "One of Armstrong's two physical service center locations and primary anchor market; highest keyword volume and competitive analysis focus",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Austin",
+        "tier": "primary",
+        "context": "Armstrong's second physical service center and branch market; co-equal anchor market for service pages, GBP, and paid stack",
+        "parentRegion": "Austin, TX"
+      },
+      {
+        "name": "Victoria",
+        "tier": "secondary",
+        "context": "Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "Beaumont",
+        "tier": "secondary",
+        "context": "Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "San Antonio",
+        "tier": "secondary",
+        "context": "Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "Killeen",
+        "tier": "secondary",
+        "context": "Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "Galleria",
+        "tier": "tertiary",
+        "context": "Named Houston hotel corridor submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Medical Center",
+        "tier": "tertiary",
+        "context": "Named Houston hotel and healthcare corridor; Texas Medical Center is the largest medical district in the world and a key submarket for healthcare F&B buyer segment",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Downtown Houston",
+        "tier": "tertiary",
+        "context": "Named hotel corridor submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Houston Airport Corridor",
+        "tier": "tertiary",
+        "context": "Named hotel corridor submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Downtown Austin",
+        "tier": "tertiary",
+        "context": "Named hotel submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Austin, TX"
+      },
+      {
+        "name": "South Congress",
+        "tier": "tertiary",
+        "context": "Named Austin hotel submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Austin, TX"
+      },
+      {
+        "name": "Domain",
+        "tier": "tertiary",
+        "context": "Named Austin hotel and tech-corridor submarket relevant to hospitality F&B and corporate facilities buyer segments",
+        "parentRegion": "Austin, TX"
+      },
+      {
+        "name": "Bee Cave",
+        "tier": "tertiary",
+        "context": "Named Austin-area hotel submarket relevant to hospitality F&B buyer segment",
+        "parentRegion": "Austin, TX"
+      }
+    ]
+  },
+  "raw": "{\"targetLocations\":[{\"name\":\"Houston\",\"tier\":\"primary\",\"context\":\"One of Armstrong's two physical service center locations and primary anchor market; highest keyword volume and competitive analysis focus\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Austin\",\"tier\":\"primary\",\"context\":\"Armstrong's second physical service center and branch market; co-equal anchor market for service pages, GBP, and paid stack\",\"parentRegion\":\"Austin, TX\"},{\"name\":\"Victoria\",\"tier\":\"secondary\",\"context\":\"Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas\",\"parentRegion\":\"Texas\"},{\"name\":\"Beaumont\",\"tier\":\"secondary\",\"context\":\"Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas\",\"parentRegion\":\"Texas\"},{\"name\":\"San Antonio\",\"tier\":\"secondary\",\"context\":\"Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas\",\"parentRegion\":\"Texas\"},{\"name\":\"Killeen\",\"tier\":\"secondary\",\"context\":\"Listed as part of Armstrong's documented field coverage footprint across South-Central and Southeast Texas\",\"parentRegion\":\"Texas\"},{\"name\":\"Galleria\",\"tier\":\"tertiary\",\"context\":\"Named Houston hotel corridor submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Medical Center\",\"tier\":\"tertiary\",\"context\":\"Named Houston hotel and healthcare corridor; Texas Medical Center is the largest medical district in the world and a key submarket for healthcare F&B buyer segment\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Downtown Houston\",\"tier\":\"tertiary\",\"context\":\"Named hotel corridor submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Houston Airport Corridor\",\"tier\":\"tertiary\",\"context\":\"Named hotel corridor submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Downtown Austin\",\"tier\":\"tertiary\",\"context\":\"Named hotel submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Austin, TX\"},{\"name\":\"South Congress\",\"tier\":\"tertiary\",\"context\":\"Named Austin hotel submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Austin, TX\"},{\"name\":\"Domain\",\"tier\":\"tertiary\",\"context\":\"Named Austin hotel and tech-corridor submarket relevant to hospitality F&B and corporate facilities buyer segments\",\"parentRegion\":\"Austin, TX\"},{\"name\":\"Bee Cave\",\"tier\":\"tertiary\",\"context\":\"Named Austin-area hotel submarket relevant to hospitality F&B buyer segment\",\"parentRegion\":\"Austin, TX\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 10398,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 567,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-locations",
+    "key": "e6834be6dcbc25d9",
+    "capturedAt": "2026-06-16T21:39:49.489Z"
+  }
+}

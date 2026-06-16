@@ -1,0 +1,136 @@
+{
+  "data": {
+    "currentDigitalPresence": {
+      "website": {
+        "url": "https://evolveatx.com",
+        "lcpDesktopSeconds": 0.7,
+        "lcpMobileSeconds": 8.4,
+        "knownIssues": [
+          "Mobile performance score 31/100",
+          "Desktop performance score 59/100",
+          "Homepage loads ~62 MB of uncompressed images and heavy scripts",
+          "Mobile LCP 8.4 seconds, TBT 16.2 seconds",
+          "No H1 headings on key pages or decorative H1s pulled from sliders",
+          "Meta titles missing geo modifier (Austin) across all pages",
+          "Several meta descriptions auto-pulled or too long",
+          "Image and asset optimization missing — no modern formats, uncompressed",
+          "Running deprecated Universal Analytics instead of GA4",
+          "No Google Ads conversion tag on the website"
+        ]
+      },
+      "reviews": {
+        "googleRating": 4.9,
+        "googleReviewCount": 289,
+        "yelp": {
+          "verified": true,
+          "visibleReviewCount": null,
+          "knownIssues": []
+        },
+        "bbb": {
+          "present": null,
+          "rating": null,
+          "knownIssues": []
+        }
+      },
+      "social": {
+        "facebook": {
+          "url": null,
+          "followers": 2021,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "active",
+          "knownIssues": [
+            "No paid ads running",
+            "Serves only as secondary channel",
+            "Check-ins: 1,045 but no paid amplification"
+          ]
+        },
+        "instagram": {
+          "url": null,
+          "followers": 5418,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "active",
+          "knownIssues": [
+            "No paid amplification despite active organic presence",
+            "No short-form video content",
+            "Organic reach not being converted to booked sessions"
+          ]
+        },
+        "nextdoor": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": []
+        },
+        "linkedin": {
+          "url": null,
+          "followers": 52,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "dormant",
+          "knownIssues": [
+            "Account claimed but inactive"
+          ]
+        },
+        "tiktok": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No profile detected despite high opportunity for wellness content"
+          ]
+        },
+        "youtube": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No channel detected — recovery and education video opportunity untapped"
+          ]
+        }
+      },
+      "paidMedia": {
+        "googleAds": {
+          "active": false,
+          "notes": "No Google Ads conversion tag on website, no active search ads for target keywords (0 paid keywords), no remarketing or display tags detected, running deprecated Universal Analytics instead of GA4"
+        },
+        "localServiceAds": {
+          "present": false,
+          "competitorsHoldingSlots": []
+        }
+      }
+    }
+  },
+  "raw": "{\n  \"currentDigitalPresence\": {\n    \"website\": {\n      \"url\": \"https://evolveatx.com\",\n      \"lcpDesktopSeconds\": 0.7,\n      \"lcpMobileSeconds\": 8.4,\n      \"knownIssues\": [\n        \"Mobile performance score 31/100\",\n        \"Desktop performance score 59/100\",\n        \"Homepage loads ~62 MB of uncompressed images and heavy scripts\",\n        \"Mobile LCP 8.4 seconds, TBT 16.2 seconds\",\n        \"No H1 headings on key pages or decorative H1s pulled from sliders\",\n        \"Meta titles missing geo modifier (Austin) across all pages\",\n        \"Several meta descriptions auto-pulled or too long\",\n        \"Image and asset optimization missing — no modern formats, uncompressed\",\n        \"Running deprecated Universal Analytics instead of GA4\",\n        \"No Google Ads conversion tag on the website\"\n      ]\n    },\n    \"reviews\": {\n      \"googleRating\": 4.9,\n      \"googleReviewCount\": 289,\n      \"yelp\": {\n        \"verified\": true,\n        \"visibleReviewCount\": null,\n        \"knownIssues\": []\n      },\n      \"bbb\": {\n        \"present\": null,\n        \"rating\": null,\n        \"knownIssues\": []\n      }\n    },\n    \"social\": {\n      \"facebook\": {\n        \"url\": null,\n        \"followers\": 2021,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"active\",\n        \"knownIssues\": [\n          \"No paid ads running\",\n          \"Serves only as secondary channel\",\n          \"Check-ins: 1,045 but no paid amplification\"\n        ]\n      },\n      \"instagram\": {\n        \"url\": null,\n        \"followers\": 5418,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"active\",\n        \"knownIssues\": [\n          \"No paid amplification despite active organic presence\",\n          \"No short-form video content\",\n          \"Organic reach not being converted to booked sessions\"\n        ]\n      },\n      \"nextdoor\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": []\n      },\n      \"linkedin\": {\n        \"url\": null,\n        \"followers\": 52,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"dormant\",\n        \"knownIssues\": [\n          \"Account claimed but inactive\"\n        ]\n      },\n      \"tiktok\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No profile detected despite high opportunity for wellness content\"\n        ]\n      },\n      \"youtube\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No channel detected — recovery and education video opportunity untapped\"\n        ]\n      }\n    },\n    \"paidMedia\": {\n      \"googleAds\": {\n        \"active\": false,\n        \"notes\": \"No Google Ads conversion tag on website, no active search ads for target keywords (0 paid keywords), no remarketing or display tags detected, running deprecated Universal Analytics instead of GA4\"\n      },\n      \"localServiceAds\": {\n        \"present\": false,\n        \"competitorsHoldingSlots\": []\n      }\n    }\n  }\n}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 3773,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1007,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "digital-presence-detail",
+    "key": "d626ae1ebf97ec82",
+    "capturedAt": "2026-06-16T21:37:18.835Z"
+  }
+}

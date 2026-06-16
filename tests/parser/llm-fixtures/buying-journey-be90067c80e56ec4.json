@@ -1,0 +1,58 @@
+{
+  "data": {
+    "buyingJourney": {
+      "stages": [
+        {
+          "step": 1,
+          "name": "Equipment fails — search and dispatch",
+          "description": "Walk-in fails at lunch rush, fryer down at dinner service, banquet equipment fails 90 minutes before an event. Operator pulls phone, searches 'commercial appliance repair [city]' or 'near me,' dispatches the first credible local result with visible 24/7 capability.",
+          "channels": [
+            "Google Search",
+            "Google Business Profile / Maps"
+          ]
+        },
+        {
+          "step": 2,
+          "name": "Evaluate & verify the partner",
+          "description": "For contract renewal, new vendor onboarding, or procurement evaluation: the buyer crosses references with peers, checks OEM authorizations, verifies CFESA / district-approved status, scans Google reviews and BBB. Three to five vendors are short-listed before any phone calls.",
+          "channels": [
+            "Google Search",
+            "Google Business Profile / Maps",
+            "Industry Directories",
+            "Peer references",
+            "LinkedIn"
+          ]
+        },
+        {
+          "step": 3,
+          "name": "Validate scale & consolidate",
+          "description": "For multi-unit operators and large institutional buyers: validation moves to LinkedIn (company size, leadership credentials), industry directories (CFESA member list, NRA member directories), and increasingly AI platforms ('best commercial kitchen repair company Houston'). One vendor across the portfolio wins the consolidation.",
+          "channels": [
+            "LinkedIn",
+            "Industry Directories",
+            "AI Platforms"
+          ]
+        }
+      ]
+    }
+  },
+  "raw": "{\"buyingJourney\":{\"stages\":[{\"step\":1,\"name\":\"Equipment fails — search and dispatch\",\"description\":\"Walk-in fails at lunch rush, fryer down at dinner service, banquet equipment fails 90 minutes before an event. Operator pulls phone, searches 'commercial appliance repair [city]' or 'near me,' dispatches the first credible local result with visible 24/7 capability.\",\"channels\":[\"Google Search\",\"Google Business Profile / Maps\"]},{\"step\":2,\"name\":\"Evaluate & verify the partner\",\"description\":\"For contract renewal, new vendor onboarding, or procurement evaluation: the buyer crosses references with peers, checks OEM authorizations, verifies CFESA / district-approved status, scans Google reviews and BBB. Three to five vendors are short-listed before any phone calls.\",\"channels\":[\"Google Search\",\"Google Business Profile / Maps\",\"Industry Directories\",\"Peer references\",\"LinkedIn\"]},{\"step\":3,\"name\":\"Validate scale & consolidate\",\"description\":\"For multi-unit operators and large institutional buyers: validation moves to LinkedIn (company size, leadership credentials), industry directories (CFESA member list, NRA member directories), and increasingly AI platforms ('best commercial kitchen repair company Houston'). One vendor across the portfolio wins the consolidation.\",\"channels\":[\"LinkedIn\",\"Industry Directories\",\"AI Platforms\"]}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 6248,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 300,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "buying-journey",
+    "key": "be90067c80e56ec4",
+    "capturedAt": "2026-06-16T21:40:52.810Z"
+  }
+}

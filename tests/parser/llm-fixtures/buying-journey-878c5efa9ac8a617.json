@@ -1,0 +1,61 @@
+{
+  "data": {
+    "buyingJourney": {
+      "stages": [
+        {
+          "step": 1,
+          "name": "Search & Discover",
+          "description": "The problem hits. They go to Google or AI platforms and search for immediate solutions. SEO, PPC, and LSAs determine who gets seen first.",
+          "channels": [
+            "Google Search",
+            "PPC",
+            "Local Service Ads",
+            "AI Platforms"
+          ]
+        },
+        {
+          "step": 2,
+          "name": "Evaluate & Compare",
+          "description": "They check reviews, scan your website, compare you against 2–3 competitors. Review volume, rating, and website quality win or lose the job.",
+          "channels": [
+            "Google Reviews",
+            "BBB",
+            "Clutch",
+            "Company Website"
+          ]
+        },
+        {
+          "step": 3,
+          "name": "Validate & Decide",
+          "description": "Before calling, many check social media for recent activity, look for industry peer recommendations, or ask AI for a second opinion.",
+          "channels": [
+            "LinkedIn",
+            "Facebook",
+            "AI Platforms",
+            "Industry Directories",
+            "Peer Networks"
+          ]
+        }
+      ]
+    }
+  },
+  "raw": "{\"buyingJourney\": {\"stages\": [{\"step\": 1, \"name\": \"Search & Discover\", \"description\": \"The problem hits. They go to Google or AI platforms and search for immediate solutions. SEO, PPC, and LSAs determine who gets seen first.\", \"channels\": [\"Google Search\", \"PPC\", \"Local Service Ads\", \"AI Platforms\"]}, {\"step\": 2, \"name\": \"Evaluate & Compare\", \"description\": \"They check reviews, scan your website, compare you against 2–3 competitors. Review volume, rating, and website quality win or lose the job.\", \"channels\": [\"Google Reviews\", \"BBB\", \"Clutch\", \"Company Website\"]}, {\"step\": 3, \"name\": \"Validate & Decide\", \"description\": \"Before calling, many check social media for recent activity, look for industry peer recommendations, or ask AI for a second opinion.\", \"channels\": [\"LinkedIn\", \"Facebook\", \"AI Platforms\", \"Industry Directories\", \"Peer Networks\"]}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 4173,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 232,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "buying-journey",
+    "key": "878c5efa9ac8a617",
+    "capturedAt": "2026-06-16T21:38:34.847Z"
+  }
+}

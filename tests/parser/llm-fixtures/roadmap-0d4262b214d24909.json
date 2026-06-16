@@ -1,0 +1,97 @@
+{
+  "data": {
+    "roadmap": {
+      "phases": [
+        {
+          "phase": 1,
+          "title": "Foundation Fix, Claim, Cleanse",
+          "description": "Days 1–30. Quick wins that recover local search visibility and create the surface paid spend will land on. Includes deploying structured data (LocalBusiness + Organization + Service JSON-LD) across all pages, fixing page titles and meta descriptions, creating and verifying the Austin Google Business Profile, optimizing the Houston GBP, cleaning up NAP inconsistencies across all directories, fixing the mobile contact page rendering bug, and deploying CallRail for inbound attribution."
+        },
+        {
+          "phase": 2,
+          "title": "Growth — Service Pages, Reviews, LinkedIn Cadence",
+          "description": "Days 31–60. Activate the content and reputation surface that converts paid traffic. Includes building service-specific pages (fryer, walk-in cooler, ice machine, oven, dishwasher, ventilation repair), geography pages for Houston and Austin metros and named submarkets, launching a review velocity program targeting 3–5 new Google reviews per month at Houston GBP and 10–15 first reviews at Austin GBP, rebuilding organic LinkedIn with weekly posting cadence targeting 23 to 250+ followers, surfacing AI visibility credentials (CFESA, Manitowoc STAR, Blue Book, FER) with schema markup, and optimizing images and page speed."
+        },
+        {
+          "phase": 3,
+          "title": "Scale — Paid Stack, Link Velocity, Content Cadence",
+          "description": "Days 61–90. Turn on the LinkedIn-led B2B paid engine and the compounding authority program. Includes launching LinkedIn Ads (45% of paid budget) with Sponsored Content and Sponsored InMail targeted to six buyer profiles, Microsoft Ads with LinkedIn audience overlay (30%), ChatGPT Ads pilot (15%) targeting buyer-question vocabulary, Reddit Ads pilot (10%) across niche foodservice and facilities subreddits, a link-building campaign to close the Authority Score gap from 8 toward the 21–28 independent ceiling within 12 months, monthly content publishing with Meta retargeting, and weekly performance benchmarking with monthly OMNIVIZ composite re-scoring."
+        }
+      ],
+      "packages": [
+        {
+          "tier": "A",
+          "name": "L1 Foundation",
+          "services": [
+            "Citation cleanup",
+            "NAP consistency across 50+ directories",
+            "Industry-directory placements (CFESA, Blue Book, FER)",
+            "Manufacturer dealer-locator verification (Manitowoc STAR / Montague / Moffat / Belshaw)",
+            "~5–10 new referring domains per month"
+          ],
+          "zoneAdjustment": "$500–$1,000 / month"
+        },
+        {
+          "tier": "B",
+          "name": "L2 Builder",
+          "services": [
+            "All L1 Foundation services",
+            "Manufacturer-partner content syndication",
+            "K-12 supplier directory placements",
+            "Association memberships (Texas Restaurant Association, regional food-service operator networks)",
+            "Targeted guest content",
+            "~15–25 new referring domains per month"
+          ],
+          "zoneAdjustment": "$1,500–$2,500 / month"
+        },
+        {
+          "tier": "C",
+          "name": "L3 Accelerator",
+          "services": [
+            "All L2 Builder services",
+            "Digital PR outreach",
+            "Trade-publication placements (FER, RFB, FCSI)",
+            "Thought-leadership ghostwriting",
+            "Case-study syndication",
+            "Podcast booking",
+            "~30–50 new referring domains per month"
+          ],
+          "zoneAdjustment": "$3,000–$5,000 / month"
+        },
+        {
+          "tier": "D",
+          "name": "L4 Dominator",
+          "services": [
+            "All L3 Accelerator services",
+            "Premium digital PR",
+            "White-glove media outreach",
+            "Exclusive partnership-content placements",
+            "Executive-bylined trade publications",
+            "Conference-speaker positioning",
+            "~50–100+ new referring domains per month"
+          ],
+          "zoneAdjustment": "$6,000–$10,000 / month"
+        }
+      ]
+    }
+  },
+  "raw": "{\"roadmap\": {\"phases\": [{\"phase\": 1, \"title\": \"Foundation Fix, Claim, Cleanse\", \"description\": \"Days 1–30. Quick wins that recover local search visibility and create the surface paid spend will land on. Includes deploying structured data (LocalBusiness + Organization + Service JSON-LD) across all pages, fixing page titles and meta descriptions, creating and verifying the Austin Google Business Profile, optimizing the Houston GBP, cleaning up NAP inconsistencies across all directories, fixing the mobile contact page rendering bug, and deploying CallRail for inbound attribution.\"}, {\"phase\": 2, \"title\": \"Growth — Service Pages, Reviews, LinkedIn Cadence\", \"description\": \"Days 31–60. Activate the content and reputation surface that converts paid traffic. Includes building service-specific pages (fryer, walk-in cooler, ice machine, oven, dishwasher, ventilation repair), geography pages for Houston and Austin metros and named submarkets, launching a review velocity program targeting 3–5 new Google reviews per month at Houston GBP and 10–15 first reviews at Austin GBP, rebuilding organic LinkedIn with weekly posting cadence targeting 23 to 250+ followers, surfacing AI visibility credentials (CFESA, Manitowoc STAR, Blue Book, FER) with schema markup, and optimizing images and page speed.\"}, {\"phase\": 3, \"title\": \"Scale — Paid Stack, Link Velocity, Content Cadence\", \"description\": \"Days 61–90. Turn on the LinkedIn-led B2B paid engine and the compounding authority program. Includes launching LinkedIn Ads (45% of paid budget) with Sponsored Content and Sponsored InMail targeted to six buyer profiles, Microsoft Ads with LinkedIn audience overlay (30%), ChatGPT Ads pilot (15%) targeting buyer-question vocabulary, Reddit Ads pilot (10%) across niche foodservice and facilities subreddits, a link-building campaign to close the Authority Score gap from 8 toward the 21–28 independent ceiling within 12 months, monthly content publishing with Meta retargeting, and weekly performance benchmarking with monthly OMNIVIZ composite re-scoring.\"}], \"packages\": [{\"tier\": \"A\", \"name\": \"L1 Foundation\", \"services\": [\"Citation cleanup\", \"NAP consistency across 50+ directories\", \"Industry-directory placements (CFESA, Blue Book, FER)\", \"Manufacturer dealer-locator verification (Manitowoc STAR / Montague / Moffat / Belshaw)\", \"~5–10 new referring domains per month\"], \"zoneAdjustment\": \"$500–$1,000 / month\"}, {\"tier\": \"B\", \"name\": \"L2 Builder\", \"services\": [\"All L1 Foundation services\", \"Manufacturer-partner content syndication\", \"K-12 supplier directory placements\", \"Association memberships (Texas Restaurant Association, regional food-service operator networks)\", \"Targeted guest content\", \"~15–25 new referring domains per month\"], \"zoneAdjustment\": \"$1,500–$2,500 / month\"}, {\"tier\": \"C\", \"name\": \"L3 Accelerator\", \"services\": [\"All L2 Builder services\", \"Digital PR outreach\", \"Trade-publication placements (FER, RFB, FCSI)\", \"Thought-leadership ghostwriting\", \"Case-study syndication\", \"Podcast booking\", \"~30–50 new referring domains per month\"], \"zoneAdjustment\": \"$3,000–$5,000 / month\"}, {\"tier\": \"D\", \"name\": \"L4 Dominator\", \"services\": [\"All L3 Accelerator services\", \"Premium digital PR\", \"White-glove media outreach\", \"Exclusive partnership-content placements\", \"Executive-bylined trade publications\", \"Conference-speaker positioning\", \"~50–100+ new referring domains per month\"], \"zoneAdjustment\": \"$6,000–$10,000 / month\"}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 4385,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 923,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "roadmap",
+    "key": "0d4262b214d24909",
+    "capturedAt": "2026-06-16T21:40:43.734Z"
+  }
+}

@@ -80,8 +80,8 @@ allegiant-web-wizardd/
 
 - Node.js 18+
 - A Netlify account with access to the `allegiantdigitalmarketing` team
-- An Anthropic API key (committed to Netlify env vars, never to the repo)
-- A SERP API key (Serper.dev recommended for v1; committed to Netlify env vars)
+- An Anthropic API key (from `console.anthropic.com`) — used for LLM-based extraction in the parser
+- A SERP API key (Serper.dev recommended for v1) — used by Layer 2 (Research), not required for Phase 1
 
 ### Install dependencies
 
@@ -89,29 +89,60 @@ allegiant-web-wizardd/
 npm install
 ```
 
-### Validate schemas
+### Set up local environment
 
-The validator must pass before any schema or example change is committed:
+The repo includes `.env.example`. Copy it and fill in your Anthropic API key:
+
+```bash
+cp .env.example .env
+# Open .env and replace the ANTHROPIC_API_KEY placeholder with your real key
+# .env is gitignored — it must never be committed
+```
+
+### Run the test suite
+
+The test suite runs **schema validation + parser tests** in cached-replay mode by default. Fast, free, deterministic.
+
+```bash
+npm test
+```
+
+Expected output: `All schemas + examples passed validation.` and `All parser fixtures passed.`
+
+### LLM fixture modes
+
+The parser includes 9 LLM extraction tasks that turn the regex-extracted scaffolding into a fully-enriched A.R.C. record. Their responses are cached as fixtures in `tests/parser/llm-fixtures/`. You control caching via the `LLM_CACHE_MODE` env var, but the most common usage is via npm scripts:
+
+| Command | Mode | What it does | Cost |
+| --- | --- | --- | --- |
+| `npm test` | replay | Default — uses cached fixtures, never calls Claude | Free |
+| `npm run test:live` | live | Calls Claude on every task, doesn't update cache | ~$1-2 per full run |
+| `npm run parser:dump:record` | record | Calls Claude on every task, writes new fixtures | ~$2 per full record run |
+
+You record fixtures once when you add new A.R.C. fixtures or change a prompt. After that, daily development is free.
+
+### Validate schemas only
 
 ```bash
 npm run validate:schemas
 ```
 
-Expected output:
+### Regenerate parsed outputs
 
+```bash
+npm run parser:dump
 ```
-✓ PASS  A.R.C. extraction · Kirchner Electric
-✓ PASS  Intake form · Kirchner Electric
-All schemas + examples passed validation.
-```
+
+This writes parsed JSON to `tests/parser/parsed-output/` for visual inspection.
 
 ### Environment variables (set in Netlify, never committed)
 
 ```
 ANTHROPIC_API_KEY=...
-SERPER_API_KEY=...
+WIZARDD_LLM_MODEL=claude-sonnet-4-6    # optional override
+SERPER_API_KEY=...                       # for Layer 2 (Research)
 NETLIFY_IDENTITY_ALLOWED_DOMAIN=allegiantdigital.com
-PREVIEW_TOKEN_SECRET=...      # for signing one-time partner preview URLs
+PREVIEW_TOKEN_SECRET=...                 # for signing partner preview URLs
 ```
 
 ---

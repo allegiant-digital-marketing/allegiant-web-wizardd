@@ -1,0 +1,120 @@
+{
+  "data": {
+    "targetServices": [
+      {
+        "name": "Generator Installation (Generac Standby & Portable Interlock)",
+        "shortName": "Generator Install",
+        "personaIds": [
+          "P1"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "6,050/mo panel+generator cluster; Mister Sparky and A1 Plus currently capture LSA stack; Kirchner not ranking in top 100 for 'generator installation houston' (880/mo)"
+      },
+      {
+        "name": "200-Amp Electrical Panel Upgrade",
+        "shortName": "Panel Upgrade",
+        "personaIds": [
+          "P2",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "'panel upgrade houston' 1,300/mo; Kirchner not in top 100; A1 Plus and Mister Sparky dominate paid and organic; high-CPC, high-intent category"
+      },
+      {
+        "name": "Federal Pacific Panel Replacement (FPE Stab-Lok)",
+        "shortName": "FPE Replacement",
+        "personaIds": [
+          "P2"
+        ],
+        "priority": "high",
+        "competitiveContext": "Insurance- and inspection-driven demand; 210/mo search volume; Kirchner not ranking; specialty signal differentiates from generalist competitors"
+      },
+      {
+        "name": "EV Charger Installation (Tesla Wall Connector & Universal Level 2)",
+        "shortName": "EV Charger Install",
+        "personaIds": [
+          "P3"
+        ],
+        "priority": "growth",
+        "competitiveContext": "'ev charger installation cypress' 320/mo, 'tesla wall connector installation' 260/mo; Kirchner not ranking; manufacturer locator referrals available; mobile-first buyer segment"
+      },
+      {
+        "name": "Aluminum Wiring Remediation",
+        "shortName": "Aluminum Wiring",
+        "personaIds": [
+          "P2"
+        ],
+        "priority": "medium",
+        "competitiveContext": "Cypress 1980s-build inventory drives demand; 140/mo search volume; specialty service with low competitor content depth"
+      },
+      {
+        "name": "Whole-Home Surge Protection",
+        "shortName": "Surge Protection",
+        "personaIds": [
+          "P1",
+          "P2"
+        ],
+        "priority": "medium",
+        "competitiveContext": "Bundled with generator and panel upgrade jobs; limited standalone competitor content; upsell opportunity on high-ticket installs"
+      },
+      {
+        "name": "Emergency Electrical Services (24-Hour)",
+        "shortName": "Emergency Electric",
+        "personaIds": [
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "'emergency electrician houston' 480/mo; LSA pack is primary discovery surface; A1 Plus and Mister Sparky hold LSA slots #1 and #2; Kirchner not enrolled"
+      },
+      {
+        "name": "Residential Electrical Services (General)",
+        "shortName": "Residential Electric",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "Core electrician cluster 45,220/mo; Kirchner ranks for 0 non-branded terms; JR Electrical, A1 Plus, Mister Sparky, Abacus, and RHK capture all non-branded traffic"
+      },
+      {
+        "name": "Remodel & Addition Electrical (Pool, Addition, Multi-Phase Projects)",
+        "shortName": "Remodel Electric",
+        "personaIds": [
+          "P5"
+        ],
+        "priority": "medium",
+        "competitiveContext": "GC-referral-driven; Houzz and project portfolio visibility required; schedule reliability is primary differentiator over price"
+      },
+      {
+        "name": "Commercial Electrical Services (Small Commercial & Property Management)",
+        "shortName": "Commercial Electric",
+        "personaIds": [
+          "P6"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "90+ day evaluation cycle; LinkedIn and COI/reference vetting required; no current commercial-track service pages or LinkedIn presence; highest LTV persona currently unaddressed digitally"
+      }
+    ]
+  },
+  "raw": "{\"targetServices\":[{\"name\":\"Generator Installation (Generac Standby & Portable Interlock)\",\"shortName\":\"Generator Install\",\"personaIds\":[\"P1\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"6,050/mo panel+generator cluster; Mister Sparky and A1 Plus currently capture LSA stack; Kirchner not ranking in top 100 for 'generator installation houston' (880/mo)\"},{\"name\":\"200-Amp Electrical Panel Upgrade\",\"shortName\":\"Panel Upgrade\",\"personaIds\":[\"P2\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"'panel upgrade houston' 1,300/mo; Kirchner not in top 100; A1 Plus and Mister Sparky dominate paid and organic; high-CPC, high-intent category\"},{\"name\":\"Federal Pacific Panel Replacement (FPE Stab-Lok)\",\"shortName\":\"FPE Replacement\",\"personaIds\":[\"P2\"],\"priority\":\"high\",\"competitiveContext\":\"Insurance- and inspection-driven demand; 210/mo search volume; Kirchner not ranking; specialty signal differentiates from generalist competitors\"},{\"name\":\"EV Charger Installation (Tesla Wall Connector & Universal Level 2)\",\"shortName\":\"EV Charger Install\",\"personaIds\":[\"P3\"],\"priority\":\"growth\",\"competitiveContext\":\"'ev charger installation cypress' 320/mo, 'tesla wall connector installation' 260/mo; Kirchner not ranking; manufacturer locator referrals available; mobile-first buyer segment\"},{\"name\":\"Aluminum Wiring Remediation\",\"shortName\":\"Aluminum Wiring\",\"personaIds\":[\"P2\"],\"priority\":\"medium\",\"competitiveContext\":\"Cypress 1980s-build inventory drives demand; 140/mo search volume; specialty service with low competitor content depth\"},{\"name\":\"Whole-Home Surge Protection\",\"shortName\":\"Surge Protection\",\"personaIds\":[\"P1\",\"P2\"],\"priority\":\"medium\",\"competitiveContext\":\"Bundled with generator and panel upgrade jobs; limited standalone competitor content; upsell opportunity on high-ticket installs\"},{\"name\":\"Emergency Electrical Services (24-Hour)\",\"shortName\":\"Emergency Electric\",\"personaIds\":[\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"'emergency electrician houston' 480/mo; LSA pack is primary discovery surface; A1 Plus and Mister Sparky hold LSA slots #1 and #2; Kirchner not enrolled\"},{\"name\":\"Residential Electrical Services (General)\",\"shortName\":\"Residential Electric\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"Core electrician cluster 45,220/mo; Kirchner ranks for 0 non-branded terms; JR Electrical, A1 Plus, Mister Sparky, Abacus, and RHK capture all non-branded traffic\"},{\"name\":\"Remodel & Addition Electrical (Pool, Addition, Multi-Phase Projects)\",\"shortName\":\"Remodel Electric\",\"personaIds\":[\"P5\"],\"priority\":\"medium\",\"competitiveContext\":\"GC-referral-driven; Houzz and project portfolio visibility required; schedule reliability is primary differentiator over price\"},{\"name\":\"Commercial Electrical Services (Small Commercial & Property Management)\",\"shortName\":\"Commercial Electric\",\"personaIds\":[\"P6\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"90+ day evaluation cycle; LinkedIn and COI/reference vetting required; no current commercial-track service pages or LinkedIn presence; highest LTV persona currently unaddressed digitally\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 8698,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 843,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-services",
+    "key": "bc8ab29ea539dc9f",
+    "capturedAt": "2026-06-16T21:33:45.458Z"
+  }
+}

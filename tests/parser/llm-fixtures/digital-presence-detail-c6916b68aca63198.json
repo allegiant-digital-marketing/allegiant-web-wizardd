@@ -1,0 +1,157 @@
+{
+  "data": {
+    "currentDigitalPresence": {
+      "website": {
+        "url": "https://kirchnerelectricpro.com",
+        "lcpDesktopSeconds": 5.2,
+        "lcpMobileSeconds": 20.6,
+        "knownIssues": [
+          "Mobile LCP is ~8x over the 2.5s target",
+          "Location pages not cached — 35x TTFB gap vs home page",
+          "28% duplicate content (target <15%) driven by templated location pages",
+          "HVAC content bleed across 7 of 25 indexed pages",
+          "Magnolia phone number typo: (281) 775-4124 instead of (281) 755-4124",
+          "Bellaire lists two different addresses",
+          "Three brand domains splitting equity: kirchnerelectricpro.com, kirchner-electric.com, kirchner-electric.brandrepmarketing.com",
+          "5 of 8 critical schema types missing (LocalBusiness, Service, AggregateRating, Review, FAQPage, Article)",
+          "Inconsistent canonical tags across 3 brand domains",
+          "Image alt-text coverage only 62% (target 95%+)",
+          "Hero images uncompressed PNG/JPG (~1.4MB on mobile)",
+          "3+ render-blocking scripts in <head>",
+          "No sticky tap-to-call button",
+          "Licensure/insurance badge below fold on mobile",
+          "Total Blocking Time 690ms (target <200ms)",
+          "No Google Tag Manager, GA4, Google Ads conversion tag, or Meta Pixel installed",
+          "7 location pages with HVAC content bleed indexed and getting impressions against wrong intent",
+          "GBP posts dormant since Q3 2025"
+        ]
+      },
+      "reviews": {
+        "googleRating": 4.9,
+        "googleReviewCount": 237,
+        "yelp": {
+          "verified": true,
+          "visibleReviewCount": 0,
+          "knownIssues": [
+            "Verified but 0 visible reviews",
+            "Profile linked to legacy domain kirchner-electric.com instead of canonical kirchnerelectricpro.com"
+          ]
+        },
+        "bbb": {
+          "present": false,
+          "rating": null,
+          "knownIssues": [
+            "No BBB profile despite 40-year operating history"
+          ]
+        }
+      },
+      "social": {
+        "facebook": {
+          "url": "https://facebook.com/kirchnerelectric",
+          "followers": 535,
+          "reviewCount": 12,
+          "recommendationPct": 100,
+          "lastActivityDate": "2025-06",
+          "status": "dormant",
+          "knownIssues": [
+            "No posts in last 6 months (Dec 2025 – May 2026)",
+            "Silent for ~10 months as of May 2026",
+            "Address slightly off vs GBP"
+          ]
+        },
+        "instagram": {
+          "url": null,
+          "followers": 105,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": "2024",
+          "status": "dormant",
+          "knownIssues": [
+            "No posts in last 6 months (Dec 2025 – May 2026)",
+            "Silent for ~16 months as of May 2026",
+            "Sporadic posting history before full cessation"
+          ]
+        },
+        "nextdoor": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "issue",
+          "knownIssues": [
+            "Profile location set to Tomball, not Cypress",
+            "Only 1 recommendation",
+            "Not positioned in correct Cypress/Bridgeland/Towne Lake feeds"
+          ]
+        },
+        "linkedin": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "dormant",
+          "knownIssues": [
+            "Company page exists but minimal — no recent activity",
+            "Channel for highest-LTV persona (commercial property manager) is effectively empty"
+          ]
+        },
+        "tiktok": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No account found — never activated"
+          ]
+        },
+        "youtube": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No channel found — never activated"
+          ]
+        }
+      },
+      "paidMedia": {
+        "googleAds": {
+          "active": false,
+          "notes": "No Google Ads tag detected in homepage source. No active campaigns verified via SERP impressions. Branded search uncontested. High-intent service queries fully ceded. No GA4 or GTM present."
+        },
+        "localServiceAds": {
+          "present": false,
+          "competitorsHoldingSlots": [
+            "A1 Plus Electric (#1 LSA slot — dominant)",
+            "Mister Sparky (Top 3 LSA slot)"
+          ]
+        }
+      }
+    }
+  },
+  "raw": "{\n  \"currentDigitalPresence\": {\n    \"website\": {\n      \"url\": \"https://kirchnerelectricpro.com\",\n      \"lcpDesktopSeconds\": 5.2,\n      \"lcpMobileSeconds\": 20.6,\n      \"knownIssues\": [\n        \"Mobile LCP is ~8x over the 2.5s target\",\n        \"Location pages not cached — 35x TTFB gap vs home page\",\n        \"28% duplicate content (target <15%) driven by templated location pages\",\n        \"HVAC content bleed across 7 of 25 indexed pages\",\n        \"Magnolia phone number typo: (281) 775-4124 instead of (281) 755-4124\",\n        \"Bellaire lists two different addresses\",\n        \"Three brand domains splitting equity: kirchnerelectricpro.com, kirchner-electric.com, kirchner-electric.brandrepmarketing.com\",\n        \"5 of 8 critical schema types missing (LocalBusiness, Service, AggregateRating, Review, FAQPage, Article)\",\n        \"Inconsistent canonical tags across 3 brand domains\",\n        \"Image alt-text coverage only 62% (target 95%+)\",\n        \"Hero images uncompressed PNG/JPG (~1.4MB on mobile)\",\n        \"3+ render-blocking scripts in <head>\",\n        \"No sticky tap-to-call button\",\n        \"Licensure/insurance badge below fold on mobile\",\n        \"Total Blocking Time 690ms (target <200ms)\",\n        \"No Google Tag Manager, GA4, Google Ads conversion tag, or Meta Pixel installed\",\n        \"7 location pages with HVAC content bleed indexed and getting impressions against wrong intent\",\n        \"GBP posts dormant since Q3 2025\"\n      ]\n    },\n    \"reviews\": {\n      \"googleRating\": 4.9,\n      \"googleReviewCount\": 237,\n      \"yelp\": {\n        \"verified\": true,\n        \"visibleReviewCount\": 0,\n        \"knownIssues\": [\n          \"Verified but 0 visible reviews\",\n          \"Profile linked to legacy domain kirchner-electric.com instead of canonical kirchnerelectricpro.com\"\n        ]\n      },\n      \"bbb\": {\n        \"present\": false,\n        \"rating\": null,\n        \"knownIssues\": [\n          \"No BBB profile despite 40-year operating history\"\n        ]\n      }\n    },\n    \"social\": {\n      \"facebook\": {\n        \"url\": \"https://facebook.com/kirchnerelectric\",\n        \"followers\": 535,\n        \"reviewCount\": 12,\n        \"recommendationPct\": 100,\n        \"lastActivityDate\": \"2025-06\",\n        \"status\": \"dormant\",\n        \"knownIssues\": [\n          \"No posts in last 6 months (Dec 2025 – May 2026)\",\n          \"Silent for ~10 months as of May 2026\",\n          \"Address slightly off vs GBP\"\n        ]\n      },\n      \"instagram\": {\n        \"url\": null,\n        \"followers\": 105,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": \"2024\",\n        \"status\": \"dormant\",\n        \"knownIssues\": [\n          \"No posts in last 6 months (Dec 2025 – May 2026)\",\n          \"Silent for ~16 months as of May 2026\",\n          \"Sporadic posting history before full cessation\"\n        ]\n      },\n      \"nextdoor\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"issue\",\n        \"knownIssues\": [\n          \"Profile location set to Tomball, not Cypress\",\n          \"Only 1 recommendation\",\n          \"Not positioned in correct Cypress/Bridgeland/Towne Lake feeds\"\n        ]\n      },\n      \"linkedin\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"dormant\",\n        \"knownIssues\": [\n          \"Company page exists but minimal — no recent activity\",\n          \"Channel for highest-LTV persona (commercial property manager) is effectively empty\"\n        ]\n      },\n      \"tiktok\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No account found — never activated\"\n        ]\n      },\n      \"youtube\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No channel found — never activated\"\n        ]\n      }\n    },\n    \"paidMedia\": {\n      \"googleAds\": {\n        \"active\": false,\n        \"notes\": \"No Google Ads tag detected in homepage source. No active campaigns verified via SERP impressions. Branded search uncontested. High-intent service queries fully ceded. No GA4 or GTM present.\"\n      },\n      \"localServiceAds\": {\n        \"present\": false,\n        \"competitorsHoldingSlots\": [\n          \"A1 Plus Electric (#1 LSA slot — dominant)\",\n          \"Mister Sparky (Top 3 LSA slot)\"\n        ]\n      }\n    }\n  }\n}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 7764,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1432,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "digital-presence-detail",
+    "key": "c6916b68aca63198",
+    "capturedAt": "2026-06-16T21:35:43.872Z"
+  }
+}

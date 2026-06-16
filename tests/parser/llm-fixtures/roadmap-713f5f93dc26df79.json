@@ -1,0 +1,96 @@
+{
+  "data": {
+    "roadmap": {
+      "phases": [
+        {
+          "phase": 1,
+          "title": "Foundation — Fix, Optimize, Launch",
+          "description": "Quick wins that create immediate momentum. Website speed & asset optimization — compress images, serve modern formats, and trim heavy scripts to fix the 62MB / 8.4s mobile load. On-page SEO repair — add the missing H1s, write Austin/geo-modified page titles, and tighten the auto-generated meta descriptions. GA4 migration & conversion tracking — replace the deprecated Universal Analytics with GA4 plus booking/event tracking so every channel is measurable. GBP optimization — complete categories, services, photos, and descriptions across cryo and the full menu. Review amplification — extend the automated review engine to sauna, massage & contouring, where review volume is thin, and keep the Google lead growing. Bing Places & listings tidy — claim the one missing directory and keep NAP consistent across platforms."
+        },
+        {
+          "phase": 2,
+          "title": "Growth — Activate & Accelerate",
+          "description": "Turn on the channels the market is ignoring. Google Ads launch — first-mover paid search on high-intent cryo, sauna, contouring & massage terms with full conversion tracking. Meta paid social launch — activate the installed Meta Pixel — prospecting plus retargeting to the 5,418 Instagram / 2,021 Facebook audience. Service-line content build — dedicated, optimized pages for infrared sauna, body contouring, massage & facials to capture the searches EvolvE is invisible for. Short-form video kickoff — launch TikTok and Instagram Reels — recovery, results, and education content where wellness travels furthest. AI visibility groundwork — structured data, authoritative service content, and consistent business info to extend AI presence beyond cryotherapy."
+        },
+        {
+          "phase": 3,
+          "title": "Scale — Compound & Lead",
+          "description": "Build a lasting competitive advantage. Link-building campaign — targeted outreach to extend the independent-authority lead and close the gap to the national chains. Paid social scale — expand the winning ad sets and layer in membership-conversion and seasonal offers. Content & review flywheel — ongoing service-specific content and review generation compounding into SEO and AI visibility. Performance benchmarking — measure progress against the baseline scores in this audit. Competitive monitoring — track rankings, reviews, and ad activity across the local set."
+        }
+      ],
+      "packages": [
+        {
+          "tier": "A",
+          "name": "The Foundation",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Basic AI SEO optimization",
+            "Call tracking",
+            "Performance reporting"
+          ],
+          "zoneAdjustment": "Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)"
+        },
+        {
+          "tier": "B",
+          "name": "The Accelerator",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Standard AI SEO optimization",
+            "Call tracking",
+            "Performance reporting"
+          ],
+          "zoneAdjustment": "Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)"
+        },
+        {
+          "tier": "C",
+          "name": "The Dominator",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Social Media Advertising",
+            "Advanced AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)"
+        },
+        {
+          "tier": "D",
+          "name": "Omni-Presence",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Social Media Advertising",
+            "Social Media Organic management",
+            "Advanced+ AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)"
+        }
+      ]
+    }
+  },
+  "raw": "{\"roadmap\":{\"phases\":[{\"phase\":1,\"title\":\"Foundation — Fix, Optimize, Launch\",\"description\":\"Quick wins that create immediate momentum. Website speed & asset optimization — compress images, serve modern formats, and trim heavy scripts to fix the 62MB / 8.4s mobile load. On-page SEO repair — add the missing H1s, write Austin/geo-modified page titles, and tighten the auto-generated meta descriptions. GA4 migration & conversion tracking — replace the deprecated Universal Analytics with GA4 plus booking/event tracking so every channel is measurable. GBP optimization — complete categories, services, photos, and descriptions across cryo and the full menu. Review amplification — extend the automated review engine to sauna, massage & contouring, where review volume is thin, and keep the Google lead growing. Bing Places & listings tidy — claim the one missing directory and keep NAP consistent across platforms.\"},{\"phase\":2,\"title\":\"Growth — Activate & Accelerate\",\"description\":\"Turn on the channels the market is ignoring. Google Ads launch — first-mover paid search on high-intent cryo, sauna, contouring & massage terms with full conversion tracking. Meta paid social launch — activate the installed Meta Pixel — prospecting plus retargeting to the 5,418 Instagram / 2,021 Facebook audience. Service-line content build — dedicated, optimized pages for infrared sauna, body contouring, massage & facials to capture the searches EvolvE is invisible for. Short-form video kickoff — launch TikTok and Instagram Reels — recovery, results, and education content where wellness travels furthest. AI visibility groundwork — structured data, authoritative service content, and consistent business info to extend AI presence beyond cryotherapy.\"},{\"phase\":3,\"title\":\"Scale — Compound & Lead\",\"description\":\"Build a lasting competitive advantage. Link-building campaign — targeted outreach to extend the independent-authority lead and close the gap to the national chains. Paid social scale — expand the winning ad sets and layer in membership-conversion and seasonal offers. Content & review flywheel — ongoing service-specific content and review generation compounding into SEO and AI visibility. Performance benchmarking — measure progress against the baseline scores in this audit. Competitive monitoring — track rankings, reviews, and ad activity across the local set.\"}],\"packages\":[{\"tier\":\"A\",\"name\":\"The Foundation\",\"services\":[\"Search Engine Optimization\",\"Google Ads (PPC)\",\"Basic AI SEO optimization\",\"Call tracking\",\"Performance reporting\"],\"zoneAdjustment\":\"Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)\"},{\"tier\":\"B\",\"name\":\"The Accelerator\",\"services\":[\"Search Engine Optimization\",\"Google Ads (PPC)\",\"Local Services Ads (LSAs)\",\"Standard AI SEO optimization\",\"Call tracking\",\"Performance reporting\"],\"zoneAdjustment\":\"Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)\"},{\"tier\":\"C\",\"name\":\"The Dominator\",\"services\":[\"Search Engine Optimization\",\"Google Ads (PPC)\",\"Local Services Ads (LSAs)\",\"Social Media Advertising\",\"Advanced AI SEO optimization\",\"Call tracking + reporting\"],\"zoneAdjustment\":\"Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)\"},{\"tier\":\"D\",\"name\":\"Omni-Presence\",\"services\":[\"Search Engine Optimization\",\"Google Ads (PPC)\",\"Local Services Ads (LSAs)\",\"Social Media Advertising\",\"Social Media Organic management\",\"Advanced+ AI SEO optimization\",\"Call tracking + reporting\"],\"zoneAdjustment\":\"Zone 2 — Growth Market (Austin, TX · 1.25x multiplier)\"}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 7976,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 847,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "roadmap",
+    "key": "713f5f93dc26df79",
+    "capturedAt": "2026-06-16T21:36:51.395Z"
+  }
+}

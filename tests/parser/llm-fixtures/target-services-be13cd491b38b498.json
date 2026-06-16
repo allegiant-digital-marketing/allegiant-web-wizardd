@@ -1,0 +1,251 @@
+{
+  "data": {
+    "targetServices": [
+      {
+        "name": "Commercial Appliance Repair",
+        "shortName": "Appliance Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "Highest-volume keyword cluster (8,100+/mo nationally); Armstrong currently not in top 100 for primary terms; competitors like Hobart Service and General Parts dominate above the fold"
+      },
+      {
+        "name": "Commercial Refrigeration Repair",
+        "shortName": "Refrigeration Repair",
+        "personaIds": [
+          "P1",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "Dedicated Houston and Austin geo terms with premium CPCs ($6.67–$13.56); Armstrong not in top 100 for any refrigeration terms; Zero Degree Refrigeration is closest local peer"
+      },
+      {
+        "name": "Commercial Fryer Repair",
+        "shortName": "Fryer Repair",
+        "personaIds": [
+          "P1",
+          "P3"
+        ],
+        "priority": "high",
+        "competitiveContext": "High-urgency emergency dispatch service; service-specific landing page identified as Days 31–60 priority; no dedicated page currently exists on Armstrong site"
+      },
+      {
+        "name": "Walk-In Cooler Repair",
+        "shortName": "Walk-In Repair",
+        "personaIds": [
+          "P1",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "Service-specific page identified as Days 31–60 build priority; critical for restaurant and hospitality segments; no dedicated page currently exists"
+      },
+      {
+        "name": "Commercial Ice Machine Repair",
+        "shortName": "Ice Machine Repair",
+        "personaIds": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "Explicitly called out in hotel/hospitality persona as high-fear failure scenario; service page identified as Days 31–60 priority; Manitowoc STAR authorization is key differentiator"
+      },
+      {
+        "name": "Commercial Oven Repair",
+        "shortName": "Oven Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "Service-specific page identified as Days 31–60 build priority; critical for K-12 and institutional segments; no dedicated page currently exists"
+      },
+      {
+        "name": "Commercial Dishwasher Repair",
+        "shortName": "Dishwasher Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "medium",
+        "competitiveContext": "Service-specific page identified as Days 31–60 build priority; relevant across all institutional segments; no dedicated page currently exists"
+      },
+      {
+        "name": "Commercial Kitchen Ventilation & Hood Repair",
+        "shortName": "Hood Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "medium",
+        "competitiveContext": "'Commercial kitchen hood repair' keyword at 320/mo nationally; Armstrong not in top 100; service page identified as Days 31–60 build priority"
+      },
+      {
+        "name": "Preventative Maintenance Contracts for Commercial Foodservice Equipment",
+        "shortName": "PM Contracts",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "Core contract vehicle for all six buyer segments; competitors win master service agreements through response-time SLAs and OEM authorization credentials; Armstrong's multi-location coverage is a key differentiator"
+      },
+      {
+        "name": "Multi-Location Master Service Agreements",
+        "shortName": "Master Service",
+        "personaIds": [
+          "P1",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "Highest-LTV offering; national networks like General Parts and CKPS compete on consolidated billing and multi-site coverage; Armstrong's two-metro footprint positions it for Houston+Austin consolidation plays"
+      },
+      {
+        "name": "Emergency 24/7 Commercial Kitchen Equipment Dispatch",
+        "shortName": "Emergency Dispatch",
+        "personaIds": [
+          "P1",
+          "P3",
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "Stage 1 buyer motion; first credible local result with visible 24/7 capability wins the call; Armstrong's GBP and mobile presence gaps directly undermine capture of this demand"
+      },
+      {
+        "name": "K-12 School District Foodservice Equipment Repair & Scheduled Maintenance",
+        "shortName": "K-12 Foodservice",
+        "personaIds": [
+          "P2"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "Procurement-driven segment requiring district-approved vendor status, CFESA certification, and cooperative purchasing alignment (BuyBoard, TIPS-USA); Pasadena ISD and Crosby ISD are verified Armstrong references providing local competitive advantage national networks cannot replicate"
+      },
+      {
+        "name": "Healthcare & Senior Living Kitchen Equipment Repair",
+        "shortName": "Healthcare Foodservice",
+        "personaIds": [
+          "P4"
+        ],
+        "priority": "growth",
+        "competitiveContext": "Compliance-first segment requiring CMS/Joint Commission documentation, vendor health-screening, and Texas Medical Center vendor list presence; longer sales cycle but high contract value and renewal stability"
+      },
+      {
+        "name": "Hotel & Hospitality Banquet Kitchen Equipment Repair",
+        "shortName": "Hospitality Repair",
+        "personaIds": [
+          "P3"
+        ],
+        "priority": "growth",
+        "competitiveContext": "Brand-standard compliance and technician discretion are table stakes; hotel-brand approved-vendor list presence required for corporate properties; Houston Galleria/Medical Center and Austin downtown corridors are primary target zones"
+      },
+      {
+        "name": "Higher Education Dining Services Equipment Repair & Maintenance",
+        "shortName": "Higher Ed Dining",
+        "personaIds": [
+          "P5"
+        ],
+        "priority": "growth",
+        "competitiveContext": "Campus procurement pre-approval required; NACUFS network and cooperative purchasing programs (UT System, A&M System) are primary discovery channels; two-metro coverage is differentiator for multi-campus university systems"
+      },
+      {
+        "name": "Corporate Campus & Employee Café Equipment Repair",
+        "shortName": "Corporate Café Repair",
+        "personaIds": [
+          "P6"
+        ],
+        "priority": "growth",
+        "competitiveContext": "Austin tech corridor (Samsung, Tesla, Apple, Google) and Houston energy HQ segment; COI compliance, badge readiness, and predictable monthly billing are decision drivers; IFMA chapter presence is key discovery channel"
+      },
+      {
+        "name": "OEM-Authorized Commercial Foodservice Equipment Repair (Manitowoc, Hobart, Vulcan, Frymaster, Traulsen)",
+        "shortName": "OEM-Authorized Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "Factory authorization is table-stakes for procurement-driven segments; Manitowoc STAR, Blue Book, FER, Montague/Moffat/Belshaw credentials need schema markup to surface in AI platform recommendations; Hobart Service competes directly as manufacturer-owned service network"
+      },
+      {
+        "name": "Houston Commercial Foodservice Equipment Repair",
+        "shortName": "Houston Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "Geography page identified as Days 31–60 build priority; Armstrong ranks Pos 15 for 'commercial appliance repair houston' (90/mo) and not in top 100 for refrigeration terms; All Service Commercial Kitchen and CKPS are primary local competitors"
+      },
+      {
+        "name": "Austin Commercial Foodservice Equipment Repair",
+        "shortName": "Austin Repair",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ],
+        "priority": "high",
+        "competitiveContext": "No Austin GBP exists — single highest-leverage local-search fix in the report; Armstrong ranks Pos 19–28 for limited Austin terms and not in top 100 for primary volume terms; creating Austin GBP is Day 1–30 priority"
+      }
+    ]
+  },
+  "raw": "{\"targetServices\":[{\"name\":\"Commercial Appliance Repair\",\"shortName\":\"Appliance Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"Highest-volume keyword cluster (8,100+/mo nationally); Armstrong currently not in top 100 for primary terms; competitors like Hobart Service and General Parts dominate above the fold\"},{\"name\":\"Commercial Refrigeration Repair\",\"shortName\":\"Refrigeration Repair\",\"personaIds\":[\"P1\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"Dedicated Houston and Austin geo terms with premium CPCs ($6.67–$13.56); Armstrong not in top 100 for any refrigeration terms; Zero Degree Refrigeration is closest local peer\"},{\"name\":\"Commercial Fryer Repair\",\"shortName\":\"Fryer Repair\",\"personaIds\":[\"P1\",\"P3\"],\"priority\":\"high\",\"competitiveContext\":\"High-urgency emergency dispatch service; service-specific landing page identified as Days 31–60 priority; no dedicated page currently exists on Armstrong site\"},{\"name\":\"Walk-In Cooler Repair\",\"shortName\":\"Walk-In Repair\",\"personaIds\":[\"P1\",\"P3\",\"P4\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"Service-specific page identified as Days 31–60 build priority; critical for restaurant and hospitality segments; no dedicated page currently exists\"},{\"name\":\"Commercial Ice Machine Repair\",\"shortName\":\"Ice Machine Repair\",\"personaIds\":[\"P1\",\"P3\",\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"Explicitly called out in hotel/hospitality persona as high-fear failure scenario; service page identified as Days 31–60 priority; Manitowoc STAR authorization is key differentiator\"},{\"name\":\"Commercial Oven Repair\",\"shortName\":\"Oven Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"Service-specific page identified as Days 31–60 build priority; critical for K-12 and institutional segments; no dedicated page currently exists\"},{\"name\":\"Commercial Dishwasher Repair\",\"shortName\":\"Dishwasher Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"medium\",\"competitiveContext\":\"Service-specific page identified as Days 31–60 build priority; relevant across all institutional segments; no dedicated page currently exists\"},{\"name\":\"Commercial Kitchen Ventilation & Hood Repair\",\"shortName\":\"Hood Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"medium\",\"competitiveContext\":\"'Commercial kitchen hood repair' keyword at 320/mo nationally; Armstrong not in top 100; service page identified as Days 31–60 build priority\"},{\"name\":\"Preventative Maintenance Contracts for Commercial Foodservice Equipment\",\"shortName\":\"PM Contracts\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"Core contract vehicle for all six buyer segments; competitors win master service agreements through response-time SLAs and OEM authorization credentials; Armstrong's multi-location coverage is a key differentiator\"},{\"name\":\"Multi-Location Master Service Agreements\",\"shortName\":\"Master Service\",\"personaIds\":[\"P1\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"Highest-LTV offering; national networks like General Parts and CKPS compete on consolidated billing and multi-site coverage; Armstrong's two-metro footprint positions it for Houston+Austin consolidation plays\"},{\"name\":\"Emergency 24/7 Commercial Kitchen Equipment Dispatch\",\"shortName\":\"Emergency Dispatch\",\"personaIds\":[\"P1\",\"P3\",\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"Stage 1 buyer motion; first credible local result with visible 24/7 capability wins the call; Armstrong's GBP and mobile presence gaps directly undermine capture of this demand\"},{\"name\":\"K-12 School District Foodservice Equipment Repair & Scheduled Maintenance\",\"shortName\":\"K-12 Foodservice\",\"personaIds\":[\"P2\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"Procurement-driven segment requiring district-approved vendor status, CFESA certification, and cooperative purchasing alignment (BuyBoard, TIPS-USA); Pasadena ISD and Crosby ISD are verified Armstrong references providing local competitive advantage national networks cannot replicate\"},{\"name\":\"Healthcare & Senior Living Kitchen Equipment Repair\",\"shortName\":\"Healthcare Foodservice\",\"personaIds\":[\"P4\"],\"priority\":\"growth\",\"competitiveContext\":\"Compliance-first segment requiring CMS/Joint Commission documentation, vendor health-screening, and Texas Medical Center vendor list presence; longer sales cycle but high contract value and renewal stability\"},{\"name\":\"Hotel & Hospitality Banquet Kitchen Equipment Repair\",\"shortName\":\"Hospitality Repair\",\"personaIds\":[\"P3\"],\"priority\":\"growth\",\"competitiveContext\":\"Brand-standard compliance and technician discretion are table stakes; hotel-brand approved-vendor list presence required for corporate properties; Houston Galleria/Medical Center and Austin downtown corridors are primary target zones\"},{\"name\":\"Higher Education Dining Services Equipment Repair & Maintenance\",\"shortName\":\"Higher Ed Dining\",\"personaIds\":[\"P5\"],\"priority\":\"growth\",\"competitiveContext\":\"Campus procurement pre-approval required; NACUFS network and cooperative purchasing programs (UT System, A&M System) are primary discovery channels; two-metro coverage is differentiator for multi-campus university systems\"},{\"name\":\"Corporate Campus & Employee Café Equipment Repair\",\"shortName\":\"Corporate Café Repair\",\"personaIds\":[\"P6\"],\"priority\":\"growth\",\"competitiveContext\":\"Austin tech corridor (Samsung, Tesla, Apple, Google) and Houston energy HQ segment; COI compliance, badge readiness, and predictable monthly billing are decision drivers; IFMA chapter presence is key discovery channel\"},{\"name\":\"OEM-Authorized Commercial Foodservice Equipment Repair (Manitowoc, Hobart, Vulcan, Frymaster, Traulsen)\",\"shortName\":\"OEM-Authorized Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"Factory authorization is table-stakes for procurement-driven segments; Manitowoc STAR, Blue Book, FER, Montague/Moffat/Belshaw credentials need schema markup to surface in AI platform recommendations; Hobart Service competes directly as manufacturer-owned service network\"},{\"name\":\"Houston Commercial Foodservice Equipment Repair\",\"shortName\":\"Houston Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"Geography page identified as Days 31–60 build priority; Armstrong ranks Pos 15 for 'commercial appliance repair houston' (90/mo) and not in top 100 for refrigeration terms; All Service Commercial Kitchen and CKPS are primary local competitors\"},{\"name\":\"Austin Commercial Foodservice Equipment Repair\",\"shortName\":\"Austin Repair\",\"personaIds\":[\"P1\",\"P2\",\"P3\",\"P4\",\"P5\",\"P6\"],\"priority\":\"high\",\"competitiveContext\":\"No Austin GBP exists — single highest-leverage local-search fix in the report; Armstrong ranks Pos 19–28 for limited Austin terms and not in top 100 for primary volume terms; creating Austin GBP is Day 1–30 priority\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 10795,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1777,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-services",
+    "key": "be13cd491b38b498",
+    "capturedAt": "2026-06-16T21:39:39.710Z"
+  }
+}

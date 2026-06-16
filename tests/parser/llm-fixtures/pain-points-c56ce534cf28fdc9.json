@@ -1,0 +1,57 @@
+{
+  "data": {
+    "painPoints": [
+      "Mobile performance score of 31/100 — site takes 8.4 seconds to load on mobile, causing visitors to abandon before booking",
+      "Homepage weighs approximately 62 MB due to uncompressed images and heavy scripts, creating extreme page weight",
+      "Largest Contentful Paint (LCP) of 8.4 seconds on mobile far exceeds acceptable thresholds",
+      "Total Blocking Time of 16.2 seconds on mobile ties up the browser and prevents interaction",
+      "Desktop performance score of only 59/100, indicating optimization issues beyond just mobile",
+      "No geo modifier (city/location) included in meta titles across any key service pages",
+      "Missing H1 headings on multiple pages including homepage, massage, membership, and contact pages",
+      "Decorative H1 tags pulled from sliders on service pages provide no SEO value",
+      "Meta descriptions are auto-pulled or exceed 280+ characters on several pages, reducing click-through effectiveness",
+      "Missing meta description entirely on the contact page",
+      "Images are uncompressed and not served in modern formats, contributing to the 62 MB page weight",
+      "Analytics running on deprecated Universal Analytics (UA) instead of GA4, meaning paid campaigns would launch without proper measurement",
+      "Meta Pixel is installed but sitting completely idle — no active retargeting or paid social campaigns running",
+      "No Google Ads or paid search campaigns active despite zero local competitors running meaningful paid search",
+      "No Google Local Services Ads listing and no Google Guaranteed badge",
+      "No remarketing or display tags detected",
+      "AI visibility score of only 32/100 — EvolvE surfaces in AI assistants for cryotherapy only and is absent for infrared sauna, massage, body contouring, and facials",
+      "Absent from AI assistant results for 4 of 5 service lines including infrared sauna, lymphatic drainage massage, body contouring, and couples massage",
+      "No service-specific content depth for non-cryotherapy services, causing AI platforms to recommend specialists and med spas instead",
+      "Invisible in organic search results for infrared sauna, massage, facials, and body contouring keywords",
+      "Ranking only #4 for 'cryotherapy austin' in organic search despite strong reviews",
+      "No presence in Google Local Services Ads, ceding the top-of-page position to competitors",
+      "Reviews for non-cryotherapy service lines (sauna, massage, body contouring) are sparse, limiting AI and search visibility for those categories",
+      "Bing Places listing unclaimed",
+      "No short-form video content on TikTok or YouTube despite wellness content performing strongly in those formats",
+      "LinkedIn and X (Twitter) profiles are dormant and inactive",
+      "No YouTube channel detected, missing opportunity for recovery and education video content",
+      "No TikTok profile detected, missing a high-opportunity platform for wellness content",
+      "Paid social advertising is completely absent despite having an established Instagram following of 5,418 and a ready Meta Pixel",
+      "Cross-page content overlap on /services/ (32%) and /contact/ (31%) pages may dilute SEO signals",
+      "Lack of structured, service-specific content prevents AI platforms from associating EvolvE with non-cryo service categories",
+      "No paid amplification strategy to convert existing social audience into booked sessions"
+    ]
+  },
+  "raw": "{\"painPoints\": [\"Mobile performance score of 31/100 — site takes 8.4 seconds to load on mobile, causing visitors to abandon before booking\",\"Homepage weighs approximately 62 MB due to uncompressed images and heavy scripts, creating extreme page weight\",\"Largest Contentful Paint (LCP) of 8.4 seconds on mobile far exceeds acceptable thresholds\",\"Total Blocking Time of 16.2 seconds on mobile ties up the browser and prevents interaction\",\"Desktop performance score of only 59/100, indicating optimization issues beyond just mobile\",\"No geo modifier (city/location) included in meta titles across any key service pages\",\"Missing H1 headings on multiple pages including homepage, massage, membership, and contact pages\",\"Decorative H1 tags pulled from sliders on service pages provide no SEO value\",\"Meta descriptions are auto-pulled or exceed 280+ characters on several pages, reducing click-through effectiveness\",\"Missing meta description entirely on the contact page\",\"Images are uncompressed and not served in modern formats, contributing to the 62 MB page weight\",\"Analytics running on deprecated Universal Analytics (UA) instead of GA4, meaning paid campaigns would launch without proper measurement\",\"Meta Pixel is installed but sitting completely idle — no active retargeting or paid social campaigns running\",\"No Google Ads or paid search campaigns active despite zero local competitors running meaningful paid search\",\"No Google Local Services Ads listing and no Google Guaranteed badge\",\"No remarketing or display tags detected\",\"AI visibility score of only 32/100 — EvolvE surfaces in AI assistants for cryotherapy only and is absent for infrared sauna, massage, body contouring, and facials\",\"Absent from AI assistant results for 4 of 5 service lines including infrared sauna, lymphatic drainage massage, body contouring, and couples massage\",\"No service-specific content depth for non-cryotherapy services, causing AI platforms to recommend specialists and med spas instead\",\"Invisible in organic search results for infrared sauna, massage, facials, and body contouring keywords\",\"Ranking only #4 for 'cryotherapy austin' in organic search despite strong reviews\",\"No presence in Google Local Services Ads, ceding the top-of-page position to competitors\",\"Reviews for non-cryotherapy service lines (sauna, massage, body contouring) are sparse, limiting AI and search visibility for those categories\",\"Bing Places listing unclaimed\",\"No short-form video content on TikTok or YouTube despite wellness content performing strongly in those formats\",\"LinkedIn and X (Twitter) profiles are dormant and inactive\",\"No YouTube channel detected, missing opportunity for recovery and education video content\",\"No TikTok profile detected, missing a high-opportunity platform for wellness content\",\"Paid social advertising is completely absent despite having an established Instagram following of 5,418 and a ready Meta Pixel\",\"Cross-page content overlap on /services/ (32%) and /contact/ (31%) pages may dilute SEO signals\",\"Lack of structured, service-specific content prevents AI platforms from associating EvolvE with non-cryo service categories\",\"No paid amplification strategy to convert existing social audience into booked sessions\"]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 7220,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 697,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "pain-points",
+    "key": "c56ce534cf28fdc9",
+    "capturedAt": "2026-06-16T21:36:31.868Z"
+  }
+}

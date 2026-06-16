@@ -1,0 +1,100 @@
+{
+  "data": {
+    "roadmap": {
+      "phases": [
+        {
+          "phase": 1,
+          "title": "Foundation — Fix, Optimize, Launch",
+          "description": "Quick wins that create immediate momentum. Website technical fixes — resolve broken links, add missing schema markup, fix canonical tags, optimize images for speed. On-page SEO repair — write unique meta titles and descriptions for every page, fix duplicate H1 tags. GBP optimization — complete profile, add categories, photos, services, and business description. Review generation launch — deploy automated review request system to start closing the review gap. NAP cleanup — correct inconsistent listings across 13 directories identified in audit. Call tracking setup — install tracking lines to measure every lead source from day one."
+        },
+        {
+          "phase": 2,
+          "title": "Growth — Activate & Accelerate",
+          "description": "Turn on revenue-generating channels. Google Ads launch — target high-intent keywords identified in keyword analysis with conversion tracking. Local Services Ads setup — apply for Google Guaranteed badge, launch pay-per-lead ads. SEO content strategy — begin addressing duplicate content and creating unique service/location pages. Social media reactivation — restart posting cadence on Facebook and Instagram with branded content. AI visibility groundwork — structured data, content authority signals, and business information consistency."
+        },
+        {
+          "phase": 3,
+          "title": "Scale — Compound & Dominate",
+          "description": "Build lasting competitive advantage. Link building campaign — targeted outreach to close the domain authority gap identified in competitive analysis. Meta/Facebook Ads launch — paid social targeting business owners in service area with seasonal offers. Content marketing cadence — blog posts, FAQ content, and educational articles targeting AI and organic visibility. Performance benchmarking — measure progress against baseline scores from this audit. Competitive monitoring — track competitor movements in rankings, reviews, and ad activity."
+        }
+      ],
+      "packages": [
+        {
+          "tier": "A",
+          "name": "Good",
+          "services": [
+            "Search Engine Optimization (State)",
+            "Link Building (Foundation)",
+            "Google Ads (PPC)",
+            "Meta Ads (Facebook/Instagram)",
+            "LinkedIn Ads",
+            "AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Estimated monthly investment to Allegiant $8,975 + Ad Spend $19,000 = Total $27,975 + one-time setup costs"
+        },
+        {
+          "tier": "B",
+          "name": "Better",
+          "services": [
+            "Search Engine Optimization (National)",
+            "Link Building (Growth)",
+            "Google Ads (PPC)",
+            "Meta Ads (Facebook/Instagram)",
+            "LinkedIn Ads",
+            "AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Estimated monthly investment to Allegiant $16,445 + Ad Spend $47,500 = Total $63,945 + one-time setup costs"
+        },
+        {
+          "tier": "C",
+          "name": "Great",
+          "services": [
+            "Search Engine Optimization (National Aggressive)",
+            "Link Building (Authority)",
+            "Google Ads (PPC)",
+            "Meta Ads (Facebook/Instagram)",
+            "LinkedIn Ads",
+            "AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Estimated monthly investment to Allegiant $22,945 + Ad Spend $95,000 = Total $117,945 + one-time setup costs"
+        },
+        {
+          "tier": "D",
+          "name": "Best",
+          "services": [
+            "Search Engine Optimization (National Aggressive Plus)",
+            "Link Building (Dominance)",
+            "Google Ads (PPC)",
+            "Meta Ads (Facebook/Instagram)",
+            "LinkedIn Ads",
+            "Advanced+ AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Estimated monthly investment to Allegiant $30,445–$35,445 + Ad Spend $185,000 = Total $215,445–$220,445 + one-time setup costs"
+        }
+      ]
+    }
+  },
+  "raw": "{\"roadmap\": {\"phases\": [{\"phase\": 1, \"title\": \"Foundation — Fix, Optimize, Launch\", \"description\": \"Quick wins that create immediate momentum. Website technical fixes — resolve broken links, add missing schema markup, fix canonical tags, optimize images for speed. On-page SEO repair — write unique meta titles and descriptions for every page, fix duplicate H1 tags. GBP optimization — complete profile, add categories, photos, services, and business description. Review generation launch — deploy automated review request system to start closing the review gap. NAP cleanup — correct inconsistent listings across 13 directories identified in audit. Call tracking setup — install tracking lines to measure every lead source from day one.\"}, {\"phase\": 2, \"title\": \"Growth — Activate & Accelerate\", \"description\": \"Turn on revenue-generating channels. Google Ads launch — target high-intent keywords identified in keyword analysis with conversion tracking. Local Services Ads setup — apply for Google Guaranteed badge, launch pay-per-lead ads. SEO content strategy — begin addressing duplicate content and creating unique service/location pages. Social media reactivation — restart posting cadence on Facebook and Instagram with branded content. AI visibility groundwork — structured data, content authority signals, and business information consistency.\"}, {\"phase\": 3, \"title\": \"Scale — Compound & Dominate\", \"description\": \"Build lasting competitive advantage. Link building campaign — targeted outreach to close the domain authority gap identified in competitive analysis. Meta/Facebook Ads launch — paid social targeting business owners in service area with seasonal offers. Content marketing cadence — blog posts, FAQ content, and educational articles targeting AI and organic visibility. Performance benchmarking — measure progress against baseline scores from this audit. Competitive monitoring — track competitor movements in rankings, reviews, and ad activity.\"}], \"packages\": [{\"tier\": \"A\", \"name\": \"Good\", \"services\": [\"Search Engine Optimization (State)\", \"Link Building (Foundation)\", \"Google Ads (PPC)\", \"Meta Ads (Facebook/Instagram)\", \"LinkedIn Ads\", \"AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Estimated monthly investment to Allegiant $8,975 + Ad Spend $19,000 = Total $27,975 + one-time setup costs\"}, {\"tier\": \"B\", \"name\": \"Better\", \"services\": [\"Search Engine Optimization (National)\", \"Link Building (Growth)\", \"Google Ads (PPC)\", \"Meta Ads (Facebook/Instagram)\", \"LinkedIn Ads\", \"AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Estimated monthly investment to Allegiant $16,445 + Ad Spend $47,500 = Total $63,945 + one-time setup costs\"}, {\"tier\": \"C\", \"name\": \"Great\", \"services\": [\"Search Engine Optimization (National Aggressive)\", \"Link Building (Authority)\", \"Google Ads (PPC)\", \"Meta Ads (Facebook/Instagram)\", \"LinkedIn Ads\", \"AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Estimated monthly investment to Allegiant $22,945 + Ad Spend $95,000 = Total $117,945 + one-time setup costs\"}, {\"tier\": \"D\", \"name\": \"Best\", \"services\": [\"Search Engine Optimization (National Aggressive Plus)\", \"Link Building (Dominance)\", \"Google Ads (PPC)\", \"Meta Ads (Facebook/Instagram)\", \"LinkedIn Ads\", \"Advanced+ AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Estimated monthly investment to Allegiant $30,445–$35,445 + Ad Spend $185,000 = Total $215,445–$220,445 + one-time setup costs\"}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 4014,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 855,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "roadmap",
+    "key": "139476ce3e488f4d",
+    "capturedAt": "2026-06-16T21:38:29.124Z"
+  }
+}

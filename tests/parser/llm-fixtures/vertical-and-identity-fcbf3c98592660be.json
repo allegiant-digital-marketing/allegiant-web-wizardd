@@ -1,0 +1,28 @@
+{
+  "data": {
+    "vertical": "commercial_kitchen_service",
+    "subVertical": "commercial_kitchen_equipment_repair_b2b",
+    "zone": null,
+    "yearsOperating": null,
+    "tagline": "The operators who depend on what you offer deserve to find you."
+  },
+  "raw": "{\"vertical\": \"commercial_kitchen_service\", \"subVertical\": \"commercial_kitchen_equipment_repair_b2b\", \"zone\": null, \"yearsOperating\": null, \"tagline\": \"The operators who depend on what you offer deserve to find you.\"}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 5618,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 63,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "vertical-and-identity",
+    "key": "fcbf3c98592660be",
+    "capturedAt": "2026-06-16T21:39:00.361Z"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "data": {
+    "roadmap": {
+      "phases": [
+        {
+          "phase": 1,
+          "title": "Foundation — Consolidate, Clean, Activate",
+          "description": "Quick wins that unlock immediate market visibility. Includes brand-domain consolidation to kirchnerelectricpro.com with 301 redirects, NAP consistency sweep fixing 25 of 37 inconsistent directory listings, GBP optimization and review-response activation, Local Services Ads enrollment for Google Guaranteed verification, mobile speed remediation addressing LCP 20.6s, schema markup deployment (LocalBusiness, ElectricalContractor, Service, Review, FAQPage), Yelp claim and BBB profile creation, and CallRail call tracking deployment across all channels."
+        },
+        {
+          "phase": 2,
+          "title": "Growth — Activate Paid Channels & Rebuild Content",
+          "description": "Turn on revenue channels and eliminate content quality issues blocking organic visibility. Includes Google Ads launch across Cypress and Houston metro targeting 78,930/mo category demand, elimination of HVAC content bleed across 7 location pages, high-value service-page deep build for Generator Installation, EV Charger Installation, 200-amp Panel Upgrade, Whole-Home Surge Protection, Federal Pacific Panel Replacement, and Aluminum Wiring Remediation, social cadence reactivation on Facebook and Instagram at 3x/week, AI visibility groundwork via citation consistency and structured FAQ content, and owner-response automation expansion to 100% of new reviews within 24 hours."
+        },
+        {
+          "phase": 3,
+          "title": "Scale — Compound Authority & Build Lasting Advantage",
+          "description": "Move from foundation-fixing to category leadership in the Cypress electrician market. Includes targeted link-building campaign to close DR 0 to DR 5 over 6 months and DR 12 over 12 months, Meta Ads launch with Facebook Pixel and Cypress-targeted retargeting, weekly long-form content marketing addressing buyer questions surfaced in AI visibility tests, performance benchmarking re-running the 6-platform AI visibility test and organic keyword data, and competitive monitoring rhythm tracking JR Electrical, A1 Plus, Mister Sparky, Beekman, RHK, and Unity Services month-over-month."
+        }
+      ],
+      "packages": [
+        {
+          "tier": "A",
+          "name": "The Foundation",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Basic AI SEO optimization",
+            "Call tracking",
+            "Performance reporting"
+          ],
+          "zoneAdjustment": "Houston Metroplex — Zone 1 (1.6×)"
+        },
+        {
+          "tier": "B",
+          "name": "The Accelerator",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Standard AI SEO optimization",
+            "Call tracking",
+            "Performance reporting"
+          ],
+          "zoneAdjustment": "Houston Metroplex — Zone 1 (1.6×)"
+        },
+        {
+          "tier": "C",
+          "name": "The Dominator",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Social Media Advertising",
+            "Advanced AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Houston Metroplex — Zone 1 (1.6×)"
+        },
+        {
+          "tier": "D",
+          "name": "Omni-Presence",
+          "services": [
+            "Search Engine Optimization",
+            "Google Ads (PPC)",
+            "Local Services Ads (LSAs)",
+            "Social Media Advertising",
+            "Social Media Organic management",
+            "Advanced+ AI SEO optimization",
+            "Call tracking + reporting"
+          ],
+          "zoneAdjustment": "Houston Metroplex — Zone 1 (1.6×)"
+        }
+      ]
+    }
+  },
+  "raw": "{\"roadmap\": {\"phases\": [{\"phase\": 1, \"title\": \"Foundation — Consolidate, Clean, Activate\", \"description\": \"Quick wins that unlock immediate market visibility. Includes brand-domain consolidation to kirchnerelectricpro.com with 301 redirects, NAP consistency sweep fixing 25 of 37 inconsistent directory listings, GBP optimization and review-response activation, Local Services Ads enrollment for Google Guaranteed verification, mobile speed remediation addressing LCP 20.6s, schema markup deployment (LocalBusiness, ElectricalContractor, Service, Review, FAQPage), Yelp claim and BBB profile creation, and CallRail call tracking deployment across all channels.\"}, {\"phase\": 2, \"title\": \"Growth — Activate Paid Channels & Rebuild Content\", \"description\": \"Turn on revenue channels and eliminate content quality issues blocking organic visibility. Includes Google Ads launch across Cypress and Houston metro targeting 78,930/mo category demand, elimination of HVAC content bleed across 7 location pages, high-value service-page deep build for Generator Installation, EV Charger Installation, 200-amp Panel Upgrade, Whole-Home Surge Protection, Federal Pacific Panel Replacement, and Aluminum Wiring Remediation, social cadence reactivation on Facebook and Instagram at 3x/week, AI visibility groundwork via citation consistency and structured FAQ content, and owner-response automation expansion to 100% of new reviews within 24 hours.\"}, {\"phase\": 3, \"title\": \"Scale — Compound Authority & Build Lasting Advantage\", \"description\": \"Move from foundation-fixing to category leadership in the Cypress electrician market. Includes targeted link-building campaign to close DR 0 to DR 5 over 6 months and DR 12 over 12 months, Meta Ads launch with Facebook Pixel and Cypress-targeted retargeting, weekly long-form content marketing addressing buyer questions surfaced in AI visibility tests, performance benchmarking re-running the 6-platform AI visibility test and organic keyword data, and competitive monitoring rhythm tracking JR Electrical, A1 Plus, Mister Sparky, Beekman, RHK, and Unity Services month-over-month.\"}], \"packages\": [{\"tier\": \"A\", \"name\": \"The Foundation\", \"services\": [\"Search Engine Optimization\", \"Google Ads (PPC)\", \"Basic AI SEO optimization\", \"Call tracking\", \"Performance reporting\"], \"zoneAdjustment\": \"Houston Metroplex — Zone 1 (1.6×)\"}, {\"tier\": \"B\", \"name\": \"The Accelerator\", \"services\": [\"Search Engine Optimization\", \"Google Ads (PPC)\", \"Local Services Ads (LSAs)\", \"Standard AI SEO optimization\", \"Call tracking\", \"Performance reporting\"], \"zoneAdjustment\": \"Houston Metroplex — Zone 1 (1.6×)\"}, {\"tier\": \"C\", \"name\": \"The Dominator\", \"services\": [\"Search Engine Optimization\", \"Google Ads (PPC)\", \"Local Services Ads (LSAs)\", \"Social Media Advertising\", \"Advanced AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Houston Metroplex — Zone 1 (1.6×)\"}, {\"tier\": \"D\", \"name\": \"Omni-Presence\", \"services\": [\"Search Engine Optimization\", \"Google Ads (PPC)\", \"Local Services Ads (LSAs)\", \"Social Media Advertising\", \"Social Media Organic management\", \"Advanced+ AI SEO optimization\", \"Call tracking + reporting\"], \"zoneAdjustment\": \"Houston Metroplex — Zone 1 (1.6×)\"}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 5209,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 849,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "roadmap",
+    "key": "d60e6e5b9b0e6891",
+    "capturedAt": "2026-06-16T21:34:59.755Z"
+  }
+}

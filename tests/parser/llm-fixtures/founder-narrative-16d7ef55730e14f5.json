@@ -1,0 +1,24 @@
+{
+  "data": {
+    "founderNarrative": "Whether you are a growing company finding your stride or an established organization ready to reach the next level, digital marketing will serve as one of the most powerful forces shaping the future of your business. Your prospective clients — CFOs, credit managers, and business owners with aging receivables — are online right now searching for a commercial collection partner they can trust. The agencies that show up with clarity, authority, and credibility are the ones that win those relationships.\n\nWe also know that digital marketing can feel overwhelming. With thousands of platforms to consider, agencies making promises they can't keep, and a landscape that shifts faster than most businesses can adapt — it's easy to feel like you're falling behind. That's exactly why this report exists.\n\nAt Allegiant Digital Marketing, we take an education-first approach. We believe you deserve to understand not just what to do, but why it matters and how it connects to the growth you're building toward. This A.R.C. Report was designed to give you valuable analysis, honest insight, and strategic recommendations that position your business for measurable, lasting success.\n\nYour business matters. Your story matters. And the people who need what you offer deserve to find you.\n\nThank you for affording us the opportunity to share this with you. When you partner with Allegiant, you're not hiring a vendor — you're gaining a team that is genuinely invested in your success, your legacy, and the value of what you are building.\n\nChad Markham\nPresident and CEO\nAllegiant Digital Marketing"
+  },
+  "raw": "{\"founderNarrative\": \"Whether you are a growing company finding your stride or an established organization ready to reach the next level, digital marketing will serve as one of the most powerful forces shaping the future of your business. Your prospective clients — CFOs, credit managers, and business owners with aging receivables — are online right now searching for a commercial collection partner they can trust. The agencies that show up with clarity, authority, and credibility are the ones that win those relationships.\\n\\nWe also know that digital marketing can feel overwhelming. With thousands of platforms to consider, agencies making promises they can't keep, and a landscape that shifts faster than most businesses can adapt — it's easy to feel like you're falling behind. That's exactly why this report exists.\\n\\nAt Allegiant Digital Marketing, we take an education-first approach. We believe you deserve to understand not just what to do, but why it matters and how it connects to the growth you're building toward. This A.R.C. Report was designed to give you valuable analysis, honest insight, and strategic recommendations that position your business for measurable, lasting success.\\n\\nYour business matters. Your story matters. And the people who need what you offer deserve to find you.\\n\\nThank you for affording us the opportunity to share this with you. When you partner with Allegiant, you're not hiring a vendor — you're gaining a team that is genuinely invested in your success, your legacy, and the value of what you are building.\\n\\nChad Markham\\nPresident and CEO\\nAllegiant Digital Marketing\"}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 582,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 349,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "founder-narrative",
+    "key": "16d7ef55730e14f5",
+    "capturedAt": "2026-06-16T21:37:24.998Z"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "data": {
+    "targetLocations": [
+      {
+        "name": "Austin",
+        "tier": "primary",
+        "context": "Main market for EvolvE Cryo + Wellness; anchor geography for all service keyword clusters and competitive analysis",
+        "parentRegion": "Travis County, TX"
+      },
+      {
+        "name": "Round Rock",
+        "tier": "secondary",
+        "context": "Listed as a target geography in the audience opportunity section; EvolvE ranks #1 for 'cryotherapy round rock' with 930 searches/mo",
+        "parentRegion": "Williamson County, TX"
+      },
+      {
+        "name": "Cedar Park",
+        "tier": "secondary",
+        "context": "Listed as a target geography in the audience opportunity section; EvolvE not yet ranking for key terms like 'cryotherapy cedar park' or 'cold plunge cedar park'",
+        "parentRegion": "Williamson County, TX"
+      },
+      {
+        "name": "Georgetown",
+        "tier": "secondary",
+        "context": "Listed as a target geography in the audience opportunity section alongside Austin, Round Rock, and Cedar Park",
+        "parentRegion": "Williamson County, TX"
+      },
+      {
+        "name": "South Austin",
+        "tier": "tertiary",
+        "context": "Mentioned as a location descriptor for the Recovery-Driven Athlete persona demographic",
+        "parentRegion": "Austin, TX"
+      }
+    ]
+  },
+  "raw": "{\"targetLocations\": [{\"name\": \"Austin\", \"tier\": \"primary\", \"context\": \"Main market for EvolvE Cryo + Wellness; anchor geography for all service keyword clusters and competitive analysis\", \"parentRegion\": \"Travis County, TX\"}, {\"name\": \"Round Rock\", \"tier\": \"secondary\", \"context\": \"Listed as a target geography in the audience opportunity section; EvolvE ranks #1 for 'cryotherapy round rock' with 930 searches/mo\", \"parentRegion\": \"Williamson County, TX\"}, {\"name\": \"Cedar Park\", \"tier\": \"secondary\", \"context\": \"Listed as a target geography in the audience opportunity section; EvolvE not yet ranking for key terms like 'cryotherapy cedar park' or 'cold plunge cedar park'\", \"parentRegion\": \"Williamson County, TX\"}, {\"name\": \"Georgetown\", \"tier\": \"secondary\", \"context\": \"Listed as a target geography in the audience opportunity section alongside Austin, Round Rock, and Cedar Park\", \"parentRegion\": \"Williamson County, TX\"}, {\"name\": \"South Austin\", \"tier\": \"tertiary\", \"context\": \"Mentioned as a location descriptor for the Recovery-Driven Athlete persona demographic\", \"parentRegion\": \"Austin, TX\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 4688,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 296,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-locations",
+    "key": "7e82eaf53a0cfad7",
+    "capturedAt": "2026-06-16T21:36:13.562Z"
+  }
+}

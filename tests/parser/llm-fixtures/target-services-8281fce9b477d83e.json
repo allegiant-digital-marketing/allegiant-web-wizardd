@@ -1,0 +1,128 @@
+{
+  "data": {
+    "targetServices": [
+      {
+        "name": "Commercial Debt Collection",
+        "shortName": "Commercial Collections",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P4",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "Highly competitive nationally; Tucker Albin currently not ranking in top 50 for primary national keywords. Competitors like IC System (DR 58) and The Kaplan Group (DR 52) hold significant authority advantages."
+      },
+      {
+        "name": "B2B Debt Recovery",
+        "shortName": "B2B Recovery",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "880–1,900 monthly searches for B2B-specific terms; Tucker Albin has no visible national rankings. Competitors with higher domain authority dominate these results."
+      },
+      {
+        "name": "Accounts Receivable Management Services",
+        "shortName": "A/R Management",
+        "personaIds": [
+          "P2",
+          "P4"
+        ],
+        "priority": "high",
+        "competitiveContext": "Searched by CFOs and controllers optimizing DSO; Tucker Albin not ranking nationally for this term. Competitors offering reporting portals and ERP integration have an edge."
+      },
+      {
+        "name": "International Debt Collection",
+        "shortName": "International Recovery",
+        "personaIds": [
+          "P6"
+        ],
+        "priority": "growth",
+        "competitiveContext": "1,600 monthly searches for international collection agency; enterprise buyers vet through IACC and CLLA directories. Tucker Albin must demonstrate global compliance credentials to compete."
+      },
+      {
+        "name": "Contingency-Based Collection Services",
+        "shortName": "Contingency Collections",
+        "personaIds": [
+          "P1",
+          "P2",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "Fee structure transparency is a top decision factor; buyers actively compare contingency rates across 3–5 agencies before shortlisting."
+      },
+      {
+        "name": "Enterprise Accounts Receivable Outsourcing",
+        "shortName": "Enterprise A/R",
+        "personaIds": [
+          "P4",
+          "P6"
+        ],
+        "priority": "high-LTV",
+        "competitiveContext": "RFP-driven procurement with formal vetting; requires SOC 2 compliance, CLLA certification, and enterprise case studies to compete. Long sales cycle but high retention once won."
+      },
+      {
+        "name": "Multi-Location / Franchise A/R Management",
+        "shortName": "Franchise A/R",
+        "personaIds": [
+          "P4"
+        ],
+        "priority": "growth",
+        "competitiveContext": "Niche but high-value segment; buyers require centralized reporting and consistent processes across locations. Few agencies specialize here, creating differentiation opportunity."
+      },
+      {
+        "name": "Emergency Commercial Debt Recovery",
+        "shortName": "Emergency Recovery",
+        "personaIds": [
+          "P1",
+          "P5"
+        ],
+        "priority": "high",
+        "competitiveContext": "Urgency-driven searches like 'emergency debt recovery near me'; first-mover advantage goes to agencies with strong reviews, visible phone numbers, and fast response times."
+      },
+      {
+        "name": "Small Business Debt Collection",
+        "shortName": "Small Biz Collections",
+        "personaIds": [
+          "P3",
+          "P5"
+        ],
+        "priority": "medium",
+        "competitiveContext": "1,900 monthly searches; growing businesses seeking first collection partner rely heavily on peer referrals and BBB/Google reviews. Trust and education are key differentiators."
+      },
+      {
+        "name": "Corporate Debt Collection",
+        "shortName": "Corporate Collections",
+        "personaIds": [
+          "P2",
+          "P4",
+          "P6"
+        ],
+        "priority": "medium",
+        "competitiveContext": "1,300 monthly searches; corporate buyers evaluate compliance credentials, recovery rates, and reporting capabilities. CLLA certification is table stakes in this segment."
+      }
+    ]
+  },
+  "raw": "{\"targetServices\":[{\"name\":\"Commercial Debt Collection\",\"shortName\":\"Commercial Collections\",\"personaIds\":[\"P1\",\"P2\",\"P4\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"Highly competitive nationally; Tucker Albin currently not ranking in top 50 for primary national keywords. Competitors like IC System (DR 58) and The Kaplan Group (DR 52) hold significant authority advantages.\"},{\"name\":\"B2B Debt Recovery\",\"shortName\":\"B2B Recovery\",\"personaIds\":[\"P1\",\"P2\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"880–1,900 monthly searches for B2B-specific terms; Tucker Albin has no visible national rankings. Competitors with higher domain authority dominate these results.\"},{\"name\":\"Accounts Receivable Management Services\",\"shortName\":\"A/R Management\",\"personaIds\":[\"P2\",\"P4\"],\"priority\":\"high\",\"competitiveContext\":\"Searched by CFOs and controllers optimizing DSO; Tucker Albin not ranking nationally for this term. Competitors offering reporting portals and ERP integration have an edge.\"},{\"name\":\"International Debt Collection\",\"shortName\":\"International Recovery\",\"personaIds\":[\"P6\"],\"priority\":\"growth\",\"competitiveContext\":\"1,600 monthly searches for international collection agency; enterprise buyers vet through IACC and CLLA directories. Tucker Albin must demonstrate global compliance credentials to compete.\"},{\"name\":\"Contingency-Based Collection Services\",\"shortName\":\"Contingency Collections\",\"personaIds\":[\"P1\",\"P2\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"Fee structure transparency is a top decision factor; buyers actively compare contingency rates across 3–5 agencies before shortlisting.\"},{\"name\":\"Enterprise Accounts Receivable Outsourcing\",\"shortName\":\"Enterprise A/R\",\"personaIds\":[\"P4\",\"P6\"],\"priority\":\"high-LTV\",\"competitiveContext\":\"RFP-driven procurement with formal vetting; requires SOC 2 compliance, CLLA certification, and enterprise case studies to compete. Long sales cycle but high retention once won.\"},{\"name\":\"Multi-Location / Franchise A/R Management\",\"shortName\":\"Franchise A/R\",\"personaIds\":[\"P4\"],\"priority\":\"growth\",\"competitiveContext\":\"Niche but high-value segment; buyers require centralized reporting and consistent processes across locations. Few agencies specialize here, creating differentiation opportunity.\"},{\"name\":\"Emergency Commercial Debt Recovery\",\"shortName\":\"Emergency Recovery\",\"personaIds\":[\"P1\",\"P5\"],\"priority\":\"high\",\"competitiveContext\":\"Urgency-driven searches like 'emergency debt recovery near me'; first-mover advantage goes to agencies with strong reviews, visible phone numbers, and fast response times.\"},{\"name\":\"Small Business Debt Collection\",\"shortName\":\"Small Biz Collections\",\"personaIds\":[\"P3\",\"P5\"],\"priority\":\"medium\",\"competitiveContext\":\"1,900 monthly searches; growing businesses seeking first collection partner rely heavily on peer referrals and BBB/Google reviews. Trust and education are key differentiators.\"},{\"name\":\"Corporate Debt Collection\",\"shortName\":\"Corporate Collections\",\"personaIds\":[\"P2\",\"P4\",\"P6\"],\"priority\":\"medium\",\"competitiveContext\":\"1,300 monthly searches; corporate buyers evaluate compliance credentials, recovery rates, and reporting capabilities. CLLA certification is table stakes in this segment.\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 6229,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 777,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-services",
+    "key": "8281fce9b477d83e",
+    "capturedAt": "2026-06-16T21:37:41.015Z"
+  }
+}

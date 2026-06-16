@@ -1,0 +1,28 @@
+{
+  "data": {
+    "vertical": "collections_agency",
+    "subVertical": "commercial_debt_collection",
+    "zone": null,
+    "yearsOperating": null,
+    "tagline": "The people who need what you offer deserve to find you."
+  },
+  "raw": "{\"vertical\": \"collections_agency\", \"subVertical\": \"commercial_debt_collection\", \"zone\": null, \"yearsOperating\": null, \"tagline\": \"The people who need what you offer deserve to find you.\"}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 3714,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 54,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "vertical-and-identity",
+    "key": "1fceb49db486ffa1",
+    "capturedAt": "2026-06-16T21:37:20.551Z"
+  }
+}

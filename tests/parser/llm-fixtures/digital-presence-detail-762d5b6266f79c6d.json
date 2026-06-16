@@ -1,0 +1,170 @@
+{
+  "data": {
+    "currentDigitalPresence": {
+      "website": {
+        "url": "https://www.armstrongrepair.com",
+        "lcpDesktopSeconds": 3,
+        "lcpMobileSeconds": 5.2,
+        "knownIssues": [
+          "Mobile Performance Score estimated at 32; Desktop at 58",
+          "Mobile TTFB 1.40s vs Desktop 0.37s (3.8x gap)",
+          "17 render-blocking resources (9 CSS + 8 JS) loaded synchronously",
+          "157KB hero JPG with zero srcset and zero loading=lazy across 12 site-wide images",
+          "Joomla / Gantry5 / Fabrik Forms stack from pre-mobile-first era",
+          "Estimated 25% unique content, 50% boilerplate, 25% duplicate",
+          "/contact and /index.php/contact are exact duplicates",
+          "Homepage <title> is single word 'Home' — no brand, no service, no city",
+          "Homepage has three H1 tags instead of one",
+          "Zero pages have meta descriptions",
+          "Zero pages have OpenGraph tags",
+          "Zero pages have JSON-LD structured data",
+          "robots.txt missing — returns HTML error page",
+          "XML sitemap missing — all sitemap URLs return 404",
+          "Apex domain armstrongrepair.com does not resolve",
+          "Soft-404 handling missing",
+          "Duplicate URL pattern site-wide",
+          "Cache headers set to no-store/no-cache/must-revalidate on every page",
+          "HSTS and security headers absent",
+          "Austin contact block shows only phone number — no street address, city, state, or zip",
+          "No srcset on any of 12 homepage images",
+          "No loading=lazy on any images",
+          "Only 8 content URLs reachable from homepage",
+          "No service-to-service or service-to-geography cross-linking"
+        ]
+      },
+      "reviews": {
+        "googleRating": 3.3,
+        "googleReviewCount": 28,
+        "yelp": {
+          "verified": true,
+          "visibleReviewCount": 0,
+          "knownIssues": [
+            "Houston Yelp page exists but no public review count surfacing",
+            "Austin Yelp page shows 0 reviews — 'Be the first to review' — completely dormant"
+          ]
+        },
+        "bbb": {
+          "present": true,
+          "rating": "A+",
+          "knownIssues": [
+            "Houston BBB listed under 'Auto Repairs' — wrong industry category",
+            "Houston BBB listed under municipality 'Bellaire' instead of Houston proper",
+            "Houston BBB not accredited",
+            "Austin BBB lists Houston phone number (713) 666-7100 instead of Austin number",
+            "Austin BBB lists founding history as 'Started 2006' vs actual 1968",
+            "Austin BBB not accredited",
+            "Austin BBB A+ rating but with incorrect data"
+          ]
+        }
+      },
+      "social": {
+        "facebook": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "dormant",
+          "knownIssues": [
+            "Only 16 page likes",
+            "Infrequent posting — rarely active",
+            "0 surfaced posts in last 6 months",
+            "No Meta Pixel detected on website",
+            "No active ads found in Meta Ad Library"
+          ]
+        },
+        "instagram": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No Instagram profile detected"
+          ]
+        },
+        "nextdoor": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": []
+        },
+        "linkedin": {
+          "url": null,
+          "followers": 23,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "active",
+          "knownIssues": [
+            "Only 23 followers",
+            "0 surfaced posts in last 6 months",
+            "No LinkedIn Insight Tag detected on website",
+            "No sponsored content surfaced",
+            "Low follower count limits organic reach"
+          ]
+        },
+        "tiktok": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No TikTok profile detected — noted as not a B2B fit"
+          ]
+        },
+        "youtube": {
+          "url": null,
+          "followers": null,
+          "reviewCount": null,
+          "recommendationPct": null,
+          "lastActivityDate": null,
+          "status": "missing",
+          "knownIssues": [
+            "No YouTube channel detected"
+          ]
+        }
+      },
+      "paidMedia": {
+        "googleAds": {
+          "active": false,
+          "notes": "No Google Ads conversion tag found on armstrongrepair.com. No active search ads surfaced for Houston/Austin foodservice repair queries. No remarketing or display tags detected. Allegiant framework actively de-prioritizes Google head-term search ads for this category due to inflated CPCs, blunt targeting, and residential-leaning searcher intent."
+        },
+        "localServiceAds": {
+          "present": false,
+          "competitorsHoldingSlots": [
+            "Hobart Service (Houston)",
+            "Tech-24 (Houston)",
+            "General Parts Group",
+            "Commercial Kitchen Parts & Service"
+          ]
+        }
+      }
+    }
+  },
+  "raw": "{\n  \"currentDigitalPresence\": {\n    \"website\": {\n      \"url\": \"https://www.armstrongrepair.com\",\n      \"lcpDesktopSeconds\": 3.0,\n      \"lcpMobileSeconds\": 5.2,\n      \"knownIssues\": [\n        \"Mobile Performance Score estimated at 32; Desktop at 58\",\n        \"Mobile TTFB 1.40s vs Desktop 0.37s (3.8x gap)\",\n        \"17 render-blocking resources (9 CSS + 8 JS) loaded synchronously\",\n        \"157KB hero JPG with zero srcset and zero loading=lazy across 12 site-wide images\",\n        \"Joomla / Gantry5 / Fabrik Forms stack from pre-mobile-first era\",\n        \"Estimated 25% unique content, 50% boilerplate, 25% duplicate\",\n        \"/contact and /index.php/contact are exact duplicates\",\n        \"Homepage <title> is single word 'Home' — no brand, no service, no city\",\n        \"Homepage has three H1 tags instead of one\",\n        \"Zero pages have meta descriptions\",\n        \"Zero pages have OpenGraph tags\",\n        \"Zero pages have JSON-LD structured data\",\n        \"robots.txt missing — returns HTML error page\",\n        \"XML sitemap missing — all sitemap URLs return 404\",\n        \"Apex domain armstrongrepair.com does not resolve\",\n        \"Soft-404 handling missing\",\n        \"Duplicate URL pattern site-wide\",\n        \"Cache headers set to no-store/no-cache/must-revalidate on every page\",\n        \"HSTS and security headers absent\",\n        \"Austin contact block shows only phone number — no street address, city, state, or zip\",\n        \"No srcset on any of 12 homepage images\",\n        \"No loading=lazy on any images\",\n        \"Only 8 content URLs reachable from homepage\",\n        \"No service-to-service or service-to-geography cross-linking\"\n      ]\n    },\n    \"reviews\": {\n      \"googleRating\": 3.3,\n      \"googleReviewCount\": 28,\n      \"yelp\": {\n        \"verified\": true,\n        \"visibleReviewCount\": 0,\n        \"knownIssues\": [\n          \"Houston Yelp page exists but no public review count surfacing\",\n          \"Austin Yelp page shows 0 reviews — 'Be the first to review' — completely dormant\"\n        ]\n      },\n      \"bbb\": {\n        \"present\": true,\n        \"rating\": \"A+\",\n        \"knownIssues\": [\n          \"Houston BBB listed under 'Auto Repairs' — wrong industry category\",\n          \"Houston BBB listed under municipality 'Bellaire' instead of Houston proper\",\n          \"Houston BBB not accredited\",\n          \"Austin BBB lists Houston phone number (713) 666-7100 instead of Austin number\",\n          \"Austin BBB lists founding history as 'Started 2006' vs actual 1968\",\n          \"Austin BBB not accredited\",\n          \"Austin BBB A+ rating but with incorrect data\"\n        ]\n      }\n    },\n    \"social\": {\n      \"facebook\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"dormant\",\n        \"knownIssues\": [\n          \"Only 16 page likes\",\n          \"Infrequent posting — rarely active\",\n          \"0 surfaced posts in last 6 months\",\n          \"No Meta Pixel detected on website\",\n          \"No active ads found in Meta Ad Library\"\n        ]\n      },\n      \"instagram\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No Instagram profile detected\"\n        ]\n      },\n      \"nextdoor\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": []\n      },\n      \"linkedin\": {\n        \"url\": null,\n        \"followers\": 23,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"active\",\n        \"knownIssues\": [\n          \"Only 23 followers\",\n          \"0 surfaced posts in last 6 months\",\n          \"No LinkedIn Insight Tag detected on website\",\n          \"No sponsored content surfaced\",\n          \"Low follower count limits organic reach\"\n        ]\n      },\n      \"tiktok\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No TikTok profile detected — noted as not a B2B fit\"\n        ]\n      },\n      \"youtube\": {\n        \"url\": null,\n        \"followers\": null,\n        \"reviewCount\": null,\n        \"recommendationPct\": null,\n        \"lastActivityDate\": null,\n        \"status\": \"missing\",\n        \"knownIssues\": [\n          \"No YouTube channel detected\"\n        ]\n      }\n    },\n    \"paidMedia\": {\n      \"googleAds\": {\n        \"active\": false,\n        \"notes\": \"No Google Ads conversion tag found on armstrongrepair.com. No active search ads surfaced for Houston/Austin foodservice repair queries. No remarketing or display tags detected. Allegiant framework actively de-prioritizes Google head-term search ads for this category due to inflated CPCs, blunt targeting, and residential-leaning searcher intent.\"\n      },\n      \"localServiceAds\": {\n        \"present\": false,\n        \"competitorsHoldingSlots\": [\n          \"Hobart Service (Houston)\",\n          \"Tech-24 (Houston)\",\n          \"General Parts Group\",\n          \"Commercial Kitchen Parts & Service\"\n        ]\n      }\n    }\n  }\n}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 8670,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1561,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "digital-presence-detail",
+    "key": "762d5b6266f79c6d",
+    "capturedAt": "2026-06-16T21:41:26.769Z"
+  }
+}

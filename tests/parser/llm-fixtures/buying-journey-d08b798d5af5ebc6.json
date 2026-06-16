@@ -1,0 +1,60 @@
+{
+  "data": {
+    "buyingJourney": {
+      "stages": [
+        {
+          "step": 1,
+          "name": "Search & Discover",
+          "description": "The problem hits. They go to Google or AI platforms and search for immediate solutions. SEO, PPC, and LSAs determine who gets seen first.",
+          "channels": [
+            "Google Search",
+            "PPC",
+            "Local Service Ads",
+            "AI Platforms"
+          ]
+        },
+        {
+          "step": 2,
+          "name": "Evaluate & Compare",
+          "description": "They check reviews, scan your website, compare you against 2–3 competitors. Review volume, rating, and website quality win or lose the job.",
+          "channels": [
+            "Google Reviews",
+            "Website",
+            "Competitor Sites"
+          ]
+        },
+        {
+          "step": 3,
+          "name": "Validate & Decide",
+          "description": "Before calling, many check social media for recent activity, look for neighborhood recommendations, or ask AI for a second opinion.",
+          "channels": [
+            "Instagram",
+            "Facebook",
+            "Nextdoor",
+            "AI Platforms",
+            "Word-of-Mouth"
+          ]
+        }
+      ]
+    }
+  },
+  "raw": "{\"buyingJourney\":{\"stages\":[{\"step\":1,\"name\":\"Search & Discover\",\"description\":\"The problem hits. They go to Google or AI platforms and search for immediate solutions. SEO, PPC, and LSAs determine who gets seen first.\",\"channels\":[\"Google Search\",\"PPC\",\"Local Service Ads\",\"AI Platforms\"]},{\"step\":2,\"name\":\"Evaluate & Compare\",\"description\":\"They check reviews, scan your website, compare you against 2–3 competitors. Review volume, rating, and website quality win or lose the job.\",\"channels\":[\"Google Reviews\",\"Website\",\"Competitor Sites\"]},{\"step\":3,\"name\":\"Validate & Decide\",\"description\":\"Before calling, many check social media for recent activity, look for neighborhood recommendations, or ask AI for a second opinion.\",\"channels\":[\"Instagram\",\"Facebook\",\"Nextdoor\",\"AI Platforms\",\"Word-of-Mouth\"]}]}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 2892,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 206,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "buying-journey",
+    "key": "d08b798d5af5ebc6",
+    "capturedAt": "2026-06-16T21:36:56.953Z"
+  }
+}

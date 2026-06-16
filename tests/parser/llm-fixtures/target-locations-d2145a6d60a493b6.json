@@ -1,0 +1,115 @@
+{
+  "data": {
+    "targetLocations": [
+      {
+        "name": "Cypress",
+        "tier": "primary",
+        "context": "Kirchner Electric HQ at 14802 Grant Rd, 77429; core service area and primary SEO/GBP optimization target",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Bridgeland",
+        "tier": "primary",
+        "context": "Named explicitly in multiple persona profiles as a key residential neighborhood for homeowners; Towne Lake area",
+        "parentRegion": "Cypress, TX"
+      },
+      {
+        "name": "Towne Lake",
+        "tier": "primary",
+        "context": "Named alongside Bridgeland as a Cypress-area community where target personas (Heather & Mark) live",
+        "parentRegion": "Cypress, TX"
+      },
+      {
+        "name": "Tomball",
+        "tier": "secondary",
+        "context": "Named in persona profiles for Daniel Reyes and Cynthia Marsh; existing Nextdoor profile incorrectly listed here instead of Cypress",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Spring",
+        "tier": "secondary",
+        "context": "Named in persona profiles for Daniel Reyes and Cynthia Marsh as part of the service area",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Jersey Village",
+        "tier": "secondary",
+        "context": "Listed as a target geography for localized SEO and GBP optimization",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Magnolia",
+        "tier": "secondary",
+        "context": "Listed as a target geography for localized SEO and GBP optimization",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Klein",
+        "tier": "secondary",
+        "context": "Listed as a target geography for localized SEO and GBP optimization",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Bellaire",
+        "tier": "secondary",
+        "context": "Listed as a target geography for localized SEO and GBP optimization",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "The Woodlands",
+        "tier": "secondary",
+        "context": "Listed as a target geography for localized SEO and GBP optimization",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Greater Houston Metro",
+        "tier": "primary",
+        "context": "Broader service radius referenced throughout; 78,930 monthly searches tracked across Cypress and Greater Houston metro",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "Northwest Houston",
+        "tier": "secondary",
+        "context": "Referenced as the metro area for Carla Whitfield, the commercial property manager persona with highest LTV",
+        "parentRegion": "Houston, TX"
+      },
+      {
+        "name": "Pipe Creek",
+        "tier": "tertiary",
+        "context": "Existing location page flagged for evaluation against trip-radius reality; may dilute local Cypress signal",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "Boerne",
+        "tier": "tertiary",
+        "context": "Existing location page flagged for evaluation against trip-radius reality; may dilute local Cypress signal",
+        "parentRegion": "Texas"
+      },
+      {
+        "name": "San Antonio",
+        "tier": "tertiary",
+        "context": "Existing service area pages flagged for evaluation; noted as potentially diluting Cypress local SEO signal",
+        "parentRegion": "Texas"
+      }
+    ]
+  },
+  "raw": "{\"targetLocations\":[{\"name\":\"Cypress\",\"tier\":\"primary\",\"context\":\"Kirchner Electric HQ at 14802 Grant Rd, 77429; core service area and primary SEO/GBP optimization target\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Bridgeland\",\"tier\":\"primary\",\"context\":\"Named explicitly in multiple persona profiles as a key residential neighborhood for homeowners; Towne Lake area\",\"parentRegion\":\"Cypress, TX\"},{\"name\":\"Towne Lake\",\"tier\":\"primary\",\"context\":\"Named alongside Bridgeland as a Cypress-area community where target personas (Heather & Mark) live\",\"parentRegion\":\"Cypress, TX\"},{\"name\":\"Tomball\",\"tier\":\"secondary\",\"context\":\"Named in persona profiles for Daniel Reyes and Cynthia Marsh; existing Nextdoor profile incorrectly listed here instead of Cypress\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Spring\",\"tier\":\"secondary\",\"context\":\"Named in persona profiles for Daniel Reyes and Cynthia Marsh as part of the service area\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Jersey Village\",\"tier\":\"secondary\",\"context\":\"Listed as a target geography for localized SEO and GBP optimization\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Magnolia\",\"tier\":\"secondary\",\"context\":\"Listed as a target geography for localized SEO and GBP optimization\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Klein\",\"tier\":\"secondary\",\"context\":\"Listed as a target geography for localized SEO and GBP optimization\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Bellaire\",\"tier\":\"secondary\",\"context\":\"Listed as a target geography for localized SEO and GBP optimization\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"The Woodlands\",\"tier\":\"secondary\",\"context\":\"Listed as a target geography for localized SEO and GBP optimization\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Greater Houston Metro\",\"tier\":\"primary\",\"context\":\"Broader service radius referenced throughout; 78,930 monthly searches tracked across Cypress and Greater Houston metro\",\"parentRegion\":\"Texas\"},{\"name\":\"Northwest Houston\",\"tier\":\"secondary\",\"context\":\"Referenced as the metro area for Carla Whitfield, the commercial property manager persona with highest LTV\",\"parentRegion\":\"Houston, TX\"},{\"name\":\"Pipe Creek\",\"tier\":\"tertiary\",\"context\":\"Existing location page flagged for evaluation against trip-radius reality; may dilute local Cypress signal\",\"parentRegion\":\"Texas\"},{\"name\":\"Boerne\",\"tier\":\"tertiary\",\"context\":\"Existing location page flagged for evaluation against trip-radius reality; may dilute local Cypress signal\",\"parentRegion\":\"Texas\"},{\"name\":\"San Antonio\",\"tier\":\"tertiary\",\"context\":\"Existing service area pages flagged for evaluation; noted as potentially diluting Cypress local SEO signal\",\"parentRegion\":\"Texas\"}]}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 6541,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 644,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "target-locations",
+    "key": "d2145a6d60a493b6",
+    "capturedAt": "2026-06-16T21:33:57.937Z"
+  }
+}

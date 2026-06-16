@@ -2,13 +2,15 @@
  * A.R.C. parser — orchestrates extraction + normalization for one A.R.C. URL.
  *
  * Pipeline:
- *   1. Fetch HTML from sourceUrl
+ *   1. Fetch HTML from sourceUrl (or accept as direct input)
  *   2. Run regex/cheerio extractors for deterministic fields
- *   3. Run LLM extractors for variant/prose fields (stubbed in v0.1)
- *   4. Normalize into schema-conforming output
- *   5. Validate against arc-extraction.schema.json
- *   6. Compute completenessScore
- *   7. Return the partner record (or throw on validation failure)
+ *   3. Normalize into schema-conforming output (with PENDING placeholders for
+ *      the LLM-pending fields)
+ *   4. Run LLM extractors for variant/prose fields (routed through llm-cache
+ *      so test runs are fast/free and production runs hit the live API)
+ *   5. Recompute completenessScore based on what actually landed
+ *   6. Validate against arc-extraction.schema.json
+ *   7. Return the extracted record (or throw on validation failure)
  *
  * Public API:
  *   parseArcUrl(url) → Promise<arcExtraction>
@@ -46,13 +48,18 @@ async function parseArcHtml(html, sourceUrl) {
   // Pass 1 — deterministic regex/cheerio extraction
   const raw = regex.extractAll(html);
 
-  // Pass 2 — LLM enrichment (stubbed in v0.1)
-  const { extracted: enriched, warnings: llmWarnings } = await llm.applyLlmExtraction(raw, html);
+  // Pass 2 — normalize to schema shape (with placeholders for LLM-pending fields)
+  const normalized = normalize(raw, sourceUrl);
 
-  // Pass 3 — normalize to schema shape
-  const normalized = normalize(enriched, sourceUrl, llmWarnings);
+  // Pass 3 — LLM enrichment. Mutates `normalized` in place by merging task results.
+  const { warnings: llmWarnings } = await llm.applyLlmExtraction(normalized, html);
+  normalized.metadata.extractionWarnings.push(...llmWarnings);
 
-  // Pass 4 — schema validation
+  // Pass 4 — recompute completeness now that LLM has populated more fields
+  normalized.metadata.completenessScore = computeFinalCompleteness(normalized);
+
+  // Pass 5 — schema validation. This catches any LLM extraction that produced
+  // shape that doesn't match the schema (e.g., invalid enum value).
   const valid = validate(normalized);
   if (!valid) {
     const errMsg = ajv.errorsText(validate.errors);
@@ -63,10 +70,11 @@ async function parseArcHtml(html, sourceUrl) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
- * Normalization — turn raw extraction into schema-conforming output
+ * Normalization — turn raw regex extraction into schema-conforming output
+ * with placeholders where LLM extraction will fill in.
  * ───────────────────────────────────────────────────────────────── */
 
-function normalize(raw, sourceUrl, llmWarnings = []) {
+function normalize(raw, sourceUrl) {
   const personas = raw.personas.map(p => ({
     id: p.id,
     name: p.name,
@@ -84,7 +92,7 @@ function normalize(raw, sourceUrl, llmWarnings = []) {
     fullProfileNotes: p.fullProfileNotes
   }));
 
-  // Normalize weighting hints to sum to ~1.0
+  // Normalize weighting hints to sum to ~1.0 across the persona roster
   const weightSum = personas.reduce((s, p) => s + (p.weightingHint || 0), 0);
   if (weightSum > 0 && Math.abs(weightSum - 1.0) > 0.05) {
     personas.forEach(p => {
@@ -94,24 +102,17 @@ function normalize(raw, sourceUrl, llmWarnings = []) {
     });
   }
 
-  const warnings = [...llmWarnings];
-  const fieldsExtracted = countExtractedFields(raw);
-  const completenessScore = computeCompleteness(fieldsExtracted);
-
-  if (completenessScore < 80) {
-    warnings.push(`Completeness score ${completenessScore} is below the 80 threshold — builder review recommended before Generation runs.`);
-  }
+  const warnings = [];
   if (personas.length === 0) {
     warnings.push('No personas extracted — audience section may be missing or in an unrecognized format');
-  }
-  if (personas.length > 0 && personas.length !== 6) {
+  } else if (personas.length !== 6) {
     warnings.push(`Extracted ${personas.length} personas — A.R.C. template normally has exactly 6`);
   }
   if (raw.competitors.length === 0) {
     warnings.push('No competitors extracted from panel-s7 — competitive section may be missing');
   }
   if (raw.avs === null) {
-    warnings.push('AVS score not extracted — AI Visibility tab presentation may be in an unrecognized format');
+    warnings.push('AVS score not extracted from regex — AI Visibility tab presentation may be in an unrecognized format (LLM may fill in)');
   }
 
   return {
@@ -124,7 +125,10 @@ function normalize(raw, sourceUrl, llmWarnings = []) {
         yelp: { verified: null, visibleReviewCount: null, knownIssues: [] },
         bbb: { present: null, rating: null, knownIssues: [] }
       },
-      social: {},
+      social: {
+        facebook:  emptySocial(), instagram: emptySocial(), nextdoor:  emptySocial(),
+        linkedin:  emptySocial(), tiktok:    emptySocial(), youtube:   emptySocial()
+      },
       paidMedia: {
         googleAds: { active: null, notes: null },
         localServiceAds: { present: null, competitorsHoldingSlots: [] }
@@ -134,20 +138,20 @@ function normalize(raw, sourceUrl, llmWarnings = []) {
       avs: raw.avs,
       citationCount: null,
       platforms: {
-        chatgpt: { cited: null, citationContext: null, score: null },
-        claude: { cited: null, citationContext: null, score: null },
-        gemini: { cited: null, citationContext: null, score: null },
-        perplexity: { cited: null, citationContext: null, score: null },
-        copilot: { cited: null, citationContext: null, score: null }
+        chatgpt:    emptyPlatform(),
+        claude:     emptyPlatform(),
+        gemini:     emptyPlatform(),
+        perplexity: emptyPlatform(),
+        copilot:    emptyPlatform()
       },
       disciplineScores: {
-        aeo: { score: null, notes: null },
-        geo: { score: null, notes: null },
-        aiSeo: { score: null, notes: null },
+        aeo:    { score: null, notes: null },
+        geo:    { score: null, notes: null },
+        aiSeo:  { score: null, notes: null },
         llmSeo: { score: null, notes: null }
       }
     },
-    targetServices: [{ name: 'PENDING_LLM_EXTRACTION', shortName: null, personaIds: [], priority: 'medium', competitiveContext: null }],
+    targetServices:  [{ name: 'PENDING_LLM_EXTRACTION', shortName: null, personaIds: [], priority: 'medium', competitiveContext: null }],
     targetLocations: [{ name: 'PENDING_LLM_EXTRACTION', tier: 'primary', context: null, parentRegion: null }],
     competitors: raw.competitors,
     audience: {
@@ -163,33 +167,45 @@ function normalize(raw, sourceUrl, llmWarnings = []) {
       sourceUrl,
       extractedAt: new Date().toISOString(),
       arcTemplateVersion: detectTemplateVersion(raw.panelInventory),
-      completenessScore,
+      completenessScore: 0,  // placeholder; recomputed after LLM pass
       extractionWarnings: warnings
     }
   };
 }
 
+function emptySocial() {
+  return { url: null, followers: null, reviewCount: null, recommendationPct: null, lastActivityDate: null, status: 'missing', knownIssues: [] };
+}
+
+function emptyPlatform() {
+  return { cited: null, citationContext: null, score: null };
+}
+
 /* ─────────────────────────────────────────────────────────────────
- * Completeness scoring
+ * Final completeness scoring
  *
- * Counts schema-relevant fields that the regex extractor populated.
- * This is a coarse signal — a 100 score does not guarantee correctness,
- * only that fields were extracted. The LLM extractor passes do not yet
- * contribute (they are stubbed); when they wire up, this calculation
- * grows to include LLM-extracted fields.
+ * Counts the high-leverage fields that should be populated after the
+ * full regex + LLM pipeline runs. This is the score builders see in
+ * the Gauntlet Evidence and use to decide whether to proceed to
+ * Generation.
  * ───────────────────────────────────────────────────────────────── */
 
-function countExtractedFields(raw) {
+function computeFinalCompleteness(record) {
   let count = 0;
   let possible = 0;
 
-  // Business identity: 1 deterministic field (businessName)
-  possible += 1;
-  if (raw.businessIdentity.businessName) count += 1;
+  // Identity (5 fields)
+  const bi = record.businessIdentity;
+  possible += 5;
+  if (bi.businessName) count++;
+  if (bi.vertical && bi.vertical !== 'unknown') count++;
+  if (bi.zone) count++;
+  if (bi.yearsOperating) count++;
+  if (bi.founderNarrative) count++;
 
-  // Personas: 6 expected, ~9 fields per persona that are extractable from cards+modals
+  // Personas (6 expected × 9 fields each)
   possible += 6 * 9;
-  for (const p of raw.personas) {
+  for (const p of record.audience.personas) {
     if (p.name) count++;
     if (p.tier) count++;
     if (p.subTier !== null) count++;
@@ -201,31 +217,45 @@ function countExtractedFields(raw) {
     if (p.device) count++;
   }
 
-  // Competitors: expecting ~5 with name (other fields require regex hits that may not always fire)
+  // Competitors (5 expected)
   possible += 5;
-  count += Math.min(raw.competitors.length, 5);
+  count += Math.min(record.competitors.length, 5);
 
-  // AVS: 1 field
+  // AVS (1)
   possible += 1;
-  if (raw.avs !== null) count += 1;
+  if (record.aiVisibility.avs !== null) count++;
 
-  // Decision drivers: expecting ~6
+  // Decision drivers (6 expected)
   possible += 6;
-  count += Math.min(raw.decisionDrivers.length, 6);
+  count += Math.min(record.audience.decisionDrivers.length, 6);
 
-  // Channel map: expecting ~8-10
-  possible += 8;
-  count += Math.min(raw.channelMap.length, 8);
+  // Channel map (7 expected — common floor across A.R.C.s)
+  possible += 7;
+  count += Math.min(record.audience.channelMap.length, 7);
 
-  // Panels: expecting 13
-  possible += 13;
-  count += Math.min(raw.panelInventory.length, 13);
+  // Target services & locations (LLM-extracted; expect 4+ each)
+  possible += 4;
+  const realServices = record.targetServices.filter(s => s.name !== 'PENDING_LLM_EXTRACTION').length;
+  count += Math.min(realServices, 4);
 
-  return { count, possible };
-}
+  possible += 4;
+  const realLocations = record.targetLocations.filter(l => l.name !== 'PENDING_LLM_EXTRACTION').length;
+  count += Math.min(realLocations, 4);
 
-function computeCompleteness({ count, possible }) {
-  if (possible === 0) return 0;
+  // Pain points (LLM-extracted; expect 5+)
+  possible += 5;
+  count += Math.min(record.painPoints.length, 5);
+
+  // Roadmap phases (3 expected) + packages (4 expected)
+  possible += 3;
+  count += Math.min(record.roadmap.phases.length, 3);
+  possible += 4;
+  count += Math.min(record.roadmap.packages.length, 4);
+
+  // Buying journey stages (3 expected)
+  possible += 3;
+  count += Math.min(record.audience.buyingJourney.stages.length, 3);
+
   return Math.round((count / possible) * 100);
 }
 

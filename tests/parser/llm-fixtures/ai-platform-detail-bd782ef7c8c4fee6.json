@@ -1,0 +1,69 @@
+{
+  "data": {
+    "citationCount": "2 of 6",
+    "platforms": {
+      "chatgpt": {
+        "cited": true,
+        "citationContext": "ChatGPT Free returns Kirchner at #3 on 'Best electrician in Cypress, TX?' query; also mentioned on 'Panel upgrade 200 amp Cypress?' and 'Most-reviewed electrician Cypress 4.9 star?' queries. ChatGPT Plus does not cite Kirchner across the full test set.",
+        "score": null
+      },
+      "claude": {
+        "cited": true,
+        "citationContext": "Claude returns Kirchner at #6 on 'Best electrician in Cypress, TX?' query; also listed in set on 'Most-reviewed electrician Cypress 4.9 star?' query.",
+        "score": null
+      },
+      "gemini": {
+        "cited": false,
+        "citationContext": "Kirchner does not surface on Gemini across the full test set.",
+        "score": null
+      },
+      "perplexity": {
+        "cited": false,
+        "citationContext": "Kirchner does not surface on Perplexity across the full test set.",
+        "score": null
+      },
+      "copilot": {
+        "cited": true,
+        "citationContext": "Microsoft Copilot returns Kirchner Top 3 on 'Best electrician in Cypress, TX?' and 'Most-reviewed electrician Cypress 4.9 star?' queries; mentioned in passing on 'Emergency electrician Cypress 24/7?' query.",
+        "score": null
+      }
+    },
+    "disciplineScores": {
+      "aeo": {
+        "score": 10,
+        "notes": "1 out of 10. Answer Engine Optimization — featured snippets, 'people also ask,' voice-assistant answers. Missing schema starves AEO surfaces."
+      },
+      "geo": {
+        "score": 30,
+        "notes": "3 out of 10. Generative Engine Optimization — ChatGPT, Claude, Perplexity citation depth. Thin content authority limits GEO surfacing."
+      },
+      "aiSeo": {
+        "score": 10,
+        "notes": "1 out of 10. Search Generative Experience — Google AI Overviews, Bing AI surfaces. Missing schema starves AI SEO surfaces."
+      },
+      "llmSeo": {
+        "score": 30,
+        "notes": "3 out of 10. LLM training-data citation footprint — Wikipedia, Crunchbase, BBB, Yelp authority signals. Fragmented citations (25 of 37 inconsistent directory citations) and three brand domains splitting authority signals starve LLM SEO."
+      }
+    }
+  },
+  "raw": "{\"citationCount\": \"2 of 6\", \"platforms\": {\"chatgpt\": {\"cited\": true, \"citationContext\": \"ChatGPT Free returns Kirchner at #3 on 'Best electrician in Cypress, TX?' query; also mentioned on 'Panel upgrade 200 amp Cypress?' and 'Most-reviewed electrician Cypress 4.9 star?' queries. ChatGPT Plus does not cite Kirchner across the full test set.\", \"score\": null}, \"claude\": {\"cited\": true, \"citationContext\": \"Claude returns Kirchner at #6 on 'Best electrician in Cypress, TX?' query; also listed in set on 'Most-reviewed electrician Cypress 4.9 star?' query.\", \"score\": null}, \"gemini\": {\"cited\": false, \"citationContext\": \"Kirchner does not surface on Gemini across the full test set.\", \"score\": null}, \"perplexity\": {\"cited\": false, \"citationContext\": \"Kirchner does not surface on Perplexity across the full test set.\", \"score\": null}, \"copilot\": {\"cited\": true, \"citationContext\": \"Microsoft Copilot returns Kirchner Top 3 on 'Best electrician in Cypress, TX?' and 'Most-reviewed electrician Cypress 4.9 star?' queries; mentioned in passing on 'Emergency electrician Cypress 24/7?' query.\", \"score\": null}}, \"disciplineScores\": {\"aeo\": {\"score\": 10, \"notes\": \"1 out of 10. Answer Engine Optimization — featured snippets, 'people also ask,' voice-assistant answers. Missing schema starves AEO surfaces.\"}, \"geo\": {\"score\": 30, \"notes\": \"3 out of 10. Generative Engine Optimization — ChatGPT, Claude, Perplexity citation depth. Thin content authority limits GEO surfacing.\"}, \"aiSeo\": {\"score\": 10, \"notes\": \"1 out of 10. Search Generative Experience — Google AI Overviews, Bing AI surfaces. Missing schema starves AI SEO surfaces.\"}, \"llmSeo\": {\"score\": 30, \"notes\": \"3 out of 10. LLM training-data citation footprint — Wikipedia, Crunchbase, BBB, Yelp authority signals. Fragmented citations (25 of 37 inconsistent directory citations) and three brand domains splitting authority signals starve LLM SEO.\"}}}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 3076,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 586,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "ai-platform-detail",
+    "key": "bd782ef7c8c4fee6",
+    "capturedAt": "2026-06-16T21:35:18.496Z"
+  }
+}

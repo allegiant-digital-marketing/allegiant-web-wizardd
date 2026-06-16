@@ -1,0 +1,69 @@
+{
+  "data": {
+    "citationCount": "4 of 12",
+    "platforms": {
+      "chatgpt": {
+        "cited": true,
+        "citationContext": "Lists EvolvE among Austin cryo options; absent for sauna, contouring & massage",
+        "score": null
+      },
+      "claude": {
+        "cited": true,
+        "citationContext": "Surfaces EvolvE for cryotherapy and recovery; not for other service lines",
+        "score": null
+      },
+      "gemini": {
+        "cited": true,
+        "citationContext": "Leans on local pack + reviews, where EvolvE shows for cryo",
+        "score": null
+      },
+      "perplexity": {
+        "cited": null,
+        "citationContext": null,
+        "score": null
+      },
+      "copilot": {
+        "cited": true,
+        "citationContext": "Mirrors the cryo \"best of\" sources; absent elsewhere",
+        "score": null
+      }
+    },
+    "disciplineScores": {
+      "aeo": {
+        "score": 32,
+        "notes": "Overall AI visibility score is 32 out of 100; EvolvE surfaces for cryotherapy only (~33% coverage across 12 questions tested)"
+      },
+      "geo": {
+        "score": null,
+        "notes": null
+      },
+      "aiSeo": {
+        "score": null,
+        "notes": null
+      },
+      "llmSeo": {
+        "score": null,
+        "notes": null
+      }
+    }
+  },
+  "raw": "{\n  \"citationCount\": \"4 of 12\",\n  \"platforms\": {\n    \"chatgpt\": {\n      \"cited\": true,\n      \"citationContext\": \"Lists EvolvE among Austin cryo options; absent for sauna, contouring & massage\",\n      \"score\": null\n    },\n    \"claude\": {\n      \"cited\": true,\n      \"citationContext\": \"Surfaces EvolvE for cryotherapy and recovery; not for other service lines\",\n      \"score\": null\n    },\n    \"gemini\": {\n      \"cited\": true,\n      \"citationContext\": \"Leans on local pack + reviews, where EvolvE shows for cryo\",\n      \"score\": null\n    },\n    \"perplexity\": {\n      \"cited\": null,\n      \"citationContext\": null,\n      \"score\": null\n    },\n    \"copilot\": {\n      \"cited\": true,\n      \"citationContext\": \"Mirrors the cryo \\\"best of\\\" sources; absent elsewhere\",\n      \"score\": null\n    }\n  },\n  \"disciplineScores\": {\n    \"aeo\": {\n      \"score\": 32,\n      \"notes\": \"Overall AI visibility score is 32 out of 100; EvolvE surfaces for cryotherapy only (~33% coverage across 12 questions tested)\"\n    },\n    \"geo\": {\n      \"score\": null,\n      \"notes\": null\n    },\n    \"aiSeo\": {\n      \"score\": null,\n      \"notes\": null\n    },\n    \"llmSeo\": {\n      \"score\": null,\n      \"notes\": null\n    }\n  }\n}",
+  "model": "claude-sonnet-4-6",
+  "usage": {
+    "input_tokens": 1875,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 408,
+    "service_tier": "standard",
+    "inference_geo": "global"
+  },
+  "_meta": {
+    "taskName": "ai-platform-detail",
+    "key": "e9e383476749d1d8",
+    "capturedAt": "2026-06-16T21:37:03.603Z"
+  }
+}
