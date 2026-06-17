@@ -1,0 +1,4898 @@
+{
+  "categories": {
+    "residential_home_services": {
+      "label": "Residential home services",
+      "verticals": [
+        {
+          "id": "residential_electrician",
+          "label": "Residential electrician",
+          "definition": "Electrical installation, repair, and panel work for residential properties.",
+          "synonyms": [
+            "electrical_contractor_residential",
+            "residential_electrical",
+            "home_electrician"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Required vertical. Anchor example for the local-service definition."
+        },
+        {
+          "id": "residential_hvac",
+          "label": "Residential HVAC",
+          "definition": "Heating, ventilation, and air-conditioning install, repair, and maintenance for homes.",
+          "synonyms": [
+            "hvac_residential",
+            "heating_cooling",
+            "ac_repair_residential",
+            "furnace_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Required vertical."
+        },
+        {
+          "id": "residential_plumbing",
+          "label": "Residential plumbing",
+          "definition": "Plumbing install, repair, and drain work for residential properties.",
+          "synonyms": [
+            "plumber_residential",
+            "residential_plumber",
+            "drain_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Required vertical."
+        },
+        {
+          "id": "residential_roofing",
+          "label": "Residential roofing",
+          "definition": "Roof installation, replacement, and repair for homes.",
+          "synonyms": [
+            "roofer_residential",
+            "roof_repair",
+            "roof_replacement"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Storm/insurance work common; watch for fabricated claim language at QA. See commercial_roofing for the commercial counterpart."
+        },
+        {
+          "id": "residential_painting",
+          "label": "Residential painting",
+          "definition": "Interior and exterior painting for residential properties.",
+          "synonyms": [
+            "house_painter",
+            "interior_painting",
+            "exterior_painting"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "drywall_plaster",
+          "label": "Drywall & plaster",
+          "definition": "Drywall hang, finish, texture, and plaster repair for residential interiors.",
+          "synonyms": [
+            "drywall_contractor",
+            "sheetrock",
+            "plastering"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "flooring_installation",
+          "label": "Flooring installation",
+          "definition": "Supply and installation of carpet, hardwood, tile, laminate, and luxury vinyl flooring.",
+          "synonyms": [
+            "flooring_contractor",
+            "floor_installer",
+            "carpet_installation",
+            "hardwood_flooring"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "S3-117 Flooring pillar is the internal content-compliance reference. See kitchen_bath_showroom (retail) for the showroom variant."
+        },
+        {
+          "id": "window_door_replacement",
+          "label": "Window & door replacement",
+          "definition": "Installation and replacement of residential windows and exterior doors.",
+          "synonyms": [
+            "window_installation",
+            "door_installation",
+            "window_replacement"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "garage_door_services",
+          "label": "Garage door installation & repair",
+          "definition": "Installation, repair, and opener service for residential garage doors.",
+          "synonyms": [
+            "garage_door_repair",
+            "overhead_door_residential"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "gutter_services",
+          "label": "Gutter installation & cleaning",
+          "definition": "Installation, repair, and cleaning of residential gutters and gutter guards.",
+          "synonyms": [
+            "gutter_installation",
+            "gutter_cleaning",
+            "seamless_gutters"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "siding_installation",
+          "label": "Siding installation",
+          "definition": "Installation and repair of residential exterior siding.",
+          "synonyms": [
+            "siding_contractor",
+            "vinyl_siding",
+            "fiber_cement_siding"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "insulation_services",
+          "label": "Insulation installation",
+          "definition": "Installation of attic, wall, and crawlspace insulation for homes.",
+          "synonyms": [
+            "insulation_contractor",
+            "spray_foam",
+            "attic_insulation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "handyman_services",
+          "label": "Handyman services",
+          "definition": "General small-job repair and maintenance for residential properties.",
+          "synonyms": [
+            "handyman",
+            "home_repair",
+            "odd_jobs"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "appliance_repair",
+          "label": "Appliance repair (residential)",
+          "definition": "Repair of residential appliances such as refrigerators, washers, dryers, and ovens.",
+          "synonyms": [
+            "appliance_repair_residential",
+            "home_appliance_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National manufacturer warranty call-centers / mail-in repair.",
+          "notes": null
+        },
+        {
+          "id": "water_heater_services",
+          "label": "Water heater installation & repair",
+          "definition": "Install, repair, and replacement of tank and tankless water heaters.",
+          "synonyms": [
+            "water_heater_repair",
+            "tankless_water_heater"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Often bundled under plumbing; kept distinct for routing precision."
+        },
+        {
+          "id": "residential_solar",
+          "label": "Solar panel installation (residential)",
+          "definition": "Design and installation of residential rooftop solar and battery storage.",
+          "synonyms": [
+            "solar_installer_residential",
+            "rooftop_solar",
+            "home_solar"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National solar financiers / online solar marketplaces (lead aggregators).",
+          "notes": "Frequently sold through national dealer networks; the install/sales operator is local. See commercial_solar."
+        },
+        {
+          "id": "foundation_repair",
+          "label": "Foundation repair",
+          "definition": "Repair and stabilization of residential foundations and slabs.",
+          "synonyms": [
+            "foundation_contractor",
+            "slab_repair",
+            "pier_and_beam"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "waterproofing",
+          "label": "Waterproofing / basement waterproofing",
+          "definition": "Moisture control, basement, and crawlspace waterproofing for homes.",
+          "synonyms": [
+            "basement_waterproofing",
+            "crawlspace_encapsulation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "chimney_services",
+          "label": "Chimney sweep & repair",
+          "definition": "Cleaning, inspection, and repair of residential chimneys and fireplaces.",
+          "synonyms": [
+            "chimney_sweep",
+            "chimney_repair",
+            "fireplace_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "deck_patio_construction",
+          "label": "Deck & patio construction",
+          "definition": "Design and build of residential decks, patios, and outdoor living structures.",
+          "synonyms": [
+            "deck_builder",
+            "patio_builder",
+            "deck_contractor"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "fence_installation",
+          "label": "Fence installation",
+          "definition": "Installation and repair of residential fencing and gates.",
+          "synonyms": [
+            "fence_contractor",
+            "fencing",
+            "gate_installation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "residential_locksmith",
+          "label": "Locksmith (residential)",
+          "definition": "Lock install, rekey, and lockout service for homes.",
+          "synonyms": [
+            "locksmith_residential",
+            "rekey",
+            "lockout_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National locksmith lead-routing / dispatch call-centers.",
+          "notes": null
+        },
+        {
+          "id": "home_security_installation",
+          "label": "Home security system installation",
+          "definition": "Install and service of residential alarm, camera, and monitoring systems.",
+          "synonyms": [
+            "alarm_installation",
+            "security_camera_installation",
+            "home_alarm"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National DIY / self-monitored security brands sold online.",
+          "notes": null
+        },
+        {
+          "id": "smart_home_installation",
+          "label": "Smart home installation",
+          "definition": "Install and integration of residential smart-home, automation, and AV systems.",
+          "synonyms": [
+            "home_automation",
+            "av_installation",
+            "smart_home_integrator"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "septic_services",
+          "label": "Septic system services (residential)",
+          "definition": "Pumping, inspection, install, and repair of residential septic systems.",
+          "synonyms": [
+            "septic_pumping",
+            "septic_repair",
+            "septic_tank_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "well_water_services",
+          "label": "Well & water-treatment services",
+          "definition": "Well drilling, pump service, and residential water treatment/filtration.",
+          "synonyms": [
+            "well_drilling",
+            "water_treatment",
+            "water_softener",
+            "well_pump_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "kitchen_remodeling",
+          "label": "Kitchen remodeling",
+          "definition": "Design and remodel of residential kitchens.",
+          "synonyms": [
+            "kitchen_remodel",
+            "kitchen_renovation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "See construction_specialty_trades for whole-home/general remodeling."
+        },
+        {
+          "id": "bathroom_remodeling",
+          "label": "Bathroom remodeling",
+          "definition": "Design and remodel of residential bathrooms, including tub/shower conversions.",
+          "synonyms": [
+            "bathroom_remodel",
+            "bath_remodel",
+            "shower_replacement"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National bath-fitter franchisors at the corporate level.",
+          "notes": null
+        },
+        {
+          "id": "closet_storage_systems",
+          "label": "Closet & storage systems",
+          "definition": "Design and install of custom closets, Murphy beds, and home storage solutions.",
+          "synonyms": [
+            "custom_closets",
+            "murphy_beds",
+            "storage_solutions",
+            "home_organization"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Matches the More Space Place engagement (Murphy bed / closet franchise)."
+        },
+        {
+          "id": "awning_patio_cover",
+          "label": "Awning & patio cover installation",
+          "definition": "Install of residential awnings, patio covers, and shade structures.",
+          "synonyms": [
+            "awning_installation",
+            "patio_cover",
+            "shade_structure"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "screen_enclosure",
+          "label": "Screen & patio enclosure",
+          "definition": "Build and repair of residential screen rooms and patio enclosures.",
+          "synonyms": [
+            "screen_room",
+            "patio_enclosure",
+            "sunroom_screen"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pool_installation",
+          "label": "Pool installation (residential)",
+          "definition": "Design and construction of residential in-ground and above-ground pools.",
+          "synonyms": [
+            "pool_builder",
+            "pool_construction",
+            "inground_pool"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Recurring pool cleaning/maintenance is in outdoor_grounds_services (pool_service)."
+        },
+        {
+          "id": "epoxy_garage_flooring",
+          "label": "Epoxy & garage flooring",
+          "definition": "Application of epoxy and coated flooring for garages and residential concrete.",
+          "synonyms": [
+            "epoxy_flooring",
+            "garage_floor_coating",
+            "concrete_coating"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "commercial_facility_services": {
+      "label": "Commercial & facility services",
+      "verticals": [
+        {
+          "id": "commercial_hvac",
+          "label": "Commercial HVAC",
+          "definition": "HVAC install, repair, and maintenance for commercial and light-industrial buildings.",
+          "synonyms": [
+            "hvac_commercial",
+            "commercial_heating_cooling",
+            "rtu_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National facilities-management / national mechanical-services firms.",
+          "notes": null
+        },
+        {
+          "id": "commercial_plumbing",
+          "label": "Commercial plumbing",
+          "definition": "Plumbing install and repair for commercial buildings and facilities.",
+          "synonyms": [
+            "plumber_commercial",
+            "commercial_drain"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_electrical",
+          "label": "Commercial electrical",
+          "definition": "Electrical install, service, and code work for commercial buildings.",
+          "synonyms": [
+            "electrical_contractor_commercial",
+            "commercial_electrician"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_roofing",
+          "label": "Commercial roofing",
+          "definition": "Flat and low-slope roof install, repair, and maintenance for commercial buildings.",
+          "synonyms": [
+            "roofer_commercial",
+            "flat_roof",
+            "tpo_roofing",
+            "commercial_roof_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_kitchen_equipment_repair",
+          "label": "Commercial kitchen equipment repair",
+          "definition": "Repair and maintenance of commercial cooking, refrigeration, and food-service equipment.",
+          "synonyms": [
+            "restaurant_equipment_repair",
+            "foodservice_equipment_repair",
+            "cooking_equipment_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National OEM service networks / national field-service dispatch.",
+          "notes": "Required vertical. B2B but local \u2014 install/service operator competes within a metro."
+        },
+        {
+          "id": "commercial_refrigeration",
+          "label": "Commercial refrigeration repair",
+          "definition": "Install and repair of walk-ins, reach-ins, ice machines, and refrigeration systems.",
+          "synonyms": [
+            "refrigeration_repair",
+            "walk_in_cooler_repair",
+            "ice_machine_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "facility_maintenance",
+          "label": "Facility / building maintenance",
+          "definition": "Multi-trade building maintenance and repair for commercial facilities.",
+          "synonyms": [
+            "building_maintenance",
+            "facilities_maintenance",
+            "property_maintenance_commercial"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National integrated facilities-management (IFM) providers.",
+          "notes": null
+        },
+        {
+          "id": "commercial_painting",
+          "label": "Commercial painting",
+          "definition": "Interior and exterior painting for commercial buildings and complexes.",
+          "synonyms": [
+            "painting_contractor_commercial",
+            "commercial_painter"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_flooring",
+          "label": "Commercial flooring",
+          "definition": "Supply and install of commercial-grade flooring systems.",
+          "synonyms": [
+            "flooring_contractor_commercial",
+            "commercial_floor_install"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "fire_protection",
+          "label": "Fire protection & suppression",
+          "definition": "Install, inspection, and service of fire sprinkler, alarm, and suppression systems.",
+          "synonyms": [
+            "fire_sprinkler",
+            "fire_suppression",
+            "fire_alarm_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National life-safety / fire-protection conglomerates.",
+          "notes": "Life-safety regulated work; not consumer-health YMYL but heavily code-governed."
+        },
+        {
+          "id": "commercial_security_access",
+          "label": "Commercial security & access control",
+          "definition": "Install and service of commercial access control, surveillance, and alarm systems.",
+          "synonyms": [
+            "access_control",
+            "commercial_surveillance",
+            "card_access"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "building_automation",
+          "label": "HVAC controls & building automation",
+          "definition": "Install and integration of building automation and controls systems.",
+          "synonyms": [
+            "building_automation_systems",
+            "bas",
+            "hvac_controls"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "elevator_services",
+          "label": "Elevator install & maintenance",
+          "definition": "Install, modernization, and maintenance of elevators and lifts.",
+          "synonyms": [
+            "elevator_maintenance",
+            "lift_service",
+            "elevator_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "The major national/global elevator OEMs.",
+          "notes": null
+        },
+        {
+          "id": "commercial_glass_glazing",
+          "label": "Commercial glass & glazing",
+          "definition": "Install and repair of commercial storefront glass, curtain wall, and glazing.",
+          "synonyms": [
+            "glazing_contractor",
+            "storefront_glass",
+            "commercial_glass"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "loading_dock_doors",
+          "label": "Dock & overhead door services (commercial)",
+          "definition": "Install and repair of loading dock equipment and commercial overhead doors.",
+          "synonyms": [
+            "dock_equipment",
+            "commercial_overhead_door",
+            "rolling_steel_door"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_locksmith",
+          "label": "Commercial locksmith & lock systems",
+          "definition": "Master-key, access hardware, and lock service for commercial facilities.",
+          "synonyms": [
+            "locksmith_commercial",
+            "master_key_systems"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "parking_lot_maintenance",
+          "label": "Parking lot striping & maintenance",
+          "definition": "Striping, sealcoating, and maintenance of commercial parking lots.",
+          "synonyms": [
+            "lot_striping",
+            "sealcoating",
+            "parking_lot_marking"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "sign_install_maintenance",
+          "label": "Sign installation & maintenance",
+          "definition": "Install, service, and repair of commercial signage and illuminated signs.",
+          "synonyms": [
+            "sign_installation",
+            "sign_repair",
+            "channel_letters"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_generator",
+          "label": "Commercial generator install & service",
+          "definition": "Install and maintenance of standby generators for commercial facilities.",
+          "synonyms": [
+            "generator_installation",
+            "standby_power",
+            "backup_generator"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "boiler_services",
+          "label": "Boiler service",
+          "definition": "Install, repair, and maintenance of commercial and industrial boilers.",
+          "synonyms": [
+            "boiler_repair",
+            "boiler_maintenance"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "industrial_equipment_repair",
+          "label": "Industrial equipment repair (local)",
+          "definition": "On-site repair and maintenance of industrial machinery for area businesses.",
+          "synonyms": [
+            "machinery_repair",
+            "industrial_maintenance",
+            "equipment_servicing"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Local-service when the operator serves a defined service radius; national field-service firms excluded."
+        },
+        {
+          "id": "hood_cleaning",
+          "label": "Kitchen exhaust / hood cleaning",
+          "definition": "Cleaning and certification of commercial kitchen exhaust hoods and ductwork.",
+          "synonyms": [
+            "kitchen_exhaust_cleaning",
+            "hood_cleaning",
+            "grease_duct_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "grease_trap_cleaning",
+          "label": "Grease trap & grease management",
+          "definition": "Pumping and maintenance of commercial grease traps and interceptors.",
+          "synonyms": [
+            "grease_trap_service",
+            "grease_management",
+            "grease_pumping"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "commercial_pressure_washing",
+          "label": "Commercial pressure washing",
+          "definition": "Exterior pressure/soft washing for commercial buildings, lots, and fleets.",
+          "synonyms": [
+            "commercial_power_washing",
+            "building_washing"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Residential exterior washing is in outdoor_grounds_services."
+        }
+      ]
+    },
+    "outdoor_grounds_services": {
+      "label": "Outdoor & grounds services",
+      "verticals": [
+        {
+          "id": "landscaping",
+          "label": "Landscaping (design & install)",
+          "definition": "Landscape design, install, and grounds construction for residential and commercial sites.",
+          "synonyms": [
+            "landscaper",
+            "landscape_design",
+            "landscape_installation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "lawn_care",
+          "label": "Lawn care & maintenance",
+          "definition": "Recurring mowing, edging, and turf maintenance.",
+          "synonyms": [
+            "lawn_maintenance",
+            "mowing",
+            "lawn_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "lawn_treatment",
+          "label": "Lawn fertilization & weed control",
+          "definition": "Recurring fertilization, weed, and turf-health treatment programs.",
+          "synonyms": [
+            "lawn_fertilization",
+            "weed_control",
+            "turf_treatment"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "tree_care",
+          "label": "Tree care services",
+          "definition": "Tree trimming, pruning, removal, and health care by arborists.",
+          "synonyms": [
+            "tree_service",
+            "arborist",
+            "tree_trimming",
+            "tree_removal"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Required vertical. Matches the Tree Care Partners (TCP) PE engagement; 8 managed brands route here."
+        },
+        {
+          "id": "stump_grinding",
+          "label": "Stump grinding & removal",
+          "definition": "Grinding and removal of tree stumps.",
+          "synonyms": [
+            "stump_removal",
+            "stump_grinding_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pest_control",
+          "label": "Pest control",
+          "definition": "Inspection and treatment for household and commercial pests.",
+          "synonyms": [
+            "exterminator",
+            "pest_management",
+            "bug_control"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National pest-control brands at the corporate/franchisor level.",
+          "notes": null
+        },
+        {
+          "id": "termite_control",
+          "label": "Termite control",
+          "definition": "Inspection, treatment, and prevention of termite infestation.",
+          "synonyms": [
+            "termite_treatment",
+            "termite_inspection"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "mosquito_control",
+          "label": "Mosquito control",
+          "definition": "Seasonal mosquito and outdoor-pest barrier treatment.",
+          "synonyms": [
+            "mosquito_treatment",
+            "mosquito_barrier"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "wildlife_removal",
+          "label": "Wildlife & animal control",
+          "definition": "Humane removal and exclusion of nuisance wildlife from properties.",
+          "synonyms": [
+            "animal_control_private",
+            "critter_removal",
+            "wildlife_exclusion"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "irrigation_services",
+          "label": "Irrigation / sprinkler systems",
+          "definition": "Install, repair, and maintenance of lawn irrigation and sprinkler systems.",
+          "synonyms": [
+            "sprinkler_repair",
+            "irrigation_install",
+            "sprinkler_system"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "hardscaping",
+          "label": "Hardscaping",
+          "definition": "Install of patios, retaining walls, pavers, and stone hardscape features.",
+          "synonyms": [
+            "paver_install",
+            "retaining_walls",
+            "hardscape_contractor"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "sod_installation",
+          "label": "Sod & turf installation",
+          "definition": "Install of sod, artificial turf, and new lawns.",
+          "synonyms": [
+            "sod_install",
+            "artificial_turf",
+            "turf_installation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "land_clearing",
+          "label": "Land clearing & grading",
+          "definition": "Clearing, brush removal, and rough grading of lots and acreage.",
+          "synonyms": [
+            "lot_clearing",
+            "brush_clearing",
+            "forestry_mulching"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pool_service",
+          "label": "Pool service & maintenance",
+          "definition": "Recurring cleaning, chemical balancing, and equipment service for pools.",
+          "synonyms": [
+            "pool_cleaning",
+            "pool_maintenance",
+            "pool_service_recurring"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Pool construction/build is in residential_home_services (pool_installation)."
+        },
+        {
+          "id": "snow_removal",
+          "label": "Snow & ice removal",
+          "definition": "Snow plowing and ice management for residential and commercial properties.",
+          "synonyms": [
+            "snow_plowing",
+            "ice_management",
+            "snow_clearing"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Seasonal/regional; not applicable in some metros."
+        },
+        {
+          "id": "holiday_lighting",
+          "label": "Holiday & outdoor lighting",
+          "definition": "Seasonal holiday light install and permanent outdoor lighting design.",
+          "synonyms": [
+            "holiday_lights",
+            "christmas_lights",
+            "landscape_lighting"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pressure_washing_residential",
+          "label": "Pressure washing (residential exterior)",
+          "definition": "Exterior soft/pressure washing for homes, driveways, and decks.",
+          "synonyms": [
+            "power_washing_residential",
+            "house_washing",
+            "driveway_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "junk_removal",
+          "label": "Junk removal & hauling",
+          "definition": "Pickup and disposal of household and commercial junk and debris.",
+          "synonyms": [
+            "junk_hauling",
+            "debris_removal",
+            "trash_hauling"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National junk-removal franchisors at the corporate level.",
+          "notes": null
+        },
+        {
+          "id": "dumpster_rental",
+          "label": "Dumpster / roll-off rental",
+          "definition": "Roll-off dumpster and temporary waste-container rental.",
+          "synonyms": [
+            "roll_off_rental",
+            "dumpster_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pond_lake_management",
+          "label": "Pond & lake management",
+          "definition": "Maintenance, aeration, and treatment of private ponds and lakes.",
+          "synonyms": [
+            "pond_maintenance",
+            "lake_management",
+            "aquatic_management"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "cleaning_janitorial": {
+      "label": "Cleaning & janitorial",
+      "verticals": [
+        {
+          "id": "residential_cleaning",
+          "label": "Residential cleaning / maid service",
+          "definition": "Recurring and one-time house cleaning for residential customers.",
+          "synonyms": [
+            "house_cleaning",
+            "maid_service",
+            "home_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National maid-service franchisors at the corporate level.",
+          "notes": null
+        },
+        {
+          "id": "commercial_janitorial",
+          "label": "Commercial janitorial",
+          "definition": "Recurring janitorial and custodial service for commercial facilities.",
+          "synonyms": [
+            "janitorial_services",
+            "office_cleaning",
+            "commercial_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National janitorial franchisors / national BSC contractors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "carpet_cleaning",
+          "label": "Carpet & upholstery cleaning",
+          "definition": "Deep cleaning of carpets, rugs, and upholstery.",
+          "synonyms": [
+            "upholstery_cleaning",
+            "rug_cleaning",
+            "carpet_cleaner"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "window_cleaning",
+          "label": "Window cleaning",
+          "definition": "Interior and exterior window cleaning for homes and businesses.",
+          "synonyms": [
+            "window_washing",
+            "glass_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "tile_grout_cleaning",
+          "label": "Tile & grout cleaning",
+          "definition": "Deep cleaning and sealing of tile and grout surfaces.",
+          "synonyms": [
+            "grout_cleaning",
+            "tile_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "air_duct_cleaning",
+          "label": "Air duct cleaning",
+          "definition": "Cleaning of HVAC ductwork and ventilation systems.",
+          "synonyms": [
+            "duct_cleaning",
+            "hvac_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dryer_vent_cleaning",
+          "label": "Dryer vent cleaning",
+          "definition": "Cleaning and inspection of residential and commercial dryer vents.",
+          "synonyms": [
+            "dryer_vent_service",
+            "lint_removal"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "post_construction_cleaning",
+          "label": "Post-construction cleaning",
+          "definition": "Final clean of newly built or renovated spaces.",
+          "synonyms": [
+            "construction_cleanup",
+            "final_clean"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "move_cleaning",
+          "label": "Move-in / move-out cleaning",
+          "definition": "Turnover cleaning for moves and tenant changeovers.",
+          "synonyms": [
+            "move_out_cleaning",
+            "turnover_cleaning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "disaster_restoration",
+          "label": "Disaster / water damage restoration",
+          "definition": "Emergency water, flood, and storm damage mitigation and restoration.",
+          "synonyms": [
+            "water_damage_restoration",
+            "flood_restoration",
+            "water_mitigation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restoration franchisors at corporate level.",
+          "notes": "Insurance-driven, urgency-sensitive; not health YMYL but watch fabricated-claim language and insurance representations at QA."
+        },
+        {
+          "id": "fire_smoke_restoration",
+          "label": "Fire & smoke damage restoration",
+          "definition": "Cleanup and restoration after fire and smoke damage.",
+          "synonyms": [
+            "fire_restoration",
+            "smoke_damage"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "mold_remediation",
+          "label": "Mold remediation",
+          "definition": "Inspection, containment, and removal of indoor mold.",
+          "synonyms": [
+            "mold_removal",
+            "mold_inspection",
+            "remediation"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Flagged YMYL-style: makes indoor-air/health-adjacent claims and is licensed/regulated in many states \u2014 route through the compliance brake."
+        },
+        {
+          "id": "biohazard_cleanup",
+          "label": "Biohazard / trauma cleanup",
+          "definition": "Cleanup and decontamination of biohazard, trauma, and crime scenes.",
+          "synonyms": [
+            "crime_scene_cleanup",
+            "trauma_cleanup",
+            "biohazard_remediation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Sensitive subject matter; keep marketing language careful and non-graphic."
+        },
+        {
+          "id": "floor_strip_wax",
+          "label": "Floor stripping & waxing",
+          "definition": "Strip, wax, and refinish of commercial hard-floor surfaces.",
+          "synonyms": [
+            "floor_waxing",
+            "floor_refinishing_commercial"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "hoarding_cleanup",
+          "label": "Hoarding cleanup",
+          "definition": "Specialized cleanout and remediation of hoarding situations.",
+          "synonyms": [
+            "hoarding_remediation",
+            "cleanout_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Sensitive; involves vulnerable individuals. Keep messaging compassionate and non-judgmental."
+        },
+        {
+          "id": "sanitization_disinfection",
+          "label": "Sanitization & disinfection",
+          "definition": "Specialized disinfection and sanitization for homes and facilities.",
+          "synonyms": [
+            "disinfection_service",
+            "sanitizing",
+            "decontamination"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "real_estate_property": {
+      "label": "Real estate & property",
+      "verticals": [
+        {
+          "id": "residential_real_estate_brokerage",
+          "label": "Residential real estate brokerage",
+          "definition": "Local residential buyer/seller agent and brokerage services.",
+          "synonyms": [
+            "realtor",
+            "real_estate_agent",
+            "residential_brokerage",
+            "home_selling"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National iBuyer platforms and pure-online discount brokerages.",
+          "notes": "Allegiant policy: YMYL \u2014 sits atop the largest financial transaction most consumers ever make, and brokerage content routinely discusses appreciation, timing, and market direction (de facto financial claims). Route through compliance brake. Override on the operator confirm only if the partner explicitly disclaims financial advice and sticks to it in their content. Anchor partner: Laurie Flood Team (KW Realty)."
+        },
+        {
+          "id": "commercial_real_estate_brokerage",
+          "label": "Commercial real estate brokerage",
+          "definition": "Local commercial leasing, sales, and tenant-rep brokerage.",
+          "synonyms": [
+            "cre_brokerage",
+            "commercial_broker",
+            "tenant_rep"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National CRE platforms (the major national brokerage houses).",
+          "notes": "YMYL-adjacent (investment claims). Large-deal/national-account CRE shops may not be single-market."
+        },
+        {
+          "id": "residential_property_management",
+          "label": "Property management (residential)",
+          "definition": "Leasing, tenant, and maintenance management for residential rentals.",
+          "synonyms": [
+            "property_manager_residential",
+            "rental_management"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National single-family-rental (SFR) platforms / national REIT operators.",
+          "notes": "Financial-adjacent (handles owner funds)."
+        },
+        {
+          "id": "commercial_property_management",
+          "label": "Property management (commercial)",
+          "definition": "Operations, leasing, and maintenance management for commercial properties.",
+          "synonyms": [
+            "property_manager_commercial",
+            "cre_management"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National commercial PM platforms.",
+          "notes": null
+        },
+        {
+          "id": "hoa_management",
+          "label": "HOA / community association management",
+          "definition": "Management of homeowner and community associations.",
+          "synonyms": [
+            "community_association_management",
+            "hoa_manager"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "real_estate_appraisal",
+          "label": "Real estate appraisal",
+          "definition": "Independent valuation of residential and commercial property.",
+          "synonyms": [
+            "appraiser",
+            "property_appraisal",
+            "home_appraisal"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Financial valuation; license-regulated. Route through compliance brake."
+        },
+        {
+          "id": "home_inspection",
+          "label": "Home inspection",
+          "definition": "Pre-purchase and maintenance inspection of residential property condition.",
+          "synonyms": [
+            "home_inspector",
+            "property_inspection"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National inspection franchisors at corporate level.",
+          "notes": "Safety/condition findings; license-regulated in many states."
+        },
+        {
+          "id": "title_escrow",
+          "label": "Title & escrow services (local)",
+          "definition": "Local title search, title insurance, and escrow/closing services.",
+          "synonyms": [
+            "title_company",
+            "escrow_services",
+            "closing_services"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National title underwriters at the corporate level.",
+          "notes": "Financial + insurance; heavily regulated. Route through compliance brake."
+        },
+        {
+          "id": "land_surveying",
+          "label": "Land surveying",
+          "definition": "Boundary, topographic, and ALTA surveying of land parcels.",
+          "synonyms": [
+            "surveyor",
+            "boundary_survey",
+            "topographic_survey"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "vacation_rental_management",
+          "label": "Vacation / short-term rental management",
+          "definition": "Local management of short-term and vacation rental properties.",
+          "synonyms": [
+            "str_management",
+            "airbnb_management",
+            "vacation_rental_manager"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National STR-management platforms.",
+          "notes": null
+        },
+        {
+          "id": "apartment_locating",
+          "label": "Apartment locating / leasing",
+          "definition": "Local apartment-finder and leasing-assistance service.",
+          "synonyms": [
+            "apartment_finder",
+            "leasing_agent",
+            "apartment_locator"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Common in TX metros; agent is paid by the property."
+        }
+      ]
+    },
+    "local_professional_services": {
+      "label": "Local professional services",
+      "verticals": [
+        {
+          "id": "cpa_accounting",
+          "label": "CPA / accounting firm (local)",
+          "definition": "Local certified public accounting and assurance services.",
+          "synonyms": [
+            "accountant",
+            "cpa_firm",
+            "accounting_services"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "The Big-Four / national accounting networks.",
+          "notes": "Financial YMYL \u2014 compliance brake."
+        },
+        {
+          "id": "tax_preparation",
+          "label": "Tax preparation",
+          "definition": "Individual and small-business tax preparation and filing.",
+          "synonyms": [
+            "tax_prep",
+            "tax_preparer",
+            "tax_filing"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National tax-software platforms / national tax-prep franchisors at corporate level.",
+          "notes": "Financial YMYL \u2014 compliance brake."
+        },
+        {
+          "id": "bookkeeping",
+          "label": "Bookkeeping services",
+          "definition": "Recurring bookkeeping and financial record-keeping for small businesses.",
+          "synonyms": [
+            "bookkeeper",
+            "books_management"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National remote-bookkeeping platforms.",
+          "notes": "Lower-stakes financial claims, but kept in the YMYL brake group for consistency. Can be delivered remotely \u2014 confirm local-market focus before slicing."
+        },
+        {
+          "id": "payroll_services",
+          "label": "Payroll services (local)",
+          "definition": "Local payroll processing and compliance for small businesses.",
+          "synonyms": [
+            "payroll_provider",
+            "payroll_processing"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National payroll/HR SaaS platforms.",
+          "notes": "Often remote/national; only local when the operator markets to a defined metro."
+        },
+        {
+          "id": "insurance_agency",
+          "label": "Insurance agency (local)",
+          "definition": "Local agency placing auto, home, life, and commercial insurance.",
+          "synonyms": [
+            "insurance_agent",
+            "insurance_broker",
+            "independent_agent"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National direct/online insurers and national carriers (corporate).",
+          "notes": "Financial YMYL \u2014 compliance brake. Captive-agent and franchise models common."
+        },
+        {
+          "id": "mortgage_broker",
+          "label": "Mortgage broker / lender (local)",
+          "definition": "Local mortgage origination and brokerage services.",
+          "synonyms": [
+            "mortgage_lender",
+            "loan_officer",
+            "mortgage_originator"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online lenders / national wholesale lenders.",
+          "notes": "Financial YMYL \u2014 compliance brake. Rate/APR claims are heavily regulated."
+        },
+        {
+          "id": "financial_advisor",
+          "label": "Financial advisor / wealth management (local)",
+          "definition": "Local financial planning and investment-advisory practice.",
+          "synonyms": [
+            "wealth_management",
+            "financial_planner",
+            "ria_local",
+            "investment_advisor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National roboadvisors, online brokerages, and national wirehouses.",
+          "notes": "Financial YMYL \u2014 compliance brake. Note the Austin Moon / Bridgemark RIA M&A engagement is a SELLER-SIDE M&A advisor (national scope, niche) \u2014 that operator is NOT a local-slice fit; this vertical is the general local-advisor case."
+        },
+        {
+          "id": "notary_services",
+          "label": "Notary / mobile notary",
+          "definition": "Local notarization and mobile/loan-signing notary services.",
+          "synonyms": [
+            "mobile_notary",
+            "loan_signing_agent",
+            "notary_public"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "architecture_firm",
+          "label": "Architecture firm (local)",
+          "definition": "Local architectural design for residential and commercial projects.",
+          "synonyms": [
+            "architect",
+            "architectural_services"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National/global architecture practices.",
+          "notes": null
+        },
+        {
+          "id": "engineering_firm",
+          "label": "Engineering firm (local)",
+          "definition": "Local civil, structural, and MEP engineering services.",
+          "synonyms": [
+            "civil_engineering",
+            "structural_engineering",
+            "mep_engineering"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National engineering / AEC firms.",
+          "notes": null
+        },
+        {
+          "id": "interior_design",
+          "label": "Interior design (local)",
+          "definition": "Local residential and commercial interior design services.",
+          "synonyms": [
+            "interior_designer",
+            "design_studio"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "local_it_services",
+          "label": "IT services / managed IT (local MSP)",
+          "definition": "Local managed IT, support, and network services for area businesses.",
+          "synonyms": [
+            "managed_it",
+            "msp",
+            "it_support",
+            "computer_services"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National MSPs / national cloud and IT-outsourcing providers.",
+          "notes": "Borderline \u2014 can be delivered remotely. Local-service only when the operator serves on-site clients in a defined metro."
+        },
+        {
+          "id": "staffing_agency",
+          "label": "Staffing / employment agency (local)",
+          "definition": "Local recruiting and staffing services for area employers.",
+          "synonyms": [
+            "recruiting_agency",
+            "employment_agency",
+            "staffing_firm"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National staffing networks / national job platforms.",
+          "notes": null
+        },
+        {
+          "id": "local_marketing_agency",
+          "label": "Marketing / advertising agency (local)",
+          "definition": "Local marketing, advertising, and creative-services agency.",
+          "synonyms": [
+            "ad_agency",
+            "creative_agency",
+            "digital_marketing_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National/remote digital agencies serving clients across many markets.",
+          "notes": "IMPORTANT self-reference: a national-scope agency (clients across multiple metros) is NOT a local-slice fit even if HQ is local. This mirrors Allegiant's own national service model."
+        },
+        {
+          "id": "print_shop",
+          "label": "Printing / print shop (local)",
+          "definition": "Local commercial printing, copy, and finishing services.",
+          "synonyms": [
+            "printing_services",
+            "copy_shop",
+            "commercial_printing"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online print-on-demand platforms.",
+          "notes": null
+        },
+        {
+          "id": "sign_shop",
+          "label": "Sign shop (local)",
+          "definition": "Local design and fabrication of signage and graphics.",
+          "synonyms": [
+            "signage_company",
+            "sign_maker",
+            "custom_signs"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "photography_studio",
+          "label": "Photography studio (local)",
+          "definition": "Local portrait, family, headshot, and commercial photography.",
+          "synonyms": [
+            "photographer",
+            "portrait_studio",
+            "headshot_photography"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Event/wedding photography is in events_entertainment."
+        },
+        {
+          "id": "translation_interpreting",
+          "label": "Translation / interpreting (local)",
+          "definition": "Local document translation and on-site interpreting services.",
+          "synonyms": [
+            "translation_services",
+            "interpreter",
+            "localization_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National/remote translation and localization platforms.",
+          "notes": null
+        },
+        {
+          "id": "business_consulting",
+          "label": "Business consulting (local)",
+          "definition": "Local management, operations, or small-business consulting.",
+          "synonyms": [
+            "consultant_local",
+            "management_consulting_local",
+            "small_business_consulting"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National/global consultancies and remote-only consultants.",
+          "notes": "Borderline \u2014 confirm defined-metro focus before slicing."
+        },
+        {
+          "id": "court_reporting",
+          "label": "Court reporting (local)",
+          "definition": "Local deposition and court reporting / transcription services.",
+          "synonyms": [
+            "court_reporter",
+            "deposition_services",
+            "stenography"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "process_serving",
+          "label": "Process serving (local)",
+          "definition": "Local service of legal process and document delivery.",
+          "synonyms": [
+            "process_server",
+            "legal_process_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "local_legal": {
+      "label": "Local legal",
+      "verticals": [
+        {
+          "id": "personal_injury_law",
+          "label": "Personal injury law",
+          "definition": "Local plaintiff-side personal injury and accident representation.",
+          "synonyms": [
+            "pi_lawyer",
+            "injury_attorney",
+            "accident_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": "Required edge case example: a local PI firm = local; national mass-tort advertiser = excluded."
+        },
+        {
+          "id": "family_law",
+          "label": "Family law / divorce",
+          "definition": "Local divorce, custody, and family-law representation.",
+          "synonyms": [
+            "divorce_lawyer",
+            "custody_attorney",
+            "family_attorney"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "criminal_defense",
+          "label": "Criminal defense",
+          "definition": "Local criminal defense representation.",
+          "synonyms": [
+            "criminal_lawyer",
+            "defense_attorney"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "dui_dwi_defense",
+          "label": "DUI / DWI defense",
+          "definition": "Local DUI/DWI and traffic-crime defense.",
+          "synonyms": [
+            "dwi_lawyer",
+            "dui_attorney"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "estate_planning_law",
+          "label": "Estate planning / wills & trusts",
+          "definition": "Local estate planning, wills, trusts, and probate-prevention work.",
+          "synonyms": [
+            "estate_attorney",
+            "wills_and_trusts",
+            "estate_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "probate_law",
+          "label": "Probate law",
+          "definition": "Local probate administration and estate-settlement representation.",
+          "synonyms": [
+            "probate_attorney",
+            "estate_administration"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "elder_law",
+          "label": "Elder law",
+          "definition": "Local elder-law, guardianship, and long-term-care planning.",
+          "synonyms": [
+            "elder_attorney",
+            "guardianship_law"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "real_estate_law",
+          "label": "Real estate law",
+          "definition": "Local real estate transactional and dispute representation.",
+          "synonyms": [
+            "real_estate_attorney",
+            "property_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "bankruptcy_law",
+          "label": "Bankruptcy law",
+          "definition": "Local consumer and small-business bankruptcy representation.",
+          "synonyms": [
+            "bankruptcy_attorney",
+            "debt_relief_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "immigration_law",
+          "label": "Immigration law (local practice)",
+          "definition": "Local immigration and naturalization representation.",
+          "synonyms": [
+            "immigration_attorney",
+            "visa_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National high-volume immigration mills / online platforms.",
+          "notes": null
+        },
+        {
+          "id": "employment_law",
+          "label": "Employment law (plaintiff / local)",
+          "definition": "Local employee-side employment and labor representation.",
+          "synonyms": [
+            "employment_attorney",
+            "labor_lawyer",
+            "wrongful_termination"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "workers_comp_law",
+          "label": "Workers' compensation law",
+          "definition": "Local workers' compensation claimant representation.",
+          "synonyms": [
+            "workers_comp_attorney",
+            "work_injury_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "business_law_local",
+          "label": "Business / commercial law (local firm)",
+          "definition": "Local small-business, contract, and commercial-law representation.",
+          "synonyms": [
+            "business_attorney",
+            "commercial_lawyer",
+            "corporate_law_local"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "civil_litigation_local",
+          "label": "Civil litigation (local)",
+          "definition": "Local general civil litigation and dispute representation.",
+          "synonyms": [
+            "litigation_attorney",
+            "civil_lawyer"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "landlord_tenant_law",
+          "label": "Landlord-tenant law",
+          "definition": "Local landlord/tenant and eviction representation.",
+          "synonyms": [
+            "eviction_lawyer",
+            "tenant_attorney",
+            "landlord_attorney"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "traffic_ticket_defense",
+          "label": "Traffic ticket defense",
+          "definition": "Local traffic citation and license-defense representation.",
+          "synonyms": [
+            "traffic_lawyer",
+            "ticket_attorney"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        },
+        {
+          "id": "general_practice_law",
+          "label": "General practice law firm (local)",
+          "definition": "Local multi-practice general law firm.",
+          "synonyms": [
+            "general_practice_attorney",
+            "law_firm_local"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National BigLaw / AmLaw-100 firms and national class-action / mass-tort networks.",
+          "notes": null
+        }
+      ]
+    },
+    "local_medical_dental_wellness": {
+      "label": "Local medical / dental / wellness",
+      "verticals": [
+        {
+          "id": "general_dentistry",
+          "label": "Dental practice (general)",
+          "definition": "Local general and family dentistry.",
+          "synonyms": [
+            "dentist",
+            "family_dentist",
+            "dental_office"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National dental-support-organization (DSO) platforms at corporate level.",
+          "notes": "DSO consolidation common; the practice still competes locally."
+        },
+        {
+          "id": "orthodontics",
+          "label": "Orthodontics",
+          "definition": "Local orthodontic and alignment treatment.",
+          "synonyms": [
+            "orthodontist",
+            "braces",
+            "invisalign_provider"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National direct-to-consumer clear-aligner brands (mail-order).",
+          "notes": null
+        },
+        {
+          "id": "oral_surgery",
+          "label": "Oral & maxillofacial surgery",
+          "definition": "Local oral surgery, extractions, and implants.",
+          "synonyms": [
+            "oral_surgeon",
+            "dental_implants_surgical"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "endodontics",
+          "label": "Endodontics",
+          "definition": "Local root-canal and endodontic specialty care.",
+          "synonyms": [
+            "endodontist",
+            "root_canal_specialist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "periodontics",
+          "label": "Periodontics",
+          "definition": "Local gum-disease and periodontal specialty care.",
+          "synonyms": [
+            "periodontist",
+            "gum_specialist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pediatric_dentistry",
+          "label": "Pediatric dentistry",
+          "definition": "Local dental care for children.",
+          "synonyms": [
+            "pediatric_dentist",
+            "kids_dentist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "cosmetic_dentistry",
+          "label": "Cosmetic dentistry",
+          "definition": "Local cosmetic dental procedures and smile design.",
+          "synonyms": [
+            "cosmetic_dentist",
+            "veneers",
+            "teeth_whitening_dental"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "primary_care",
+          "label": "Primary care / family medicine",
+          "definition": "Local primary-care and family-medicine practice.",
+          "synonyms": [
+            "family_doctor",
+            "primary_care_physician",
+            "internal_medicine"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National telehealth-only primary-care platforms.",
+          "notes": null
+        },
+        {
+          "id": "pediatrics",
+          "label": "Pediatrics",
+          "definition": "Local pediatric medical practice.",
+          "synonyms": [
+            "pediatrician",
+            "childrens_doctor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "obgyn",
+          "label": "OB/GYN",
+          "definition": "Local obstetrics and gynecology practice.",
+          "synonyms": [
+            "obstetrician",
+            "gynecologist",
+            "womens_health"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dermatology",
+          "label": "Dermatology",
+          "definition": "Local medical and cosmetic dermatology.",
+          "synonyms": [
+            "dermatologist",
+            "skin_doctor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "med_spa",
+          "label": "Med spa (with health claims)",
+          "definition": "Local medical aesthetics offering injectables, lasers, and clinical skin treatments.",
+          "synonyms": [
+            "medical_spa",
+            "aesthetics_clinic",
+            "medspa",
+            "botox_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National telehealth-aesthetics / national injectable brands at corporate level.",
+          "notes": "Required vertical. YMYL \u2014 physician-supervised health claims; ad-platform restrictions on before/after and drug-name claims. Compliance brake mandatory."
+        },
+        {
+          "id": "plastic_surgery",
+          "label": "Plastic / cosmetic surgery",
+          "definition": "Local cosmetic and reconstructive surgical practice.",
+          "synonyms": [
+            "plastic_surgeon",
+            "cosmetic_surgery"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "chiropractic",
+          "label": "Chiropractic",
+          "definition": "Local chiropractic adjustment and spinal-care practice.",
+          "synonyms": [
+            "chiropractor",
+            "spinal_care"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "physical_therapy",
+          "label": "Physical therapy",
+          "definition": "Local physical rehabilitation and movement therapy.",
+          "synonyms": [
+            "physical_therapist",
+            "rehab_clinic",
+            "pt_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "occupational_therapy",
+          "label": "Occupational therapy",
+          "definition": "Local occupational rehabilitation and daily-function therapy.",
+          "synonyms": [
+            "occupational_therapist",
+            "ot_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "speech_therapy",
+          "label": "Speech therapy",
+          "definition": "Local speech-language pathology and therapy.",
+          "synonyms": [
+            "speech_pathologist",
+            "slp_clinic",
+            "speech_language"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "optometry",
+          "label": "Optometry / eye care",
+          "definition": "Local optometric exams and vision care.",
+          "synonyms": [
+            "optometrist",
+            "eye_doctor",
+            "vision_care"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online eyewear/contact retailers (for the retail side).",
+          "notes": null
+        },
+        {
+          "id": "ophthalmology",
+          "label": "Ophthalmology",
+          "definition": "Local medical and surgical eye care.",
+          "synonyms": [
+            "ophthalmologist",
+            "eye_surgeon",
+            "lasik_provider"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "audiology",
+          "label": "Audiology / hearing",
+          "definition": "Local hearing evaluation and hearing-aid services.",
+          "synonyms": [
+            "audiologist",
+            "hearing_aids",
+            "hearing_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online/OTC hearing-aid brands.",
+          "notes": null
+        },
+        {
+          "id": "podiatry",
+          "label": "Podiatry",
+          "definition": "Local foot and ankle medical care.",
+          "synonyms": [
+            "podiatrist",
+            "foot_doctor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "urgent_care",
+          "label": "Urgent care clinic",
+          "definition": "Local walk-in urgent and episodic medical care.",
+          "synonyms": [
+            "walk_in_clinic",
+            "urgent_care_center"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National urgent-care franchisors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "mental_health_counseling",
+          "label": "Mental health / counseling practice",
+          "definition": "Local therapy, counseling, and behavioral-health practice.",
+          "synonyms": [
+            "therapist",
+            "counseling_practice",
+            "behavioral_health"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National teletherapy platforms.",
+          "notes": "YMYL + sensitive. Crisis/outcome claims and testimonials are restricted on ad platforms."
+        },
+        {
+          "id": "psychiatry",
+          "label": "Psychiatry",
+          "definition": "Local psychiatric evaluation and medication management.",
+          "synonyms": [
+            "psychiatrist",
+            "psychiatric_practice"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National telepsychiatry platforms.",
+          "notes": null
+        },
+        {
+          "id": "acupuncture",
+          "label": "Acupuncture",
+          "definition": "Local acupuncture and traditional-medicine practice.",
+          "synonyms": [
+            "acupuncturist",
+            "tcm_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Makes health claims; flag for the compliance brake."
+        },
+        {
+          "id": "massage_therapy_clinical",
+          "label": "Massage therapy (therapeutic)",
+          "definition": "Local therapeutic and medical massage services.",
+          "synonyms": [
+            "massage_therapist",
+            "therapeutic_massage",
+            "medical_massage"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Borderline: relaxation spas belong in fitness_beauty_personal_care; therapeutic/medical-claim practices lean YMYL \u2014 confirm before slicing."
+        },
+        {
+          "id": "pain_management",
+          "label": "Pain management clinic",
+          "definition": "Local interventional and medical pain-management practice.",
+          "synonyms": [
+            "pain_clinic",
+            "pain_specialist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "orthopedics",
+          "label": "Orthopedics",
+          "definition": "Local orthopedic and musculoskeletal medical practice.",
+          "synonyms": [
+            "orthopedic_surgeon",
+            "orthopedist",
+            "sports_medicine_ortho"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "ent_practice",
+          "label": "ENT (otolaryngology)",
+          "definition": "Local ear, nose, and throat medical practice.",
+          "synonyms": [
+            "otolaryngologist",
+            "ent_doctor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "cardiology",
+          "label": "Cardiology",
+          "definition": "Local cardiology and heart-care practice.",
+          "synonyms": [
+            "cardiologist",
+            "heart_doctor"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "gastroenterology",
+          "label": "Gastroenterology",
+          "definition": "Local digestive-health medical practice.",
+          "synonyms": [
+            "gi_doctor",
+            "gastroenterologist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "urology",
+          "label": "Urology",
+          "definition": "Local urology medical practice.",
+          "synonyms": [
+            "urologist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "allergy_immunology",
+          "label": "Allergy & immunology",
+          "definition": "Local allergy, asthma, and immunology practice.",
+          "synonyms": [
+            "allergist",
+            "immunologist"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "weight_loss_clinic",
+          "label": "Medical weight-loss clinic",
+          "definition": "Local physician-supervised weight-loss and metabolic programs.",
+          "synonyms": [
+            "medical_weight_loss",
+            "weight_management_clinic",
+            "glp1_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National telehealth weight-loss / online GLP-1 prescribers.",
+          "notes": "YMYL \u2014 drug and outcome claims heavily restricted on ad platforms. Compliance brake mandatory."
+        },
+        {
+          "id": "iv_hydration_therapy",
+          "label": "IV / hydration therapy",
+          "definition": "Local IV vitamin and hydration-therapy services.",
+          "synonyms": [
+            "iv_therapy",
+            "iv_drip",
+            "hydration_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Health claims; physician oversight varies by state."
+        },
+        {
+          "id": "hormone_trt_clinic",
+          "label": "Hormone / TRT clinic",
+          "definition": "Local hormone-optimization and testosterone-replacement therapy.",
+          "synonyms": [
+            "trt_clinic",
+            "hormone_therapy",
+            "hrt_clinic"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National telehealth hormone prescribers.",
+          "notes": "YMYL \u2014 prescription claims restricted; compliance brake mandatory."
+        },
+        {
+          "id": "fertility_clinic",
+          "label": "Fertility clinic",
+          "definition": "Local reproductive-medicine and fertility practice.",
+          "synonyms": [
+            "fertility_center",
+            "ivf_clinic",
+            "reproductive_medicine"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "sleep_clinic",
+          "label": "Sleep clinic",
+          "definition": "Local sleep-disorder evaluation and treatment.",
+          "synonyms": [
+            "sleep_center",
+            "sleep_medicine"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "imaging_center",
+          "label": "Imaging / radiology center",
+          "definition": "Local diagnostic imaging and radiology services.",
+          "synonyms": [
+            "radiology_center",
+            "diagnostic_imaging",
+            "mri_center"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pharmacy_independent",
+          "label": "Independent pharmacy",
+          "definition": "Local independent retail and compounding pharmacy.",
+          "synonyms": [
+            "compounding_pharmacy",
+            "local_pharmacy"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National mail-order / online pharmacy chains.",
+          "notes": "YMYL + regulated; drug claims restricted."
+        },
+        {
+          "id": "home_health_agency",
+          "label": "Home health / hospice (local)",
+          "definition": "Local in-home skilled nursing, home-health, and hospice services.",
+          "synonyms": [
+            "home_health",
+            "hospice",
+            "in_home_care_skilled"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National home-health / hospice chains at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "senior_care_facility",
+          "label": "Assisted living / senior care (local)",
+          "definition": "Local assisted-living, memory-care, and senior-living communities.",
+          "synonyms": [
+            "assisted_living",
+            "memory_care",
+            "senior_living",
+            "nursing_home"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National senior-living REIT/operator platforms.",
+          "notes": "YMYL + vulnerable population."
+        },
+        {
+          "id": "non_emergency_medical_transport",
+          "label": "Non-emergency medical transport (local)",
+          "definition": "Local non-emergency medical transportation services.",
+          "synonyms": [
+            "nemt",
+            "medical_transport",
+            "patient_transport"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "wellness_holistic_center",
+          "label": "Wellness / holistic center",
+          "definition": "Local integrative-wellness center (non-clinical to lightly-clinical).",
+          "synonyms": [
+            "holistic_wellness",
+            "integrative_health",
+            "wellness_center"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Health claims vary widely; flag for compliance review of any therapeutic claim."
+        },
+        {
+          "id": "naturopathy",
+          "label": "Naturopathy",
+          "definition": "Local naturopathic and functional-medicine practice.",
+          "synonyms": [
+            "naturopath",
+            "functional_medicine"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Health claims; flag for compliance brake."
+        }
+      ]
+    },
+    "local_food_hospitality": {
+      "label": "Local food service & hospitality",
+      "verticals": [
+        {
+          "id": "full_service_restaurant",
+          "label": "Restaurant (full-service)",
+          "definition": "Local sit-down, full-service restaurant.",
+          "synonyms": [
+            "restaurant",
+            "dine_in",
+            "eatery"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "quick_service_restaurant",
+          "label": "Quick-service / fast-casual (independent)",
+          "definition": "Local quick-service or fast-casual food operation.",
+          "synonyms": [
+            "fast_casual",
+            "qsr_independent",
+            "counter_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "cafe_coffee_shop",
+          "label": "Caf\u00e9 / coffee shop",
+          "definition": "Local caf\u00e9 and specialty-coffee shop.",
+          "synonyms": [
+            "coffee_shop",
+            "cafe",
+            "espresso_bar"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "bakery",
+          "label": "Bakery",
+          "definition": "Local retail bakery and pastry shop.",
+          "synonyms": [
+            "bake_shop",
+            "patisserie",
+            "pastry_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "bar_pub",
+          "label": "Bar / pub / tavern",
+          "definition": "Local bar, pub, or tavern.",
+          "synonyms": [
+            "pub",
+            "tavern",
+            "cocktail_bar"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "brewery_taproom",
+          "label": "Brewery / taproom (local)",
+          "definition": "Local craft brewery with taproom.",
+          "synonyms": [
+            "craft_brewery",
+            "taproom",
+            "microbrewery"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Alcohol \u2014 ad-platform age/targeting restrictions apply."
+        },
+        {
+          "id": "winery_tasting_room",
+          "label": "Winery / tasting room (local)",
+          "definition": "Local winery and tasting room.",
+          "synonyms": [
+            "winery",
+            "tasting_room",
+            "vineyard"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Alcohol restrictions apply."
+        },
+        {
+          "id": "distillery",
+          "label": "Distillery (local)",
+          "definition": "Local craft distillery with tasting/retail.",
+          "synonyms": [
+            "craft_distillery",
+            "spirits_maker"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Alcohol restrictions apply."
+        },
+        {
+          "id": "catering",
+          "label": "Catering (local)",
+          "definition": "Local catering for events and businesses.",
+          "synonyms": [
+            "caterer",
+            "event_catering",
+            "corporate_catering"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "food_truck",
+          "label": "Food truck",
+          "definition": "Local mobile food vending operation.",
+          "synonyms": [
+            "mobile_food",
+            "food_cart"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pizzeria",
+          "label": "Pizzeria",
+          "definition": "Local pizza restaurant or shop.",
+          "synonyms": [
+            "pizza_shop",
+            "pizza_restaurant"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "deli_sandwich",
+          "label": "Deli / sandwich shop",
+          "definition": "Local delicatessen or sandwich shop.",
+          "synonyms": [
+            "deli",
+            "sandwich_shop",
+            "sub_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "dessert_ice_cream",
+          "label": "Ice cream / dessert shop",
+          "definition": "Local ice cream, frozen-dessert, or sweets shop.",
+          "synonyms": [
+            "ice_cream_shop",
+            "dessert_shop",
+            "frozen_yogurt"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "juice_smoothie_bar",
+          "label": "Juice / smoothie bar",
+          "definition": "Local juice and smoothie shop.",
+          "synonyms": [
+            "smoothie_shop",
+            "juice_bar"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National restaurant/QSR franchisors at the corporate level (the franchisee location is local-service).",
+          "notes": null
+        },
+        {
+          "id": "specialty_food_shop",
+          "label": "Specialty food shop / butcher",
+          "definition": "Local butcher, fishmonger, cheesemonger, or specialty-food retailer.",
+          "synonyms": [
+            "butcher_shop",
+            "fishmonger",
+            "specialty_grocer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "personal_chef",
+          "label": "Personal chef / meal prep (local)",
+          "definition": "Local personal-chef and prepared-meal services.",
+          "synonyms": [
+            "personal_chef_service",
+            "meal_prep_local",
+            "private_chef"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "mobile_bartending",
+          "label": "Mobile bartending service",
+          "definition": "Local mobile-bar and event-bartending service.",
+          "synonyms": [
+            "mobile_bar",
+            "event_bartender"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Alcohol restrictions apply."
+        },
+        {
+          "id": "bed_and_breakfast",
+          "label": "Bed & breakfast",
+          "definition": "Local independent bed-and-breakfast lodging.",
+          "synonyms": [
+            "bnb",
+            "inn",
+            "guest_house"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "boutique_hotel",
+          "label": "Boutique hotel (independent)",
+          "definition": "Local independently operated boutique hotel.",
+          "synonyms": [
+            "independent_hotel",
+            "boutique_lodging"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National hotel chains/flags at the corporate level (a franchised property is local-operated).",
+          "notes": "National-brand flagged hotels: franchisor not local; the property operator is local-service."
+        },
+        {
+          "id": "event_venue",
+          "label": "Event / banquet venue",
+          "definition": "Local event, wedding, and banquet venue.",
+          "synonyms": [
+            "banquet_hall",
+            "wedding_venue",
+            "event_space"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Also surfaces in events_entertainment; primary home here."
+        }
+      ]
+    },
+    "local_automotive": {
+      "label": "Local automotive",
+      "verticals": [
+        {
+          "id": "auto_repair",
+          "label": "Auto repair / mechanic (general)",
+          "definition": "Local general automotive repair and maintenance.",
+          "synonyms": [
+            "mechanic",
+            "auto_shop",
+            "car_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National automotive-service franchisors at corporate level (the franchised shop is local-service).",
+          "notes": null
+        },
+        {
+          "id": "auto_body_collision",
+          "label": "Auto body / collision repair",
+          "definition": "Local collision repair and auto body work.",
+          "synonyms": [
+            "collision_repair",
+            "body_shop",
+            "auto_body"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National collision-center / MSO networks at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "tire_shop",
+          "label": "Tire shop",
+          "definition": "Local tire sales, install, and service.",
+          "synonyms": [
+            "tire_service",
+            "tire_dealer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National automotive-service franchisors at corporate level (the franchised shop is local-service).",
+          "notes": null
+        },
+        {
+          "id": "oil_change",
+          "label": "Oil change / quick lube",
+          "definition": "Local quick-lube and oil-change service.",
+          "synonyms": [
+            "quick_lube",
+            "lube_shop",
+            "oil_change_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National automotive-service franchisors at corporate level (the franchised shop is local-service).",
+          "notes": null
+        },
+        {
+          "id": "transmission_repair",
+          "label": "Transmission repair",
+          "definition": "Local transmission and drivetrain repair.",
+          "synonyms": [
+            "transmission_shop",
+            "drivetrain_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National automotive-service franchisors at corporate level (the franchised shop is local-service).",
+          "notes": null
+        },
+        {
+          "id": "brake_repair",
+          "label": "Brake repair",
+          "definition": "Local brake service and repair.",
+          "synonyms": [
+            "brake_shop",
+            "brake_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National automotive-service franchisors at corporate level (the franchised shop is local-service).",
+          "notes": null
+        },
+        {
+          "id": "auto_detailing",
+          "label": "Auto detailing",
+          "definition": "Local interior/exterior auto detailing.",
+          "synonyms": [
+            "car_detailing",
+            "detail_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "car_wash",
+          "label": "Car wash",
+          "definition": "Local car-wash operation (express, full-service, self-serve).",
+          "synonyms": [
+            "express_wash",
+            "auto_wash"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National car-wash chains at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "mobile_mechanic",
+          "label": "Mobile mechanic",
+          "definition": "Local mobile automotive repair coming to the customer.",
+          "synonyms": [
+            "mobile_auto_repair",
+            "on_site_mechanic"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "auto_glass",
+          "label": "Auto glass / windshield repair",
+          "definition": "Local windshield repair and auto-glass replacement.",
+          "synonyms": [
+            "windshield_repair",
+            "auto_glass_replacement"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National auto-glass networks at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "muffler_exhaust",
+          "label": "Muffler / exhaust shop",
+          "definition": "Local muffler and exhaust-system service.",
+          "synonyms": [
+            "exhaust_shop",
+            "muffler_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "window_tinting_auto",
+          "label": "Auto window tinting",
+          "definition": "Local automotive window-tint installation.",
+          "synonyms": [
+            "car_tint",
+            "auto_tint"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "used_car_dealer",
+          "label": "Used car dealership (local independent)",
+          "definition": "Local independent used-vehicle dealership.",
+          "synonyms": [
+            "used_car_lot",
+            "independent_dealer",
+            "pre_owned_dealer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Financing claims may need review; large multi-state auto groups excluded."
+        },
+        {
+          "id": "motorcycle_repair",
+          "label": "Motorcycle / powersports repair",
+          "definition": "Local motorcycle and powersports service.",
+          "synonyms": [
+            "powersports_repair",
+            "motorcycle_shop",
+            "atv_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "rv_repair",
+          "label": "RV repair / service",
+          "definition": "Local recreational-vehicle repair and service.",
+          "synonyms": [
+            "rv_service",
+            "motorhome_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "marine_repair",
+          "label": "Boat / marine repair",
+          "definition": "Local marine and boat repair service.",
+          "synonyms": [
+            "boat_repair",
+            "marine_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "diesel_truck_repair",
+          "label": "Diesel / truck repair",
+          "definition": "Local diesel and commercial-truck repair.",
+          "synonyms": [
+            "truck_repair",
+            "diesel_mechanic",
+            "fleet_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Fleet maintenance for area businesses is local-service; national fleet-service networks excluded."
+        },
+        {
+          "id": "towing_roadside",
+          "label": "Towing / roadside assistance",
+          "definition": "Local towing and roadside-assistance service.",
+          "synonyms": [
+            "tow_truck",
+            "roadside_assistance",
+            "wrecker_service"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National roadside-assistance/dispatch programs.",
+          "notes": null
+        },
+        {
+          "id": "paintless_dent_repair",
+          "label": "Paintless dent repair",
+          "definition": "Local PDR and minor dent removal.",
+          "synonyms": [
+            "pdr",
+            "dent_removal"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "car_audio_install",
+          "label": "Car audio / accessories install",
+          "definition": "Local install of car audio, electronics, and accessories.",
+          "synonyms": [
+            "car_stereo",
+            "auto_electronics",
+            "12v_install"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "smog_emissions",
+          "label": "Smog / emissions / inspection",
+          "definition": "Local state vehicle inspection and emissions testing.",
+          "synonyms": [
+            "emissions_testing",
+            "vehicle_inspection",
+            "smog_check"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Availability/format varies by state (e.g., TX inspection program)."
+        }
+      ]
+    },
+    "local_retail": {
+      "label": "Local retail (brick-and-mortar)",
+      "verticals": [
+        {
+          "id": "furniture_store",
+          "label": "Furniture store (local)",
+          "definition": "Local brick-and-mortar furniture retailer.",
+          "synonyms": [
+            "furniture_retailer",
+            "home_furnishings"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National furniture e-commerce / national chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "mattress_store",
+          "label": "Mattress store (local)",
+          "definition": "Local mattress and sleep retailer.",
+          "synonyms": [
+            "mattress_retailer",
+            "sleep_store"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National mattress e-commerce / bed-in-a-box brands.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "jewelry_store",
+          "label": "Jewelry store (local)",
+          "definition": "Local jewelry retail and custom/repair services.",
+          "synonyms": [
+            "jeweler",
+            "jewelry_retailer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National jewelry e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "florist",
+          "label": "Florist / flower shop",
+          "definition": "Local floral design and delivery shop.",
+          "synonyms": [
+            "flower_shop",
+            "floral_designer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National floral order-gathering / wire-service platforms.",
+          "notes": "Also supports events_entertainment (weddings/events). Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "garden_center",
+          "label": "Garden center / nursery",
+          "definition": "Local plant nursery and garden-supply retailer.",
+          "synonyms": [
+            "plant_nursery",
+            "garden_supply"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "hardware_store",
+          "label": "Hardware store (independent)",
+          "definition": "Local independent hardware and home-improvement retailer.",
+          "synonyms": [
+            "hardware_retailer",
+            "ace_independent"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National home-improvement big-box chains at corporate level.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "appliance_store",
+          "label": "Appliance store (local)",
+          "definition": "Local appliance sales and delivery.",
+          "synonyms": [
+            "appliance_retailer",
+            "appliance_dealer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National appliance e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "bike_shop",
+          "label": "Bike shop",
+          "definition": "Local bicycle sales and repair.",
+          "synonyms": [
+            "bicycle_shop",
+            "bike_store"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "sporting_goods",
+          "label": "Sporting goods (local)",
+          "definition": "Local sporting-goods and outdoor retailer.",
+          "synonyms": [
+            "sports_store",
+            "outdoor_retailer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National sporting-goods e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "clothing_boutique",
+          "label": "Clothing boutique",
+          "definition": "Local apparel boutique.",
+          "synonyms": [
+            "apparel_boutique",
+            "fashion_boutique"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National apparel e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "liquor_store",
+          "label": "Liquor / wine shop",
+          "definition": "Local liquor, wine, and spirits retailer.",
+          "synonyms": [
+            "wine_shop",
+            "package_store",
+            "spirits_retailer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Alcohol ad restrictions apply. Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "hobby_craft_store",
+          "label": "Hobby / craft store",
+          "definition": "Local hobby, craft, and art-supply retailer.",
+          "synonyms": [
+            "craft_store",
+            "art_supply",
+            "hobby_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National craft e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "music_instrument_store",
+          "label": "Music / instrument store",
+          "definition": "Local musical-instrument sales, rental, and repair.",
+          "synonyms": [
+            "instrument_store",
+            "music_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "electronics_computer_store",
+          "label": "Electronics / computer store (local)",
+          "definition": "Local electronics and computer retail with repair.",
+          "synonyms": [
+            "computer_store",
+            "electronics_retailer",
+            "phone_repair_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National electronics e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "vape_smoke_shop",
+          "label": "Vape / smoke shop",
+          "definition": "Local vape and tobacco-accessory retailer.",
+          "synonyms": [
+            "smoke_shop",
+            "vape_store"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Tobacco/nicotine ad restrictions are severe on major platforms. Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "cannabis_dispensary",
+          "label": "Cannabis dispensary (where legal)",
+          "definition": "Local licensed cannabis retail (in legal jurisdictions).",
+          "synonyms": [
+            "dispensary",
+            "marijuana_dispensary",
+            "cannabis_retail"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Heavily regulated; paid-ad restrictions severe; health/medical claims regulated. Route through compliance brake. Legality varies by state."
+        },
+        {
+          "id": "optical_eyewear_retail",
+          "label": "Optical / eyewear retail",
+          "definition": "Local eyewear and optical retail (often paired with optometry).",
+          "synonyms": [
+            "eyewear_store",
+            "optical_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online eyewear/contact retailers.",
+          "notes": "Overlaps optometry (medical). Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "antique_consignment",
+          "label": "Antique / consignment / thrift",
+          "definition": "Local antique, consignment, and resale retail.",
+          "synonyms": [
+            "antique_store",
+            "consignment_shop",
+            "thrift_store"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "pawn_shop",
+          "label": "Pawn shop",
+          "definition": "Local pawn and collateral-lending retail.",
+          "synonyms": [
+            "pawnbroker",
+            "pawn"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Lending is regulated (financial). Route through compliance brake."
+        },
+        {
+          "id": "pet_store",
+          "label": "Pet store (local)",
+          "definition": "Local pet-supply retailer.",
+          "synonyms": [
+            "pet_supply_store",
+            "pet_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National pet e-commerce / chains.",
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "camera_store",
+          "label": "Camera / photo store",
+          "definition": "Local camera, photo, and imaging retail.",
+          "synonyms": [
+            "photo_store",
+            "camera_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "paint_store_retail",
+          "label": "Paint store (independent)",
+          "definition": "Local independent paint and coatings retailer.",
+          "synonyms": [
+            "paint_retailer",
+            "coatings_store"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "lighting_showroom",
+          "label": "Lighting showroom",
+          "definition": "Local lighting and fixture showroom.",
+          "synonyms": [
+            "lighting_store",
+            "fixture_showroom"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "kitchen_bath_showroom",
+          "label": "Kitchen & bath showroom",
+          "definition": "Local kitchen, bath, and tile/flooring showroom.",
+          "synonyms": [
+            "tile_showroom",
+            "kitchen_bath_retail",
+            "flooring_showroom"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Showroom counterpart to flooring/remodeling trades. Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        },
+        {
+          "id": "pool_supply_store",
+          "label": "Pool supply store",
+          "definition": "Local pool-supply and equipment retailer.",
+          "synonyms": [
+            "pool_store",
+            "pool_supply_retail"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Retail is the softest fit on criterion #3 (local competition): national e-commerce competes directly with most brick-and-mortar retail. Slice only when the operator's draw is genuinely local (showroom, service, immediacy, local trade area). Operator confirms matter most here."
+        }
+      ]
+    },
+    "fitness_beauty_personal_care": {
+      "label": "Local fitness, beauty & personal care",
+      "verticals": [
+        {
+          "id": "hair_salon",
+          "label": "Hair salon",
+          "definition": "Local hair-cutting, color, and styling salon.",
+          "synonyms": [
+            "salon",
+            "hair_stylist",
+            "beauty_salon"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National salon franchisors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "barbershop",
+          "label": "Barbershop",
+          "definition": "Local barbershop and men's grooming.",
+          "synonyms": [
+            "barber",
+            "mens_grooming"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "nail_salon",
+          "label": "Nail salon",
+          "definition": "Local manicure, pedicure, and nail services.",
+          "synonyms": [
+            "nail_spa",
+            "manicure_pedicure"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "day_spa",
+          "label": "Day spa",
+          "definition": "Local relaxation spa (massage, facials, body treatments \u2014 non-clinical).",
+          "synonyms": [
+            "spa",
+            "relaxation_spa"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Clinical/medical aesthetics belong in med_spa (YMYL)."
+        },
+        {
+          "id": "esthetics_skincare",
+          "label": "Esthetics / skincare (non-medical)",
+          "definition": "Local facials and non-medical skin-care services.",
+          "synonyms": [
+            "esthetician",
+            "facial_studio",
+            "skincare_studio"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "waxing_threading",
+          "label": "Waxing / threading",
+          "definition": "Local waxing and threading hair-removal services.",
+          "synonyms": [
+            "waxing_studio",
+            "threading_salon"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National waxing franchisors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "lash_brow_studio",
+          "label": "Lash & brow studio",
+          "definition": "Local eyelash-extension and brow services.",
+          "synonyms": [
+            "lash_studio",
+            "brow_bar",
+            "lash_extensions"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "permanent_makeup",
+          "label": "Permanent makeup / microblading",
+          "definition": "Local cosmetic tattoo and microblading services.",
+          "synonyms": [
+            "microblading",
+            "cosmetic_tattoo",
+            "pmu"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Body-modification health/safety regs apply."
+        },
+        {
+          "id": "tanning_salon",
+          "label": "Tanning salon",
+          "definition": "Local UV and spray-tanning services.",
+          "synonyms": [
+            "spray_tan",
+            "tanning_studio"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "UV-exposure health claims are sensitive; review messaging."
+        },
+        {
+          "id": "tattoo_studio",
+          "label": "Tattoo studio",
+          "definition": "Local tattoo and body-art studio.",
+          "synonyms": [
+            "tattoo_shop",
+            "body_art"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Bloodborne-pathogen/health regs apply; not clinical YMYL."
+        },
+        {
+          "id": "piercing_studio",
+          "label": "Piercing studio",
+          "definition": "Local body-piercing studio.",
+          "synonyms": [
+            "body_piercing",
+            "piercing_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Health/safety regs apply."
+        },
+        {
+          "id": "makeup_artist",
+          "label": "Makeup artist (local)",
+          "definition": "Local on-location and studio makeup services.",
+          "synonyms": [
+            "mua",
+            "makeup_services"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "gym_fitness_center",
+          "label": "Gym / fitness center",
+          "definition": "Local independent gym or health club.",
+          "synonyms": [
+            "health_club",
+            "fitness_gym"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National gym franchisors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "boutique_fitness_studio",
+          "label": "Boutique fitness studio",
+          "definition": "Local boutique studio (yoga, pilates, spin, barre, HIIT).",
+          "synonyms": [
+            "yoga_studio",
+            "pilates_studio",
+            "spin_studio",
+            "barre_studio"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National boutique-fitness franchisors at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "crossfit_box",
+          "label": "CrossFit / functional-fitness box",
+          "definition": "Local CrossFit-style functional-fitness gym.",
+          "synonyms": [
+            "crossfit",
+            "functional_fitness"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "personal_training",
+          "label": "Personal training (local)",
+          "definition": "Local in-person personal-training services.",
+          "synonyms": [
+            "personal_trainer",
+            "fitness_coach"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online-coaching platforms.",
+          "notes": null
+        },
+        {
+          "id": "martial_arts",
+          "label": "Martial arts / dojo",
+          "definition": "Local martial-arts and self-defense instruction.",
+          "synonyms": [
+            "karate_school",
+            "bjj_gym",
+            "dojo",
+            "taekwondo"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dance_studio",
+          "label": "Dance studio",
+          "definition": "Local dance instruction and studio.",
+          "synonyms": [
+            "dance_school",
+            "ballet_studio"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "cryotherapy_studio",
+          "label": "Cryotherapy / recovery studio",
+          "definition": "Local cryotherapy, contrast, and recovery services.",
+          "synonyms": [
+            "cryotherapy",
+            "recovery_studio",
+            "cold_therapy"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Allegiant policy: YMYL \u2014 therapeutic/recovery claims (cryo for inflammation, red-light therapy for healing, IV/photobiomodulation for outcomes) are routine in this vertical. Route through compliance brake. Override on the operator confirm only if the partner explicitly disclaims medical/therapeutic claims and stays inside lifestyle/aesthetic positioning. Anchor partner: Evolve Cryo."
+        },
+        {
+          "id": "float_spa",
+          "label": "Float / sensory-deprivation spa",
+          "definition": "Local float-tank and sensory-deprivation services.",
+          "synonyms": [
+            "float_tank",
+            "sensory_deprivation",
+            "floatation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "sauna_studio",
+          "label": "Sauna / wellness-heat studio",
+          "definition": "Local infrared-sauna and heat-therapy services.",
+          "synonyms": [
+            "infrared_sauna",
+            "sauna_spa"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Health claims can stray into YMYL \u2014 flag therapeutic claims."
+        },
+        {
+          "id": "mobile_beauty",
+          "label": "Mobile beauty / spa (local)",
+          "definition": "Local mobile hair, makeup, and spa services to the customer.",
+          "synonyms": [
+            "mobile_spa",
+            "on_location_beauty"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "construction_specialty_trades": {
+      "label": "Local construction / contracting / specialty trades",
+      "verticals": [
+        {
+          "id": "general_contractor_residential",
+          "label": "General contractor (residential)",
+          "definition": "Local residential general contracting and project management.",
+          "synonyms": [
+            "gc_residential",
+            "home_contractor"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "general_contractor_commercial",
+          "label": "General contractor (commercial)",
+          "definition": "Local commercial general contracting and construction management.",
+          "synonyms": [
+            "gc_commercial",
+            "commercial_builder"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National/ENR general contractors on multi-state programs.",
+          "notes": null
+        },
+        {
+          "id": "custom_home_builder",
+          "label": "Home builder / custom home builder",
+          "definition": "Local custom and spec residential home construction.",
+          "synonyms": [
+            "home_builder",
+            "custom_builder",
+            "spec_builder"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National production homebuilders at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "remodeling_contractor",
+          "label": "Remodeling contractor (whole-home)",
+          "definition": "Local whole-home and multi-room remodeling.",
+          "synonyms": [
+            "home_remodeler",
+            "renovation_contractor"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "Kitchen-only and bath-only remodels are in residential_home_services."
+        },
+        {
+          "id": "concrete_contractor",
+          "label": "Concrete contractor",
+          "definition": "Local flatwork, foundations, and decorative concrete.",
+          "synonyms": [
+            "concrete_work",
+            "flatwork",
+            "decorative_concrete"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "masonry",
+          "label": "Masonry / brick / stone",
+          "definition": "Local brick, block, and stone masonry.",
+          "synonyms": [
+            "mason",
+            "brickwork",
+            "stonework"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "framing_contractor",
+          "label": "Framing contractor",
+          "definition": "Local structural framing for residential and light-commercial builds.",
+          "synonyms": [
+            "framer",
+            "rough_carpentry"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "excavation_grading",
+          "label": "Excavation & grading",
+          "definition": "Local excavation, grading, and site-prep earthwork.",
+          "synonyms": [
+            "excavation_contractor",
+            "site_work",
+            "dirt_work"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "demolition",
+          "label": "Demolition",
+          "definition": "Local structural and interior demolition.",
+          "synonyms": [
+            "demo_contractor",
+            "structure_demolition"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "paving_asphalt",
+          "label": "Paving / asphalt",
+          "definition": "Local asphalt paving for driveways, lots, and roads.",
+          "synonyms": [
+            "asphalt_contractor",
+            "driveway_paving",
+            "blacktop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "welding_fabrication",
+          "label": "Welding / metal fabrication (local)",
+          "definition": "Local custom welding and metal fabrication.",
+          "synonyms": [
+            "metal_fab",
+            "welder",
+            "ornamental_iron"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "tile_contractor",
+          "label": "Tile setting / tile contractor",
+          "definition": "Local tile installation for floors, walls, and showers.",
+          "synonyms": [
+            "tile_setter",
+            "tile_install"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "countertop_fabrication",
+          "label": "Countertop fabrication & install",
+          "definition": "Local fabrication and install of granite, quartz, and stone countertops.",
+          "synonyms": [
+            "granite_fabricator",
+            "quartz_countertops",
+            "stone_fabrication"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "cabinetry_millwork",
+          "label": "Cabinetry / custom millwork",
+          "definition": "Local custom cabinetry and architectural millwork.",
+          "synonyms": [
+            "custom_cabinets",
+            "millwork",
+            "woodworking_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "stair_builder",
+          "label": "Stair builder",
+          "definition": "Local custom staircase fabrication and install.",
+          "synonyms": [
+            "staircase_builder",
+            "stair_contractor"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "structural_shoring",
+          "label": "Structural / shoring",
+          "definition": "Local structural reinforcement, shoring, and underpinning.",
+          "synonyms": [
+            "shoring_contractor",
+            "underpinning"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "steel_erection",
+          "label": "Steel erection (local)",
+          "definition": "Local structural-steel erection for area projects.",
+          "synonyms": [
+            "steel_contractor",
+            "structural_steel"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "low_voltage_cabling",
+          "label": "Low-voltage / structured cabling",
+          "definition": "Local structured cabling, data, and low-voltage install.",
+          "synonyms": [
+            "structured_cabling",
+            "data_cabling",
+            "network_cabling"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "adu_garage_builder",
+          "label": "ADU / garage / sunroom builder",
+          "definition": "Local accessory-dwelling, garage, and sunroom construction.",
+          "synonyms": [
+            "adu_builder",
+            "garage_builder",
+            "sunroom_builder"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "septic_installer",
+          "label": "Septic system installer",
+          "definition": "Local design and install of new septic systems.",
+          "synonyms": [
+            "septic_install",
+            "onsite_wastewater"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Pumping/service is in residential_home_services (septic_services)."
+        },
+        {
+          "id": "utility_contractor",
+          "label": "Utility contractor (local)",
+          "definition": "Local underground utility, water, and sewer-line contracting.",
+          "synonyms": [
+            "underground_utilities",
+            "site_utilities"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "fire_sprinkler_contractor",
+          "label": "Fire sprinkler contractor",
+          "definition": "Local design and install of fire-sprinkler systems.",
+          "synonyms": [
+            "sprinkler_contractor",
+            "fire_protection_install"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Overlaps commercial_facility_services (fire_protection); life-safety regulated."
+        }
+      ]
+    },
+    "events_entertainment": {
+      "label": "Local events / entertainment",
+      "verticals": [
+        {
+          "id": "event_planning",
+          "label": "Event planning / coordination",
+          "definition": "Local event planning and coordination services.",
+          "synonyms": [
+            "event_planner",
+            "event_coordinator"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "wedding_planner",
+          "label": "Wedding planner",
+          "definition": "Local wedding planning and coordination.",
+          "synonyms": [
+            "wedding_coordinator",
+            "bridal_planner"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dj_services",
+          "label": "DJ services",
+          "definition": "Local DJ and event-entertainment services.",
+          "synonyms": [
+            "event_dj",
+            "wedding_dj"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "live_entertainment_booking",
+          "label": "Live band / entertainment booking (local)",
+          "definition": "Local live-music and entertainment booking.",
+          "synonyms": [
+            "band_booking",
+            "live_music_local",
+            "entertainment_agency_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "photo_booth_rental",
+          "label": "Photo booth rental",
+          "definition": "Local photo-booth rental for events.",
+          "synonyms": [
+            "photobooth",
+            "event_photo_booth"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "party_equipment_rental",
+          "label": "Party / equipment rental",
+          "definition": "Local rental of tents, tables, chairs, and event equipment.",
+          "synonyms": [
+            "event_rental",
+            "tent_rental",
+            "party_rental",
+            "bounce_house_rental"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "wedding_photography",
+          "label": "Wedding photography",
+          "definition": "Local wedding and engagement photography.",
+          "synonyms": [
+            "wedding_photographer",
+            "bridal_photography"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Portrait/commercial photography is in local_professional_services."
+        },
+        {
+          "id": "videography_local",
+          "label": "Videography (local)",
+          "definition": "Local event and commercial videography.",
+          "synonyms": [
+            "videographer",
+            "event_video",
+            "wedding_videography"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "balloon_decor",
+          "label": "Balloon & event decor",
+          "definition": "Local balloon decor and event styling.",
+          "synonyms": [
+            "balloon_artist",
+            "event_decorator"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "limo_party_bus",
+          "label": "Limousine / party bus / car service (local)",
+          "definition": "Local limo, party-bus, and chauffeured car service.",
+          "synonyms": [
+            "limo_service",
+            "party_bus",
+            "chauffeur_service",
+            "black_car"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "tour_operator_local",
+          "label": "Tour operator (local)",
+          "definition": "Local sightseeing, food, and experience tours.",
+          "synonyms": [
+            "local_tours",
+            "sightseeing",
+            "experience_tours"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "escape_room",
+          "label": "Escape room",
+          "definition": "Local escape-room entertainment.",
+          "synonyms": [
+            "escape_game"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "family_entertainment_center",
+          "label": "Family entertainment center",
+          "definition": "Local arcade, mini-golf, and family-entertainment venue.",
+          "synonyms": [
+            "arcade",
+            "fec",
+            "mini_golf",
+            "go_kart_track"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "trampoline_park",
+          "label": "Trampoline / adventure park",
+          "definition": "Local trampoline and indoor-adventure park.",
+          "synonyms": [
+            "trampoline_park",
+            "indoor_adventure"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "axe_throwing",
+          "label": "Axe throwing",
+          "definition": "Local axe-throwing entertainment venue.",
+          "synonyms": [
+            "axe_throwing_venue",
+            "hatchet_throwing"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "laser_tag_paintball",
+          "label": "Laser tag / paintball",
+          "definition": "Local laser-tag and paintball venue.",
+          "synonyms": [
+            "laser_tag",
+            "paintball_field"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "bowling_alley",
+          "label": "Bowling alley",
+          "definition": "Local bowling and entertainment center.",
+          "synonyms": [
+            "bowling_center",
+            "bowling"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "movie_theater_independent",
+          "label": "Movie theater (independent)",
+          "definition": "Local independent cinema.",
+          "synonyms": [
+            "independent_cinema",
+            "indie_theater"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": "National cinema chains at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "music_venue_local",
+          "label": "Music venue (local)",
+          "definition": "Local live-music venue.",
+          "synonyms": [
+            "live_music_venue",
+            "concert_venue_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "comedy_club",
+          "label": "Comedy club (local)",
+          "definition": "Local comedy and live-performance club.",
+          "synonyms": [
+            "comedy_venue"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "theater_playhouse",
+          "label": "Theater / playhouse (local)",
+          "definition": "Local performing-arts theater or playhouse.",
+          "synonyms": [
+            "community_theater",
+            "playhouse"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "childrens_party_entertainer",
+          "label": "Children's party entertainer",
+          "definition": "Local children's-party performers (characters, magicians, face painting).",
+          "synonyms": [
+            "party_entertainer",
+            "magician_local",
+            "face_painting",
+            "character_entertainer"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "petting_zoo_pony",
+          "label": "Petting zoo / pony rides (local)",
+          "definition": "Local mobile petting-zoo and pony-ride event services.",
+          "synonyms": [
+            "mobile_petting_zoo",
+            "pony_rides"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    },
+    "pet_animal_services": {
+      "label": "Local pet & animal services",
+      "verticals": [
+        {
+          "id": "veterinary_clinic",
+          "label": "Veterinary clinic / animal hospital",
+          "definition": "Local veterinary medical care for companion animals.",
+          "synonyms": [
+            "vet",
+            "animal_hospital",
+            "veterinarian"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National corporate vet groups at parent level.",
+          "notes": "Animal-health (not human) but makes medical claims and is licensed/ad-regulated \u2014 routed through the compliance brake."
+        },
+        {
+          "id": "mobile_vet",
+          "label": "Mobile veterinary (local)",
+          "definition": "Local mobile/house-call veterinary services.",
+          "synonyms": [
+            "house_call_vet",
+            "mobile_veterinarian"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "See veterinary_clinic re: health-claim compliance brake."
+        },
+        {
+          "id": "dog_grooming",
+          "label": "Dog / pet grooming",
+          "definition": "Local pet grooming at a salon.",
+          "synonyms": [
+            "pet_groomer",
+            "dog_groomer",
+            "grooming_salon"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "mobile_pet_grooming",
+          "label": "Mobile pet grooming",
+          "definition": "Local mobile grooming coming to the pet owner.",
+          "synonyms": [
+            "mobile_groomer",
+            "on_site_grooming"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dog_boarding_kennel",
+          "label": "Dog boarding / kennel",
+          "definition": "Local overnight pet boarding and kennel services.",
+          "synonyms": [
+            "pet_boarding",
+            "kennel",
+            "pet_hotel"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "doggy_daycare",
+          "label": "Doggy daycare",
+          "definition": "Local daytime pet-care and socialization.",
+          "synonyms": [
+            "dog_daycare",
+            "pet_daycare"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dog_walking",
+          "label": "Dog walking",
+          "definition": "Local recurring dog-walking services.",
+          "synonyms": [
+            "dog_walker"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pet_sitting",
+          "label": "Pet sitting",
+          "definition": "Local in-home pet-sitting and drop-in care.",
+          "synonyms": [
+            "pet_sitter",
+            "in_home_pet_care"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National pet-care marketplaces/apps.",
+          "notes": null
+        },
+        {
+          "id": "dog_training",
+          "label": "Dog / pet training",
+          "definition": "Local obedience and behavior training.",
+          "synonyms": [
+            "dog_trainer",
+            "obedience_training",
+            "k9_training"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pet_waste_removal",
+          "label": "Pet waste removal",
+          "definition": "Local yard pet-waste cleanup service.",
+          "synonyms": [
+            "pooper_scooper",
+            "waste_removal_pet"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "pet_cremation",
+          "label": "Pet cremation / aftercare",
+          "definition": "Local pet cremation and end-of-life aftercare.",
+          "synonyms": [
+            "pet_aftercare",
+            "animal_cremation"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Sensitive subject; keep messaging compassionate."
+        }
+      ]
+    },
+    "education_instruction_childcare": {
+      "label": "Local education, instruction & childcare",
+      "verticals": [
+        {
+          "id": "tutoring_center",
+          "label": "Tutoring / test-prep center",
+          "definition": "Local academic tutoring and test-preparation services.",
+          "synonyms": [
+            "tutoring",
+            "test_prep",
+            "learning_center"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online-tutoring / test-prep platforms.",
+          "notes": "Local-service only when in-person/defined-metro; online tutoring is the excluded variant."
+        },
+        {
+          "id": "music_lessons",
+          "label": "Music lessons / school",
+          "definition": "Local instrument and voice instruction.",
+          "synonyms": [
+            "music_school",
+            "music_instruction",
+            "piano_lessons"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "art_classes",
+          "label": "Art / craft classes (local)",
+          "definition": "Local art, pottery, and craft instruction.",
+          "synonyms": [
+            "art_school_local",
+            "pottery_classes",
+            "paint_and_sip"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "driving_school",
+          "label": "Driving school",
+          "definition": "Local driver education and behind-the-wheel training.",
+          "synonyms": [
+            "drivers_ed",
+            "driving_instruction"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "swim_school",
+          "label": "Swim school",
+          "definition": "Local swimming instruction and lessons.",
+          "synonyms": [
+            "swim_lessons",
+            "swimming_school"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "language_school",
+          "label": "Language school (local)",
+          "definition": "Local in-person language instruction.",
+          "synonyms": [
+            "language_instruction",
+            "esl_school"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National/online language-learning platforms.",
+          "notes": null
+        },
+        {
+          "id": "cooking_classes",
+          "label": "Cooking classes (local)",
+          "definition": "Local culinary and cooking-class instruction.",
+          "synonyms": [
+            "culinary_classes",
+            "cooking_school_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "daycare_preschool",
+          "label": "Daycare / preschool",
+          "definition": "Local childcare, daycare, and preschool.",
+          "synonyms": [
+            "childcare",
+            "preschool",
+            "early_learning",
+            "montessori"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National childcare-center operators at corporate level.",
+          "notes": "Child-safety sensitive (YMYL-style). Route through the compliance brake; testimonials and safety claims need review."
+        },
+        {
+          "id": "after_school_program",
+          "label": "After-school / enrichment program",
+          "definition": "Local after-school care and enrichment.",
+          "synonyms": [
+            "after_school_care",
+            "enrichment_program"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "stem_robotics_program",
+          "label": "STEM / coding / robotics program (local)",
+          "definition": "Local in-person STEM, coding, and robotics instruction for kids.",
+          "synonyms": [
+            "coding_for_kids",
+            "robotics_class",
+            "stem_program"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National online kids-coding platforms.",
+          "notes": null
+        }
+      ]
+    },
+    "personal_life_services": {
+      "label": "Local personal & life services",
+      "verticals": [
+        {
+          "id": "funeral_home",
+          "label": "Funeral home",
+          "definition": "Local funeral, memorial, and burial services.",
+          "synonyms": [
+            "funeral_services",
+            "mortuary"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National death-care conglomerates at corporate level.",
+          "notes": "Sensitive ('your life') and consumer-protection regulated (FTC Funeral Rule). Route through the compliance brake; keep messaging respectful."
+        },
+        {
+          "id": "crematory",
+          "label": "Crematory / cremation services",
+          "definition": "Local cremation provider.",
+          "synonyms": [
+            "cremation_services",
+            "crematorium"
+          ],
+          "is_ymyl": true,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": "See funeral_home re: sensitivity and compliance brake."
+        },
+        {
+          "id": "cemetery_memorial",
+          "label": "Cemetery / monument / headstone",
+          "definition": "Local cemetery, monument, and headstone services.",
+          "synonyms": [
+            "headstone",
+            "monument_company",
+            "cemetery_services"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": "Sensitive subject; respectful messaging."
+        },
+        {
+          "id": "local_movers",
+          "label": "Moving company (local)",
+          "definition": "Local residential and commercial moving services.",
+          "synonyms": [
+            "moving_services",
+            "movers",
+            "local_moving"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National van-line / long-distance moving brands at corporate level.",
+          "notes": "Local moves are local-service; interstate/long-distance moving is the national variant."
+        },
+        {
+          "id": "self_storage",
+          "label": "Self-storage facility",
+          "definition": "Local self-storage and portable-storage rental.",
+          "synonyms": [
+            "storage_facility",
+            "mini_storage",
+            "portable_storage"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National self-storage REIT operators at corporate level.",
+          "notes": null
+        },
+        {
+          "id": "packing_services",
+          "label": "Packing / move-management services",
+          "definition": "Local packing, unpacking, and senior-move-management services.",
+          "synonyms": [
+            "packing_service",
+            "move_management",
+            "senior_move_manager"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "dry_cleaning",
+          "label": "Dry cleaning / laundry service",
+          "definition": "Local dry cleaning and laundry services.",
+          "synonyms": [
+            "dry_cleaner",
+            "laundry_service",
+            "wash_and_fold"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "laundromat",
+          "label": "Laundromat",
+          "definition": "Local self-service and full-service laundromat.",
+          "synonyms": [
+            "laundry_facility",
+            "coin_laundry"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "tailor_alterations",
+          "label": "Tailor / alterations",
+          "definition": "Local clothing alterations and tailoring.",
+          "synonyms": [
+            "alterations",
+            "seamstress",
+            "tailoring"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "shoe_repair",
+          "label": "Shoe / leather repair",
+          "definition": "Local shoe repair and leather services.",
+          "synonyms": [
+            "cobbler",
+            "leather_repair"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "picture_framing",
+          "label": "Picture framing",
+          "definition": "Local custom picture-framing services.",
+          "synonyms": [
+            "custom_framing",
+            "frame_shop"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        },
+        {
+          "id": "locks_safes_personal",
+          "label": "Mobile locksmith (personal/auto)",
+          "definition": "Local mobile locksmith for residential, auto, and emergency lockouts.",
+          "synonyms": [
+            "mobile_locksmith",
+            "emergency_locksmith",
+            "car_key_replacement"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": true,
+          "national_variant_excluded": "National locksmith dispatch/lead-routing call-centers.",
+          "notes": "Overlaps residential_locksmith / commercial_locksmith; this entry covers mobile/auto/emergency operators."
+        },
+        {
+          "id": "personal_concierge",
+          "label": "Personal concierge / errand service (local)",
+          "definition": "Local concierge, errand, and personal-assistant services.",
+          "synonyms": [
+            "errand_service",
+            "concierge_local",
+            "personal_assistant_local"
+          ],
+          "is_ymyl": false,
+          "franchised_commonly": false,
+          "national_variant_excluded": null,
+          "notes": null
+        }
+      ]
+    }
+  },
+  "inclusion_criteria": "A vertical qualifies as local-service (and may fire the Vertical-Slice gate) when ALL THREE hold: (1) it primarily serves customers within a defined geographic market \u2014 a single city, metro, or contiguous region, not multi-state or national; (2) the transaction typically requires the customer visiting a physical location OR the business going to the customer for in-person service; and (3) it competes locally \u2014 its primary competitors are other businesses in the same metro, not national chains or pure-digital players. Every vertical in this enum is local-service by construction. Note: this enum determines the LOCAL-SERVICE half of the gate only. The 'revenue concentrated in <=5 money pages' half is established by the operator confirms + A.R.C. signals at routing time, not by membership in this list. B2B verticals can be local-service (e.g., commercial_kitchen_equipment_repair). Franchises are local-service at the FRANCHISEE level; the franchisor entity is not.",
+  "exclusion_criteria": "NOT local-service even if headquartered locally: pure e-commerce / DTC brands; national B2B services; remote-only or SaaS-delivered digital services; multi-state or national operators whose competitive set is national rather than metro-level; and franchisor (corporate) entities. Where a vertical has a clear national variant, it is captured in that vertical's 'national_variant_excluded' field (e.g., a local boutique law firm is local-service; an AmLaw-100 / national mass-tort firm is excluded; a local agency is local-service, a national/remote agency serving many metros is excluded). Borderline verticals that can be delivered remotely (bookkeeping, payroll, IT/MSP, business consulting, online tutoring) are local-service ONLY when the operator markets to and serves a defined metro in person; confirm before slicing. Retail (brick-and-mortar) is the softest fit on criterion (3) because national e-commerce competes directly with it \u2014 slice only when the operator's draw is genuinely local."
+}
