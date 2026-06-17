@@ -43,3 +43,8 @@ coverage/
 # Misc
 *.tgz
 .cache/
+
+# Local diagnostic / dump artifacts (contain partner data — stay local)
+arc-dumps.txt
+route-dump.js
+tests/parser/parsed-output/
