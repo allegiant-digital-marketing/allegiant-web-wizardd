@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Web WIZARDD · Ingestion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">▲</span>
+        <span class="brand-name">Web WIZARDD</span>
+        <span class="brand-divider">·</span>
+        <span class="brand-tagline">Ingestion</span>
+      </div>
+      <div class="topbar-meta">
+        <span class="env-label">internal · localhost</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ───────── Input panel ───────── -->
+    <section class="panel" id="input-panel">
+      <h1 class="panel-title">Parse a partner A.R.C. Report</h1>
+      <p class="panel-help">
+        Paste the deployed A.R.C. URL (e.g.
+        <code>https://kirchner-arc-report.netlify.app/</code>). Web WIZARDD
+        fetches the report, runs the parser, and renders a normalized record
+        for your review and edits below.
+      </p>
+      <form id="parse-form" class="parse-form" autocomplete="off">
+        <label class="field-label" for="arc-url">A.R.C. URL</label>
+        <div class="input-row">
+          <input
+            type="url"
+            id="arc-url"
+            name="arc-url"
+            class="input-text"
+            placeholder="https://&lt;partner&gt;-arc-report.netlify.app/"
+            required
+          >
+          <button type="submit" id="parse-button" class="btn btn-primary">
+            Parse
+          </button>
+        </div>
+        <div id="parse-status" class="status-line"></div>
+      </form>
+
+      <details class="previous-records">
+        <summary>Load a previously saved record</summary>
+        <div id="records-list" class="records-list">Loading…</div>
+      </details>
+    </section>
+
+    <!-- ───────── Output / edit panel ───────── -->
+    <section class="panel hidden" id="review-panel">
+      <!-- Sticky toolbar — stays at top while scrolling -->
+      <div class="review-toolbar" id="review-toolbar">
+        <div class="review-toolbar-left">
+          <h2 class="panel-title" id="review-title">Review parsed record</h2>
+          <p class="panel-meta" id="review-meta"></p>
+        </div>
+        <div class="review-toolbar-right">
+          <span id="edit-counter" class="edit-counter hidden"></span>
+          <button id="toggle-all-button" class="btn btn-ghost" type="button">Expand all</button>
+          <button id="cancel-button" class="btn btn-ghost" type="button">Discard</button>
+          <button id="save-button" class="btn btn-primary" type="button">Save reviewed record</button>
+        </div>
+      </div>
+
+      <div class="warnings" id="warnings-block"></div>
+
+      <!-- Builder review notes (saved into metadata.builderReview.notes) -->
+      <div class="builder-notes">
+        <label class="field-label" for="builder-notes-input">
+          Builder review notes
+          <span class="field-label-hint">— captured alongside the saved record</span>
+        </label>
+        <textarea
+          id="builder-notes-input"
+          class="input-textarea"
+          rows="2"
+          placeholder="Optional. What you fixed, what looked off, partner-specific context for downstream generation…"
+        ></textarea>
+      </div>
+
+      <div id="record-form" class="record-form">
+        <!-- Sections rendered dynamically by app.js -->
+      </div>
+
+      <div class="review-actions review-actions--bottom">
+        <button id="cancel-button-bottom" class="btn btn-ghost" type="button">Discard</button>
+        <button id="save-button-bottom" class="btn btn-primary" type="button">Save reviewed record</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

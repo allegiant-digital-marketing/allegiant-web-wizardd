@@ -33,6 +33,9 @@ yarn-error.log*
 generated-builds/
 partner-previews/
 
+# Builder-reviewed records (contain partner data — kept local only)
+data/
+
 # Test coverage
 coverage/
 .nyc_output/

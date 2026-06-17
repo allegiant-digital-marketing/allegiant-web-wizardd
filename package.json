@@ -11,6 +11,8 @@
     "url": "git+https://github.com/allegiant-digital-marketing/allegiant-web-wizardd.git"
   },
   "scripts": {
+    "start": "cross-env LLM_CACHE_MODE=replay node src/server.js",
+    "start:live": "cross-env LLM_CACHE_MODE=fallback node src/server.js",
     "validate:schemas": "node tests/schemas/validate.js",
     "test:parser": "cross-env LLM_CACHE_MODE=replay node tests/parser/test-parser.js",
     "test:parser:live": "cross-env LLM_CACHE_MODE=live node tests/parser/test-parser.js",
@@ -23,7 +25,8 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.27.0",
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "ajv": "^8.12.0",
