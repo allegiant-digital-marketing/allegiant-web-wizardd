@@ -1,218 +1,226 @@
-# Routing SOP — Tier-1 P4 Human Peer Review Worksheet
+# Routing SOP — Tier-1 P4 Human Peer Review Worksheet (Signed)
 
-**Document under review:** `docs/ALLEGIANT_ARC_ROUTING_SOP.md` (v1.1)
-**Reviewer:** _______________________________
-**Role:** _______________________________
-**Date:** _______________________________
+**Document under review:** `docs/ALLEGIANT_ARC_ROUTING_SOP.md` (v1.1 at review time; v1.2 as of author response)
+**Reviewer:** Mike Small
+**Role:** Director of Production, Allegiant Digital Marketing
+**Review dates:** 2026-06-24 through 2026-06-30
 
 ---
 
 ## What this worksheet is
 
-A structured pass through the Allegiant Gauntlet's P4 (four hostile reads) applied to the routing SOP. An AI did an initial P4 pass already during the SOP's authoring — this is the **human** P4 the SOP itself says is owed before it governs paid production. Until this worksheet is signed at the bottom, the SOP is pending — not operating standard.
+A structured pass through the Allegiant Gauntlet's P4 (four hostile reads) applied to the routing SOP. An AI did an initial P4 pass during the SOP's authoring; this is the **human** P4 that the Gauntlet v2.1 §I.B requires before an SOP can govern paid production.
 
-**Time required:** ~60–90 minutes if done thoroughly.
-
-## How to use it
-
-1. Read `docs/ALLEGIANT_ARC_ROUTING_SOP.md` first — one pass, no marks. Get the whole framework in your head.
-2. For each of the four reads below, put on that hat **specifically** — don't blend them. The four reads are kept distinct deliberately; that's where the discipline comes from.
-3. For each finding, mark disposition: **No change required / Required change / Blocks adoption**.
-4. Roll the four reads up into an overall disposition at the bottom.
-5. Sign off.
-
-The pre-populated content in each section is **what the AI P4 already found**. Your job is to (a) pressure-test whether those findings are right, (b) find what the AI missed, and (c) apply production-side judgment AI can't bring.
+**Status:** ✅ SIGNED AND COMPLETE. Findings folded into SOP v1.2.
 
 ---
 
 ## Read 1 — CFO
 
-**The role you're playing:** the executive who has to justify the cost of this SOP existing — both the time to apply it per partner, and any future engineering it implies. You're looking for hidden cost, marginal value, and downside.
+### Finding 1
 
-**Questions to pressure-test:**
+**Excellent:** The routing framework clearly creates more value than relying solely on strategist judgment because it establishes consistency, reduces onboarding time, and creates an auditable decision trail.
 
-- Is the marginal value of this SOP positive vs. just having strategists eyeball each A.R.C. and use judgment?
-- What does misrouting actually cost in dollars? (Wasted production hours, partner churn, reputation damage if results don't materialize)
-- Is the cost of Step 0's "flag for human review" higher than the cost of just routing everyone and inspecting outliers?
-- The SOP defers building software until volume justifies. Does that math seem right given Allegiant's current partner count and growth trajectory?
-- Hidden costs: training time for new strategists, edge-case adjudication overhead, the 5–10-partner calibration period before the thresholds harden
+**Potential Update:** The SOP could define measurable success criteria for the routing model itself. Without KPIs, Allegiant cannot determine whether the routing decisions are actually improving outcomes over time.
 
-**What the AI P4 already found (CFO read):**
+**Disposition:** Required Change
 
-> A 3-gate tree is simple enough to run by hand. What's the marginal value of building software over publishing the priority tree as a one-page decision SOP that strategists apply — and automating only once volume justifies it? Software earns its cost on (a) operator consistency, (b) the persisted attributed artifact the paid-production gate needs, and (c) programmatic feed into WIZARDD later. If those aren't needed yet, the interactive is premature.
->
-> Also: misrouting a broken-base partner to Citation-Capture has real cost — wasted production + a partner who doesn't get results. The human-override path must be explicit, not implied.
+### Finding 2
 
-**Your findings:**
+**Excellent:** The SOP correctly postpones software automation until sufficient volume exists. That is the appropriate business decision today.
 
-| # | Finding | Disposition |
-|---|---|---|
-| 1 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 2 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 3 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
+**Potential Update:** The document could clearly identify the trigger that justifies moving from manual routing to automation (for example, partner volume, monthly routing frequency, or routing time per strategist). Otherwise, automation becomes subjective rather than economically driven.
+
+**Disposition:** Required Change
+
+### Finding 3
+
+**Excellent:** The human-review path is appropriately conservative, but...
+
+**Potential Update:** Step 0 may create operational bottlenecks if parser warnings become common during template evolution. The SOP should require periodic review of Step 0 trigger frequency so that excessive false positives do not become hidden production cost.
+
+**Disposition:** Required Change
 
 ---
 
 ## Read 2 — Competitor
 
-**The role you're playing:** a competing agency that wants to point out why this SOP is unimpressive, generic, or worse than what they offer. Argue your competitor's side honestly — what would they attack?
+### Finding 1
 
-**Questions to pressure-test:**
+**Excellent:** The routing logic itself is solid...
 
-- Is "Foundation → Citation-Capture → Vertical-Slice" actually a novel framework, or is it rebranded "audit-fix-grow"?
-- What's the unique Allegiant value vs. a generic SEO playbook a competitor could draft in a week?
-- Are the thresholds (`avs<40`, `LCP≥8s`, `≤5 pages`) defensible, or could a competitor make us look amateur for citing uncalibrated numbers in client-facing material?
-- Does the language read as "we have a method" or as "we have a procedure document"?
-- What would a competitor exploit in front of a prospect? ("They route everyone to Foundation work because their thresholds are arbitrary…")
+**Potential Update:** but today the competitive advantage resides almost entirely in the decision tree. The actual execution playbooks behind Foundation-First, Citation-Capture, and Vertical-Slice still appear to be developing. A competitor with mature implementation playbooks could reasonably argue that Allegiant has categorized work better than it has operationalized it.
 
-**What the AI P4 already found (Competitor read):**
+**Disposition:** Required Change
 
-> The router outputs a model label and an ID list — but the differentiated value, the ordered vertical-tuned playbook, doesn't exist until Phase 2 fill-in catches up behind those IDs. Until then, a rival with a fleshed-out playbook beats a labeled bucket.
->
-> And the thresholds (LCP > 4s, avs < 40, ≤5 pages) are unsourced cut points with zero calibration data — confidently wrong is worse than vague.
+### Finding 2
 
-**Your findings:**
+**Excellent:** The SOP repeatedly acknowledges that several thresholds are "starting cuts." Internally this is appropriate, but...
 
-| # | Finding | Disposition |
-|---|---|---|
-| 1 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 2 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 3 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
+**Potential Update:** these values should likely not appear in partner-facing material until validated with production data. A competitor could easily criticize arbitrary thresholds and raise doubt.
+
+**Disposition:** Required Change
+
+### Finding 3
+
+**Very Good:** The terminology is typically very good, but portions of the SOP occasionally read like engineering documentation rather than a strategic methodology.
+
+**Potential Update:** A brief introductory section explaining *why* this routing model improves partner outcomes would strengthen the document and better distinguish Allegiant's approach from a generic audit-fix-grow framework.
+
+**Disposition:** Required Change
 
 ---
 
 ## Read 3 — Fact-Checker
 
-**The role you're playing:** an editor who treats every factual claim in the SOP as guilty until proven. Don't take any premise on trust.
+### Finding 1
 
-**Premises to specifically verify** (check each one against the actual files):
+**Excellent:** The supporting documentation consistently reinforces the parser architecture, structural variance findings, and schema decisions.
 
-- [ ] `schemas/local-service-verticals.json` exists, contains exactly 354 verticals, 17 categories
-- [ ] 80 verticals in that file are flagged `is_ymyl: true`
-- [ ] All schema field references in the SOP exist in `schemas/arc-extraction.schema.json`: `website.lcpMobileSeconds`, `website.knownIssues[]`, `aiVisibility.avs`, `aiVisibility.citationCount`, `targetServices[]`, `targetLocations[]`, `businessIdentity.vertical`, `metadata.completenessScore`, `metadata.extractionWarnings`
-- [ ] The claim "Kirchner, Tucker Albin, and Armstrong all routed Foundation-First" — pull each partner's parsed extraction and re-walk the tree manually. Do they?
-- [ ] The claim "`completenessScore` measures fraction of expected schema fields populated, not extraction success" — verify by reading `src/layers/1-ingestion/index.js`, function `computeFinalCompleteness`
-- [ ] Tucker's reported A.R.C. issues — schema absent, broken links, lorem ipsum live — verify these are in the actual extraction
-- [ ] Armstrong's reported issues — no JSON-LD, no robots.txt, no sitemap, apex doesn't resolve — verify in actual extraction
-- [ ] The "9/9 tasks succeeded" claim for Tucker and Armstrong — verify in `metadata.extractionWarnings`
+**Potential Update:** Several factual assertions in the SOP depend on implementation artifacts (schema files, parser code, extraction outputs, vertical counts, and completeness calculations) rather than the SOP itself. Those references could potentially be periodically validated during version releases as part of release QA instead of relying on manual spot checks.
 
-**Other questions:**
+**Disposition:** Required Change
 
-- Is the critical-foundation issue checklist complete? Anything missing? (Look at recent A.R.C.s for issues you've seen that aren't on the list)
-- Are any of the cosmetic-vs-critical classifications wrong? (E.g., is "missing H1 at scale" really critical, or sometimes just a styling artifact?)
-- Does "≤5 pages = majority of leads" map to anything measurable in the WIZARDD intake form, or is the operator answering from memory?
+*(Note: this finding was flagged Required Change in-line but did not appear in Mike's final rollup. The SOP author elected to include it as Required Change #11, treating it as a governance addition rather than a rollup omission.)*
 
-**Your findings:**
+### Finding 2
 
-| # | Finding | Disposition |
-|---|---|---|
-| 1 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 2 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 3 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
+**Excellent:** The "critical foundation issue" list is comprehensive, but...
+
+**Potential Update:** a few items appear to mix truly blocking technical failures with severe optimization deficiencies. Missing H1 tags or missing meta descriptions at scale may warrant Foundation routing, but they are generally accepted as lower-severity than DNS failures, broken HTTPS, indexing failures, or unresolved domains. We could potentially consider grouping the list into Critical Infrastructure versus Critical Optimization issues to raise this to the next level.
+
+**Disposition:** Required Change
+
+### Finding 3
+
+**Potential Update:** Operator input C2 ("Do ≤5 pages generate the majority of leads?") appears to rely on operator knowledge rather than measurable intake data. Wherever possible, this should eventually be derived from analytics or intake-form data instead of institutional memory.
+
+**Disposition:** Required Change
 
 ---
 
 ## Read 4 — Lawyer
 
-**The role you're playing:** outside counsel who reads every sentence for worst-case interpretation, attribution risk, and downstream liability.
+### Finding 1
 
-**Language to specifically scrutinize** (re-read each in its full context):
+**Excellent:** The SOP consistently refers to a "recommended entry sequence," which appropriately limits liability. That wording should remain consistent throughout future revisions. Any language implying the router determines the objectively correct path should be avoided.
 
-- [ ] Output framed as "recommended entry sequence" not "correct path" — does this hold everywhere in the SOP, or does some language drift?
-- [ ] Compliance brake wording — does the SOP adequately communicate to the operator that bare Vertical-Slice on a YMYL partner is forbidden, not just "preferred against"?
-- [ ] The phrase "human peer reviewer must sign off" — does the SOP make clear who is qualified to sign? (Or could anyone in the org claim P4 sign-off?)
-- [ ] Persistence record claims to capture "operator name + decision timestamp" — any PII implications? Retention policy needed?
-- [ ] Override-of-compliance-brake clause says "must be co-signed by a second operator" — is "operator" defined? Does this need to be a specifically senior role?
-- [ ] "Uncalibrated starting cuts" — does labeling them this way actually protect Allegiant if a routing decision based on them turns out wrong for a partner?
-- [ ] References to specific real partners by name (Kirchner, Tucker, Armstrong) in the procedure document — any partner-confidentiality concerns? Should they be anonymized to "Partner A / B / C"?
+**Disposition:** No Change Required
 
-**Other questions:**
+### Finding 2
 
-- Compliance-brake failure modes: what if the operator answers "No" on C3 for a partner who IS YMYL by vertical-list match? (SOP says the brake fires anyway — is the wording strong enough?)
-- What if the operator's C3 contradicts the YMYL flag for the partner's vertical? Whose answer wins, and is that documented clearly enough that two operators would interpret it the same way?
-- Worst-case scenario: SOP is followed exactly and a regulated partner suffers a compliance event in their content. Does the SOP's own language increase or decrease Allegiant's exposure?
+**Excellent:** The compliance brake is one of the strongest sections of the SOP. However...
 
-**Your findings:**
+**Potential Update:** the document could benefit from explicitly defining who qualifies as the required second approver when overriding compliance decisions. "Operator" is too broad for an operating standard.
 
-| # | Finding | Disposition |
-|---|---|---|
-| 1 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 2 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
-| 3 |   | ☐ No change · ☐ Required change · ☐ Blocks adoption |
+**Disposition:** Required Change
+
+### Finding 3
+
+**Excellent:** The SOP currently references actual partner names as routing examples.
+
+**Potential Update:** While acceptable for internal engineering documentation, an operating standard would be stronger if those examples were anonymized (Partner A, Partner B, etc.) or moved into separate test fixtures. This reduces unnecessary confidentiality concerns and keeps the SOP focused on process rather than specific engagements.
+
+**Disposition:** Required Change
 
 ---
 
-## Overall disposition
+## Overall Disposition
 
-Sum the findings across all four reads. Then check ONE:
+☒ **CLEARED WITH REQUIRED CHANGES**
 
-- ☐ **CLEARED** — no required changes; SOP is operating standard as written.
-- ☐ **CLEARED WITH REQUIRED CHANGES** — list the required changes below; SOP becomes operating standard after the author folds them in and the changes are version-committed.
-- ☐ **NOT CLEARED** — substantive issues block adoption. List specifics; SOP returns to author for rework before re-review.
+- The routing methodology itself is sound.
+- The gate sequence is logical.
+- The compliance brake is appropriately conservative.
+- The supporting parser architecture, schema decisions, and structural variance analysis demonstrate that substantial engineering thought has gone into the system.
+- The remaining issues are primarily governance, maintainability, calibration, and operational clarity rather than flaws in the routing model itself. **None of the required changes alter the routing logic.**
 
-### Required changes (if any)
+### Required Changes (per Mike's rollup)
 
-Number, describe, and reference which read surfaced it:
+1. Define measurable success metrics for the routing model (CFO).
+2. Define objective criteria for when routing automation becomes economically justified (CFO).
+3. Add periodic review of Step 0 false-positive rates (CFO).
+4. Complete the implementation playbooks behind each routing sequence before presenting the methodology as a competitive differentiator (Competitor).
+5. Keep routing thresholds internal until validated with production data (Competitor).
+6. Add a brief business rationale explaining why the routing model exists before introducing the gates (Competitor).
+7. Separate Critical Infrastructure failures from Critical Optimization failures within Gate 1 (Fact Checker).
+8. Replace operator memory for C2 with measurable intake or analytics data when feasible (Fact Checker).
+9. Define the minimum authority required for compliance override co-signers (Lawyer).
+10. Consider anonymizing partner examples or moving them into engineering test documentation (Lawyer).
+11. Add release QA process for factual claim verification against implementation artifacts (Fact Checker — inclusion by SOP author from Read 3 Finding 1).
 
-1.
-2.
-3.
+### Risks Accepted As-Is
 
-### Risks accepted as-is (if any)
+- Initial routing thresholds are acceptable provided they remain clearly identified as calibration values and are reviewed as production data accumulates.
+- Manual routing prior to automation is appropriate at Allegiant's current scale.
+- The parser's hybrid deterministic/LLM extraction strategy is well justified and appears maintainable given the documented structural variance across A.R.C. reports.
 
-Things you noted but explicitly accept rather than require changes:
+### Overall Assessment
 
-1.
-2.
+**Score: 9.5/10**
+
+Most SOPs I've reviewed are either high-level business documents or highly technical engineering specs. This one successfully bridges those worlds. It establishes clear operational rules while remaining implementable in software, and the supporting documentation demonstrates a thoughtful architecture rather than an ad hoc process. The changes above would make it more resilient as an official operating standard without changing the core methodology.
 
 ---
 
 ## Sign-off
 
-**Reviewer signature:** ____________________________________________
+**Reviewer signature:** Mike Small
 
-**Printed name:** _______________________________
+**Printed name:** Mike Small
 
-**Role:** _______________________________
+**Role:** Director of Production, Allegiant Digital Marketing
 
-**Date:** _______________________________
+**Date:** 2026-06-30
 
 **Reviewer affirms:**
 
-- ☐ I have read the SOP under review in full
-- ☐ I have applied each of the four reads distinctly, not collapsed
-- ☐ The findings above are mine, not generated or assisted by AI
-- ☐ I have no undisclosed conflict of interest in the SOP being adopted
+- ☒ I have read the SOP under review in full
+- ☒ I have applied each of the four reads distinctly, not collapsed
+- ☒ The findings above are mine, not generated or assisted by AI
+- ☒ I have no undisclosed conflict of interest in the SOP being adopted
 
 ---
 
 ## SOP author response
 
-*To be filled by SOP author (Chad Markham) after the reviewer signs off.*
+**Author:** Chad Markham, President/CEO, Allegiant Digital Marketing
+**Response date:** 2026-07-01
 
-For each required change, document what was changed in v1.2 and where:
+All 11 required changes folded into v1.2. Six were self-contained edits I authorized directly; five required specific policy decisions on scope, thresholds, and org structure. The five policy decisions:
 
-| # | Required change | Change applied | Commit hash |
-|---|---|---|---|
-| 1 |   |   |   |
-| 2 |   |   |   |
-| 3 |   |   |   |
+- **Success metrics (Change 1):** all three — override rate, partner satisfaction @ 90 days, time-to-first-shipped-page — adopted as provisional starting cuts pending calibration.
+- **Automation trigger criteria (Change 2):** cleaner set adopted (volume · team-scale · consistency drift), with provisional labeling and quarterly review under the Gauntlet Part IV calibration loop. Team-scale selected over operator-time as the discrete, less-ambiguous measurement.
+- **Playbook completeness (Change 4):** deferred to post-calibration. The `weighting_tier` tagging of the 263-item master reference — per the newly-adopted Allegiant SEO Weighting Model (`docs/ALLEGIANT_SEO_WEIGHTING_MODEL.md`) — is the executable-playbook mechanism. Section 12.2 of v1.2 acknowledges explicitly that until tagging is complete, the SOP is categorization framework, not full methodology.
+- **Compliance override authority (Change 9):** Chad Markham (CEO) directly, sole authority pending org-structure changes. Section 7 states the condition for revisiting.
+- **Partner anonymization (Change 10):** full anonymization in SOP body (Partner A / B / C). Internal reference key preserved in Appendix C, marked internal-only.
 
-For any risks accepted as-is, document why:
+### Changes applied
 
-1.
-2.
+| # | Required change | Change applied in v1.2 |
+|---|---|---|
+| 1 | Define measurable success metrics | Section 9 added — override rate, partner satisfaction @ 90d, time-to-first-page. All provisional starting cuts. |
+| 2 | Define objective automation triggers | Section 8 added — cleaner set (volume, team-scale, consistency drift) as provisional cuts. Quarterly review per Gauntlet §IV. |
+| 3 | Periodic Step 0 false-positive review | Section 10.1 added — quarterly Step 0 trigger-rate check with revisit thresholds. |
+| 4 | Complete implementation playbooks | Section 12.2 updated — `weighting_tier` tagging per Weighting Model is the playbook mechanism, deferred to post-calibration. Explicit acknowledgment that until tagged, SOP is framework not methodology. |
+| 5 | Keep thresholds internal until validated | Header classification note added; Section 6 opens with internal-only reminder. |
+| 6 | Business rationale intro | Section 1 added — "Why this framework exists." |
+| 7 | Split Critical Infrastructure vs Optimization | Section 5.1 (Infrastructure) and 5.2 (Optimization) created as sub-lists. Both trigger Gate 1. |
+| 8 | C2 references measurable data, not memory | Section 3 C2 wording tightened — operator answers Yes only from analytics or intake data, never memory. |
+| 9 | Compliance override authority | Section 7 defines Chad Markham as sole co-signer authority pending org changes. |
+| 10 | Anonymize partner examples | Kirchner → Partner A; Tucker Albin → Partner B; Armstrong → Partner C throughout body. Internal reference key in Appendix C, marked internal-only. |
+| 11 | Release QA for factual claims | Section 10.2 added — every SOP version bump verifies schema, partner data, and vertical count claims against actual repo files as a Gauntlet P2 pass before commit. |
 
-**SOP author signature:** ____________________________________________
+### Risks accepted as-is
 
-**Date:** _______________________________
+Beyond the risks Mike explicitly accepted in his own list (routing thresholds provisional, manual routing at current scale, parser architecture), no additional risks accepted by author beyond what v1.2 documents.
+
+**Author signature:** Chad Markham
+
+**Date:** 2026-07-01
 
 ---
 
-## Closing this loop
+## Status
 
-**Once both signatures are present AND required changes are folded in:**
-
-1. Update the SOP's status header from `⏸ PENDING TIER-1 P4 HUMAN PEER REVIEW` to `✅ OPERATING STANDARD — cleared at P4 by [reviewer], [date]`
-2. Commit the updated SOP and this signed worksheet to the repo
-3. The routing SOP is now operating standard at Allegiant — every paid partner build flows through it.
+☒ **CLEARED — OPERATING STANDARD.** All required changes folded into `docs/ALLEGIANT_ARC_ROUTING_SOP.md` v1.2. SOP status banner updated from ⏸ PENDING to ✅ OPERATING STANDARD. Governs live partner builds effective 2026-07-01.
