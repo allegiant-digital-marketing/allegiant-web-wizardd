@@ -1,8 +1,8 @@
-# A.R.C. Report — Expansion Instructions v1.1
+# A.R.C. Report — Expansion Instructions v1.2
 
 **Purpose:** Baseline update to the A.R.C. Report template so every partner report going forward surfaces the fields Web WIZARDD needs to ingest cleanly. Derived from the Webb Pest Service ingestion (2026-07-01) which surfaced six missing/incomplete field classes.
 
-**Governing standard:** Allegiant Gauntlet Master Verification Standard v2.1. This instruction set is a partner-facing deliverable spec; §I-B (A.R.C. Report module) governs the P2/P5 verification when the report is built.
+**Governing standard:** Allegiant Gauntlet Master Verification Standard v2.1. This instruction set is a partner-facing deliverable spec; §III-B (A.R.C. Report module) governs the P2/P5 verification when the report is built.
 
 **Deliver this document to:** a **new** conversation in the A.R.C. Report generator project (attach as a file; do not paste as text). Also attach the Master Verification Standard v2.1 so §III-B is present in that project's knowledge.
 
@@ -171,9 +171,9 @@ The `data-panel-id` attribute is load-bearing — the parser uses it to identify
 
 ---
 
-## Verification (this document's own §I-B pass)
+## Verification (this document's own §III-B pass)
 
-Per Master Standard §I-B, when this expanded template is applied to a live A.R.C. Report:
+Per Master Standard §III-B, when this expanded template is applied to a live A.R.C. Report:
 
 - **P2 — per-dimension verification:** every metric above traces to a live, dated capture. AVS scores trace to the AVS export block with timestamps. GBP data traces to the actual Google Business Profile. Rankings trace to Semrush/live SERP with dates. No metric asserted from memory, inference, or stale run.
 - **P5 — external validation:** 13 tabs render · every link 200 · deployed to Netlify team `allegiantdigitalmarketing` · every computed figure recomputed and traceable · figures consistent tab-to-tab.
@@ -193,6 +193,7 @@ Per §I.A.6 (third-party-claims rule): every claim about the recipient's own bus
 
 ## Change control
 
+- Version 1.2 — 2026-07-11. Citation fix: §I-B corrected to §III-B (the A.R.C. Report module) throughout — Part I §B is the 5-Pass Protocol, not the A.R.C. module. Flagged by the A.R.C. generator during template-update restatement.
 - Version 1.1 — 2026-07-05. Platform set in §5 corrected against live AVS tool documentation; `citationContext` enum staged; AVS export block named as source of record for the AI Visibility panel.
 - Version 1.0 — 2026-07-01. Initial expansion instruction set derived from Webb Pest Service ingestion escapes. Never committed or applied; retired.
 - Future revisions triggered by additional escapes surfaced during the WIZARDD calibration window per Standing Instructions §7 calibration loop.
