@@ -22,7 +22,8 @@
   let state = {
     original: null,
     edited: null,
-    sourceUrl: null
+    sourceUrl: null,
+    provenance: {}   // dotted-path → 'intake' map from the failsafe merge
   };
 
   /* ──────────────────────────────────────────────────────────
@@ -51,10 +52,21 @@
       editCounter: document.getElementById('edit-counter'),
       builderNotes: document.getElementById('builder-notes-input'),
       recordsList: document.getElementById('records-list'),
-      toastContainer: document.getElementById('toast-container')
+      toastContainer: document.getElementById('toast-container'),
+      intakeDetails: document.getElementById('intake-failsafe'),
+      intakeJson: document.getElementById('intake-json-input'),
+      intakeValidate: document.getElementById('intake-validate-button'),
+      intakeClear: document.getElementById('intake-clear-button'),
+      intakeStatus: document.getElementById('intake-status')
     };
 
     els.parseForm.addEventListener('submit', onParseSubmit);
+    els.intakeValidate.addEventListener('click', () => validateIntakeJson(true));
+    els.intakeClear.addEventListener('click', () => {
+      els.intakeJson.value = '';
+      setIntakeStatus('');
+    });
+    els.intakeJson.addEventListener('input', () => setIntakeStatus(''));
     els.saveButton.addEventListener('click', onSaveClick);
     els.saveButtonBottom.addEventListener('click', onSaveClick);
     els.cancelButton.addEventListener('click', onCancelClick);
@@ -78,6 +90,15 @@
     const url = els.arcUrl.value.trim();
     if (!url) return;
 
+    // Intake failsafe: if the textarea has content it must be valid JSON.
+    // Invalid intake halts the parse entirely — no silent parser-only proceed.
+    const intake = validateIntakeJson(false);
+    if (!intake.ok) {
+      els.intakeDetails.open = true;
+      setStatus('Intake JSON is invalid — fix it or click Clear before parsing.', 'error');
+      return;
+    }
+
     els.parseButton.disabled = true;
     setStatus(`<span class="spinner"></span>Fetching and parsing… (may take 5–30s if not yet cached)`);
 
@@ -85,7 +106,7 @@
       const res = await fetch('/api/parse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url })
+        body: JSON.stringify({ url, intakeJson: intake.value })
       });
       const data = await res.json();
       if (!res.ok) {
@@ -98,7 +119,12 @@
       state.original = data.record;
       state.edited = deepClone(data.record);
       state.sourceUrl = url;
-      setStatus(`Parsed in ${data.timing.parseMs}ms (fetch ${data.timing.fetchMs}ms). Completeness: ${data.record.metadata.completenessScore}`, 'success');
+      const meta = data.record.metadata;
+      let cMsg = `Completeness: ${meta.completenessScore}`;
+      if (meta.mergeSource === 'parser+intake' && meta.parserCompletenessScore != null) {
+        cMsg += ` (parser first-pass: ${meta.parserCompletenessScore})`;
+      }
+      setStatus(`Parsed in ${data.timing.parseMs}ms (fetch ${data.timing.fetchMs}ms). ${cMsg}`, 'success');
       renderReview();
     } catch (err) {
       setStatus(`Network error: ${err.message}`, 'error');
@@ -113,6 +139,71 @@
   }
 
   /* ──────────────────────────────────────────────────────────
+   * Intake-JSON failsafe helpers
+   * ────────────────────────────────────────────────────────── */
+
+  function setIntakeStatus(html, level) {
+    els.intakeStatus.innerHTML = html;
+    els.intakeStatus.className = 'status-line' + (level ? ' ' + level : '');
+  }
+
+  /**
+   * Validates the intake textarea. Returns { ok, value } where value is
+   * the parsed object (or null when the textarea is empty — empty is valid
+   * and means "no intake supplied").
+   */
+  function validateIntakeJson(showSuccess) {
+    const raw = els.intakeJson.value.trim();
+    if (!raw) {
+      if (showSuccess) setIntakeStatus('Nothing to validate — the textarea is empty.');
+      return { ok: true, value: null };
+    }
+    try {
+      const value = JSON.parse(raw);
+      if (typeof value !== 'object' || value === null || Array.isArray(value)) {
+        setIntakeStatus('Intake JSON must be a single object ({...}), not an array or primitive.', 'error');
+        return { ok: false, value: null };
+      }
+      if (showSuccess) {
+        const n = countLeaves(value).total;
+        setIntakeStatus(`Valid JSON — ${n} field${n === 1 ? '' : 's'} parsed.`, 'success');
+      }
+      return { ok: true, value };
+    } catch (err) {
+      setIntakeStatus(`Invalid JSON: ${escapeHtml(err.message)}`, 'error');
+      return { ok: false, value: null };
+    }
+  }
+
+  function pathKey(path) {
+    return path.join('.');
+  }
+
+  /** Exact provenance hit — this precise field came from intake. */
+  function hasIntakeAt(path) {
+    return state.provenance && state.provenance[pathKey(path)] === 'intake';
+  }
+
+  /** Prefix provenance hit — something at or under this path came from intake. */
+  function hasIntakeUnder(path) {
+    if (!state.provenance) return false;
+    const p = pathKey(path);
+    if (state.provenance[p]) return true;
+    const prefix = p + '.';
+    for (const k in state.provenance) {
+      if (k.startsWith(prefix)) return true;
+    }
+    return false;
+  }
+
+  function intakeBadge() {
+    const b = document.createElement('span');
+    b.className = 'intake-badge';
+    b.textContent = 'intake';
+    return b;
+  }
+
+  /* ──────────────────────────────────────────────────────────
    * Render: top-level layout
    * ────────────────────────────────────────────────────────── */
 
@@ -122,7 +213,17 @@
     const completeness = (r.metadata && r.metadata.completenessScore) || 0;
     const cBadge = completenessBadge(completeness);
 
-    els.reviewTitle.innerHTML = `Review · <span style="color: var(--mint)">${escapeHtml(partner)}</span>${cBadge}`;
+    // Provenance map drives the [intake] badges on individual fields
+    state.provenance = (r.metadata && r.metadata.fieldProvenance) || {};
+
+    // When the failsafe merged intake data, show the parser-only first-pass
+    // score alongside — that number is the §11.1 calibration metric.
+    let pBadge = '';
+    if (r.metadata && r.metadata.mergeSource === 'parser+intake' && r.metadata.parserCompletenessScore != null) {
+      pBadge = `<span class="completeness-badge parser">parser ${r.metadata.parserCompletenessScore}</span>`;
+    }
+
+    els.reviewTitle.innerHTML = `Review · <span style="color: var(--mint)">${escapeHtml(partner)}</span>${cBadge}${pBadge}`;
     els.reviewMeta.textContent = state.sourceUrl
       ? `Source: ${state.sourceUrl}`
       : 'Loaded from saved record';
@@ -407,6 +508,7 @@
         const label = document.createElement('div');
         label.className = 'field-group-label';
         label.textContent = `${titleCase(key)} (${childValue.length})`;
+        if (hasIntakeUnder(childPath)) label.appendChild(intakeBadge());
         group.appendChild(label);
         group.appendChild(renderArray(childValue, childPath, readOnly));
         wrap.appendChild(group);
@@ -417,6 +519,7 @@
         const label = document.createElement('div');
         label.className = 'field-group-label';
         label.textContent = titleCase(key);
+        if (hasIntakeUnder(childPath)) label.appendChild(intakeBadge());
         group.appendChild(label);
         const sub = document.createElement('div');
         sub.className = 'sub-object';
@@ -431,6 +534,7 @@
         const lbl = document.createElement('div');
         lbl.className = 'field-row-label';
         lbl.textContent = key;
+        if (hasIntakeAt(childPath)) lbl.appendChild(intakeBadge());
         row.appendChild(lbl);
 
         row.appendChild(renderValue(childValue, childPath, readOnly));
@@ -454,6 +558,7 @@
         let extra = '';
         if (item.tier) extra = `<span class="sub-object-tier">${escapeHtml(item.tier)}</span>`;
         header.innerHTML = escapeHtml(itemLabel) + extra;
+        if (hasIntakeUnder(path.concat(i))) header.appendChild(intakeBadge());
         sub.appendChild(header);
 
         sub.appendChild(renderObject(item, path.concat(i), readOnly));
@@ -642,7 +747,8 @@
 
   function onCancelClick() {
     if (!confirm('Discard your edits and return to the input panel?')) return;
-    state = { original: null, edited: null, sourceUrl: null };
+    state = { original: null, edited: null, sourceUrl: null, provenance: {} };
+    setIntakeStatus('');  // intake textarea content is kept on purpose — easy re-parse
     els.reviewPanel.classList.add('hidden');
     els.recordForm.innerHTML = '';
     els.warnings.innerHTML = '';
@@ -692,6 +798,7 @@
       state.original = data.record;
       state.edited = deepClone(data.record);
       state.sourceUrl = null;
+      state.provenance = (data.record.metadata && data.record.metadata.fieldProvenance) || {};
       renderReview();
       toast(`Loaded ${filename}`, 'success');
     } catch (err) {

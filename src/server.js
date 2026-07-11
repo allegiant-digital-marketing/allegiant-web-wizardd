@@ -29,7 +29,8 @@ require('dotenv').config();
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
-const { parseArcHtml } = require('./layers/1-ingestion');
+const { parseArcHtml, computeFinalCompleteness } = require('./layers/1-ingestion');
+const { mergeIntakeIntoRecord } = require('./shared/intake-merge');
 
 const PORT = process.env.PORT || 3000;
 const HOST = '127.0.0.1';
@@ -68,12 +69,15 @@ app.use(express.static(UI_DIR));
  * single canonical place to handle URL → HTML conversion.
  * ──────────────────────────────────────────────────────────────────── */
 app.post('/api/parse', async (req, res) => {
-  const { url } = req.body || {};
+  const { url, intakeJson } = req.body || {};
   if (!url || typeof url !== 'string') {
     return res.status(400).json({ error: 'Missing or invalid `url` in request body' });
   }
   if (!url.startsWith('https://') && !url.startsWith('http://')) {
     return res.status(400).json({ error: 'URL must start with http:// or https://' });
+  }
+  if (intakeJson != null && (typeof intakeJson !== 'object' || Array.isArray(intakeJson))) {
+    return res.status(400).json({ error: 'intakeJson, when provided, must be a single JSON object' });
   }
 
   try {
@@ -92,9 +96,36 @@ app.post('/api/parse', async (req, res) => {
     console.log(`[parse] Fetched ${html.length} bytes in ${fetchMs}ms — parsing...`);
 
     const parseStart = Date.now();
-    const record = await parseArcHtml(html, url);
+    let record = await parseArcHtml(html, url);
     const parseMs = Date.now() - parseStart;
     console.log(`[parse] Parsed in ${parseMs}ms — completeness ${record.metadata.completenessScore}`);
+
+    // ── Intake-JSON failsafe merge (docs/WEB_WIZARDD_UI_PATCH_SPEC.md) ──
+    // Parser wins on conflict; intake fills gaps. The parser-only score is
+    // preserved as parserCompletenessScore — that number, NOT the merged
+    // score, is the first-pass calibration metric per Routing SOP §11.1.
+    const parserCompleteness = record.metadata.completenessScore;
+    if (intakeJson && Object.keys(intakeJson).length > 0) {
+      const parserSnapshot = JSON.parse(JSON.stringify(record));
+      const { merged, provenance, skippedMetadata } = mergeIntakeIntoRecord(record, intakeJson);
+      merged.metadata.parserCompletenessScore = parserCompleteness;
+      merged.metadata.completenessScore = computeFinalCompleteness(merged);
+      merged.metadata.mergeSource = 'parser+intake';
+      merged.metadata.fieldProvenance = provenance;
+      merged.metadata.sources = { parser: parserSnapshot, intake: intakeJson };
+      if (skippedMetadata) {
+        merged.metadata.extractionWarnings.push(
+          'Intake JSON contained a `metadata` key — ignored by design (metadata is parser-owned).'
+        );
+      }
+      console.log(
+        `[parse] Intake merge applied — ${Object.keys(provenance).length} field(s) from intake; ` +
+        `completeness ${parserCompleteness} → ${merged.metadata.completenessScore}`
+      );
+      record = merged;
+    } else {
+      record.metadata.mergeSource = 'parser-only';
+    }
 
     return res.json({
       record,
@@ -138,6 +169,9 @@ app.post('/api/save', (req, res) => {
     metadata: {
       ...(record.metadata || {}),
       builderReview: {
+        // Preserve anything the UI already put here (e.g. builder notes) —
+        // clobbering this object silently dropped notes prior to this fix.
+        ...((record.metadata && record.metadata.builderReview) || {}),
         reviewedAt: new Date().toISOString(),
         savedTo: filename
       }

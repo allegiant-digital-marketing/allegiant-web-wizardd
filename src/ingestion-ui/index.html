@@ -55,6 +55,28 @@
         <div id="parse-status" class="status-line"></div>
       </form>
 
+      <details class="intake-failsafe" id="intake-failsafe">
+        <summary>Intake Form JSON (optional failsafe)</summary>
+        <p class="panel-help intake-help">
+          Paste intake-form JSON to fill fields the parser misses. Parser values
+          always win on conflict — intake only fills gaps. Intake-supplied fields
+          are badged in the review and excluded from the first-pass calibration
+          score, which is preserved separately.
+        </p>
+        <textarea
+          id="intake-json-input"
+          class="input-textarea intake-textarea"
+          rows="8"
+          spellcheck="false"
+          placeholder='{"currentDigitalPresence": {"social": {"facebook": {"url": "https://facebook.com/partner-page"}}}}'
+        ></textarea>
+        <div class="intake-actions">
+          <button type="button" id="intake-validate-button" class="btn btn-ghost">Validate JSON</button>
+          <button type="button" id="intake-clear-button" class="btn btn-ghost">Clear</button>
+        </div>
+        <div id="intake-status" class="status-line"></div>
+      </details>
+
       <details class="previous-records">
         <summary>Load a previously saved record</summary>
         <div id="records-list" class="records-list">Loading…</div>

@@ -267,4 +267,4 @@ function detectTemplateVersion(panelInventory) {
   return 'unknown';
 }
 
-module.exports = { parseArcUrl, parseArcHtml };
+module.exports = { parseArcUrl, parseArcHtml, computeFinalCompleteness };
