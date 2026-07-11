@@ -48,3 +48,8 @@ coverage/
 arc-dumps.txt
 route-dump.js
 tests/parser/parsed-output/
+
+# Per-partner LLM fixtures from production start:live runs stay local.
+# The 36 Phase 1 test-set fixtures are already tracked and unaffected.
+# To deliberately update the test set later: git add -f <file>
+tests/parser/llm-fixtures/*.json
