@@ -166,7 +166,12 @@ function normalize(raw, sourceUrl) {
     metadata: {
       sourceUrl,
       extractedAt: new Date().toISOString(),
-      arcTemplateVersion: detectTemplateVersion(raw.panelInventory),
+      // Panel IDs alone can't see card-level template drift — the tagline-card
+      // template era (present in fixtures since at least 2026-06-15) kept all 13 panel IDs but changed the persona-card anatomy.
+      // Card anatomy is therefore the primary era signal.
+      arcTemplateVersion: raw.personaCardAnatomy === 'tagline'
+        ? 'current-tagline-cards'
+        : detectTemplateVersion(raw.panelInventory),
       completenessScore: 0,  // placeholder; recomputed after LLM pass
       extractionWarnings: warnings
     }
@@ -203,12 +208,16 @@ function computeFinalCompleteness(record) {
   if (bi.yearsOperating) count++;
   if (bi.founderNarrative) count++;
 
-  // Personas (6 expected × 9 fields each)
-  possible += 6 * 9;
+  // Personas — June-2026 cards carry 9 extractable fields; the tagline-card
+  // anatomy (tagline cards) dropped subTier from the badge, so tagline-era
+  // reports are scored on 8 fields rather than penalized for a field the
+  // template no longer contains.
+  const taglineEra = record.metadata.arcTemplateVersion === 'current-tagline-cards';
+  possible += 6 * (taglineEra ? 8 : 9);
   for (const p of record.audience.personas) {
     if (p.name) count++;
     if (p.tier) count++;
-    if (p.subTier !== null) count++;
+    if (!taglineEra && p.subTier !== null) count++;
     if (p.ageRange) count++;
     if (p.locationContext) count++;
     if (p.situation) count++;

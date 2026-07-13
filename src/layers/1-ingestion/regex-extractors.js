@@ -37,7 +37,7 @@ function extractBusinessIdentity($) {
     businessName: businessName || null,
     vertical: vertical || 'unknown',
     subVertical: null,
-    zone: null,
+    zone: extractZone($),
     yearsOperating: null,
     tagline: null,
     founderNarrative: null
@@ -91,9 +91,42 @@ function inferVerticalFromKeywords($) {
   return best.score >= 3 ? best.vertical : null;
 }
 
+/**
+ * Deterministic pricing-zone extraction. The Investment tab renders the zone
+ * consistently ("Zone 2 (1.25x)", "Monthly management fee (Zone 2)", …).
+ * Uniqueness guard: return the zone only when exactly ONE distinct zone number
+ * appears anywhere in the report — a report explaining multiple zones returns
+ * null rather than guessing (verify-or-omit).
+ */
+function extractZone($) {
+  const text = $('body').text();
+  const hits = [...new Set((text.match(/Zone\s*[123]\b/g) || []).map(z => z.replace(/\s+/g, ' ').trim()))];
+  return hits.length === 1 ? hits[0] : null;
+}
+
 /* ─────────────────────────────────────────────────────────────────
  * Persona cards (card preview — trigger / mindset / device)
  * ───────────────────────────────────────────────────────────────── */
+
+// Age ranges as rendered on June-2026 persona cards: "38–55", "30-65", "55+", "28–45"…
+// Taglines never match this, which is what makes the anatomy gate safe.
+const AGE_RANGE_RX = /^\d{1,2}\s*[–—-]\s*\d{1,3}\+?$|^\d{2}\+?$/;
+
+/**
+ * Detect which persona-card anatomy this report uses.
+ *  'triplet' — June-2026: pc-role = "age · location · situation"
+ *  'tagline' — July-2026: pc-role = single situational tagline (subTier dropped from badge)
+ * Majority vote across cards so one odd card can't flip the era.
+ */
+function detectCardAnatomy($) {
+  const roles = $('.persona-card .pc-role').map((_, e) => $(e).text().trim()).get();
+  if (!roles.length) return 'unknown';
+  const tripletCount = roles.filter(r => {
+    const seg = r.split(/\s*[·•]\s*/);
+    return seg.length >= 2 && AGE_RANGE_RX.test((seg[0] || '').trim());
+  }).length;
+  return tripletCount >= roles.length / 2 ? 'triplet' : 'tagline';
+}
 
 function extractPersonaCards($) {
   const personas = [];
@@ -131,12 +164,26 @@ function extractPersonaCards($) {
       if (remaining && remaining.toLowerCase() !== 'audience') subTier = remaining;
     }
 
-    // Parse age range from role text
-    // Role pattern: "38–55 · Cypress / Bridgeland / Towne Lake homeowner · planning a generator before hurricane season"
+    // Parse the role line — TWO template anatomies exist in the wild:
+    //   June-2026 (triplet):  "38–55 · Cypress / Bridgeland / Towne Lake homeowner · planning a generator before hurricane season"
+    //                         → ageRange · locationContext · situation
+    //   July-2026 (tagline):  "Trains hard, recovers smart"
+    //                         → a single situational tagline; age/location moved to the modal Demographics
+    // The old unconditional split corrupted ageRange on tagline-era cards (the
+    // tagline landed in ageRange). Gate the triplet mapping on segment[0]
+    // actually looking like an age range; otherwise the whole line is the
+    // situational tagline and age/location are backfilled from the modal.
     const roleSegments = role.split(/\s*[·•]\s*/);
-    const ageRange = roleSegments[0] || null;
-    const locationContext = roleSegments[1] || null;
-    const situation = roleSegments.slice(2).join(' · ') || null;
+    let ageRange = null;
+    let locationContext = null;
+    let situation = null;
+    if (roleSegments.length >= 2 && AGE_RANGE_RX.test((roleSegments[0] || '').trim())) {
+      ageRange = roleSegments[0] || null;
+      locationContext = roleSegments[1] || null;
+      situation = roleSegments.slice(2).join(' · ') || null;
+    } else if (role) {
+      situation = role;
+    }
 
     personas.push({
       id,
@@ -209,6 +256,12 @@ function enrichPersonasFromModals($, personas) {
         if (label) demographics[label] = value;
       });
     }
+
+    // Backfill card-level fields from modal Demographics (July-2026 anatomy
+    // moved age + location off the card into the modal). Null-only fill:
+    // June-era cards that already carried these are never overwritten.
+    if (!persona.ageRange && demographics.age) persona.ageRange = demographics.age;
+    if (!persona.locationContext && demographics.location) persona.locationContext = demographics.location;
 
     // Customer journey — sometimes 3 stages, sometimes 4 or 5
     const journeyStages = [];
@@ -479,6 +532,7 @@ function extractAll(html) {
     decisionDrivers,
     channelMap,
     panelInventory,
+    personaCardAnatomy: detectCardAnatomy($),
     // Fields that require LLM extraction or downstream layer enrichment:
     needsLlm: {
       vertical: businessIdentity.vertical === null,
@@ -500,6 +554,8 @@ module.exports = {
   extractBusinessIdentity,
   extractPersonaCards,
   enrichPersonasFromModals,
+  detectCardAnatomy,
+  extractZone,
   extractCompetitors,
   extractAvs,
   extractDecisionDrivers,

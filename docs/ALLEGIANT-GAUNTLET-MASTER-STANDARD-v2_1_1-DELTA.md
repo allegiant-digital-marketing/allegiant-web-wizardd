@@ -1,6 +1,6 @@
 # The Allegiant Gauntlet — Master Verification Standard v2.1.1 DELTA
 
-**Status:** DRAFT FOR CHAD'S SIGN-OFF — signed by commit to the repo and upload to the A.R.C. generator Project Knowledge. Until signed, v2.1 as written remains authoritative and the conflict this delta resolves is handled by live instruction only.
+**Status:** SIGNED by Chad Markham 2026-07-12 — executed by upload of this dated delta to the A.R.C. generator Project Knowledge (repo commit to WIZARDD `docs/` per Distribution step 1 completes the record). This delta's §III-B AI-visibility row is authoritative; v2.1 as written remains authoritative on all other items.
 **Base document:** `ALLEGIANT-GAUNTLET-MASTER-STANDARD-v2_1.md` (LOCKED 2026-07-04 per Standing Instructions v1.1). The base document is unchanged; this delta amends exactly two items. On the next full revision (v2.2), fold both in and retire this delta.
 **Owner:** Chad Markham, Allegiant Digital Marketing. **Drafted:** 2026-07-11.
 
@@ -48,4 +48,4 @@
 
 ## Sign-off
 
-**Signed:** Chad Markham, President/CEO, Allegiant Digital Marketing — by commit dated ______________
+**Signed:** Chad Markham, President/CEO, Allegiant Digital Marketing — by commit dated 2026-07-12
