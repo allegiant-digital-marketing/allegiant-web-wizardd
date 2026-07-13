@@ -456,6 +456,22 @@ function extractDecisionDrivers($) {
       drivers.push({ rank, title, description: description || null });
     }
   });
+  if (drivers.length) return drivers;
+
+  // Variant (thin-edition reports): no ranked .driver grid — the "What Drives
+  // Their Decision" sub-section renders unranked .behavior-card items instead.
+  // Scope strictly to that sub-section: "How They Search" uses the identical
+  // card markup and must not leak in. Rank = display order.
+  $('.sub-section').each((_, sec) => {
+    const $sec = $(sec);
+    if (!/what drives/i.test($sec.find('.sub-title').first().text())) return;
+    $sec.find('.behavior-card').each((idx, card) => {
+      const $c = $(card);
+      const title = $c.find('.behavior-title').first().text().trim();
+      const description = $c.find('.behavior-desc').first().text().trim();
+      if (title) drivers.push({ rank: idx + 1, title, description: description || null });
+    });
+  });
   return drivers;
 }
 

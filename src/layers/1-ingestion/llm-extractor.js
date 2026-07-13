@@ -76,10 +76,15 @@ const TASKS = [
     mergeResult: (out, d) => {
       const bi = out.businessIdentity;
       if (d.vertical) bi.vertical = String(d.vertical).toLowerCase();
-      if (d.subVertical !== undefined) bi.subVertical = d.subVertical;
-      if (d.zone !== undefined) bi.zone = d.zone;
+      // Fill-only merges: LLM enrichment fills gaps, it never erases a
+      // deterministic value with null (same doctrine as intake-merge.js —
+      // "a non-empty parser value is never overwritten"). The zone clobber
+      // was exactly this: the LLM task returns zone:null when its panels
+      // don't mention it, which overwrote the deterministic Investment-tab zone.
+      if (d.subVertical !== undefined && d.subVertical !== null) bi.subVertical = d.subVertical;
+      if (d.zone !== undefined && d.zone !== null) bi.zone = d.zone;
       if (d.yearsOperating !== undefined && d.yearsOperating !== null) bi.yearsOperating = Number(d.yearsOperating);
-      if (d.tagline !== undefined) bi.tagline = d.tagline;
+      if (d.tagline !== undefined && d.tagline !== null) bi.tagline = d.tagline;
       return out;
     }
   },
@@ -88,7 +93,7 @@ const TASKS = [
     panels: ['panel-forward'],
     promptBuilder: buildFounderPrompt,
     validateResult: (d) => ({ ok: d && typeof d === 'object' && (d.founderNarrative === null || typeof d.founderNarrative === 'string') }),
-    mergeResult: (out, d) => { out.businessIdentity.founderNarrative = d.founderNarrative; return out; }
+    mergeResult: (out, d) => { if (d.founderNarrative) out.businessIdentity.founderNarrative = d.founderNarrative; return out; }
   },
   {
     name: 'target-services',
